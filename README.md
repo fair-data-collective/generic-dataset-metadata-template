@@ -22,3 +22,9 @@ It should be noted that many FAIR principles and FDP specifications can not be s
 but must be addressed by the data aggregator and distributor. 
 These differences will be highlighted as we fill out the details of the template specifiction. 
 
+# Resources
+
+- [CEDAR folder containing metadata elements, fields and templates](https://cedar.metadatacenter.org/dashboard?folderId=https:%2F%2Frepo.metadatacenter.org%2Ffolders%2Fdaf80275-83d3-4034-bfbf-2c62ff39902b)
+- [Slides presenting the generic data metadata template](https://bit.ly/generic-metadata-template-slides)
+- [Google sheet containing details of metadata fields and elements](https://bit.ly/generic-metadata-template)
+- [Google sheet for building controlled terminology and RDF properties for the metadata template](https://bit.ly/fdc-ontology)
