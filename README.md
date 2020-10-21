@@ -26,5 +26,5 @@ These differences will be highlighted as we fill out the details of the template
 
 - [CEDAR folder containing metadata elements, fields and templates](https://cedar.metadatacenter.org/dashboard?folderId=https:%2F%2Frepo.metadatacenter.org%2Ffolders%2Fdaf80275-83d3-4034-bfbf-2c62ff39902b)
 - [Slides presenting the generic data metadata template](https://bit.ly/generic-metadata-template-slides)
-- [Google sheet containing details of metadata fields and elements](https://bit.ly/generic-metadata-template)
-- [Google sheet for building controlled terminology and RDF properties for the metadata template](https://bit.ly/fdc-ontology)
+- [Google sheet containing details about the metadata fields and elements](https://bit.ly/generic-metadata-template)
+- [Google sheet for building SKOS-based controlled terminology and RDF/OWL properties for the metadata template](https://bit.ly/fdc-ontology)
