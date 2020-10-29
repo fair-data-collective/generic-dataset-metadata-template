@@ -23,6 +23,10 @@ jobs:
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
+      - name: downloads qSKOS
+        run: |
+          curl -L https://github.com/cmader/qSKOS/releases/download/2.0.3/qSKOS-cmd.jar -o qSKOS.jar
+          echo `java -jar qSKOS.jar --version`
       - name: Run a one-line script
         run: echo `java -version`
 
