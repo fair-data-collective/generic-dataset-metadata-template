@@ -1,0 +1,166 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dsvoc: <http://www.fair-data-collective.com/datasetvoc/> .
+@prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosthes: <http://purl.org/iso25964/skos-thes#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.fair-data-collective.com/datasetvoc/> a skos:ConceptScheme;
+  dct:creator <https://orcid.org/0000-0002-9381-9694>;
+  dct:description "Controlled vocabulary of terms used in dataset generic metadata template."@en;
+  dct:title "Controlled Terms for Dataset Generic Metadata Template"@en;
+  pav:createdOn "2020-10-22T22:00:00+01:00"@en;
+  pav:lastUpdatedOn "2020-10-23T08:00:00+01:00"@en;
+  pav:version "0.1"@en;
+  skos:hasTopConcept <http://www.fair-data-collective.com/datasetvoc/>;
+  skos:narrower dsvoc:ResourceTypeCategory, dsvoc:SecondTopConcept;
+  skos:prefLabel "Controlled Terms for Dataset Generic Metadata Template"@en .
+
+dsvoc:ResourceTypeCategory a skos:Concept;
+  skos:broader <http://www.fair-data-collective.com/datasetvoc/>;
+  skos:definition "This is a set of controlled terms for the category of reseource being described."@en;
+  skos:inScheme <http://www.fair-data-collective.com/datasetvoc/>;
+  skos:narrower dsvoc:Audiovisual, dsvoc:Collection, dsvoc:DataCatalog, dsvoc:DataPaper,
+    dsvoc:DataStream, dsvoc:Dataset, dsvoc:Event, dsvoc:Image, dsvoc:InteractiveResource,
+    dsvoc:Model, dsvoc:Other, dsvoc:PhysicalObject, dsvoc:Service, dsvoc:Software, dsvoc:Sound,
+    dsvoc:Text, dsvoc:Workflow;
+  skos:prefLabel "ResourceTypeCategory"@en .
+
+dsvoc:SecondTopConcept a skos:Concept;
+  skos:broader <http://www.fair-data-collective.com/datasetvoc/>;
+  skos:definition "This is a category of parameters associated with SecondTopConcept."@en;
+  skos:inScheme <http://www.fair-data-collective.com/datasetvoc/>;
+  skos:prefLabel "SecondTopConcept"@en .
+
+dsvoc:Audiovisual a skos:Concept;
+  dct:creator <https://orcid.org/0000-0002-9381-9693>;
+  skos:broader dsvoc:ResourceTypeCategory;
+  skos:definition "A series of visual representations imparting an impression of motion when shown in succession. May or may not include sound."@en;
+  skos:inScheme <http://www.fair-data-collective.com/datasetvoc/>;
+  skos:prefLabel "Audiovisual"@en .
+
+dsvoc:Collection a skos:Concept;
+  dct:creator <https://orcid.org/0000-0002-9381-9694>;
+  skos:broader dsvoc:ResourceTypeCategory;
+  skos:definition "An aggregation of resources, which may encompass collections of one resourceType as well as those of mixed types. A collection is described as a group; its parts may also be separately described."@en;
+  skos:inScheme <http://www.fair-data-collective.com/datasetvoc/>;
+  skos:prefLabel "Collection"@en .
+
+dsvoc:DataPaper a skos:Concept;
+  dct:creator <https://orcid.org/0000-0002-9381-9695>;
+  skos:broader dsvoc:ResourceTypeCategory;
+  skos:definition "A factual and objective publication with a focused intent to identify and describe specific data, sets of data, or data collections to facilitate discoverability."@en;
+  skos:inScheme <http://www.fair-data-collective.com/datasetvoc/>;
+  skos:prefLabel "DataPaper"@en .
+
+dsvoc:DataCatalog a skos:Concept;
+  dct:creator <https://orcid.org/0000-0002-9381-9696>;
+  skos:broader dsvoc:ResourceTypeCategory;
+  skos:definition "A collection of datasets."@en;
+  skos:inScheme <http://www.fair-data-collective.com/datasetvoc/>;
+  skos:prefLabel "DataCatalog"@en .
+
+dsvoc:Dataset a skos:Concept;
+  dct:creator <https://orcid.org/0000-0002-9381-9697>;
+  skos:broader dsvoc:ResourceTypeCategory;
+  skos:definition "Dataset is a logical grouping of one or more data streams. It is can be provided in various data distributions. Dataset might be part of (parent) data catalog."@en;
+  skos:inScheme <http://www.fair-data-collective.com/datasetvoc/>;
+  skos:prefLabel "Dataset"@en .
+
+dsvoc:DataStream a skos:Concept;
+  dct:creator <https://orcid.org/0000-0002-9381-9698>;
+  skos:broader dsvoc:ResourceTypeCategory;
+  skos:definition "Data stream represent a collection of one or more variable records originating from a single data source (e.g., sensor) which properties remain unchanged during the data stream existence. In some use-cases, the data source location is required to remain unchanged (e.g., sensors attached to a meteorological tower). Data stream can grow over time."@en;
+  skos:inScheme <http://www.fair-data-collective.com/datasetvoc/>;
+  skos:prefLabel "DataStream"@en .
+
+dsvoc:Event a skos:Concept;
+  dct:creator <https://orcid.org/0000-0002-9381-9699>;
+  skos:broader dsvoc:ResourceTypeCategory;
+  skos:definition "A non-persistent, time-based occurrence."@en;
+  skos:inScheme <http://www.fair-data-collective.com/datasetvoc/>;
+  skos:prefLabel "Event"@en .
+
+dsvoc:Image a skos:Concept;
+  dct:creator <https://orcid.org/0000-0002-9381-9700>;
+  skos:broader dsvoc:ResourceTypeCategory;
+  skos:definition "A visual representation other than text"@en;
+  skos:inScheme <http://www.fair-data-collective.com/datasetvoc/>;
+  skos:prefLabel "Image"@en .
+
+dsvoc:InteractiveResource a skos:Concept;
+  dct:creator <https://orcid.org/0000-0002-9381-9701>;
+  skos:broader dsvoc:ResourceTypeCategory;
+  skos:definition "A resource requiring interaction from the user to be understood, executed, or experienced"@en;
+  skos:inScheme <http://www.fair-data-collective.com/datasetvoc/>;
+  skos:prefLabel "InteractiveResource"@en .
+
+dsvoc:Model a skos:Concept;
+  dct:creator <https://orcid.org/0000-0002-9381-9702>;
+  skos:broader dsvoc:ResourceTypeCategory;
+  skos:definition "An abstract, conceptual, graphical, mathematical or visualization model that represents empirical objects, phenomena, or physical processes."@en;
+  skos:inScheme <http://www.fair-data-collective.com/datasetvoc/>;
+  skos:prefLabel "Model"@en .
+
+dsvoc:PhysicalObject a skos:Concept;
+  dct:creator <https://orcid.org/0000-0002-9381-9703>;
+  skos:broader dsvoc:ResourceTypeCategory;
+  skos:definition "An inanimate, three-dimensional object or substance."@en;
+  skos:inScheme <http://www.fair-data-collective.com/datasetvoc/>;
+  skos:prefLabel "PhysicalObject"@en .
+
+dsvoc:Service a skos:Concept;
+  dct:creator <https://orcid.org/0000-0002-9381-9704>;
+  skos:broader dsvoc:ResourceTypeCategory;
+  skos:definition "An organized system of apparatus, appliances, staff, etc., for supplying some function(s) required by end users."@en;
+  skos:inScheme <http://www.fair-data-collective.com/datasetvoc/>;
+  skos:prefLabel "Service"@en .
+
+dsvoc:Software a skos:Concept;
+  dct:creator <https://orcid.org/0000-0002-9381-9705>;
+  skos:broader dsvoc:ResourceTypeCategory;
+  skos:definition "A computer program in source code (text) or compiled form. Use this type for all software components supporting scholarly research."@en;
+  skos:inScheme <http://www.fair-data-collective.com/datasetvoc/>;
+  skos:prefLabel "Software"@en .
+
+dsvoc:Sound a skos:Concept;
+  dct:creator <https://orcid.org/0000-0002-9381-9706>;
+  skos:broader dsvoc:ResourceTypeCategory;
+  skos:definition "A resource primarily intended to be heard."@en;
+  skos:inScheme <http://www.fair-data-collective.com/datasetvoc/>;
+  skos:prefLabel "Sound"@en .
+
+dsvoc:Text a skos:Concept;
+  dct:creator <https://orcid.org/0000-0002-9381-9707>;
+  skos:broader dsvoc:ResourceTypeCategory;
+  skos:definition "A resource consisting primarily of words for reading."@en;
+  skos:inScheme <http://www.fair-data-collective.com/datasetvoc/>;
+  skos:prefLabel "Text"@en .
+
+dsvoc:Workflow a skos:Concept;
+  dct:creator <https://orcid.org/0000-0002-9381-9708>;
+  skos:broader dsvoc:ResourceTypeCategory;
+  skos:definition "A structured series of steps which can be executed to produce a final outcome, allowing users a means to specify and enact their work in a more reproducible manner."@en;
+  skos:exactMatch <https://hdl.handle.net/21.11109/dft-2.0@#Workflow>;
+  skos:inScheme <http://www.fair-data-collective.com/datasetvoc/>;
+  skos:prefLabel "Workflow"@en .
+
+dsvoc:Other a skos:Concept;
+  dct:creator <https://orcid.org/0000-0002-9381-9709>;
+  skos:broader dsvoc:ResourceTypeCategory;
+  skos:definition "If selected, supply a value for ResourceType"@en;
+  skos:inScheme <http://www.fair-data-collective.com/datasetvoc/>;
+  skos:prefLabel "Other"@en .
