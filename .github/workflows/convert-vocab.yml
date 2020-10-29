@@ -36,7 +36,7 @@ jobs:
       - name: convert excel to rdf
         run: |
           java -jar xls2rdf.jar convert -i ./ontology/dataset-voc.xlsx -o ./ontology/dataset-voc.ttl -l en
-          mv xls2rdf.log ./ontology/logs/xls2rdf.log
+          mv xls2rdf.log ./ontology/logs/
 
       - name: validate rdf
         run: |
