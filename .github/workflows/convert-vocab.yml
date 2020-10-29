@@ -22,16 +22,23 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      # Runs a single command using the runners shell
-      - name: downloads qSKOS
+      - name: Commit
         run: |
-          curl -L https://github.com/cmader/qSKOS/releases/download/2.0.3/qSKOS-cmd.jar -o qSKOS.jar
-          echo `java -jar qSKOS.jar --version`
-      - name: Run a one-line script
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git pull
+
+      - name: Check java version
         run: echo `java -version`
 
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
+      - name: download tools
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          curl -L https://github.com/cmader/qSKOS/releases/download/2.0.3/qSKOS-cmd.jar -o qSKOS.jar
+          curl -L https://github.com/sparna-git/xls2rdf/releases/download/2.1.1/xls2rdf-app-2.1.1-onejar.jar -o xls2rdf.jar
+          echo `java -jar qSKOS.jar --version`
+
+      - name: Commit
+        run: |
+          git add .
+          git diff-index --quiet HEAD || git commit -m "generated new glossary.ttl from txt files"
+          git push
