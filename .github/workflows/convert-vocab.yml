@@ -35,7 +35,13 @@ jobs:
         run: |
           curl -L https://github.com/cmader/qSKOS/releases/download/2.0.3/qSKOS-cmd.jar -o qSKOS.jar
           curl -L https://github.com/sparna-git/xls2rdf/releases/download/2.1.1/xls2rdf-app-2.1.1-onejar.jar -o xls2rdf.jar
-          echo `java -jar qSKOS.jar --version`
+
+
+      - name: delete tools
+        run: |
+          rm qSKOS.jar
+          rm xls2rdf.jar
+
 
       - name: Commit
         run: |
