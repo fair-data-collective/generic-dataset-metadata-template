@@ -28,9 +28,6 @@ jobs:
           git config user.email github-actions@github.com
           git pull
 
-      - name: Check java version
-        run: echo `java -version`
-
       - name: download tools
         run: |
           curl -L https://github.com/cmader/qSKOS/releases/download/2.0.3/qSKOS-cmd.jar -o qSKOS.jar
@@ -39,11 +36,11 @@ jobs:
       - name: convert excel to rdf
         run: |
           java -jar xls2rdf.jar convert -i ./ontology/dataset-voc.xlsx -o ./ontology/dataset-voc.ttl -l en
+          mv xls2rdf.log ./ontology/logs/xls2rdf.log
 
       - name: validate rdf
         run: |
-          java -jar qSKOS.jar analyze -dc mil,bl ./ontology/dataset-voc.ttl -o ./ontology/dataset-voc-report.txt
-
+          java -jar qSKOS.jar analyze -dc mil,bl ./ontology/dataset-voc.ttl -o ./ontology/logs/qSKOS.log
 
       - name: delete tools
         run: |
