@@ -36,12 +36,19 @@ jobs:
           curl -L https://github.com/cmader/qSKOS/releases/download/2.0.3/qSKOS-cmd.jar -o qSKOS.jar
           curl -L https://github.com/sparna-git/xls2rdf/releases/download/2.1.1/xls2rdf-app-2.1.1-onejar.jar -o xls2rdf.jar
 
+      - name: convert excel to rdf
+        run: |
+          java -jar xls2rdf.jar convert -i ./ontology/dataset-voc.xlsx -o ./ontology/dataset-voc.ttl -l en
+
+      - name: validate rdf
+        run: |
+          java -jar qSKOS.jar analyze -dc mil,bl ./ontology/dataset-voc.ttl -o ./ontology/dataset-voc-report.txt
+
 
       - name: delete tools
         run: |
           rm qSKOS.jar
           rm xls2rdf.jar
-
 
       - name: Commit
         run: |
