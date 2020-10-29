@@ -13,7 +13,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  build:
+  build-test-deploy-vocabulary:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -22,33 +22,27 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      - name: Commit
+      - name: prepare
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
           git pull
-
-      - name: download tools
-        run: |
           curl -L https://github.com/cmader/qSKOS/releases/download/2.0.3/qSKOS-cmd.jar -o qSKOS.jar
           curl -L https://github.com/sparna-git/xls2rdf/releases/download/2.1.1/xls2rdf-app-2.1.1-onejar.jar -o xls2rdf.jar
 
-      - name: convert excel to rdf
+      - name: build
         run: |
           java -jar xls2rdf.jar convert -i ./ontology/dataset-voc.xlsx -o ./ontology/dataset-voc.ttl -l en
           mv xls2rdf.log ./ontology/logs/
 
-      - name: validate rdf
+      - name: test
         run: |
           java -jar qSKOS.jar analyze -dc mil,bl ./ontology/dataset-voc.ttl -o ./ontology/logs/qSKOS.log
 
-      - name: delete tools
+      - name: deploy
         run: |
           rm qSKOS.jar
           rm xls2rdf.jar
-
-      - name: Commit
-        run: |
           git add .
           git diff-index --quiet HEAD || git commit -m "generated new glossary.ttl from txt files"
           git push
