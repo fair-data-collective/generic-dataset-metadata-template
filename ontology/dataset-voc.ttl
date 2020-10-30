@@ -25,25 +25,24 @@
   pav:createdOn "2020-10-22T22:00:00+01:00"@en;
   pav:lastUpdatedOn "2020-10-23T08:00:00+01:00"@en;
   pav:version "0.1"@en;
-  skos:hasTopConcept <http://www.fair-data-collective.com/datasetvoc/>;
-  skos:narrower dsvoc:ResourceTypeCategory, dsvoc:SecondTopConcept;
+  skos:hasTopConcept dsvoc:ResourceTypeCategory, dsvoc:SecondTopConcept;
   skos:prefLabel "Controlled Terms for Dataset Generic Metadata Template"@en .
 
 dsvoc:ResourceTypeCategory a skos:Concept;
-  skos:broader <http://www.fair-data-collective.com/datasetvoc/>;
   skos:definition "This is a set of controlled terms for the category of reseource being described."@en;
   skos:inScheme <http://www.fair-data-collective.com/datasetvoc/>;
   skos:narrower dsvoc:Audiovisual, dsvoc:Collection, dsvoc:DataCatalog, dsvoc:DataPaper,
     dsvoc:DataStream, dsvoc:Dataset, dsvoc:Event, dsvoc:Image, dsvoc:InteractiveResource,
     dsvoc:Model, dsvoc:Other, dsvoc:PhysicalObject, dsvoc:Service, dsvoc:Software, dsvoc:Sound,
     dsvoc:Text, dsvoc:Workflow;
-  skos:prefLabel "ResourceTypeCategory"@en .
+  skos:prefLabel "ResourceTypeCategory"@en;
+  skos:topConceptOf <http://www.fair-data-collective.com/datasetvoc/> .
 
 dsvoc:SecondTopConcept a skos:Concept;
-  skos:broader <http://www.fair-data-collective.com/datasetvoc/>;
   skos:definition "This is a category of parameters associated with SecondTopConcept."@en;
   skos:inScheme <http://www.fair-data-collective.com/datasetvoc/>;
-  skos:prefLabel "SecondTopConcept"@en .
+  skos:prefLabel "SecondTopConcept"@en;
+  skos:topConceptOf <http://www.fair-data-collective.com/datasetvoc/> .
 
 dsvoc:Audiovisual a skos:Concept;
   dct:creator <https://orcid.org/0000-0002-9381-9693>;
