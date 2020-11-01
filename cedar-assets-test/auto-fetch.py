@@ -23,10 +23,39 @@ for artifact in response["resources"]:
             "https://repo.metadatacenter.org/template-elements/", ""
         )
         element_json = requests.get(cmd, headers=headers).json()
-        path = "./cedar-assets-test/Elements/" + artifact["schema:name"] + ".json"
-        # Create a folder in case it does not exist!
-        if not os.path.isdir("./cedar-assets-test/Elements/"):
-            os.mkdir("./cedar-assets-test/Elements/")
+        path = "./cedar-assets-test/Elements/"
+        file_name = artifact["schema:name"] + ".json"
 
-        with open(path, "w") as json_file:
+        if not os.path.isdir(path):
+            os.mkdir(path)
+
+        with open(path + file_name, "w") as json_file:
             json.dump(element_json, json_file, indent=4)
+
+    if artifact["resourceType"] == "field":
+        cmd = FIELD_BASE_URL + artifact["@id"].replace(
+            "https://repo.metadatacenter.org/template-fields/", ""
+        )
+        field_json = requests.get(cmd, headers=headers).json()
+        path = "./cedar-assets-test/Fields/"
+        file_name = artifact["schema:name"] + ".json"
+
+        if not os.path.isdir(path):
+            os.mkdir(path)
+
+        with open(path + file_name, "w") as json_file:
+            json.dump(field_json, json_file, indent=4)
+
+    if artifact["resourceType"] == "template":
+        cmd = TEMPLATE_BASE_URL + artifact["@id"].replace(
+            "https://repo.metadatacenter.org/templates/", ""
+        )
+        template_json = requests.get(cmd, headers=headers).json()
+        path = "./cedar-assets-test/"
+        file_name = artifact["schema:name"] + ".json"
+
+        if not os.path.isdir(path):
+            os.mkdir(path)
+
+        with open(path + file_name, "w") as json_file:
+            json.dump(template_json, json_file, indent=4)
