@@ -6,7 +6,9 @@ import os
 FOLDER_URL = "https://resource.metadatacenter.org/folders/https%3A%2F%2Frepo.metadatacenter.org%2Ffolders%2Fdaf80275-83d3-4034-bfbf-2c62ff39902b/"
 CEDAR_CMD = "contents-extract?version=all&publication_status=all&sort=name"
 FOLDER_CMD = "contents?version=latest&publication_status=all&sort=name"
-ELEMENT_BASE_URL = "https://resource.metadatacenter.org/template-elements/https%3A%2F%2Frepo.metadatacenter.org%2Ftemplate-elements%2F"
+ELEMENT_BASE_URL="https://resource.metadatacenter.org/template-elements/https%3A%2F%2Frepo.metadatacenter.org%2Ftemplate-elements%2F"
+FIELD_BASE_URL = "https://resource.metadatacenter.org/template-fields/https%3A%2F%2Frepo.metadatacenter.org%2Ftemplate-elements%2F"
+TEMPLATE_BASE_URL = "https://resource.metadatacenter.org/templates/https%3A%2F%2Frepo.metadatacenter.org%2Ftemplates%2F"
 
 headers = {
     "Accept": "application/json",
