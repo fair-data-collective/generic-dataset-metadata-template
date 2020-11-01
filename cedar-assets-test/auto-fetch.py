@@ -24,6 +24,7 @@ for artifact in response["resources"]:
         )
         element_json = requests.get(cmd, headers=headers).json()
         path = "./cedar-assets-test/Elements/" + artifact["schema:name"] + ".json"
+        # Create a folder in case it does not exist!
         if not os.path.isdir("./cedar-assets-test/Elements/"):
             os.mkdir("./cedar-assets-test/Elements/")
 
