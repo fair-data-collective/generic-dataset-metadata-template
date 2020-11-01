@@ -37,6 +37,7 @@ jobs:
 
       - name: deploy
         run: |
+          git pull
           git add .
           git diff-index --quiet HEAD || git commit -m "fetched CEDAR artifacts"
           git push
