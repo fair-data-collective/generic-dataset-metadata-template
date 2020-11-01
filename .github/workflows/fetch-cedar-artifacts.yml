@@ -26,16 +26,16 @@ jobs:
           git config user.email github-actions@github.com
           git pull
 
-      - name: fetch
+      - name: fetch-artifacts
         env:
           CEDAR_API: ${{secrets.CEDAR_API}}
         run: |
           echo `which python`
           python3 ./cedar-assets-test/auto-fetch.py
 
-      - name: deploy
+      - name: commit-artifacts
         run: |
           git pull
           git add .
-          git diff-index --quiet HEAD || git commit -m "fetched CEDAR artifacts"
+          git diff-index --quiet HEAD || git commit -m "updated CEDAR artifacts"
           git push
