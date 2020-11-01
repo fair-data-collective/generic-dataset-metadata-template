@@ -32,7 +32,8 @@ jobs:
         env:
           CEDAR_API: ${{secrets.CEDAR_API}}
         run: |
-          python ./cedar-assets-test/auto-fetch.py
+          echo `which python`
+          python3 ./cedar-assets-test/auto-fetch.py
 
       - name: deploy
         run: |
