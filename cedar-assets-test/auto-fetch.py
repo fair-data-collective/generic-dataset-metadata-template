@@ -24,6 +24,8 @@ for artifact in response["resources"]:
         )
         element_json = requests.get(cmd, headers=headers).json()
         path = "./cedar-assets-test/Elements/" + artifact["schema:name"] + ".json"
+        if not os.path.isdir("./cedar-assets-test/Elements/"):
+            os.mkdir("./cedar-assets-test/Elements/")
 
         with open(path, "w") as json_file:
             json.dump(element_json, json_file, indent=4)
