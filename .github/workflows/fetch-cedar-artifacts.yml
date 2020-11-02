@@ -31,7 +31,7 @@ jobs:
           CEDAR_API: ${{secrets.CEDAR_API}}
         run: |
           echo `which python`
-          python3 ./cedar-assets-test/auto-fetch.py
+          python3 ./src/fetch-CEDAR-artifacts.py
 
       - name: commit-artifacts
         run: |
