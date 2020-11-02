@@ -1,0 +1,76 @@
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "pav": "http://purl.org/pav/",
+        "schema": "http://schema.org/",
+        "oslc": "http://open-services.net/ns/core#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "rdfs:label": {
+            "@type": "xsd:string"
+        },
+        "schema:isBasedOn": {
+            "@type": "@id"
+        },
+        "schema:name": {
+            "@type": "xsd:string"
+        },
+        "schema:description": {
+            "@type": "xsd:string"
+        },
+        "pav:derivedFrom": {
+            "@type": "@id"
+        },
+        "pav:createdOn": {
+            "@type": "xsd:dateTime"
+        },
+        "pav:createdBy": {
+            "@type": "@id"
+        },
+        "pav:lastUpdatedOn": {
+            "@type": "xsd:dateTime"
+        },
+        "oslc:modifiedBy": {
+            "@type": "@id"
+        },
+        "skos:notation": {
+            "@type": "xsd:string"
+        },
+        "Language": "https://schema.metadatacenter.org/properties/6b00f358-9d52-4e92-9eae-97901db2f820"
+    },
+    "Language": {
+        "@context": {
+            "language": "http://purl.org/dc/elements/1.1/language",
+            "primaryLanguage": "https://schema.metadatacenter.org/properties/f87a9018-6314-4b0f-8db9-6254cbf35a56"
+        },
+        "language": [
+            {
+                "@value": "english"
+            },
+            {
+                "@value": "french"
+            },
+            {
+                "@value": "serbian"
+            },
+            {
+                "@value": "bulgarian"
+            },
+            {
+                "@value": "danish"
+            }
+        ],
+        "primaryLanguage": {
+            "@value": "english"
+        },
+        "@id": "https://repo.metadatacenter.org/template-element-instances/f621d777-5676-432a-bf27-467ce4f556f6"
+    },
+    "schema:isBasedOn": "https://repo.metadatacenter.org/templates/c33e855c-4d25-457b-aa97-19b7093493b8",
+    "schema:name": "test_template metadata",
+    "schema:description": "Template for testing purposes",
+    "pav:createdOn": "2020-10-18T11:42:25-07:00",
+    "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+    "pav:lastUpdatedOn": "2020-10-18T11:43:28-07:00",
+    "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+    "@id": "https://repo.metadatacenter.org/template-instances/84f375f3-7cb1-4ff3-91f7-14629ab68cc9"
+}
