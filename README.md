@@ -16,7 +16,7 @@ The template has the following target capabilities:
 - satisfaction of FAIR principles and metadata evaluators
 - secure generation of DOI
 
-The template description in the [Excel Sheet](./template-description.xlsx) is intended to provide sufficient detail that it can be used to create a CEDAR Template,
+The template description in the [Excel Sheet](./template-description.xlsx) is intended to provide sufficient detail that it can be used to create a [CEDAR Template](https://openview.metadatacenter.org/templates/https:%2F%2Frepo.metadatacenter.org%2Ftemplates%2Fc33e855c-4d25-457b-aa97-19b7093493b8),
 which in turn can be filled out easily by the dataset creator or contributor.
 The template description in the [Excel Sheet](./template-description.xlsx) could also be adopted for other metadata systems.
 
