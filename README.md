@@ -14,6 +14,7 @@ The template has the following target capabilities:
 - evaluation of and support for GO FAIR FAIR Data Points (FDPs)
 - support for RDF production that can be presented (with translation) as nanopublications
 - satisfaction of FAIR principles and metadata evaluators
+- secure generation of DOI
 
 The template description in the [Excel Sheet](./template-description.xlsx) is intended to provide sufficient detail that it can be used to create a CEDAR Template,
 which in turn can be filled out easily by the dataset creator or contributor.
