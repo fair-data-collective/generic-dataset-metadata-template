@@ -43,7 +43,7 @@
         "propertyDescriptions": {
             "datasetIdentifier": "A globally unique string that identifies the resource being described.",
             "propertyID": "The identifier type used to identify the resource being described.",
-            "subtypeCode": "The identifier sub-type used to identify the resource being described."
+            "subtypeCode": "The subtype of the identifier used to identify the resource being described."
         }
     },
     "properties": {
@@ -179,9 +179,9 @@
             ],
             "schema:name": "datasetIdentifier",
             "schema:description": "A globally unique string that identifies the resource being described.",
-            "pav:createdOn": "2020-11-29T20:05:22-08:00",
+            "pav:createdOn": "2020-11-29T20:58:46-08:00",
             "pav:createdBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
-            "pav:lastUpdatedOn": "2020-11-29T20:05:22-08:00",
+            "pav:lastUpdatedOn": "2020-11-29T20:58:46-08:00",
             "oslc:modifiedBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
@@ -269,9 +269,9 @@
             ],
             "schema:name": "propertyID",
             "schema:description": "The identifier type used to identify the resource being described.",
-            "pav:createdOn": "2020-11-29T20:05:22-08:00",
+            "pav:createdOn": "2020-11-29T20:58:46-08:00",
             "pav:createdBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
-            "pav:lastUpdatedOn": "2020-11-29T20:05:22-08:00",
+            "pav:lastUpdatedOn": "2020-11-29T20:58:46-08:00",
             "oslc:modifiedBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
@@ -358,10 +358,10 @@
                 "@value"
             ],
             "schema:name": "subtypeCode",
-            "schema:description": "The identifier sub-type used to identify the resource being described.",
-            "pav:createdOn": "2020-11-29T20:05:22-08:00",
+            "schema:description": "The subtype of the identifier used to identify the resource being described.",
+            "pav:createdOn": "2020-11-29T20:58:46-08:00",
             "pav:createdBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
-            "pav:lastUpdatedOn": "2020-11-29T20:05:22-08:00",
+            "pav:lastUpdatedOn": "2020-11-29T20:58:46-08:00",
             "oslc:modifiedBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
@@ -381,7 +381,7 @@
     ],
     "pav:createdOn": "2020-10-18T00:25:37-07:00",
     "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-    "pav:lastUpdatedOn": "2020-11-29T20:05:22-08:00",
+    "pav:lastUpdatedOn": "2020-11-29T20:58:46-08:00",
     "oslc:modifiedBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
     "schema:schemaVersion": "1.6.0",
     "additionalProperties": false,
