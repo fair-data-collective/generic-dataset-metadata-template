@@ -1,9 +1,10 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix dsvoc: <http://www.fair-data-collective.com/datasetvoc/> .
 @prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix gdmt: <http://vocab.fairdatacollective.org/gdmt/> .
+@prefix gdmt-property: <http://vocab.fairdatacollective.org/gdmt/property/> .
 @prefix org: <http://www.w3.org/ns/org#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix pav: <http://purl.org/pav/> .
@@ -18,148 +19,786 @@
 @prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.fair-data-collective.com/datasetvoc/> a skos:ConceptScheme;
-  dct:creator <https://orcid.org/0000-0002-9381-9694>;
-  dct:description "Controlled vocabulary of terms used in dataset generic metadata template."@en;
-  dct:title "Controlled Terms for Dataset Generic Metadata Template"@en;
-  pav:createdOn "2020-10-22T22:00:00+01:00"@en;
-  pav:lastUpdatedOn "2020-10-23T08:00:00+01:00"@en;
+<http://vocab.fairdatacollective.org/gdmt/> a skos:ConceptScheme;
+  dct:creator <http://orcid.org/0000-0002-9381-9693>, <http://orcid.org/0000-0003-4124-9040>;
+  dct:description "Ontology containing base RDF properties and controlled terms used in the generic dataset metadata template."@en;
+  dct:title "Ontology for Generic Dataset Metadata Template"@en;
+  pav:createdOn "2020-12-01T00:00:00+01:00"@en;
+  pav:lastUpdatedOn "2020-12-01T00:00:00+01:00"@en;
   pav:version "0.1"@en;
-  skos:hasTopConcept dsvoc:ResourceTypeCategory, dsvoc:SecondTopConcept;
-  skos:prefLabel "Controlled Terms for Dataset Generic Metadata Template"@en .
+  skos:hasTopConcept gdmt:Economics, gdmt:OperationMaintenance, gdmt:Siting, gdmt:WindPowerPlant,
+    gdmt:WindTurbine;
+  skos:prefLabel "Ontology for Generic Dataset Metadata Template"@en .
 
-dsvoc:ResourceTypeCategory a skos:Concept;
-  skos:definition "This is a set of controlled terms for the category of reseource being described."@en;
-  skos:inScheme <http://www.fair-data-collective.com/datasetvoc/>;
-  skos:narrower dsvoc:Audiovisual, dsvoc:Collection, dsvoc:DataCatalog, dsvoc:DataPaper,
-    dsvoc:DataStream, dsvoc:Dataset, dsvoc:Event, dsvoc:Image, dsvoc:InteractiveResource,
-    dsvoc:Model, dsvoc:Other, dsvoc:PhysicalObject, dsvoc:Service, dsvoc:Software, dsvoc:Sound,
-    dsvoc:Text, dsvoc:Workflow;
-  skos:prefLabel "ResourceTypeCategory"@en;
-  skos:topConceptOf <http://www.fair-data-collective.com/datasetvoc/> .
+gdmt-property:ResourceType a rdf:Property;
+  rdfs:label "ResourceType"@en;
+  skos:definition "Information about the type of the resource being described with metadata."@en;
+  skos:prefLabel "ResourceType"@en .
 
-dsvoc:SecondTopConcept a skos:Concept;
-  skos:definition "This is a category of parameters associated with SecondTopConcept."@en;
-  skos:inScheme <http://www.fair-data-collective.com/datasetvoc/>;
-  skos:prefLabel "SecondTopConcept"@en;
-  skos:topConceptOf <http://www.fair-data-collective.com/datasetvoc/> .
+gdmt-property:DatasetIdentifier a rdf:Property;
+  rdfs:label "DatasetIdentifier"@en;
+  skos:definition "Information about the globally unique and persistent identifier used to identify and optionally access (meta)data of the dataset being described."@en;
+  skos:prefLabel "DatasetIdentifier"@en .
 
-dsvoc:Audiovisual a skos:Concept;
-  dct:creator <https://orcid.org/0000-0002-9381-9693>;
-  skos:broader dsvoc:ResourceTypeCategory;
-  skos:definition "A series of visual representations imparting an impression of motion when shown in succession. May or may not include sound."@en;
-  skos:inScheme <http://www.fair-data-collective.com/datasetvoc/>;
-  skos:prefLabel "Audiovisual"@en .
+gdmt-property:RelatedResources a rdf:Property;
+  rdfs:label "RelatedResources"@en;
+  skos:definition "Information about resource related to the dataset or other entity being described."@en;
+  skos:prefLabel "RelatedResources"@en .
 
-dsvoc:Collection a skos:Concept;
-  dct:creator <https://orcid.org/0000-0002-9381-9694>;
-  skos:broader dsvoc:ResourceTypeCategory;
-  skos:definition "An aggregation of resources, which may encompass collections of one resourceType as well as those of mixed types. A collection is described as a group; its parts may also be separately described."@en;
-  skos:inScheme <http://www.fair-data-collective.com/datasetvoc/>;
-  skos:prefLabel "Collection"@en .
+gdmt-property:Version a rdf:Property;
+  rdfs:label "Version"@en;
+  skos:definition "Version of the resource being described."@en;
+  skos:prefLabel "Version"@en .
 
-dsvoc:DataPaper a skos:Concept;
-  dct:creator <https://orcid.org/0000-0002-9381-9695>;
-  skos:broader dsvoc:ResourceTypeCategory;
-  skos:definition "A factual and objective publication with a focused intent to identify and describe specific data, sets of data, or data collections to facilitate discoverability."@en;
-  skos:inScheme <http://www.fair-data-collective.com/datasetvoc/>;
-  skos:prefLabel "DataPaper"@en .
+gdmt-property:Language a rdf:Property;
+  rdfs:label "Language"@en;
+  skos:definition "Language in which the dataset being described is provided."@en;
+  skos:prefLabel "Language"@en .
 
-dsvoc:DataCatalog a skos:Concept;
-  dct:creator <https://orcid.org/0000-0002-9381-9696>;
-  skos:broader dsvoc:ResourceTypeCategory;
-  skos:definition "A collection of datasets."@en;
-  skos:inScheme <http://www.fair-data-collective.com/datasetvoc/>;
-  skos:prefLabel "DataCatalog"@en .
+gdmt-property:Title a rdf:Property;
+  rdfs:label "Title"@en;
+  skos:definition "A name or title by which the dataset being described is known."@en;
+  skos:prefLabel "Title"@en .
 
-dsvoc:Dataset a skos:Concept;
-  dct:creator <https://orcid.org/0000-0002-9381-9697>;
-  skos:broader dsvoc:ResourceTypeCategory;
-  skos:definition "Dataset is a logical grouping of one or more data streams. It is can be provided in various data distributions. Dataset might be part of (parent) data catalog."@en;
-  skos:inScheme <http://www.fair-data-collective.com/datasetvoc/>;
-  skos:prefLabel "Dataset"@en .
+gdmt-property:Description a rdf:Property;
+  rdfs:label "Description"@en;
+  skos:definition "Detailed information (typically at the level of an abstract) about the dataset being described."@en;
+  skos:prefLabel "Description"@en .
 
-dsvoc:DataStream a skos:Concept;
-  dct:creator <https://orcid.org/0000-0002-9381-9698>;
-  skos:broader dsvoc:ResourceTypeCategory;
-  skos:definition "Data stream represent a collection of one or more variable records originating from a single data source (e.g., sensor) which properties remain unchanged during the data stream existence. In some use-cases, the data source location is required to remain unchanged (e.g., sensors attached to a meteorological tower). Data stream can grow over time."@en;
-  skos:inScheme <http://www.fair-data-collective.com/datasetvoc/>;
+gdmt-property:Subject a rdf:Property;
+  rdfs:label "Subject"@en;
+  skos:definition "Concepts (keywords, classification, or free text terms) that define the dataset or purpose (subjects which can be addressed) using the dataset."@en;
+  skos:prefLabel "Subject"@en .
+
+gdmt-property:ControlledTerms a rdf:Property;
+  rdfs:label "ControlledTerms"@en;
+  skos:definition "Concepts that define the dataset or purpose sourced from controlled vocabulary."@en;
+  skos:prefLabel "ControlledTerms"@en .
+
+gdmt-property:Creator a rdf:Property;
+  rdfs:label "Creator"@en;
+  skos:definition "An entity that brought into existence the dataset being described. Creators can be people, organizations and/or physical or virtual infrastructure (e.g., sensors, software)."@en;
+  skos:prefLabel "Creator"@en .
+
+gdmt-property:CreatorName a rdf:Property;
+  rdfs:label "CreatorName"@en;
+  skos:definition "Information about the creator name."@en;
+  skos:prefLabel "CreatorName"@en .
+
+gdmt-property:CreatorIdentifier a rdf:Property;
+  rdfs:label "CreatorIdentifier"@en;
+  skos:definition "Information about the creator identifier."@en;
+  skos:prefLabel "CreatorIdentifier"@en .
+
+gdmt-property:CreatorAffiliation a rdf:Property;
+  rdfs:label "CreatorAffiliation"@en;
+  skos:definition "Information about the creator affiliations."@en;
+  skos:prefLabel "CreatorAffiliation"@en .
+
+gdmt-property:Contributor a rdf:Property;
+  rdfs:label "Contributor"@en;
+  skos:definition "An entity that brought into existence the dataset being described. Contributors can be people, organizations and/or physical or virtual infrastructure (e.g., sensors, software)."@en;
+  skos:prefLabel "Contributor"@en .
+
+gdmt-property:ContributorName a rdf:Property;
+  rdfs:label "ContributorName"@en;
+  skos:definition "Information about the contributor name."@en;
+  skos:prefLabel "ContributorName"@en .
+
+gdmt-property:ContributorIdentifier a rdf:Property;
+  rdfs:label "ContributorIdentifier"@en;
+  skos:definition "Information about the contributor identifier."@en;
+  skos:prefLabel "ContributorIdentifier"@en .
+
+gdmt-property:ContributorAffiliation a rdf:Property;
+  rdfs:label "ContributorAffiliation"@en;
+  skos:definition "Information about the contributor affiliations."@en;
+  skos:prefLabel "ContributorAffiliation"@en .
+
+gdmt-property:Publisher a rdf:Property;
+  rdfs:label "Publisher"@en;
+  skos:definition "The entity that plays the principal role in officially making the dataset public. The role can be to hold, archive, publish, print, distribute, release, issue, or produce the dataset being described. This property is often used to formulate the citation, so consider the prominence of the role and of the entity. For datasets, use the primary repository for serving the data, or the primary organization taking responsibility for serving the data, as the Publisher. The Distribution element can be used to describe the entity(ies) that make the dataset accessible."@en;
+  skos:prefLabel "Publisher"@en .
+
+gdmt-property:PublisherIdentifier a rdf:Property;
+  rdfs:label "PublisherIdentifier"@en;
+  skos:definition "Information about the publisher identifier."@en;
+  skos:prefLabel "PublisherIdentifier"@en .
+
+gdmt-property:Rights a rdf:Property;
+  rdfs:label "Rights"@en;
+  skos:definition "Ways in which the dataset may or may not be accessed and used."@en;
+  skos:prefLabel "Rights"@en .
+
+gdmt-property:LicenseIdentifier a rdf:Property;
+  rdfs:label "LicenseIdentifier"@en;
+  skos:definition "Information about the license identifier."@en;
+  skos:prefLabel "LicenseIdentifier"@en .
+
+gdmt-property:Date a rdf:Property;
+  rdfs:label "Date"@en;
+  skos:definition "Relevant dates related to the resource being described. One instance of date must be of datsetDateType=Published."@en;
+  skos:prefLabel "Date"@en .
+
+gdmt-property:Distribution a rdf:Property;
+  rdfs:label "Distribution"@en;
+  skos:definition "Details about the distribution for this individual public presentation of the dataset (if part of the Distribution metadata), or for all the public presentations of the dataset being described (if part of the Dataset metadata)."@en;
+  skos:prefLabel "Distribution"@en .
+
+gdmt-property:DistributionAccess a rdf:Property;
+  rdfs:label "DistributionAccess"@en;
+  skos:definition "Details about the distribution access."@en;
+  skos:prefLabel "DistributionAccess"@en .
+
+gdmt-property:Distributor a rdf:Property;
+  rdfs:label "Distributor"@en;
+  skos:definition "Information about this distributor of the dataset. The Distributor includes primarily the system doing the distribution, but can include the person or persons responsible as well, for example the person who reformsts the dataset for this distribution."@en;
+  skos:prefLabel "Distributor"@en .
+
+gdmt-property:DistributorName a rdf:Property;
+  rdfs:label "DistributorName"@en;
+  skos:definition "Information about the distributor name."@en;
+  skos:prefLabel "DistributorName"@en .
+
+gdmt-property:DistributorIdentifier a rdf:Property;
+  rdfs:label "DistributorIdentifier"@en;
+  skos:definition "Information about the distributor identifier."@en;
+  skos:prefLabel "DistributorIdentifier"@en .
+
+gdmt-property:DistributorAffiliation a rdf:Property;
+  rdfs:label "DistributorAffiliation"@en;
+  skos:definition "Information about the distributor affiliations."@en;
+  skos:prefLabel "DistributorAffiliation"@en .
+
+gdmt-property:Content a rdf:Property;
+  rdfs:label "Content"@en;
+  skos:definition "The specific entities that constitute the dataset being described, and the organization and provenance of those entities. (The dataset is defined as coming from a single Data Source.)"@en;
+  skos:prefLabel "Content"@en .
+
+gdmt-property:DataStream a rdf:Property;
+  rdfs:label "DataStream"@en;
+  skos:definition "A collection of one or more variable records originating from a single data source (e.g., sensor, process, or person). A data stream can grow over time."@en;
   skos:prefLabel "DataStream"@en .
 
-dsvoc:Event a skos:Concept;
-  dct:creator <https://orcid.org/0000-0002-9381-9699>;
-  skos:broader dsvoc:ResourceTypeCategory;
-  skos:definition "A non-persistent, time-based occurrence."@en;
-  skos:inScheme <http://www.fair-data-collective.com/datasetvoc/>;
-  skos:prefLabel "Event"@en .
+gdmt-property:DataSource a rdf:Property;
+  rdfs:label "DataSource"@en;
+  skos:definition "Physical or conceptual entity that creates the data streams that make up the described dataset. The data source may or may not be associated with a fixed location; for example, a series of discrete sensors deployed over time to a single location may be considered a single data source in some systems."@en;
+  skos:prefLabel "DataSource"@en .
 
-dsvoc:Image a skos:Concept;
-  dct:creator <https://orcid.org/0000-0002-9381-9700>;
-  skos:broader dsvoc:ResourceTypeCategory;
-  skos:definition "A visual representation other than text"@en;
-  skos:inScheme <http://www.fair-data-collective.com/datasetvoc/>;
-  skos:prefLabel "Image"@en .
+gdmt-property:Variable a rdf:Property;
+  rdfs:label "Variable"@en;
+  skos:definition "A single entity being measured or computed."@en;
+  skos:prefLabel "Variable"@en .
 
-dsvoc:InteractiveResource a skos:Concept;
-  dct:creator <https://orcid.org/0000-0002-9381-9701>;
-  skos:broader dsvoc:ResourceTypeCategory;
-  skos:definition "A resource requiring interaction from the user to be understood, executed, or experienced"@en;
-  skos:inScheme <http://www.fair-data-collective.com/datasetvoc/>;
-  skos:prefLabel "InteractiveResource"@en .
+gdmt-property:SpatialCoverage a rdf:Property;
+  rdfs:label "SpatialCoverage"@en;
+  skos:definition "The geospatial area (region on Earth) covered by the dataset being described."@en;
+  skos:prefLabel "SpatialCoverage"@en .
 
-dsvoc:Model a skos:Concept;
-  dct:creator <https://orcid.org/0000-0002-9381-9702>;
-  skos:broader dsvoc:ResourceTypeCategory;
-  skos:definition "An abstract, conceptual, graphical, mathematical or visualization model that represents empirical objects, phenomena, or physical processes."@en;
-  skos:inScheme <http://www.fair-data-collective.com/datasetvoc/>;
-  skos:prefLabel "Model"@en .
+gdmt-property:SpatialCoveragePoint a rdf:Property;
+  rdfs:label "SpatialCoveragePoint"@en;
+  skos:definition "The geospatial coverage represented as a single point."@en;
+  skos:prefLabel "SpatialCoveragePoint"@en .
 
-dsvoc:PhysicalObject a skos:Concept;
-  dct:creator <https://orcid.org/0000-0002-9381-9703>;
-  skos:broader dsvoc:ResourceTypeCategory;
-  skos:definition "An inanimate, three-dimensional object or substance."@en;
-  skos:inScheme <http://www.fair-data-collective.com/datasetvoc/>;
-  skos:prefLabel "PhysicalObject"@en .
+gdmt-property:SpatialCoverageBoundingBox a rdf:Property;
+  rdfs:label "SpatialCoverageBoundingBox"@en;
+  skos:definition "The geospatial coverage represented using bounding box."@en;
+  skos:prefLabel "SpatialCoverageBoundingBox"@en .
 
-dsvoc:Service a skos:Concept;
-  dct:creator <https://orcid.org/0000-0002-9381-9704>;
-  skos:broader dsvoc:ResourceTypeCategory;
-  skos:definition "An organized system of apparatus, appliances, staff, etc., for supplying some function(s) required by end users."@en;
-  skos:inScheme <http://www.fair-data-collective.com/datasetvoc/>;
-  skos:prefLabel "Service"@en .
+gdmt-property:SpatialCoveragePolygon a rdf:Property;
+  rdfs:label "SpatialCoveragePolygon"@en;
+  skos:definition "The geospatial coverage represented using polygon."@en;
+  skos:prefLabel "SpatialCoveragePolygon"@en .
 
-dsvoc:Software a skos:Concept;
-  dct:creator <https://orcid.org/0000-0002-9381-9705>;
-  skos:broader dsvoc:ResourceTypeCategory;
-  skos:definition "A computer program in source code (text) or compiled form. Use this type for all software components supporting scholarly research."@en;
-  skos:inScheme <http://www.fair-data-collective.com/datasetvoc/>;
-  skos:prefLabel "Software"@en .
+gdmt-property:VerticalCoverage a rdf:Property;
+  rdfs:label "VerticalCoverage"@en;
+  skos:definition "The vertical area (altitude and/or depth) covered by the dataset being described."@en;
+  skos:prefLabel "VerticalCoverage"@en .
 
-dsvoc:Sound a skos:Concept;
-  dct:creator <https://orcid.org/0000-0002-9381-9706>;
-  skos:broader dsvoc:ResourceTypeCategory;
-  skos:definition "A resource primarily intended to be heard."@en;
-  skos:inScheme <http://www.fair-data-collective.com/datasetvoc/>;
-  skos:prefLabel "Sound"@en .
+gdmt-property:TemporalCoverage a rdf:Property;
+  rdfs:label "TemporalCoverage"@en;
+  skos:definition "The temporal coverage and resolution of the dataset being described."@en;
+  skos:prefLabel "TemporalCoverage"@en .
 
-dsvoc:Text a skos:Concept;
-  dct:creator <https://orcid.org/0000-0002-9381-9707>;
-  skos:broader dsvoc:ResourceTypeCategory;
-  skos:definition "A resource consisting primarily of words for reading."@en;
-  skos:inScheme <http://www.fair-data-collective.com/datasetvoc/>;
-  skos:prefLabel "Text"@en .
+gdmt-property:Funding a rdf:Property;
+  rdfs:label "Funding"@en;
+  skos:definition "The sources of funding that enabled and drove the creation of the dataset. (Non-monetary sources are described under Contributor.)"@en;
+  skos:prefLabel "Funding"@en .
 
-dsvoc:Workflow a skos:Concept;
-  dct:creator <https://orcid.org/0000-0002-9381-9708>;
-  skos:broader dsvoc:ResourceTypeCategory;
-  skos:definition "A structured series of steps which can be executed to produce a final outcome, allowing users a means to specify and enact their work in a more reproducible manner."@en;
-  skos:exactMatch <https://hdl.handle.net/21.11109/dft-2.0@#Workflow>;
-  skos:inScheme <http://www.fair-data-collective.com/datasetvoc/>;
-  skos:prefLabel "Workflow"@en .
+gdmt-property:Award a rdf:Property;
+  rdfs:label "Award"@en;
+  skos:definition "Information about the project award."@en;
+  skos:prefLabel "Award"@en .
 
-dsvoc:Other a skos:Concept;
-  dct:creator <https://orcid.org/0000-0002-9381-9709>;
-  skos:broader dsvoc:ResourceTypeCategory;
-  skos:definition "If selected, supply a value for ResourceType"@en;
-  skos:inScheme <http://www.fair-data-collective.com/datasetvoc/>;
-  skos:prefLabel "Other"@en .
+gdmt-property:Funder a rdf:Property;
+  rdfs:label "Funder"@en;
+  skos:definition "Information about the award funder."@en;
+  skos:prefLabel "Funder"@en .
+
+gdmt:Economics a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9040>, <https://orcid.org/0000-0002-9381-9693>;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:narrower gdmt:BusinessModels, gdmt:LevelizedCostofEnergyModels, gdmt:MarketModels,
+    gdmt:ProjectFinance, gdmt:SupportSchemes;
+  skos:prefLabel "Economics"@en;
+  skos:topConceptOf <http://vocab.fairdatacollective.org/gdmt/> .
+
+gdmt:BusinessModels a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9040>;
+  skos:broader gdmt:Economics;
+  skos:definition "A conceptual structure that supports the viability of wind energy projects and details how they operate to create profit."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Business Models"@en .
+
+gdmt:LevelizedCostofEnergyModels a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9040>;
+  skos:broader gdmt:Economics;
+  skos:definition "An expression of the production cost of each unit of electricity generated over the working life of the plant taking into account wind farm development costs, capital investment, financial costs and lifetime running costs."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Levelized Cost of Energy Models"@en .
+
+gdmt:ProjectFinance a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9040>;
+  skos:broader gdmt:Economics;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Project Finance"@en .
+
+gdmt:MarketModels a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9040>;
+  skos:broader gdmt:Economics;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Market Models"@en .
+
+gdmt:SupportSchemes a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9040>;
+  skos:broader gdmt:Economics;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Support Schemes"@en .
+
+gdmt:OperationMaintenance a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9040>;
+  skos:definition "Combination of all technical and management actions intended to retain an item in, or restore it to, a state in which it can perform as required."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:narrower gdmt:Commissioning, gdmt:Decommissioning, gdmt:Forecasting, gdmt:HealthSafety,
+    gdmt:Installation, gdmt:MaintenanceScheduling;
+  skos:prefLabel "Operation & Maintenance"@en;
+  skos:topConceptOf <http://vocab.fairdatacollective.org/gdmt/> .
+
+gdmt:Commissioning a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9040>;
+  skos:broader gdmt:OperationMaintenance;
+  skos:definition "Activities undertaken to prepare a system or product prior to demonstrating that it meets its specified requirements."@en;
+  skos:editorialNote "SOURCE: IEC 62278:2002, 3.50"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Commissioning"@en .
+
+gdmt:Decommissioning a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9040>;
+  skos:broader gdmt:OperationMaintenance;
+  skos:definition "Administrative and technical actions taken to allow the removal of some or all of the regulatory controls from a facility"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:narrower gdmt:EndofLifeExtension;
+  skos:prefLabel "Decommissioning"@en .
+
+gdmt:EndofLifeExtension a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9040>;
+  skos:broader gdmt:Decommissioning;
+  skos:definition "When the life cycle stage of a product instead of end is extended for a certain period."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:narrower gdmt:ReCertification, gdmt:Recycling, gdmt:Repowering, gdmt:Revamping;
+  skos:prefLabel "End-of-Life Extension"@en .
+
+gdmt:ReCertification a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9040>;
+  skos:broader gdmt:EndofLifeExtension;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Re-Certification"@en .
+
+gdmt:Recycling a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9040>;
+  skos:broader gdmt:EndofLifeExtension;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Recycling"@en .
+
+gdmt:Repowering a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9040>;
+  skos:broader gdmt:EndofLifeExtension;
+  skos:definition "Wind turbines are dismantled and new wind turbines are installed in a brownfield and/or greenfield site."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Repowering"@en .
+
+gdmt:Revamping a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9040>;
+  skos:altLabel "Enhancement"@en, "Lifetime Extension"@en, "Reactivation"@en, "Refurbishment"@en;
+  skos:broader gdmt:EndofLifeExtension;
+  skos:definition "An act of upgrading certain components of a wind turbine to extend the overall life time of the turbine (e.g. generator). The overall external layout of the farm remains unchanged (e.g. hub height, siting, size). Revamping differs from a normal operation and maintenance activities. New technology is installed or components are replaced instead of the initial equipment of the turbine."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Revamping"@en .
+
+gdmt:Forecasting a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9040>;
+  skos:broader gdmt:OperationMaintenance;
+  skos:definition "An estimate of the expected parameter from a system at a given future date."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Forecasting"@en .
+
+gdmt:HealthSafety a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9040>;
+  skos:broader gdmt:OperationMaintenance;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Health & Safety"@en .
+
+gdmt:Installation a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9040>;
+  skos:broader gdmt:OperationMaintenance;
+  skos:definition "An apparatus or a set of devices and/or apparatuses associated in a given location to fulfil specified purposes, including all means for their satisfactory operation"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Installation"@en .
+
+gdmt:MaintenanceScheduling a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9040>;
+  skos:broader gdmt:OperationMaintenance;
+  skos:definition "A maintenance carried out in accordance with a specified schedule, which can identify the need for some corrective maintenance action."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Maintenance Scheduling"@en .
+
+gdmt:Siting a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9040>;
+  skos:definition "A process of evaluating a number of factor before deciding to pursue development of a new wind farm project. These factors include: wind resource and compatibility of land/area, environmental impacts and community input (i.e., social acceptance)"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:narrower gdmt:DesignConditions, gdmt:Infrastructures, gdmt:LongTermExtrapolation,
+    gdmt:ResourceAssessment, gdmt:SpatialPlanning, gdmt:WindAtlas, gdmt:WindMapping;
+  skos:prefLabel "Siting"@en;
+  skos:topConceptOf <http://vocab.fairdatacollective.org/gdmt/> .
+
+gdmt:DesignConditions a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9040>;
+  skos:altLabel "Design Situation"@en;
+  skos:broader gdmt:Siting;
+  skos:definition "A possible mode of wind turbine operation, e.g. power production, parking etc."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:narrower gdmt:Turbulence;
+  skos:prefLabel "Design Conditions"@en .
+
+gdmt:Turbulence a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9041>;
+  skos:broader gdmt:DesignConditions;
+  skos:definition "Random variations in velocity within a liquid or gaseous medium which may induce heterogeneous values of certain characteristics of the medium, such as refractive index."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Turbulence"@en .
+
+gdmt:Infrastructures a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9042>;
+  skos:broader gdmt:Siting;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Infrastructures"@en .
+
+gdmt:LongTermExtrapolation a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9043>;
+  skos:broader gdmt:Siting;
+  skos:definition "Long-term extrapolation involves making statistical forecasts by using historical trends that are projected for a specified period of time into the future.This type of extrapolation is only used for time-series forecasts."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Long-Term Extrapolation"@en .
+
+gdmt:ResourceAssessment a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9044>;
+  skos:broader gdmt:Siting;
+  skos:definition "An estimate of the total energy production of a wind turbine generator system during a one-year period by applying the power curve to different reference wind speed frequency distributions at hub height, assuming 100% availability."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Resource Assessment"@en .
+
+gdmt:SpatialPlanning a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9045>;
+  skos:broader gdmt:Siting;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:narrower gdmt:EnviromentalImpact, gdmt:LegalAspects;
+  skos:prefLabel "Spatial Planning"@en .
+
+gdmt:EnviromentalImpact a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9046>;
+  skos:broader gdmt:SpatialPlanning;
+  skos:definition "A change to the environment, whether adverse or beneficial, wholly or partly resulting from environmental aspects."@en;
+  skos:editorialNote "SOURCE: IEC Guide 109:2012, 3.5, modified – The expression \"an organization's\" has been omitted."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:narrower gdmt:NatureImpacts, gdmt:NoisePerception, gdmt:SocialAcceptance;
+  skos:prefLabel "Enviromental Impact"@en .
+
+gdmt:NatureImpacts a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9047>;
+  skos:broader gdmt:EnviromentalImpact;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Nature Impacts"@en .
+
+gdmt:NoisePerception a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9048>;
+  skos:broader gdmt:EnviromentalImpact;
+  skos:definition "Individual perception of the acoustic noise level produced by a machine under specified conditions of operation and measurement."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Noise Perception"@en .
+
+gdmt:SocialAcceptance a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9049>;
+  skos:altLabel "Community Input"@en;
+  skos:broader gdmt:EnviromentalImpact;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Social Acceptance"@en .
+
+gdmt:LegalAspects a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9050>;
+  skos:broader gdmt:SpatialPlanning;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Legal Aspects"@en .
+
+gdmt:WindAtlas a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9051>;
+  skos:broader gdmt:Siting;
+  skos:definition "A wind atlas is a systematic and comprehensive collection of generalized wind climates derived by the wind atlas methodology."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Wind Atlas"@en .
+
+gdmt:WindMapping a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9052>;
+  skos:broader gdmt:Siting;
+  skos:definition "A process of visualizing spatial variation of wind speed over geographic areas to help choosing prospective development areas for wind turbines installation."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Wind Mapping"@en .
+
+gdmt:WindPowerPlant a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9040>;
+  skos:definition "A power station comprising a group or groups of wind turbines."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:narrower gdmt:AncillaryServices, gdmt:GridConnection, gdmt:Loads, gdmt:Performance,
+    gdmt:WindFarm;
+  skos:prefLabel "Wind Power Plant"@en;
+  skos:topConceptOf <http://vocab.fairdatacollective.org/gdmt/> .
+
+gdmt:AncillaryServices a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9049>;
+  skos:broader gdmt:WindPowerPlant;
+  skos:definition "Services necessary for the operation of an electric power system provided by the system operator and/or by power system users."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:note "System ancillary services may include the participation in frequency regulation, reactive power regulation, active power reservation, etc."@en;
+  skos:prefLabel "Ancillary Services"@en .
+
+gdmt:GridConnection a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9050>;
+  skos:broader gdmt:WindPowerPlant;
+  skos:definition "A connection to an electric power network."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:narrower gdmt:ArrayCables, gdmt:Substation, gdmt:TransmissionSystem;
+  skos:prefLabel "Grid Connection"@en .
+
+gdmt:ArrayCables a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9051>;
+  skos:broader gdmt:GridConnection;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Array Cables"@en .
+
+gdmt:Substation a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9052>;
+  skos:broader gdmt:GridConnection;
+  skos:definition "A part of a power system, concentrated in a given place, including mainly the terminations of transmission or distribution lines switchgear and housing and which may also include transformers. It generally includes facilities necessary for system security and control (e.g. the protective devices)."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:note "According to the nature of the system within which the substation is included, a prefix may qualify it."@en;
+  skos:prefLabel "Substation"@en .
+
+gdmt:TransmissionSystem a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9053>;
+  skos:broader gdmt:GridConnection;
+  skos:definition "Whole of the means of transmission, comprising the transmission medium, terminal equipment, any necessary intermediate equipment and any equipment provided for such ancillary purposes as power feeding, supervision and testing."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:note "A transmission system is in accordance with a set of principles that is also called “transmission system” (see IEV 704-04-10)."@en;
+  skos:prefLabel "Transmission System"@en .
+
+gdmt:Loads a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9054>;
+  skos:altLabel "Load Cases"@en;
+  skos:broader gdmt:WindPowerPlant;
+  skos:definition "A combination of design situations and external conditions which result in a structural loading."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Loads"@en .
+
+gdmt:Performance a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9055>;
+  skos:broader gdmt:WindPowerPlant;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Performance"@en .
+
+gdmt:WindFarm a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9056>;
+  skos:broader gdmt:WindPowerPlant;
+  skos:definition "A group of wind turbine generator jointly operated."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:narrower gdmt:Wakes, gdmt:WindFarmControl;
+  skos:prefLabel "Wind Farm"@en .
+
+gdmt:Wakes a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9057>;
+  skos:broader gdmt:WindFarm;
+  skos:definition "A region behind the wind turbine with reduced wind speed and increased turbulence due to the extraction of energy from the wind when the flow pass through the rotor."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Wakes"@en .
+
+gdmt:WindFarmControl a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9058>;
+  skos:broader gdmt:WindFarm;
+  skos:definition "A sub‑system that receives information about the condition of the wind farm and/or its environment and adjusts the turbines in order to operate them within their operating limits."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Wind Farm Control"@en .
+
+gdmt:WindTurbine a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9040>;
+  skos:definition "A rotating machinery in which the kinetic wind energy is transformed into another form of energy."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:narrower gdmt:ConceptDesign, gdmt:Controls, gdmt:Nacelle, gdmt:Rotor, gdmt:SupportStructure,
+    gdmt:Tower;
+  skos:prefLabel "Wind Turbine"@en;
+  skos:topConceptOf <http://vocab.fairdatacollective.org/gdmt/> .
+
+gdmt:ConceptDesign a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9057>;
+  skos:broader gdmt:WindTurbine;
+  skos:definition "An activity applied in order to analyse and transform specified requirements into acceptable design solutions."@en;
+  skos:editorialNote "This entry was numbered 351-21-29 in IEC 60050-351:2006."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:narrower gdmt:Aerial, gdmt:HorizontalAxis, gdmt:MonoMultiRotor, gdmt:VerticalAxis;
+  skos:prefLabel "Concept Design"@en .
+
+gdmt:Aerial a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9058>;
+  skos:altLabel "Airborne"@en;
+  skos:broader gdmt:ConceptDesign;
+  skos:definition "An aerial wind turbine is a design concept for a wind turbine with a rotor supported in the air without a tower, thus benefiting from more mechanical and aerodynamic options, the higher velocity and persistence of wind at high altitudes."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Aerial"@en .
+
+gdmt:HorizontalAxis a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9059>;
+  skos:broader gdmt:ConceptDesign;
+  skos:definition "A wind turbine which rotor axis is horizontal."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Horizontal Axis"@en .
+
+gdmt:MonoMultiRotor a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9060>;
+  skos:broader gdmt:ConceptDesign;
+  skos:definition "A wind turbine with one or more rotors, independent on the number of blades."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Mono-Multi Rotor"@en .
+
+gdmt:VerticalAxis a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9061>;
+  skos:broader gdmt:ConceptDesign;
+  skos:definition "A wind turbine which rotor axis is vertical."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Vertical Axis"@en .
+
+gdmt:Controls a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9062>;
+  skos:broader gdmt:WindTurbine;
+  skos:definition "A purposeful action on or in a process to meet specified objectives."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:narrower gdmt:BlackBox;
+  skos:prefLabel "Controls"@en .
+
+gdmt:BlackBox a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9063>;
+  skos:broader gdmt:Controls;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Black-Box"@en .
+
+gdmt:Nacelle a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9064>;
+  skos:broader gdmt:WindTurbine;
+  skos:definition "A housing which contains the drive‑train and other elements on top of a horizontal axis wind turbine tower."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:narrower gdmt:Cooling, gdmt:Gearbox, gdmt:Generator, gdmt:MainShaft, gdmt:PowerElectronics,
+    gdmt:TurbineControl;
+  skos:prefLabel "Nacelle"@en .
+
+gdmt:Cooling a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9065>;
+  skos:broader gdmt:Nacelle;
+  skos:definition "A procedure by means of which heat resulting from losses occurring in a machine is given up to a primary coolant which may be continuously replaced or may itself be cooled by a secondary coolant in a heat exchanger."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Cooling"@en .
+
+gdmt:Gearbox a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9066>;
+  skos:broader gdmt:Nacelle;
+  skos:definition "A protective casing providing a reservoir of oil or grease for the gearing."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Gearbox"@en .
+
+gdmt:Generator a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9067>;
+  skos:broader gdmt:Nacelle;
+  skos:definition "A machine which converts mechanical energy into electrical energy."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Generator"@en .
+
+gdmt:MainShaft a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9068>;
+  skos:broader gdmt:Nacelle;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Main Shaft"@en .
+
+gdmt:PowerElectronics a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9069>;
+  skos:broader gdmt:Nacelle;
+  skos:definition "A field of electronics which deals with the conversion or switching of electric power with or without control of that power."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Power Electronics"@en .
+
+gdmt:TurbineControl a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9070>;
+  skos:broader gdmt:Nacelle;
+  skos:definition "A wind turbine sub‑system that receives information about the condition of the wind turbine and/or its environment and adjusts the turbine in order to operate it within its operating limits."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Turbine Control"@en .
+
+gdmt:Rotor a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9071>;
+  skos:broader gdmt:WindTurbine;
+  skos:definition "One of the main part of a wind turbine"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:narrower gdmt:Blades, gdmt:Hub;
+  skos:prefLabel "Rotor"@en .
+
+gdmt:Blades a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9072>;
+  skos:broader gdmt:Rotor;
+  skos:definition "Components of a wind turbine that harness wind energy and drive the rotor of a wind turbine."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Blades"@en .
+
+gdmt:Hub a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9073>;
+  skos:broader gdmt:Rotor;
+  skos:definition "A fixture for attaching the blades or blade assembly to the rotor shaft."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Hub"@en .
+
+gdmt:SupportStructure a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9074>;
+  skos:broader gdmt:WindTurbine;
+  skos:definition "A part of a wind turbine comprising the tower and foundation."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:narrower gdmt:Floating, gdmt:Foundation, gdmt:MooringLines, gdmt:Substructure;
+  skos:prefLabel "Support Structure"@en .
+
+gdmt:Floating a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9075>;
+  skos:broader gdmt:SupportStructure;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Floating"@en .
+
+gdmt:Foundation a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9076>;
+  skos:broader gdmt:SupportStructure;
+  skos:definition "A structure set in the ground, to which the base of a support is attached to provide the necessary anchorage to withstand all applied loads."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Foundation"@en .
+
+gdmt:MooringLines a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9077>;
+  skos:broader gdmt:SupportStructure;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Mooring Lines"@en .
+
+gdmt:Substructure a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9078>;
+  skos:broader gdmt:SupportStructure;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Substructure"@en .
+
+gdmt:Tower a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9079>;
+  skos:broader gdmt:WindTurbine;
+  skos:definition "A support which may be made of such material as steel, wood, concrete, and comprising a body which is normally four-sided, and cross-arms."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:narrower gdmt:Lattice, gdmt:Tubular;
+  skos:prefLabel "Tower"@en .
+
+gdmt:Tubular a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9080>;
+  skos:broader gdmt:Tower;
+  skos:definition "A structure of a tower having the form or shape of a tube slightly conical (i.e. with their diameter increasing towards the base) in order to increase their strength and to save materials at the same time."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Tubular"@en .
+
+gdmt:Lattice a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9081>;
+  skos:broader gdmt:Tower;
+  skos:definition "A structure consisting of strips of wood or metal crossed and fastened together with square-shaped spaces left between, used as a support for climbing plants."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Lattice"@en .
