@@ -19,15 +19,13 @@
 @prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://vocab.fairdatacollective.org/gdmt/> a skos:ConceptScheme;
-  dct:creator <http://orcid.org/0000-0002-9381-9693>, <http://orcid.org/0000-0003-4124-9040>;
+<http://vocab.fairdatacollective.org/gdmt/> dct:creator <http://orcid.org/0000-0002-9381-9693>,
+    <http://orcid.org/0000-0003-4124-9040>;
   dct:description "Ontology containing base RDF properties and controlled terms used in the generic dataset metadata template."@en;
   dct:title "Ontology for Generic Dataset Metadata Template"@en;
   pav:createdOn "2020-12-01T00:00:00+01:00"@en;
   pav:lastUpdatedOn "2020-12-01T00:00:00+01:00"@en;
   pav:version "0.1"@en;
-  skos:hasTopConcept gdmt:Economics, gdmt:OperationMaintenance, gdmt:Siting, gdmt:WindPowerPlant,
-    gdmt:WindTurbine;
   skos:prefLabel "Ontology for Generic Dataset Metadata Template"@en .
 
 gdmt-property:ResourceType a rdf:Property;
@@ -234,3 +232,463 @@ gdmt-property:Funder a rdf:Property;
   rdfs:label "Funder"@en;
   skos:definition "Information about the award funder."@en;
   skos:prefLabel "Funder"@en .
+
+gdmt-property:datasetIdentifierSubType a rdf:Property;
+  rdfs:label "datasetIdentifierSubType"@en;
+  skos:definition "The subtype of the identifier used to specify the related resource."@en;
+  skos:prefLabel "datasetIdentifierSubType"@en .
+
+gdmt-property:relatedResourceIdentifierSubType a rdf:Property;
+  rdfs:label "relatedResourceIdentifierSubType"@en;
+  skos:definition "The subtype of the identifier used to specify the related resource."@en;
+  skos:prefLabel "relatedResourceIdentifierSubType"@en .
+
+gdmt-property:primaryLanguage a rdf:Property;
+  rdfs:label "primaryLanguage"@en;
+  skos:definition "Primary language used to present the dataset (if multiple languages are present). Use a code from IETF BCP 47"@en;
+  skos:prefLabel "primaryLanguage"@en .
+
+gdmt-property:subjectIRI a rdf:Property;
+  rdfs:label "subjectIRI"@en;
+  skos:definition "The IRI of a concept (keyword, classification code, or controlled key phrase) that defines the dataset or indicates for which concepts the dataset can be used."@en;
+  skos:prefLabel "subjectIRI"@en .
+
+gdmt-property:subjectScheme a rdf:Property;
+  rdfs:label "subjectScheme"@en;
+  skos:definition "The name of the scheme or authority used for the Subject Concept IRI."@en;
+  skos:prefLabel "subjectScheme"@en .
+
+gdmt-property:subjectSchemeIRI a rdf:Property;
+  rdfs:label "subjectSchemeIRI"@en;
+  skos:definition "The IRI of the scheme or authority used for the Subject Concept IRI."@en;
+  skos:prefLabel "subjectSchemeIRI"@en .
+
+gdmt-property:keyword a rdf:Property;
+  rdfs:label "keyword"@en;
+  skos:definition "Free text subject, keyword, classification code, or key phrase describing the dataset or purpose for which the dataset can be used."@en;
+  skos:prefLabel "keyword"@en .
+
+gdmt-property:creatorIdentifier a rdf:Property;
+  rdfs:label "creatorIdentifier"@en;
+  skos:definition "Globally unique string that identifies the creator (an individual, legal entity or system)."@en;
+  skos:prefLabel "creatorIdentifier"@en .
+
+gdmt-property:creatorIdentifierScheme a rdf:Property;
+  rdfs:label "creatorIdentifierScheme"@en;
+  skos:definition "The name of the scheme or authority used for the Creator Identifier."@en;
+  skos:prefLabel "creatorIdentifierScheme"@en .
+
+gdmt-property:creatorIdentifierSchemeIRI a rdf:Property;
+  rdfs:label "creatorIdentifierSchemeIRI"@en;
+  skos:definition "The IRI of the scheme or authority used for the Creator Identifier."@en;
+  skos:prefLabel "creatorIdentifierSchemeIRI"@en .
+
+gdmt-property:creatorAffiliation a rdf:Property;
+  rdfs:label "creatorAffiliation"@en;
+  skos:definition "The organizational or institutional affiliation of the creator."@en;
+  skos:prefLabel "creatorAffiliation"@en .
+
+gdmt-property:creatorAffiliationIdentifier a rdf:Property;
+  rdfs:label "creatorAffiliationIdentifier"@en;
+  skos:definition "Globally unique string that identifies the organizational affiliation of the creator."@en;
+  skos:prefLabel "creatorAffiliationIdentifier"@en .
+
+gdmt-property:creatorAffiliationIdentifierScheme a rdf:Property;
+  rdfs:label "creatorAffiliationIdentifierScheme"@en;
+  skos:definition "The name of the scheme or authority used for the Creator Affiliation Identifier."@en;
+  skos:prefLabel "creatorAffiliationIdentifierScheme"@en .
+
+gdmt-property:creatorAffiliationIdentifierSchemeIRI a rdf:Property;
+  rdfs:label "creatorAffiliationIdentifierSchemeIRI"@en;
+  skos:definition "The IRI of the scheme or authority used for the Creator Affiliation Identifier."@en;
+  skos:prefLabel "creatorAffiliationIdentifierSchemeIRI"@en .
+
+gdmt-property:creatorRole a rdf:Property;
+  rdfs:label "creatorRole"@en;
+  skos:definition "The role of the creator in bringing the described dataset into existence."@en;
+  skos:prefLabel "creatorRole"@en .
+
+gdmt-property:creatorType a rdf:Property;
+  rdfs:label "creatorType"@en;
+  skos:definition "The type of the creator of the described dataset (organization, person, or system)."@en;
+  skos:prefLabel "creatorType"@en .
+
+gdmt-property:contributorIdentifier a rdf:Property;
+  rdfs:label "contributorIdentifier"@en;
+  skos:definition "Globally unique string that identifies the contributor (an individual, legal entity or system)."@en;
+  skos:prefLabel "contributorIdentifier"@en .
+
+gdmt-property:contributorIdentifierScheme a rdf:Property;
+  rdfs:label "contributorIdentifierScheme"@en;
+  skos:definition "The name of the scheme or authority used for the Contributor Identifier."@en;
+  skos:prefLabel "contributorIdentifierScheme"@en .
+
+gdmt-property:contributorIdentifierSchemeIRI a rdf:Property;
+  rdfs:label "contributorIdentifierSchemeIRI"@en;
+  skos:definition "The IRI of the scheme or authority used for the Contributor Identifier."@en;
+  skos:prefLabel "contributorIdentifierSchemeIRI"@en .
+
+gdmt-property:contributorAffiliation a rdf:Property;
+  rdfs:label "contributorAffiliation"@en;
+  skos:definition "The organizational or institutional affiliation of the contributor."@en;
+  skos:prefLabel "contributorAffiliation"@en .
+
+gdmt-property:contributorAffiliationIdentifier a rdf:Property;
+  rdfs:label "contributorAffiliationIdentifier"@en;
+  skos:definition "Globally unique string that identifies the organizational affiliation of the contributor."@en;
+  skos:prefLabel "contributorAffiliationIdentifier"@en .
+
+gdmt-property:contributorAffiliationIdentifierScheme a rdf:Property;
+  rdfs:label "contributorAffiliationIdentifierScheme"@en;
+  skos:definition "The name of the scheme or authority used for the Contributor Affiliation Identifier."@en;
+  skos:prefLabel "contributorAffiliationIdentifierScheme"@en .
+
+gdmt-property:contributorAffiliationIdentifierSchemeIRI a rdf:Property;
+  rdfs:label "contributorAffiliationIdentifierSchemeIRI"@en;
+  skos:definition "The IRI of the scheme or authority used for the Contributor Affiliation Identifier."@en;
+  skos:prefLabel "contributorAffiliationIdentifierSchemeIRI"@en .
+
+gdmt-property:contributorRole a rdf:Property;
+  rdfs:label "contributorRole"@en;
+  skos:definition "The role of the contributor in bringing the described dataset into existence."@en;
+  skos:prefLabel "contributorRole"@en .
+
+gdmt-property:contributorType a rdf:Property;
+  rdfs:label "contributorType"@en;
+  skos:definition "The type of the contributor of the described dataset (organization, person, or system)."@en;
+  skos:prefLabel "contributorType"@en .
+
+gdmt-property:publisherIdentifier a rdf:Property;
+  rdfs:label "publisherIdentifier"@en;
+  skos:definition "Globally unique string that identifies the publisher."@en;
+  skos:prefLabel "publisherIdentifier"@en .
+
+gdmt-property:publisherIdentifierScheme a rdf:Property;
+  rdfs:label "publisherIdentifierScheme"@en;
+  skos:definition "The name of the scheme or authority used for the Publisher Identifier."@en;
+  skos:prefLabel "publisherIdentifierScheme"@en .
+
+gdmt-property:publisherIdentifierSchemeIRI a rdf:Property;
+  rdfs:label "publisherIdentifierSchemeIRI"@en;
+  skos:definition "The IRI of the scheme or authority used for the Publisher Identifier."@en;
+  skos:prefLabel "publisherIdentifierSchemeIRI"@en .
+
+gdmt-property:publisherAddress a rdf:Property;
+  rdfs:label "publisherAddress"@en;
+  skos:definition "An address of the publisher."@en;
+  skos:prefLabel "publisherAddress"@en .
+
+gdmt-property:licenseName a rdf:Property;
+  rdfs:label "licenseName"@en;
+  skos:definition "A standardized version of the license name."@en;
+  skos:prefLabel "licenseName"@en .
+
+gdmt-property:licenseIdentifier a rdf:Property;
+  rdfs:label "licenseIdentifier"@en;
+  skos:definition "IRI of the license for the dataset being described."@en;
+  skos:prefLabel "licenseIdentifier"@en .
+
+gdmt-property:licenseIdentifierScheme a rdf:Property;
+  rdfs:label "licenseIdentifierScheme"@en;
+  skos:definition "The name of the scheme or authority used for the Rights Identifier."@en;
+  skos:prefLabel "licenseIdentifierScheme"@en .
+
+gdmt-property:licenseIdentifierSchemeIRI a rdf:Property;
+  rdfs:label "licenseIdentifierSchemeIRI"@en;
+  skos:definition "The IRI of the scheme or authority used for the Rights Identifier."@en;
+  skos:prefLabel "licenseIdentifierSchemeIRI"@en .
+
+gdmt-property:datasetDate a rdf:Property;
+  rdfs:label "datasetDate"@en;
+  skos:definition "Date relevant to dataset."@en;
+  skos:prefLabel "datasetDate"@en .
+
+gdmt-property:datasetDateType a rdf:Property;
+  rdfs:label "datasetDateType"@en;
+  skos:definition "Type of the date with respect to the dataset."@en;
+  skos:prefLabel "datasetDateType"@en .
+
+gdmt-property:distributionIdentifier a rdf:Property;
+  rdfs:label "distributionIdentifier"@en;
+  skos:definition "A globally unique string that identifies the dataset distribution."@en;
+  skos:prefLabel "distributionIdentifier"@en .
+
+gdmt-property:distributionIdentifierType a rdf:Property;
+  rdfs:label "distributionIdentifierType"@en;
+  skos:definition "The identifier type used to identify the dataset distribution."@en;
+  skos:prefLabel "distributionIdentifierType"@en .
+
+gdmt-property:distributionMediaType a rdf:Property;
+  rdfs:label "distributionMediaType"@en;
+  skos:definition "A media type, formerly known as a MIME type, of dataset distribution."@en;
+  skos:prefLabel "distributionMediaType"@en .
+
+gdmt-property:distributionSize a rdf:Property;
+  rdfs:label "distributionSize"@en;
+  skos:definition "Total size of dataset distribution."@en;
+  skos:prefLabel "distributionSize"@en .
+
+gdmt-property:distributionAccessProtocol a rdf:Property;
+  rdfs:label "distributionAccessProtocol"@en;
+  skos:definition "The protocol used to access the dataset distribution."@en;
+  skos:prefLabel "distributionAccessProtocol"@en .
+
+gdmt-property:distributionAccessConfiguration a rdf:Property;
+  rdfs:label "distributionAccessConfiguration"@en;
+  skos:definition "The access protocol configuration for quering dataset distribution."@en;
+  skos:prefLabel "distributionAccessConfiguration"@en .
+
+gdmt-property:distributionQueryStatement a rdf:Property;
+  rdfs:label "distributionQueryStatement"@en;
+  skos:definition "Technical statement(s) for querying dataset distribution."@en;
+  skos:prefLabel "distributionQueryStatement"@en .
+
+gdmt-property:distributionDate a rdf:Property;
+  rdfs:label "distributionDate"@en;
+  skos:definition "Date when the dataset was distributed."@en;
+  skos:prefLabel "distributionDate"@en .
+
+gdmt-property:distributorIdentifier a rdf:Property;
+  rdfs:label "distributorIdentifier"@en;
+  skos:definition "Globally unique string that identifies the distributor (an individual, legal entity or system)."@en;
+  skos:prefLabel "distributorIdentifier"@en .
+
+gdmt-property:distributorIdentifierScheme a rdf:Property;
+  rdfs:label "distributorIdentifierScheme"@en;
+  skos:definition "The name of the scheme or authority used for the Distributor Identifier."@en;
+  skos:prefLabel "distributorIdentifierScheme"@en .
+
+gdmt-property:distributorIdentifierSchemeIRI a rdf:Property;
+  rdfs:label "distributorIdentifierSchemeIRI"@en;
+  skos:definition "The IRI of the scheme or authority used for the Distributor Identifier."@en;
+  skos:prefLabel "distributorIdentifierSchemeIRI"@en .
+
+gdmt-property:distributorAffiliation a rdf:Property;
+  rdfs:label "distributorAffiliation"@en;
+  skos:definition "The organizational or institutional affiliation of the distributor."@en;
+  skos:prefLabel "distributorAffiliation"@en .
+
+gdmt-property:distributorAffiliationIdentifier a rdf:Property;
+  rdfs:label "distributorAffiliationIdentifier"@en;
+  skos:definition "Globally unique string that identifies the organizational affiliation of the distributor."@en;
+  skos:prefLabel "distributorAffiliationIdentifier"@en .
+
+gdmt-property:distributorAffiliationIdentifierScheme a rdf:Property;
+  rdfs:label "distributorAffiliationIdentifierScheme"@en;
+  skos:definition "The name of the scheme or authority used for the Distributor Affiliation Identifier."@en;
+  skos:prefLabel "distributorAffiliationIdentifierScheme"@en .
+
+gdmt-property:distributorAffiliationIdentifierSchemeIRI a rdf:Property;
+  rdfs:label "distributorAffiliationIdentifierSchemeIRI"@en;
+  skos:definition "The IRI of the scheme or authority used for the Distributor Affiliation Identifier."@en;
+  skos:prefLabel "distributorAffiliationIdentifierSchemeIRI"@en .
+
+gdmt-property:distributorRole a rdf:Property;
+  rdfs:label "distributorRole"@en;
+  skos:definition "The role of the distributor in bringing the described dataset into existence."@en;
+  skos:prefLabel "distributorRole"@en .
+
+gdmt-property:distributorType a rdf:Property;
+  rdfs:label "distributorType"@en;
+  skos:definition "The type of the distributor of the described dataset (organization, person, or system)."@en;
+  skos:prefLabel "distributorType"@en .
+
+gdmt-property:dataStream a rdf:Property;
+  rdfs:label "dataStream"@en;
+  skos:definition "Human readable name of collection of records coming from a data source."@en;
+  skos:prefLabel "dataStream"@en .
+
+gdmt-property:dataStreamIRI a rdf:Property;
+  rdfs:label "dataStreamIRI"@en;
+  skos:definition "Unique identifier of collection of records coming from a data source."@en;
+  skos:prefLabel "dataStreamIRI"@en .
+
+gdmt-property:datastreamScheme a rdf:Property;
+  rdfs:label "datastreamScheme"@en;
+  skos:definition "The name of the scheme or authority used for the Data Stream Identifier."@en;
+  skos:prefLabel "datastreamScheme"@en .
+
+gdmt-property:dataStreamSchemeIRI a rdf:Property;
+  rdfs:label "dataStreamSchemeIRI"@en;
+  skos:definition "The IRI of the scheme or authority used for the Data Stream Identifier."@en;
+  skos:prefLabel "dataStreamSchemeIRI"@en .
+
+gdmt-property:dataSource a rdf:Property;
+  rdfs:label "dataSource"@en;
+  skos:definition "Human readable name of data source from which the variable(s) come(s)."@en;
+  skos:prefLabel "dataSource"@en .
+
+gdmt-property:dataSourceIRI a rdf:Property;
+  rdfs:label "dataSourceIRI"@en;
+  skos:definition "IRI describing the data source (e.g., PID of an instrument)."@en;
+  skos:prefLabel "dataSourceIRI"@en .
+
+gdmt-property:dataSourceScheme a rdf:Property;
+  rdfs:label "dataSourceScheme"@en;
+  skos:definition "The name of the scheme or authority used for the Data Source Identifier."@en;
+  skos:prefLabel "dataSourceScheme"@en .
+
+gdmt-property:dataSourceSchemeIRI a rdf:Property;
+  rdfs:label "dataSourceSchemeIRI"@en;
+  skos:definition "The IRI of the scheme or authority used for the Data Source Identifier."@en;
+  skos:prefLabel "dataSourceSchemeIRI"@en .
+
+gdmt-property:variable a rdf:Property;
+  rdfs:label "variable"@en;
+  skos:definition "Human readable name of variable being recorded in datastream."@en;
+  skos:prefLabel "variable"@en .
+
+gdmt-property:variableIRI a rdf:Property;
+  rdfs:label "variableIRI"@en;
+  skos:definition "IRI describing the variable."@en;
+  skos:prefLabel "variableIRI"@en .
+
+gdmt-property:variableScheme a rdf:Property;
+  rdfs:label "variableScheme"@en;
+  skos:definition "The name of the scheme or authority used for the Variable Identifier."@en;
+  skos:prefLabel "variableScheme"@en .
+
+gdmt-property:variableSchemeIRI a rdf:Property;
+  rdfs:label "variableSchemeIRI"@en;
+  skos:definition "The IRI of the scheme or authority used for the Variable Identifier."@en;
+  skos:prefLabel "variableSchemeIRI"@en .
+
+gdmt-property:pointLatitude a rdf:Property;
+  rdfs:label "pointLatitude"@en;
+  skos:definition "Geographic latitude of a point which represents a location of dataset collection."@en;
+  skos:prefLabel "pointLatitude"@en .
+
+gdmt-property:pointLongitude a rdf:Property;
+  rdfs:label "pointLongitude"@en;
+  skos:definition "Geographic longitude of a point which represents a location of dataset collection."@en;
+  skos:prefLabel "pointLongitude"@en .
+
+gdmt-property:westBoundLongitude a rdf:Property;
+  rdfs:label "westBoundLongitude"@en;
+  skos:definition "The most west longitude of a bounding box representing an area of dataset collection."@en;
+  skos:prefLabel "westBoundLongitude"@en .
+
+gdmt-property:eastBoundLongitude a rdf:Property;
+  rdfs:label "eastBoundLongitude"@en;
+  skos:definition "The most east longitude of a bounding box representing an area of dataset collection."@en;
+  skos:prefLabel "eastBoundLongitude"@en .
+
+gdmt-property:southBoundLatitude a rdf:Property;
+  rdfs:label "southBoundLatitude"@en;
+  skos:definition "The most south latitude of a bounding box representing an area of dataset collection."@en;
+  skos:prefLabel "southBoundLatitude"@en .
+
+gdmt-property:northBoundLatitude a rdf:Property;
+  rdfs:label "northBoundLatitude"@en;
+  skos:definition "The most north latitude of a bounding box representing an area of dataset collection."@en;
+  skos:prefLabel "northBoundLatitude"@en .
+
+gdmt-property:polygonPointLatitude a rdf:Property;
+  rdfs:label "polygonPointLatitude"@en;
+  skos:definition "Geographical latitude of a polygon point which represents one vertex of an area of dataset collection."@en;
+  skos:prefLabel "polygonPointLatitude"@en .
+
+gdmt-property:polygonPointLongitude a rdf:Property;
+  rdfs:label "polygonPointLongitude"@en;
+  skos:definition "Geographical longitude of a polygon point which represents one vertex of an area of dataset collection."@en;
+  skos:prefLabel "polygonPointLongitude"@en .
+
+gdmt-property:geoLocationDescription a rdf:Property;
+  rdfs:label "geoLocationDescription"@en;
+  skos:definition "The description of a geographical location of dataset collection."@en;
+  skos:prefLabel "geoLocationDescription"@en .
+
+gdmt-property:verticalExtentMaximumValue a rdf:Property;
+  rdfs:label "verticalExtentMaximumValue"@en;
+  skos:definition "A maximum vertical extent of dataset collection. In case of depth, this represents a minimum depth of dataset collection."@en;
+  skos:prefLabel "verticalExtentMaximumValue"@en .
+
+gdmt-property:verticalExtentMinimumValue a rdf:Property;
+  rdfs:label "verticalExtentMinimumValue"@en;
+  skos:definition "A minimum vertical extent of dataset collection. In case of depth, this represents a maximum depth of dataset collection."@en;
+  skos:prefLabel "verticalExtentMinimumValue"@en .
+
+gdmt-property:verticalExtentUnit a rdf:Property;
+  rdfs:label "verticalExtentUnit"@en;
+  skos:definition "Unit used to specify Vertical Extent."@en;
+  skos:prefLabel "verticalExtentUnit"@en .
+
+gdmt-property:verticalExtentUnitIRI a rdf:Property;
+  rdfs:label "verticalExtentUnitIRI"@en;
+  skos:definition "Identifier for the unit used to specify Vertical Extent."@en;
+  skos:prefLabel "verticalExtentUnitIRI"@en .
+
+gdmt-property:verticalExtentUnitScheme a rdf:Property;
+  rdfs:label "verticalExtentUnitScheme"@en;
+  skos:definition "The name of the scheme or authority used for the Vertical Extent Unit Identifier."@en;
+  skos:prefLabel "verticalExtentUnitScheme"@en .
+
+gdmt-property:verticalExtentUnitSchemeIRI a rdf:Property;
+  rdfs:label "verticalExtentUnitSchemeIRI"@en;
+  skos:definition "The IRI of the scheme or authority used for the Vertical Extent Unit Identifier."@en;
+  skos:prefLabel "verticalExtentUnitSchemeIRI"@en .
+
+gdmt-property:verticalExtentDatum a rdf:Property;
+  rdfs:label "verticalExtentDatum"@en;
+  skos:definition "The name of the Datum (reference frame) used for the Vertical Extent values."@en;
+  skos:prefLabel "verticalExtentDatum"@en .
+
+gdmt-property:verticalExtentDatumIRI a rdf:Property;
+  rdfs:label "verticalExtentDatumIRI"@en;
+  skos:definition "The unique identifier of the Datum (reference frame) used for the Vertical Extent values."@en;
+  skos:prefLabel "verticalExtentDatumIRI"@en .
+
+gdmt-property:temporalExtentMinimumValue a rdf:Property;
+  rdfs:label "temporalExtentMinimumValue"@en;
+  skos:definition "The start date of the data."@en;
+  skos:prefLabel "temporalExtentMinimumValue"@en .
+
+gdmt-property:temporalExtentMaximumValue a rdf:Property;
+  rdfs:label "temporalExtentMaximumValue"@en;
+  skos:definition "The end date of the data."@en;
+  skos:prefLabel "temporalExtentMaximumValue"@en .
+
+gdmt-property:temporalResolution a rdf:Property;
+  rdfs:label "temporalResolution"@en;
+  skos:definition "Interval between two consecutive data records."@en;
+  skos:prefLabel "temporalResolution"@en .
+
+gdmt-property:duration a rdf:Property;
+  rdfs:label "duration"@en;
+  skos:definition "The total duration of data temporal coverage."@en;
+  skos:prefLabel "duration"@en .
+
+gdmt-property:awardTitle a rdf:Property;
+  rdfs:label "awardTitle"@en;
+  skos:definition "The human readable title of the award, grant, or other specific funding mechanism for the described dataset."@en;
+  skos:prefLabel "awardTitle"@en .
+
+gdmt-property:awardPageIRI a rdf:Property;
+  rdfs:label "awardPageIRI"@en;
+  skos:definition "The IRI leading to a page provided by the funder for more information about the award (grant)."@en;
+  skos:prefLabel "awardPageIRI"@en .
+
+gdmt-property:awardLocalIdentifier a rdf:Property;
+  rdfs:label "awardLocalIdentifier"@en;
+  skos:definition "The code assigned by the funding provider to a sponsored award (grant). (Can be an IRI, but typically is not.)"@en;
+  skos:prefLabel "awardLocalIdentifier"@en .
+
+gdmt-property:funderName a rdf:Property;
+  rdfs:label "funderName"@en;
+  skos:definition "Name of the organization providing the funding for the described dataset ('funding provider')."@en;
+  skos:prefLabel "funderName"@en .
+
+gdmt-property:funderIdentifier a rdf:Property;
+  rdfs:label "funderIdentifier"@en;
+  skos:definition "Globally unique string that identifies the funding provider."@en;
+  skos:prefLabel "funderIdentifier"@en .
+
+gdmt-property:funderIdentifierScheme a rdf:Property;
+  rdfs:label "funderIdentifierScheme"@en;
+  skos:definition "Name of the schema for the funderIdentifier."@en;
+  skos:prefLabel "funderIdentifierScheme"@en .
+
+gdmt-property:funderIdentifierSchemeIRI a rdf:Property;
+  rdfs:label "funderIdentifierSchemeIRI"@en;
+  skos:definition "IRI of the schema for the funder identifier."@en;
+  skos:prefLabel "funderIdentifierSchemeIRI"@en .
