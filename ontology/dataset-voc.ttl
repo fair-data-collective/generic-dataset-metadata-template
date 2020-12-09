@@ -19,13 +19,15 @@
 @prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://vocab.fairdatacollective.org/gdmt/> dct:creator <http://orcid.org/0000-0002-9381-9693>,
-    <http://orcid.org/0000-0003-4124-9040>;
+<http://vocab.fairdatacollective.org/gdmt/> a skos:ConceptScheme;
+  dct:creator <http://orcid.org/0000-0002-9381-9693>, <http://orcid.org/0000-0003-4124-9040>;
   dct:description "Ontology containing base RDF properties and controlled terms used in the generic dataset metadata template."@en;
   dct:title "Ontology for Generic Dataset Metadata Template"@en;
   pav:createdOn "2020-12-01T00:00:00+01:00"@en;
   pav:lastUpdatedOn "2020-12-01T00:00:00+01:00"@en;
   pav:version "0.1"@en;
+  skos:hasTopConcept gdmt:ContributorRoles, gdmt:DateTypes, gdmt:RelatedIdentifierTypes,
+    gdmt:RelationTypes, gdmt:ResourceTypeCategories;
   skos:prefLabel "Ontology for Generic Dataset Metadata Template"@en .
 
 gdmt-property:ResourceType a rdf:Property;
@@ -692,3 +694,664 @@ gdmt-property:funderIdentifierSchemeIRI a rdf:Property;
   rdfs:label "funderIdentifierSchemeIRI"@en;
   skos:definition "IRI of the schema for the funder identifier."@en;
   skos:prefLabel "funderIdentifierSchemeIRI"@en .
+
+gdmt:ResourceTypeCategories a skos:Concept;
+  skos:definition "This is a set of controlled terms for the category of reseource being described."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:narrower gdmt:Audiovisual, gdmt:Collection, gdmt:DataCatalog, gdmt:DataPaper,
+    gdmt:DataStream, gdmt:Dataset, gdmt:Event, gdmt:Image, gdmt:InteractiveResource, gdmt:Model,
+    gdmt:OtherResource, gdmt:PhysicalObject, gdmt:Service, gdmt:Software, gdmt:Sound,
+    gdmt:Text, gdmt:Workflow;
+  skos:prefLabel "ResourceTypeCategories"@en;
+  skos:topConceptOf <http://vocab.fairdatacollective.org/gdmt/> .
+
+gdmt:Audiovisual a skos:Concept;
+  skos:broader gdmt:ResourceTypeCategories;
+  skos:definition "A series of visual representations imparting an impression of motion when shown in succession. May or may not include sound."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Audiovisual"@en .
+
+gdmt:Collection a skos:Concept;
+  skos:broader gdmt:ResourceTypeCategories;
+  skos:definition "An aggregation of resources, which may encompass collections of one resourceType as well as those of mixed types. A collection is described as a group; its parts may also be separately described."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Collection"@en .
+
+gdmt:DataPaper a skos:Concept;
+  skos:broader gdmt:ResourceTypeCategories;
+  skos:definition "A factual and objective publication with a focused intent to identify and describe specific data, sets of data, or data collections to facilitate discoverability."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "DataPaper"@en .
+
+gdmt:DataCatalog a skos:Concept;
+  skos:broader gdmt:ResourceTypeCategories;
+  skos:definition "A collection of datasets."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "DataCatalog"@en .
+
+gdmt:Dataset a skos:Concept;
+  skos:broader gdmt:ResourceTypeCategories;
+  skos:definition "Dataset is a logical grouping of one or more data streams. It is can be provided in various data distributions. Dataset might be part of (parent) data catalog."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Dataset"@en .
+
+gdmt:DataStream a skos:Concept;
+  skos:broader gdmt:ResourceTypeCategories;
+  skos:definition "Data stream represent a collection of one or more variable records originating from a single data source (e.g., sensor) which properties remain unchanged during the data stream existence. In some use-cases, the data source location is required to remain unchanged (e.g., sensors attached to a meteorological tower). Data stream can grow over time."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "DataStream"@en .
+
+gdmt:Event a skos:Concept;
+  skos:broader gdmt:ResourceTypeCategories;
+  skos:definition "A non-persistent, time-based occurrence."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Event"@en .
+
+gdmt:Image a skos:Concept;
+  skos:broader gdmt:ResourceTypeCategories;
+  skos:definition "A visual representation other than text"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Image"@en .
+
+gdmt:InteractiveResource a skos:Concept;
+  skos:broader gdmt:ResourceTypeCategories;
+  skos:definition "A resource requiring interaction from the user to be understood, executed, or experienced"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "InteractiveResource"@en .
+
+gdmt:Model a skos:Concept;
+  skos:broader gdmt:ResourceTypeCategories;
+  skos:definition "An abstract, conceptual, graphical, mathematical or visualization model that represents empirical objects, phenomena, or physical processes."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Model"@en .
+
+gdmt:PhysicalObject a skos:Concept;
+  skos:broader gdmt:ResourceTypeCategories;
+  skos:definition "An inanimate, three-dimensional object or substance."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "PhysicalObject"@en .
+
+gdmt:Service a skos:Concept;
+  skos:broader gdmt:ResourceTypeCategories;
+  skos:definition "An organized system of apparatus, appliances, staff, etc., for supplying some function(s) required by end users."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Service"@en .
+
+gdmt:Software a skos:Concept;
+  skos:broader gdmt:ResourceTypeCategories;
+  skos:definition "A computer program in source code (text) or compiled form. Use this type for all software components supporting scholarly research."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Software"@en .
+
+gdmt:Sound a skos:Concept;
+  skos:broader gdmt:ResourceTypeCategories;
+  skos:definition "A resource primarily intended to be heard."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Sound"@en .
+
+gdmt:Text a skos:Concept;
+  skos:broader gdmt:ResourceTypeCategories;
+  skos:definition "A resource consisting primarily of words for reading."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Text"@en .
+
+gdmt:Workflow a skos:Concept;
+  skos:broader gdmt:ResourceTypeCategories;
+  skos:definition "A structured series of steps which can be executed to produce a final outcome, allowing users a means to specify and enact their work in a more reproducible manner."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Workflow"@en .
+
+gdmt:OtherResource a skos:Concept;
+  skos:broader gdmt:ResourceTypeCategories;
+  skos:definition "Uncategorized resource."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "OtherResource"@en .
+
+gdmt:ContributorRoles a skos:Concept;
+  skos:definition "This is a set of controlled terms for the category of reseource being described."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:narrower gdmt:ContactPerson, gdmt:DataCollector, gdmt:DataCurator, gdmt:DataManager,
+    gdmt:Distributor, gdmt:Editor, gdmt:HostingInstitution, gdmt:OtherRole, gdmt:Producer,
+    gdmt:ProjectLeader, gdmt:ProjectManager, gdmt:ProjectMember, gdmt:RegistrationAgency,
+    gdmt:RegistrationAuthority, gdmt:RelatedPerson, gdmt:ResearchGroup, gdmt:Researcher,
+    gdmt:RightsHolder, gdmt:Sponsor, gdmt:Supervisor, gdmt:WorkPackageLeader;
+  skos:prefLabel "ContributorRoles"@en;
+  skos:topConceptOf <http://vocab.fairdatacollective.org/gdmt/> .
+
+gdmt:ContactPerson a skos:Concept;
+  skos:broader gdmt:ContributorRoles;
+  skos:definition "Person with knowledge of how to access, troubleshoot, or otherwise field issues related to the resource"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "ContactPerson"@en .
+
+gdmt:DataCollector a skos:Concept;
+  skos:broader gdmt:ContributorRoles;
+  skos:definition "Person/institution responsible for finding, gathering/collecting data under the guidelines of the author(s) or Principal Investigator (PI)"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "DataCollector"@en .
+
+gdmt:DataCurator a skos:Concept;
+  skos:broader gdmt:ContributorRoles;
+  skos:definition "Person tasked with reviewing, enhancing, cleaning, or standardizing metadata and the associated data submitted for storage, use, and maintenance within a data centre or repository"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "DataCurator"@en .
+
+gdmt:DataManager a skos:Concept;
+  skos:broader gdmt:ContributorRoles;
+  skos:definition "Person (or organization with a staff of data managers, such as a data centre) responsible for maintaining the finished resource."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "DataManager"@en .
+
+gdmt:Distributor a skos:Concept;
+  skos:broader gdmt:ContributorRoles;
+  skos:definition "Institution tasked with responsibility to generate/disseminate copies of the resource in either electronic or print form."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Distributor"@en .
+
+gdmt:Editor a skos:Concept;
+  skos:broader gdmt:ContributorRoles;
+  skos:definition "A person who oversees the details related to the publication format of the resource."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Editor"@en .
+
+gdmt:HostingInstitution a skos:Concept;
+  skos:broader gdmt:ContributorRoles;
+  skos:definition "Typically, the organization allowing the resource to be available on the internet through the provision of its hardware/software/operating support."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "HostingInstitution"@en .
+
+gdmt:Producer a skos:Concept;
+  skos:broader gdmt:ContributorRoles;
+  skos:definition "Typically a person or organization responsible for the artistry and form of a media product."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Producer"@en .
+
+gdmt:ProjectLeader a skos:Concept;
+  skos:broader gdmt:ContributorRoles;
+  skos:definition "Person officially designated as head of project team or sub- project team instrumental in the work necessary to development of the resource."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "ProjectLeader"@en .
+
+gdmt:ProjectManager a skos:Concept;
+  skos:broader gdmt:ContributorRoles;
+  skos:definition "Person officially designated as manager of a project. Project may consist of one or many project teams and sub-teams."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "ProjectManager"@en .
+
+gdmt:ProjectMember a skos:Concept;
+  skos:broader gdmt:ContributorRoles;
+  skos:definition "Person on the membership list of a designated project/project team."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "ProjectMember"@en .
+
+gdmt:RegistrationAgency a skos:Concept;
+  skos:broader gdmt:ContributorRoles;
+  skos:definition "Institution/organization officially appointed by a Registration Authority to handle specific tasks within a defined area of responsibility."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "RegistrationAgency"@en .
+
+gdmt:RegistrationAuthority a skos:Concept;
+  skos:broader gdmt:ContributorRoles;
+  skos:definition "A standards-setting body from which Registration Agencies obtain official recognition and guidance."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "RegistrationAuthority"@en .
+
+gdmt:RelatedPerson a skos:Concept;
+  skos:broader gdmt:ContributorRoles;
+  skos:definition "A person without a specifically defined role in the development of the resource, but who is someone the author wishes to recognize."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "RelatedPerson"@en .
+
+gdmt:Researcher a skos:Concept;
+  skos:broader gdmt:ContributorRoles;
+  skos:definition "A person involved in analyzing data or the results of an experiment or formal study. May indicate an intern or assistant to one of the authors who helped with research but who was not so “key” as to be listed as an author."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Researcher"@en .
+
+gdmt:ResearchGroup a skos:Concept;
+  skos:broader gdmt:ContributorRoles;
+  skos:definition "Typically refers to a group of individuals with a lab, department, or division; the group has a particular, defined focus of activity."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "ResearchGroup"@en .
+
+gdmt:RightsHolder a skos:Concept;
+  skos:broader gdmt:ContributorRoles;
+  skos:definition "Person or institution owning or managing property rights, including intellectual property rights over the resource."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "RightsHolder"@en .
+
+gdmt:Sponsor a skos:Concept;
+  skos:broader gdmt:ContributorRoles;
+  skos:definition "Person or organization that issued a contract or under the auspices of which a work has been written, printed, published, developed, etc."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Sponsor"@en .
+
+gdmt:Supervisor a skos:Concept;
+  skos:broader gdmt:ContributorRoles;
+  skos:definition "Designated administrator over one or more groups/teams working to produce a resource or over one or more steps of a development process."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Supervisor"@en .
+
+gdmt:WorkPackageLeader a skos:Concept;
+  skos:broader gdmt:ContributorRoles;
+  skos:definition "A Work Package is a recognized data product, not all of which is included in publication. The package, instead, may include notes, discarded documents, etc. The Work Package Leader is responsible for ensuring the comprehensive contents, versioning, and availability of the Work Package during the development of the resource."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "WorkPackageLeader"@en .
+
+gdmt:OtherRole a skos:Concept;
+  skos:broader gdmt:ContributorRoles;
+  skos:definition "Any person or institution making a significant contribution to the development and/or maintenance of the resource, but whose contribution does not “fit” other controlled vocabulary for contributorType."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "OtherRole"@en .
+
+gdmt:DateTypes a skos:Concept;
+  skos:definition "This is a set of controlled terms for the category of reseource being described."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:narrower gdmt:Accepted, gdmt:Available, gdmt:Collected, gdmt:Copyrighted, gdmt:Created,
+    gdmt:Issued, gdmt:Published, gdmt:Submitted, gdmt:Updated, gdmt:Valid, gdmt:Withdrawn;
+  skos:prefLabel "DateTypes"@en;
+  skos:topConceptOf <http://vocab.fairdatacollective.org/gdmt/> .
+
+gdmt:Published a skos:Concept;
+  skos:broader gdmt:DateTypes;
+  skos:definition "The date when dataset was first time made publicaly available."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Published"@en .
+
+gdmt:Accepted a skos:Concept;
+  skos:broader gdmt:DateTypes;
+  skos:definition "The date that the publisher accepted the resource into their system."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Accepted"@en .
+
+gdmt:Available a skos:Concept;
+  skos:broader gdmt:DateTypes;
+  skos:definition "The date the resource is made publicly available. May be a range."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Available"@en .
+
+gdmt:Copyrighted a skos:Concept;
+  skos:broader gdmt:DateTypes;
+  skos:definition "The specific, documented date at which the resource receives a copyrighted status, if applicable."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Copyrighted"@en .
+
+gdmt:Collected a skos:Concept;
+  skos:broader gdmt:DateTypes;
+  skos:definition "The date or date range in which the resource content was collected."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Collected"@en .
+
+gdmt:Created a skos:Concept;
+  skos:broader gdmt:DateTypes;
+  skos:definition "The date the resource itself was put together; this could refer to a timeframe in ancient history, be a date range or a single date for a final component, e.g. the finalised file with all of the data."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Created"@en .
+
+gdmt:Issued a skos:Concept;
+  skos:broader gdmt:DateTypes;
+  skos:definition "The date that the resource is published or distributed e.g. to a data centre"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Issued"@en .
+
+gdmt:Submitted a skos:Concept;
+  skos:broader gdmt:DateTypes;
+  skos:definition "The date the creator submits the resource to the publisher. This could be different from Accepted if the publisher then applies a selection process."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Submitted"@en .
+
+gdmt:Updated a skos:Concept;
+  skos:broader gdmt:DateTypes;
+  skos:definition "The date of the last update to the resource, when the resource is being added to. May be a range."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Updated"@en .
+
+gdmt:Valid a skos:Concept;
+  skos:broader gdmt:DateTypes;
+  skos:definition "The date or date range during which the dataset or resource is accurate."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Valid"@en .
+
+gdmt:Withdrawn a skos:Concept;
+  skos:broader gdmt:DateTypes;
+  skos:definition "The date the resource is removed."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Withdrawn"@en .
+
+gdmt:RelatedIdentifierTypes a skos:Concept;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:narrower gdmt:ARK, gdmt:DOI, gdmt:EAN13, gdmt:EISSN, gdmt:Handle, gdmt:IGSN,
+    gdmt:IRI, gdmt:ISBN, gdmt:ISSN, gdmt:ISTC, gdmt:LISSN, gdmt:LSID, gdmt:PMID, gdmt:PURL,
+    gdmt:UPC, gdmt:URL, gdmt:URN, gdmt:arXiv, gdmt:bibcode, gdmt:w3id;
+  skos:prefLabel "RelatedIdentifierTypes"@en;
+  skos:topConceptOf <http://vocab.fairdatacollective.org/gdmt/> .
+
+gdmt:ARK a skos:Concept;
+  skos:broader gdmt:RelatedIdentifierTypes;
+  skos:definition "Archival Resource Key; URL designed to support long-term access to information objects. In general, ARK syntax is of the form (brackets indicate [optional] elements: [http://NMA/]ark:/NAAN/Name [Qualifier]"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "ARK"@en .
+
+gdmt:arXiv a skos:Concept;
+  skos:broader gdmt:RelatedIdentifierTypes;
+  skos:definition "arXiv identifier; arXiv.org is a repository of preprints of scientific papers in the fields of mathematics, physics, astronomy, computer science, quantitative biology, statistics, and quantitative finance."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "arXiv"@en .
+
+gdmt:bibcode a skos:Concept;
+  skos:broader gdmt:RelatedIdentifierTypes;
+  skos:definition "Astrophysics Data System bibliographic codes; a standardized 19 character identifier according to the syntax yyyyjjjjjvvvvmppppa. See http://info- uri.info/registry/OAIHandler?ve rb=GetRecord&metadataPrefix= reg&identifier=info:bibcode/"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "bibcode"@en .
+
+gdmt:DOI a skos:Concept;
+  skos:broader gdmt:RelatedIdentifierTypes;
+  skos:definition "Digital Object Identifier; a character string used to uniquely identify an object. A DOI name is divided into two parts, a prefix and a suffix, separated by a slash."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "DOI"@en .
+
+gdmt:EAN13 a skos:Concept;
+  skos:broader gdmt:RelatedIdentifierTypes;
+  skos:definition "European Article Number, now renamed International Article Number, but retaining the original acronym, is a 13-digit barcoding standard which is a superset of the original 12-digit Universal Product Code (UPC) system."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "EAN13"@en .
+
+gdmt:EISSN a skos:Concept;
+  skos:broader gdmt:RelatedIdentifierTypes;
+  skos:definition "Electronic International Standard Serial Number; ISSN used to identify periodicals in electronic form (eISSN or e- ISSN)."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "EISSN"@en .
+
+gdmt:Handle a skos:Concept;
+  skos:broader gdmt:RelatedIdentifierTypes;
+  skos:definition "A handle is an abstract reference to a resource."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Handle"@en .
+
+gdmt:IGSN a skos:Concept;
+  skos:broader gdmt:RelatedIdentifierTypes;
+  skos:definition "International Geo Sample Number; a 9-digit alphanumeric code that uniquely identifies samples from our natural environment and related sampling features."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "IGSN"@en .
+
+gdmt:ISBN a skos:Concept;
+  skos:broader gdmt:RelatedIdentifierTypes;
+  skos:definition "International Standard Book Number; a unique numeric book identifier. There are 2 formats: a 10-digit ISBN format and a 13- digit ISBN."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "ISBN"@en .
+
+gdmt:ISSN a skos:Concept;
+  skos:broader gdmt:RelatedIdentifierTypes;
+  skos:definition "International Standard Serial Number; a unique 8-digit number used to identify a print or electronic periodical publication."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "ISSN"@en .
+
+gdmt:ISTC a skos:Concept;
+  skos:broader gdmt:RelatedIdentifierTypes;
+  skos:definition "International Standard Text Code; a unique “number” assigned to a textual work. An ISTC consists of 16 numbers and/or letters."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "ISTC"@en .
+
+gdmt:LISSN a skos:Concept;
+  skos:broader gdmt:RelatedIdentifierTypes;
+  skos:definition "The linking ISSN or ISSN-L enables collocation or linking among different media versions of a continuing resource."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "LISSN"@en .
+
+gdmt:LSID a skos:Concept;
+  skos:broader gdmt:RelatedIdentifierTypes;
+  skos:definition "Life Science Identifiers; a unique identifier for data in the Life Science domain. Format: urn:lsid:authority:namespace:id entifier:revision"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "LSID"@en .
+
+gdmt:PMID a skos:Concept;
+  skos:broader gdmt:RelatedIdentifierTypes;
+  skos:definition "PubMed identifier; a unique number assigned to each PubMed record."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "PMID"@en .
+
+gdmt:PURL a skos:Concept;
+  skos:broader gdmt:RelatedIdentifierTypes;
+  skos:definition "Persistent Uniform Resource Locator. A PURL has three parts: (1) a protocol, (2) a resolver address, and (3) a name."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "PURL"@en .
+
+gdmt:UPC a skos:Concept;
+  skos:broader gdmt:RelatedIdentifierTypes;
+  skos:definition "Universal Product Code is a barcode symbology used for tracking trade items in stores. Its most common form, the UPC-A, consists of 12 numerical digits."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "UPC"@en .
+
+gdmt:URL a skos:Concept;
+  skos:broader gdmt:RelatedIdentifierTypes;
+  skos:definition "Uniform Resource Locator, also known as web address, is a specific character string that constitutes a reference to a resource. The syntax is: schema://domain:port/path?qu ery_string#fragment_id"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "URL"@en .
+
+gdmt:URN a skos:Concept;
+  skos:broader gdmt:RelatedIdentifierTypes;
+  skos:definition "Uniform Resource Name; is a unique and persistent identifier of an electronic document. The syntax is: urn:< NID>:<NSS> The leading urn: sequence is case-insensitive, <NID> is the namespace identifier, <NSS> is the namespace-specific string."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "URN"@en .
+
+gdmt:w3id a skos:Concept;
+  skos:broader gdmt:RelatedIdentifierTypes;
+  skos:definition "Permanent identifier for Web applications. Mostly used to publish vocabularies and ontologies. The letters ‘w3’ stand for “World Wide Web”."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "w3id"@en .
+
+gdmt:IRI a skos:Concept;
+  skos:broader gdmt:RelatedIdentifierTypes;
+  skos:definition "The Internationalized Resource Identifier (IRI) is an internet protocol standard which builds on the Uniform Resource Identifier (URI) protocol by greatly expanding the set of permitted characters."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "IRI"@en .
+
+gdmt:RelationTypes a skos:Concept;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:narrower gdmt:Cites, gdmt:Compiles, gdmt:Continues, gdmt:Describes, gdmt:Documents,
+    gdmt:HasMetadata, gdmt:HasPart, gdmt:HasVersion, gdmt:IsCitedBy, gdmt:IsCompiledBy,
+    gdmt:IsContinuedBy, gdmt:IsDerivedFrom, gdmt:IsDescribedBy, gdmt:IsDocumentedBy, gdmt:IsIdenticalTo,
+    gdmt:IsMetadataFor, gdmt:IsNewVersionOf, gdmt:IsObsoletedBy, gdmt:IsOriginalFormOf,
+    gdmt:IsPartOf, gdmt:IsPreviousVersionOf, gdmt:IsReferencedBy, gdmt:IsRequiredBy, gdmt:IsReviewedBy,
+    gdmt:IsSourceOf, gdmt:IsSupplementTo, gdmt:IsSupplementedBy, gdmt:IsVariantFormOf,
+    gdmt:IsVersionOf, gdmt:Obsoletes, gdmt:References, gdmt:Requires, gdmt:Reviews;
+  skos:prefLabel "RelationTypes"@en;
+  skos:topConceptOf <http://vocab.fairdatacollective.org/gdmt/> .
+
+gdmt:IsCitedBy a skos:Concept;
+  skos:broader gdmt:RelationTypes;
+  skos:definition "indicates that B includes A in a citation"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "IsCitedBy"@en .
+
+gdmt:Cites a skos:Concept;
+  skos:broader gdmt:RelationTypes;
+  skos:definition "indicates that A includes B in a citation"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Cites"@en .
+
+gdmt:IsSupplementTo a skos:Concept;
+  skos:broader gdmt:RelationTypes;
+  skos:definition "indicates that A is a supplement to B"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "IsSupplementTo"@en .
+
+gdmt:IsSupplementedBy a skos:Concept;
+  skos:broader gdmt:RelationTypes;
+  skos:definition "indicates that B is a supplement to A"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "IsSupplementedBy"@en .
+
+gdmt:IsContinuedBy a skos:Concept;
+  skos:broader gdmt:RelationTypes;
+  skos:definition "indicates A is continued by the work B"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "IsContinuedBy"@en .
+
+gdmt:Continues a skos:Concept;
+  skos:broader gdmt:RelationTypes;
+  skos:definition "indicates A is a continuation of the work B"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Continues"@en .
+
+gdmt:Describes a skos:Concept;
+  skos:broader gdmt:RelationTypes;
+  skos:definition "indicates A describes B"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Describes"@en .
+
+gdmt:IsDescribedBy a skos:Concept;
+  skos:broader gdmt:RelationTypes;
+  skos:definition "indicates A is described by B"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "IsDescribedBy"@en .
+
+gdmt:HasMetadata a skos:Concept;
+  skos:broader gdmt:RelationTypes;
+  skos:definition "indicates resource A has additional metadata B"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "HasMetadata"@en .
+
+gdmt:IsMetadataFor a skos:Concept;
+  skos:broader gdmt:RelationTypes;
+  skos:definition "indicates additional metadata A for a resource B"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "IsMetadataFor"@en .
+
+gdmt:HasVersion a skos:Concept;
+  skos:broader gdmt:RelationTypes;
+  skos:definition "indicates A has a version (B)"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "HasVersion"@en .
+
+gdmt:IsVersionOf a skos:Concept;
+  skos:broader gdmt:RelationTypes;
+  skos:definition "indicates A is a version of B"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "IsVersionOf"@en .
+
+gdmt:IsNewVersionOf a skos:Concept;
+  skos:broader gdmt:RelationTypes;
+  skos:definition "indicates A is a new edition of B, where the new edition has been modified or updated"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "IsNewVersionOf"@en .
+
+gdmt:IsPreviousVersionOf a skos:Concept;
+  skos:broader gdmt:RelationTypes;
+  skos:definition "indicates A is a previous edition of B"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "IsPreviousVersion Of"@en .
+
+gdmt:IsPartOf a skos:Concept;
+  skos:broader gdmt:RelationTypes;
+  skos:definition "indicates A is a portion of B; may be used for elements of a series"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "IsPartOf"@en .
+
+gdmt:HasPart a skos:Concept;
+  skos:broader gdmt:RelationTypes;
+  skos:definition "indicates A includes the part B"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "HasPart"@en .
+
+gdmt:IsReferencedBy a skos:Concept;
+  skos:broader gdmt:RelationTypes;
+  skos:definition "indicates A is used as a source of information by B"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "IsReferencedBy"@en .
+
+gdmt:References a skos:Concept;
+  skos:broader gdmt:RelationTypes;
+  skos:definition "indicates B is used as a source of information for A"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "References"@en .
+
+gdmt:IsDocumentedBy a skos:Concept;
+  skos:broader gdmt:RelationTypes;
+  skos:definition "indicates B is documentation about/ explaining A; e.g. points to software documentation"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "IsDocumentedBy"@en .
+
+gdmt:Documents a skos:Concept;
+  skos:broader gdmt:RelationTypes;
+  skos:definition "indicates A is documentation about B; e.g. points to software documentation"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Documents"@en .
+
+gdmt:IsCompiledBy a skos:Concept;
+  skos:broader gdmt:RelationTypes;
+  skos:definition "indicates B is used to compile or create A"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "IsCompiledBy"@en .
+
+gdmt:Compiles a skos:Concept;
+  skos:broader gdmt:RelationTypes;
+  skos:definition "indicates B is the result of a compile or creation event using A"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Compiles"@en .
+
+gdmt:IsVariantFormOf a skos:Concept;
+  skos:broader gdmt:RelationTypes;
+  skos:definition "indicates A is a variant or different form of B"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "IsVariantFormOf"@en .
+
+gdmt:IsOriginalFormOf a skos:Concept;
+  skos:broader gdmt:RelationTypes;
+  skos:definition "indicates A is the original form of B"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "IsOriginalFormOf"@en .
+
+gdmt:IsIdenticalTo a skos:Concept;
+  skos:broader gdmt:RelationTypes;
+  skos:definition "indicates that A is identical to B, for use when there is a need to register two separate instances of the same resource"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "IsIdenticalTo"@en .
+
+gdmt:IsReviewedBy a skos:Concept;
+  skos:broader gdmt:RelationTypes;
+  skos:definition "indicates that A is reviewed by B"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "IsReviewedBy"@en .
+
+gdmt:Reviews a skos:Concept;
+  skos:broader gdmt:RelationTypes;
+  skos:definition "indicates that A is a review of B"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Reviews"@en .
+
+gdmt:IsDerivedFrom a skos:Concept;
+  skos:broader gdmt:RelationTypes;
+  skos:definition "indicates B is a source upon which A is based"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "IsDerivedFrom"@en .
+
+gdmt:IsSourceOf a skos:Concept;
+  skos:broader gdmt:RelationTypes;
+  skos:definition "indicates A is a source upon which B is based"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "IsSourceOf"@en .
+
+gdmt:IsRequiredBy a skos:Concept;
+  skos:broader gdmt:RelationTypes;
+  skos:definition "Indicates A is required by B"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "IsRequiredBy"@en .
+
+gdmt:Requires a skos:Concept;
+  skos:broader gdmt:RelationTypes;
+  skos:definition "Indicates A requires B"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Requires"@en .
+
+gdmt:Obsoletes a skos:Concept;
+  skos:broader gdmt:RelationTypes;
+  skos:definition "Indicates A replaces B"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Obsoletes"@en .
+
+gdmt:IsObsoletedBy a skos:Concept;
+  skos:broader gdmt:RelationTypes;
+  skos:definition "Indicates A is replaced by B"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "IsObsoletedBy"@en .
