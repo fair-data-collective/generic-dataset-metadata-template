@@ -25,10 +25,10 @@
   pav:createdOn "2020-12-01T00:00:00+01:00"@en;
   pav:lastUpdatedOn "2020-12-01T00:00:00+01:00"@en;
   pav:version "0.1"@en;
-  skos:hasTopConcept gdmt:ContributorRoles, gdmt:CreatorTypes, gdmt:DateTypes, gdmt:GRID,
-    gdmt:ISNI, gdmt:IdentifierSchemeIRIs, gdmt:IdentifierSchemes, gdmt:LicenseIdentifierSchemeIRIs,
-    gdmt:LicenseIdentifierSchemes, gdmt:LicenseIdentifiers, gdmt:MIMETypes, gdmt:ROR,
-    gdmt:RelatedIdentifierTypes, gdmt:RelationTypes, gdmt:ResourceTypeCategories;
+  skos:hasTopConcept gdmt:ContributorRoles, gdmt:CreatorTypes, gdmt:DateTypes, gdmt:IdentifierSchemeIRIs,
+    gdmt:IdentifierSchemes, gdmt:LicenseIdentifierSchemeIRIs, gdmt:LicenseIdentifierSchemes,
+    gdmt:LicenseIdentifiers, gdmt:MIMETypes, gdmt:RelatedIdentifierTypes, gdmt:RelationTypes,
+    gdmt:ResourceTypeCategories;
   skos:prefLabel "Ontology for Generic Dataset Metadata Template"@en .
 
 gdmt:ResourceType a rdf:Property;
@@ -1140,247 +1140,14 @@ gdmt:IRI a skos:Concept;
   skos:prefLabel "IRI"@en .
 
 gdmt:RelationTypes a skos:Concept;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:narrower gdmt:Cites, gdmt:Compiles, gdmt:Continues, gdmt:Describes, gdmt:Documents,
     gdmt:HasMetadata, gdmt:HasPart, gdmt:HasVersion, gdmt:IsCitedBy, gdmt:IsCompiledBy,
     gdmt:IsContinuedBy, gdmt:IsDerivedFrom, gdmt:IsDescribedBy, gdmt:IsDocumentedBy, gdmt:IsIdenticalTo,
     gdmt:IsMetadataFor, gdmt:IsNewVersionOf, gdmt:IsObsoletedBy, gdmt:IsOriginalFormOf,
     gdmt:IsPartOf, gdmt:IsPreviousVersionOf, gdmt:IsReferencedBy, gdmt:IsRequiredBy, gdmt:IsReviewedBy,
     gdmt:IsSourceOf, gdmt:IsSupplementTo, gdmt:IsSupplementedBy, gdmt:IsVariantFormOf,
-    gdmt:IsVersionOf, gdmt:LinkedInID, gdmt:ORCiD, gdmt:Obsoletes, gdmt:References, gdmt:Requires,
-    gdmt:ResearcherID, gdmt:Reviews, gdmt:Scopus, <http://vocab.fairdatacollective.org/gdmt/application/acad>,
-    <http://vocab.fairdatacollective.org/gdmt/application/arj>, <http://vocab.fairdatacollective.org/gdmt/application/base64>,
-    <http://vocab.fairdatacollective.org/gdmt/application/binhex>, <http://vocab.fairdatacollective.org/gdmt/application/binhex4>,
-    <http://vocab.fairdatacollective.org/gdmt/application/book>, <http://vocab.fairdatacollective.org/gdmt/application/cdf>,
-    <http://vocab.fairdatacollective.org/gdmt/application/clariscad>, <http://vocab.fairdatacollective.org/gdmt/application/commonground>,
-    <http://vocab.fairdatacollective.org/gdmt/application/drafting>, <http://vocab.fairdatacollective.org/gdmt/application/dsptype>,
-    <http://vocab.fairdatacollective.org/gdmt/application/dxf>, <http://vocab.fairdatacollective.org/gdmt/application/ecmascript>,
-    <http://vocab.fairdatacollective.org/gdmt/application/envoy>, <http://vocab.fairdatacollective.org/gdmt/application/epub+zip>,
-    <http://vocab.fairdatacollective.org/gdmt/application/excel>, <http://vocab.fairdatacollective.org/gdmt/application/fractals>,
-    <http://vocab.fairdatacollective.org/gdmt/application/freeloader>, <http://vocab.fairdatacollective.org/gdmt/application/futuresplash>,
-    <http://vocab.fairdatacollective.org/gdmt/application/gnutar>, <http://vocab.fairdatacollective.org/gdmt/application/groupwise>,
-    <http://vocab.fairdatacollective.org/gdmt/application/hlp>, <http://vocab.fairdatacollective.org/gdmt/application/hta>,
-    <http://vocab.fairdatacollective.org/gdmt/application/ideas>, <http://vocab.fairdatacollective.org/gdmt/application/iges>,
-    <http://vocab.fairdatacollective.org/gdmt/application/inf>, <http://vocab.fairdatacollective.org/gdmt/application/java>,
-    <http://vocab.fairdatacollective.org/gdmt/application/javaarchive>, <http://vocab.fairdatacollective.org/gdmt/application/javabytecode>,
-    <http://vocab.fairdatacollective.org/gdmt/application/javascript>, <http://vocab.fairdatacollective.org/gdmt/application/json>,
-    <http://vocab.fairdatacollective.org/gdmt/application/ld+json>, <http://vocab.fairdatacollective.org/gdmt/application/lha>,
-    <http://vocab.fairdatacollective.org/gdmt/application/lzx>, <http://vocab.fairdatacollective.org/gdmt/application/macbinary>,
-    <http://vocab.fairdatacollective.org/gdmt/application/macbinhex>, <http://vocab.fairdatacollective.org/gdmt/application/macbinhex40>,
-    <http://vocab.fairdatacollective.org/gdmt/application/maccompactpro>, <http://vocab.fairdatacollective.org/gdmt/application/marc>,
-    <http://vocab.fairdatacollective.org/gdmt/application/mbedlet>, <http://vocab.fairdatacollective.org/gdmt/application/mcad>,
-    <http://vocab.fairdatacollective.org/gdmt/application/mime>, <http://vocab.fairdatacollective.org/gdmt/application/mspowerpoint>,
-    <http://vocab.fairdatacollective.org/gdmt/application/msword>, <http://vocab.fairdatacollective.org/gdmt/application/mswrite>,
-    <http://vocab.fairdatacollective.org/gdmt/application/netmc>, <http://vocab.fairdatacollective.org/gdmt/application/octetstream>,
-    <http://vocab.fairdatacollective.org/gdmt/application/oda>, <http://vocab.fairdatacollective.org/gdmt/application/ogg>,
-    <http://vocab.fairdatacollective.org/gdmt/application/pdf>, <http://vocab.fairdatacollective.org/gdmt/application/pkcs10>,
-    <http://vocab.fairdatacollective.org/gdmt/application/pkcs12>, <http://vocab.fairdatacollective.org/gdmt/application/pkcs7mime>,
-    <http://vocab.fairdatacollective.org/gdmt/application/pkcs7signature>, <http://vocab.fairdatacollective.org/gdmt/application/pkcscrl>,
-    <http://vocab.fairdatacollective.org/gdmt/application/pkixcert>, <http://vocab.fairdatacollective.org/gdmt/application/pkixcrl>,
-    <http://vocab.fairdatacollective.org/gdmt/application/plain>, <http://vocab.fairdatacollective.org/gdmt/application/postscript>,
-    <http://vocab.fairdatacollective.org/gdmt/application/powerpoint>, <http://vocab.fairdatacollective.org/gdmt/application/pro_eng>,
-    <http://vocab.fairdatacollective.org/gdmt/application/ringingtones>, <http://vocab.fairdatacollective.org/gdmt/application/rtf>,
-    <http://vocab.fairdatacollective.org/gdmt/application/sdp>, <http://vocab.fairdatacollective.org/gdmt/application/sea>,
-    <http://vocab.fairdatacollective.org/gdmt/application/set>, <http://vocab.fairdatacollective.org/gdmt/application/sla>,
-    <http://vocab.fairdatacollective.org/gdmt/application/smil>, <http://vocab.fairdatacollective.org/gdmt/application/solids>,
-    <http://vocab.fairdatacollective.org/gdmt/application/sounder>, <http://vocab.fairdatacollective.org/gdmt/application/step>,
-    <http://vocab.fairdatacollective.org/gdmt/application/streamingmedia>, <http://vocab.fairdatacollective.org/gdmt/application/toolbook>,
-    <http://vocab.fairdatacollective.org/gdmt/application/vda>, <http://vocab.fairdatacollective.org/gdmt/application/vnd.amazon.ebook>,
-    <http://vocab.fairdatacollective.org/gdmt/application/vnd.android.packagearchive>,
-    <http://vocab.fairdatacollective.org/gdmt/application/vnd.apple.installer+xml>, <http://vocab.fairdatacollective.org/gdmt/application/vnd.fdf>,
-    <http://vocab.fairdatacollective.org/gdmt/application/vnd.hphpgl>, <http://vocab.fairdatacollective.org/gdmt/application/vnd.hppcl>,
-    <http://vocab.fairdatacollective.org/gdmt/application/vnd.mozilla.xul+xml>, <http://vocab.fairdatacollective.org/gdmt/application/vnd.msexcel>,
-    <http://vocab.fairdatacollective.org/gdmt/application/vnd.msfontobject>, <http://vocab.fairdatacollective.org/gdmt/application/vnd.mspki.certstore>,
-    <http://vocab.fairdatacollective.org/gdmt/application/vnd.mspki.pko>, <http://vocab.fairdatacollective.org/gdmt/application/vnd.mspki.seccat>,
-    <http://vocab.fairdatacollective.org/gdmt/application/vnd.mspki.stl>, <http://vocab.fairdatacollective.org/gdmt/application/vnd.mspowerpoint>,
-    <http://vocab.fairdatacollective.org/gdmt/application/vnd.msproject>, <http://vocab.fairdatacollective.org/gdmt/application/vnd.nokia.configurationmessage>,
-    <http://vocab.fairdatacollective.org/gdmt/application/vnd.nokia.ringingtone>, <http://vocab.fairdatacollective.org/gdmt/application/vnd.oasis.opendocument.presentation>,
-    <http://vocab.fairdatacollective.org/gdmt/application/vnd.oasis.opendocument.spreadsheet>,
-    <http://vocab.fairdatacollective.org/gdmt/application/vnd.oasis.opendocument.text>,
-    <http://vocab.fairdatacollective.org/gdmt/application/vnd.openxmlformatsofficedocument.presentationml.presentation>,
-    <http://vocab.fairdatacollective.org/gdmt/application/vnd.openxmlformatsofficedocument.spreadsheetml.sheet>,
-    <http://vocab.fairdatacollective.org/gdmt/application/vnd.openxmlformatsofficedocument.wordprocessingml.document>,
-    <http://vocab.fairdatacollective.org/gdmt/application/vnd.rnrealmedia>, <http://vocab.fairdatacollective.org/gdmt/application/vnd.rnrealplayer>,
-    <http://vocab.fairdatacollective.org/gdmt/application/vnd.visio>, <http://vocab.fairdatacollective.org/gdmt/application/vnd.wap.wmlc>,
-    <http://vocab.fairdatacollective.org/gdmt/application/vnd.wap.wmlscriptc>, <http://vocab.fairdatacollective.org/gdmt/application/vnd.xara>,
-    <http://vocab.fairdatacollective.org/gdmt/application/vocaltecmediadesc>, <http://vocab.fairdatacollective.org/gdmt/application/vocaltecmediafile>,
-    <http://vocab.fairdatacollective.org/gdmt/application/wordperfect>, <http://vocab.fairdatacollective.org/gdmt/application/wordperfect6.0>,
-    <http://vocab.fairdatacollective.org/gdmt/application/wordperfect6.1>, <http://vocab.fairdatacollective.org/gdmt/application/x123>,
-    <http://vocab.fairdatacollective.org/gdmt/application/x7zcompressed>, <http://vocab.fairdatacollective.org/gdmt/application/xabiword>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xaim>, <http://vocab.fairdatacollective.org/gdmt/application/xauthorwarebin>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xauthorwaremap>, <http://vocab.fairdatacollective.org/gdmt/application/xauthorwareseg>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xbcpio>, <http://vocab.fairdatacollective.org/gdmt/application/xbinary>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xbinhex40>, <http://vocab.fairdatacollective.org/gdmt/application/xbsh>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xbytecode.elisp(compiledelisp)>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xbzip>, <http://vocab.fairdatacollective.org/gdmt/application/xbzip2>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xcdf>, <http://vocab.fairdatacollective.org/gdmt/application/xcdlink>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xchat>, <http://vocab.fairdatacollective.org/gdmt/application/xcmuraster>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xcocoa>, <http://vocab.fairdatacollective.org/gdmt/application/xcompactpro>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xcompress>, <http://vocab.fairdatacollective.org/gdmt/application/xcompressed>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xconference>, <http://vocab.fairdatacollective.org/gdmt/application/xcpio>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xcpt>, <http://vocab.fairdatacollective.org/gdmt/application/xcsh>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xdeepv>, <http://vocab.fairdatacollective.org/gdmt/application/xdirector>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xdvi>, <http://vocab.fairdatacollective.org/gdmt/application/xelc>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xenvoy>, <http://vocab.fairdatacollective.org/gdmt/application/xesrehber>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xexcel>, <http://vocab.fairdatacollective.org/gdmt/application/xfictionbook>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xframe>, <http://vocab.fairdatacollective.org/gdmt/application/xfreearc>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xfreelance>, <http://vocab.fairdatacollective.org/gdmt/application/xgsp>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xgss>, <http://vocab.fairdatacollective.org/gdmt/application/xgtar>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xgzip>, <http://vocab.fairdatacollective.org/gdmt/application/xhdf>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xhelpfile>, <http://vocab.fairdatacollective.org/gdmt/application/xhtml+xml>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xhttpdimap>, <http://vocab.fairdatacollective.org/gdmt/application/xima>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xinternettsignup>, <http://vocab.fairdatacollective.org/gdmt/application/xinventor>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xip2>, <http://vocab.fairdatacollective.org/gdmt/application/xjavaclass>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xjavacommerce>, <http://vocab.fairdatacollective.org/gdmt/application/xjavascript>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xkoan>, <http://vocab.fairdatacollective.org/gdmt/application/xksh>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xlatex>, <http://vocab.fairdatacollective.org/gdmt/application/xlha>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xlisp>, <http://vocab.fairdatacollective.org/gdmt/application/xlivescreen>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xlotus>, <http://vocab.fairdatacollective.org/gdmt/application/xlotusscreencam>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xlzh>, <http://vocab.fairdatacollective.org/gdmt/application/xlzx>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xmacbinary>, <http://vocab.fairdatacollective.org/gdmt/application/xmacbinhex40>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xmagiccappackage1.0>, <http://vocab.fairdatacollective.org/gdmt/application/xmathcad>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xmeme>, <http://vocab.fairdatacollective.org/gdmt/application/xmidi>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xmif>, <http://vocab.fairdatacollective.org/gdmt/application/xmixtransfer>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xml>, <http://vocab.fairdatacollective.org/gdmt/application/xmplayer2>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xmsexcel>, <http://vocab.fairdatacollective.org/gdmt/application/xmspowerpoint>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xnavianimation>, <http://vocab.fairdatacollective.org/gdmt/application/xnavidoc>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xnavimap>, <http://vocab.fairdatacollective.org/gdmt/application/xnavistyle>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xnetcdf>, <http://vocab.fairdatacollective.org/gdmt/application/xnewtoncompatiblepkg>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xnokia9000communicatoraddonsoftware>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xomc>, <http://vocab.fairdatacollective.org/gdmt/application/xomcdatamaker>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xomcregerator>, <http://vocab.fairdatacollective.org/gdmt/application/xpagemaker>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xpcl>, <http://vocab.fairdatacollective.org/gdmt/application/xpixclscript>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xpkcs10>, <http://vocab.fairdatacollective.org/gdmt/application/xpkcs12>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xpkcs7certificates>, <http://vocab.fairdatacollective.org/gdmt/application/xpkcs7certreqresp>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xpkcs7mime>, <http://vocab.fairdatacollective.org/gdmt/application/xpkcs7signature>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xpointplus>, <http://vocab.fairdatacollective.org/gdmt/application/xportableanymap>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xproject>, <http://vocab.fairdatacollective.org/gdmt/application/xqpro>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xrarcompressed>, <http://vocab.fairdatacollective.org/gdmt/application/xrtf>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xsdp>, <http://vocab.fairdatacollective.org/gdmt/application/xsea>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xseelogo>, <http://vocab.fairdatacollective.org/gdmt/application/xsh>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xshar>, <http://vocab.fairdatacollective.org/gdmt/application/xshockwaveflash>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xsit>, <http://vocab.fairdatacollective.org/gdmt/application/xsprite>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xstuffit>, <http://vocab.fairdatacollective.org/gdmt/application/xsv4cpio>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xsv4crc>, <http://vocab.fairdatacollective.org/gdmt/application/xtar>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xtbook>, <http://vocab.fairdatacollective.org/gdmt/application/xtcl>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xtex>, <http://vocab.fairdatacollective.org/gdmt/application/xtexinfo>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xtroff>, <http://vocab.fairdatacollective.org/gdmt/application/xtroffman>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xtroffme>, <http://vocab.fairdatacollective.org/gdmt/application/xtroffms>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xtroffmsvideo>, <http://vocab.fairdatacollective.org/gdmt/application/xustar>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xvisio>, <http://vocab.fairdatacollective.org/gdmt/application/xvnd.audioexplosion.mzz>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xvnd.lsxpix>, <http://vocab.fairdatacollective.org/gdmt/application/xvrml>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xwaissource>, <http://vocab.fairdatacollective.org/gdmt/application/xwinhelp>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xwintalk>, <http://vocab.fairdatacollective.org/gdmt/application/xworld>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xwpwin>, <http://vocab.fairdatacollective.org/gdmt/application/xwri>,
-    <http://vocab.fairdatacollective.org/gdmt/application/xx509cacert>, <http://vocab.fairdatacollective.org/gdmt/application/xx509usercert>,
-    <http://vocab.fairdatacollective.org/gdmt/application/zip>, <http://vocab.fairdatacollective.org/gdmt/audio/aac>,
-    <http://vocab.fairdatacollective.org/gdmt/audio/aiff>, <http://vocab.fairdatacollective.org/gdmt/audio/basic>,
-    <http://vocab.fairdatacollective.org/gdmt/audio/it>, <http://vocab.fairdatacollective.org/gdmt/audio/make>,
-    <http://vocab.fairdatacollective.org/gdmt/audio/make.my.funk>, <http://vocab.fairdatacollective.org/gdmt/audio/mid>,
-    <http://vocab.fairdatacollective.org/gdmt/audio/midi>, <http://vocab.fairdatacollective.org/gdmt/audio/mod>,
-    <http://vocab.fairdatacollective.org/gdmt/audio/mp3>, <http://vocab.fairdatacollective.org/gdmt/audio/mpeg>,
-    <http://vocab.fairdatacollective.org/gdmt/audio/nspaudio>, <http://vocab.fairdatacollective.org/gdmt/audio/ogg>,
-    <http://vocab.fairdatacollective.org/gdmt/audio/s3m>, <http://vocab.fairdatacollective.org/gdmt/audio/tspaudio>,
-    <http://vocab.fairdatacollective.org/gdmt/audio/tsplayer>, <http://vocab.fairdatacollective.org/gdmt/audio/vnd.qcelp>,
-    <http://vocab.fairdatacollective.org/gdmt/audio/voc>, <http://vocab.fairdatacollective.org/gdmt/audio/voxware>,
-    <http://vocab.fairdatacollective.org/gdmt/audio/wav>, <http://vocab.fairdatacollective.org/gdmt/audio/webm>,
-    <http://vocab.fairdatacollective.org/gdmt/audio/xadpcm>, <http://vocab.fairdatacollective.org/gdmt/audio/xaiff>,
-    <http://vocab.fairdatacollective.org/gdmt/audio/xau>, <http://vocab.fairdatacollective.org/gdmt/audio/xgsm>,
-    <http://vocab.fairdatacollective.org/gdmt/audio/xjam>, <http://vocab.fairdatacollective.org/gdmt/audio/xliveaudio>,
-    <http://vocab.fairdatacollective.org/gdmt/audio/xm>, <http://vocab.fairdatacollective.org/gdmt/audio/xmid>,
-    <http://vocab.fairdatacollective.org/gdmt/audio/xmidi>, <http://vocab.fairdatacollective.org/gdmt/audio/xmod>,
-    <http://vocab.fairdatacollective.org/gdmt/audio/xmpeg>, <http://vocab.fairdatacollective.org/gdmt/audio/xmpequrl>,
-    <http://vocab.fairdatacollective.org/gdmt/audio/xnspaudio>, <http://vocab.fairdatacollective.org/gdmt/audio/xpnrealaudio>,
-    <http://vocab.fairdatacollective.org/gdmt/audio/xpnrealaudioplugin>, <http://vocab.fairdatacollective.org/gdmt/audio/xpsid>,
-    <http://vocab.fairdatacollective.org/gdmt/audio/xrealaudio>, <http://vocab.fairdatacollective.org/gdmt/audio/xtwinvq>,
-    <http://vocab.fairdatacollective.org/gdmt/audio/xtwinvqplugin>, <http://vocab.fairdatacollective.org/gdmt/audio/xvnd.audioexplosion.mjuicemediafile>,
-    <http://vocab.fairdatacollective.org/gdmt/audio/xvoc>, <http://vocab.fairdatacollective.org/gdmt/audio/xwav>,
-    <http://vocab.fairdatacollective.org/gdmt/chemical/xpdb>, <http://vocab.fairdatacollective.org/gdmt/drawing/xdwf(old)>,
-    <http://vocab.fairdatacollective.org/gdmt/font/otf>, <http://vocab.fairdatacollective.org/gdmt/font/ttf>,
-    <http://vocab.fairdatacollective.org/gdmt/font/woff>, <http://vocab.fairdatacollective.org/gdmt/font/woff2>,
-    gdmt:gridIRI, <http://vocab.fairdatacollective.org/gdmt/image/bmp>, <http://vocab.fairdatacollective.org/gdmt/image/cmuraster>,
-    <http://vocab.fairdatacollective.org/gdmt/image/fif>, <http://vocab.fairdatacollective.org/gdmt/image/florian>,
-    <http://vocab.fairdatacollective.org/gdmt/image/g3fax>, <http://vocab.fairdatacollective.org/gdmt/image/gif>,
-    <http://vocab.fairdatacollective.org/gdmt/image/ief>, <http://vocab.fairdatacollective.org/gdmt/image/jpeg>,
-    <http://vocab.fairdatacollective.org/gdmt/image/jutvision>, <http://vocab.fairdatacollective.org/gdmt/image/naplps>,
-    <http://vocab.fairdatacollective.org/gdmt/image/pict>, <http://vocab.fairdatacollective.org/gdmt/image/pjpeg>,
-    <http://vocab.fairdatacollective.org/gdmt/image/png>, <http://vocab.fairdatacollective.org/gdmt/image/svg+xml>,
-    <http://vocab.fairdatacollective.org/gdmt/image/tiff>, <http://vocab.fairdatacollective.org/gdmt/image/vasa>,
-    <http://vocab.fairdatacollective.org/gdmt/image/vnd.djvu>, <http://vocab.fairdatacollective.org/gdmt/image/vnd.dwg>,
-    <http://vocab.fairdatacollective.org/gdmt/image/vnd.fpx>, <http://vocab.fairdatacollective.org/gdmt/image/vnd.microsoft.icon>,
-    <http://vocab.fairdatacollective.org/gdmt/image/vnd.netfpx>, <http://vocab.fairdatacollective.org/gdmt/image/vnd.rnrealflash>,
-    <http://vocab.fairdatacollective.org/gdmt/image/vnd.rnrealpix>, <http://vocab.fairdatacollective.org/gdmt/image/vnd.wap.wbmp>,
-    <http://vocab.fairdatacollective.org/gdmt/image/vnd.xiff>, <http://vocab.fairdatacollective.org/gdmt/image/webp>,
-    <http://vocab.fairdatacollective.org/gdmt/image/xbm>, <http://vocab.fairdatacollective.org/gdmt/image/xcmuraster>,
-    <http://vocab.fairdatacollective.org/gdmt/image/xdwg>, <http://vocab.fairdatacollective.org/gdmt/image/xicon>,
-    <http://vocab.fairdatacollective.org/gdmt/image/xjg>, <http://vocab.fairdatacollective.org/gdmt/image/xjps>,
-    <http://vocab.fairdatacollective.org/gdmt/image/xniff>, <http://vocab.fairdatacollective.org/gdmt/image/xpcx>,
-    <http://vocab.fairdatacollective.org/gdmt/image/xpict>, <http://vocab.fairdatacollective.org/gdmt/image/xpm>,
-    <http://vocab.fairdatacollective.org/gdmt/image/xportableanymap>, <http://vocab.fairdatacollective.org/gdmt/image/xportablebitmap>,
-    <http://vocab.fairdatacollective.org/gdmt/image/xportablegraymap>, <http://vocab.fairdatacollective.org/gdmt/image/xportablegreymap>,
-    <http://vocab.fairdatacollective.org/gdmt/image/xportablepixmap>, <http://vocab.fairdatacollective.org/gdmt/image/xquicktime>,
-    <http://vocab.fairdatacollective.org/gdmt/image/xrgb>, <http://vocab.fairdatacollective.org/gdmt/image/xtiff>,
-    <http://vocab.fairdatacollective.org/gdmt/image/xwindowsbmp>, <http://vocab.fairdatacollective.org/gdmt/image/xxbitmap>,
-    <http://vocab.fairdatacollective.org/gdmt/image/xxbm>, <http://vocab.fairdatacollective.org/gdmt/image/xxpixmap>,
-    <http://vocab.fairdatacollective.org/gdmt/image/xxwd>, <http://vocab.fairdatacollective.org/gdmt/image/xxwindowdump>,
-    gdmt:isniIRI, <http://vocab.fairdatacollective.org/gdmt/iworld/ivrml>, gdmt:linkedinIRI,
-    <http://vocab.fairdatacollective.org/gdmt/message/rfc822>, <http://vocab.fairdatacollective.org/gdmt/model/iges>,
-    <http://vocab.fairdatacollective.org/gdmt/model/vnd.dwf>, <http://vocab.fairdatacollective.org/gdmt/model/vrml>,
-    <http://vocab.fairdatacollective.org/gdmt/model/xpov>, <http://vocab.fairdatacollective.org/gdmt/multipart/xgzip>,
-    <http://vocab.fairdatacollective.org/gdmt/multipart/xustar>, <http://vocab.fairdatacollective.org/gdmt/music/crescendo>,
-    <http://vocab.fairdatacollective.org/gdmt/music/xkaraoke>, gdmt:orcidIRI, <http://vocab.fairdatacollective.org/gdmt/paleovu/xpv>,
-    gdmt:researcheridIRI, gdmt:rorIRI, gdmt:scopusIRI, <http://vocab.fairdatacollective.org/gdmt/text/asp>,
-    <http://vocab.fairdatacollective.org/gdmt/text/calendar>, <http://vocab.fairdatacollective.org/gdmt/text/css>;
-  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
-  skos:narrower <http://vocab.fairdatacollective.org/gdmt/text/csv>, <http://vocab.fairdatacollective.org/gdmt/text/ecmascript>,
-    <http://vocab.fairdatacollective.org/gdmt/text/fb2>, <http://vocab.fairdatacollective.org/gdmt/text/html>,
-    <http://vocab.fairdatacollective.org/gdmt/text/javascript>, <http://vocab.fairdatacollective.org/gdmt/text/mcf>,
-    <http://vocab.fairdatacollective.org/gdmt/text/pascal>, <http://vocab.fairdatacollective.org/gdmt/text/plain>,
-    <http://vocab.fairdatacollective.org/gdmt/text/richtext>, <http://vocab.fairdatacollective.org/gdmt/text/scriplet>,
-    <http://vocab.fairdatacollective.org/gdmt/text/sgml>, <http://vocab.fairdatacollective.org/gdmt/text/tabseparatedvalues>,
-    <http://vocab.fairdatacollective.org/gdmt/text/urilist>, <http://vocab.fairdatacollective.org/gdmt/text/vnd.abc>,
-    <http://vocab.fairdatacollective.org/gdmt/text/vnd.fmi.flexstor>, <http://vocab.fairdatacollective.org/gdmt/text/vnd.rnrealtext>,
-    <http://vocab.fairdatacollective.org/gdmt/text/vnd.wap.wml>, <http://vocab.fairdatacollective.org/gdmt/text/vnd.wap.wmlscript>,
-    <http://vocab.fairdatacollective.org/gdmt/text/webviewhtml>, <http://vocab.fairdatacollective.org/gdmt/text/xasm>,
-    <http://vocab.fairdatacollective.org/gdmt/text/xaudiosoftintra>, <http://vocab.fairdatacollective.org/gdmt/text/xc>,
-    <http://vocab.fairdatacollective.org/gdmt/text/xcomponent>, <http://vocab.fairdatacollective.org/gdmt/text/xfortran>,
-    <http://vocab.fairdatacollective.org/gdmt/text/xh>, <http://vocab.fairdatacollective.org/gdmt/text/xjavasource>,
-    <http://vocab.fairdatacollective.org/gdmt/text/xlaasf>, <http://vocab.fairdatacollective.org/gdmt/text/xm>,
-    <http://vocab.fairdatacollective.org/gdmt/text/xml>, <http://vocab.fairdatacollective.org/gdmt/text/xpascal>,
-    <http://vocab.fairdatacollective.org/gdmt/text/xscript>, <http://vocab.fairdatacollective.org/gdmt/text/xscript.csh>,
-    <http://vocab.fairdatacollective.org/gdmt/text/xscript.elisp>, <http://vocab.fairdatacollective.org/gdmt/text/xscript.guile>,
-    <http://vocab.fairdatacollective.org/gdmt/text/xscript.ksh>, <http://vocab.fairdatacollective.org/gdmt/text/xscript.lisp>,
-    <http://vocab.fairdatacollective.org/gdmt/text/xscript.perl>, <http://vocab.fairdatacollective.org/gdmt/text/xscript.perlmodule>,
-    <http://vocab.fairdatacollective.org/gdmt/text/xscript.phyton>, <http://vocab.fairdatacollective.org/gdmt/text/xscript.rexx>,
-    <http://vocab.fairdatacollective.org/gdmt/text/xscript.scheme>, <http://vocab.fairdatacollective.org/gdmt/text/xscript.sh>,
-    <http://vocab.fairdatacollective.org/gdmt/text/xscript.tcl>, <http://vocab.fairdatacollective.org/gdmt/text/xscript.tcsh>,
-    <http://vocab.fairdatacollective.org/gdmt/text/xscript.zsh>, <http://vocab.fairdatacollective.org/gdmt/text/xserverparsedhtml>,
-    <http://vocab.fairdatacollective.org/gdmt/text/xsetext>, <http://vocab.fairdatacollective.org/gdmt/text/xsgml>,
-    <http://vocab.fairdatacollective.org/gdmt/text/xspeech>, <http://vocab.fairdatacollective.org/gdmt/text/xuil>,
-    <http://vocab.fairdatacollective.org/gdmt/text/xuuencode>, <http://vocab.fairdatacollective.org/gdmt/text/xvcalendar>,
-    <http://vocab.fairdatacollective.org/gdmt/video/3gpp>, <http://vocab.fairdatacollective.org/gdmt/video/3gpp2>,
-    <http://vocab.fairdatacollective.org/gdmt/video/animaflex>, <http://vocab.fairdatacollective.org/gdmt/video/avi>,
-    <http://vocab.fairdatacollective.org/gdmt/video/avsvideo>, <http://vocab.fairdatacollective.org/gdmt/video/dl>,
-    <http://vocab.fairdatacollective.org/gdmt/video/fli>, <http://vocab.fairdatacollective.org/gdmt/video/gl>,
-    <http://vocab.fairdatacollective.org/gdmt/video/mp2t>, <http://vocab.fairdatacollective.org/gdmt/video/mp4>,
-    <http://vocab.fairdatacollective.org/gdmt/video/mpeg>, <http://vocab.fairdatacollective.org/gdmt/video/msvideo>,
-    <http://vocab.fairdatacollective.org/gdmt/video/ogg>, <http://vocab.fairdatacollective.org/gdmt/video/quicktime>,
-    <http://vocab.fairdatacollective.org/gdmt/video/vdo>, <http://vocab.fairdatacollective.org/gdmt/video/vivo>,
-    <http://vocab.fairdatacollective.org/gdmt/video/vnd.rnrealvideo>, <http://vocab.fairdatacollective.org/gdmt/video/vnd.vivo>,
-    <http://vocab.fairdatacollective.org/gdmt/video/vosaic>, <http://vocab.fairdatacollective.org/gdmt/video/webm>,
-    <http://vocab.fairdatacollective.org/gdmt/video/xamtdemorun>, <http://vocab.fairdatacollective.org/gdmt/video/xamtshowrun>,
-    <http://vocab.fairdatacollective.org/gdmt/video/xatomic3dfeature>, <http://vocab.fairdatacollective.org/gdmt/video/xdl>,
-    <http://vocab.fairdatacollective.org/gdmt/video/xdv>, <http://vocab.fairdatacollective.org/gdmt/video/xfli>,
-    <http://vocab.fairdatacollective.org/gdmt/video/xgl>, <http://vocab.fairdatacollective.org/gdmt/video/xisvideo>,
-    <http://vocab.fairdatacollective.org/gdmt/video/xmotionjpeg>, <http://vocab.fairdatacollective.org/gdmt/video/xmpeg>,
-    <http://vocab.fairdatacollective.org/gdmt/video/xmpeq2a>, <http://vocab.fairdatacollective.org/gdmt/video/xmsasf>,
-    <http://vocab.fairdatacollective.org/gdmt/video/xmsasfplugin>, <http://vocab.fairdatacollective.org/gdmt/video/xmsvideo>,
-    <http://vocab.fairdatacollective.org/gdmt/video/xqtc>, <http://vocab.fairdatacollective.org/gdmt/video/xscm>,
-    <http://vocab.fairdatacollective.org/gdmt/video/xsgimovie>, <http://vocab.fairdatacollective.org/gdmt/windows/metafile>,
-    <http://vocab.fairdatacollective.org/gdmt/www/mime>, <http://vocab.fairdatacollective.org/gdmt/xconference/xcooltalk>,
-    <http://vocab.fairdatacollective.org/gdmt/xgl/drawing>, <http://vocab.fairdatacollective.org/gdmt/xgl/movie>,
-    <http://vocab.fairdatacollective.org/gdmt/xmusic/xmidi>, <http://vocab.fairdatacollective.org/gdmt/xworld/x3dmf>,
-    <http://vocab.fairdatacollective.org/gdmt/xworld/xsvr>, <http://vocab.fairdatacollective.org/gdmt/xworld/xvrml>,
-    <http://vocab.fairdatacollective.org/gdmt/xworld/xvrt>;
+    gdmt:IsVersionOf, gdmt:Obsoletes, gdmt:References, gdmt:Requires, gdmt:Reviews;
   skos:prefLabel "RelationTypes"@en;
   skos:topConceptOf <http://vocab.fairdatacollective.org/gdmt/> .
 
@@ -1610,95 +1377,99 @@ gdmt:System a skos:Concept;
 
 gdmt:IdentifierSchemes a skos:Concept;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:narrower gdmt:GRID, gdmt:ISNI, gdmt:LinkedInID, gdmt:ORCiD, gdmt:ROR, gdmt:ResearcherID,
+    gdmt:Scopus;
   skos:prefLabel "IdentifierSchemes"@en;
   skos:topConceptOf <http://vocab.fairdatacollective.org/gdmt/> .
 
 gdmt:ORCiD a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:IdentifierSchemes;
   skos:definition "The ORCID (Open Researcher and Contributor ID) is a nonproprietary alphanumeric code to uniquely identify scientific and other academic authors and contributors."@en;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "ORCiD"@en .
 
 gdmt:Scopus a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:IdentifierSchemes;
   skos:definition "The Scopus author identifier distinguishes authors among themselves by assigning a unique number to each author."@en;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "Scopus"@en .
 
 gdmt:ResearcherID a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:IdentifierSchemes;
   skos:definition "ResearcherID is an identifying system for scientific authors."@en;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "ResearcherID"@en .
 
 gdmt:LinkedInID a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:IdentifierSchemes;
   skos:definition "The LinkedIn ID is a permanent number assigned to person's LinkedIn profile."@en;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "LinkedIn ID"@en .
 
 gdmt:ROR a skos:Concept;
+  skos:broader gdmt:IdentifierSchemes;
   skos:definition "ROR is the Research Organization Registry, a community-led project to develop an open, sustainable, usable, and unique identifier for every research organization in the world."@en;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
-  skos:prefLabel "ROR"@en;
-  skos:topConceptOf <http://vocab.fairdatacollective.org/gdmt/> .
+  skos:prefLabel "ROR"@en .
 
 gdmt:GRID a skos:Concept;
+  skos:broader gdmt:IdentifierSchemes;
   skos:definition "GRID (Global Research Identifier Database) is a free and openly available global database of research-related organisations, cataloging research-related organisations and providing each with a unique and persistent identifier."@en;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
-  skos:prefLabel "GRID"@en;
-  skos:topConceptOf <http://vocab.fairdatacollective.org/gdmt/> .
+  skos:prefLabel "GRID"@en .
 
 gdmt:ISNI a skos:Concept;
+  skos:broader gdmt:IdentifierSchemes;
   skos:definition "ISNI (International Standard Name Identifier) is an ISO standard, in use by numerous libraries, publishers, databases, and rights management organizations around the world. It is used to uniquely identify persons and organizations involved in creative activities, as well as public personas of both, such as pseudonyms, stage names, record labels or publishing imprints."@en;
   skos:exactMatch <https://isni.org/page/what-is-isni/>;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
-  skos:prefLabel "ISNI"@en;
-  skos:topConceptOf <http://vocab.fairdatacollective.org/gdmt/> .
+  skos:prefLabel "ISNI"@en .
 
 gdmt:IdentifierSchemeIRIs a skos:Concept;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:narrower gdmt:gridIRI, gdmt:isniIRI, gdmt:linkedinIRI, gdmt:orcidIRI, gdmt:researcheridIRI,
+    gdmt:rorIRI, gdmt:scopusIRI;
   skos:prefLabel "IdentifierSchemeIRIs"@en;
   skos:topConceptOf <http://vocab.fairdatacollective.org/gdmt/> .
 
 gdmt:orcidIRI a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:IdentifierSchemeIRIs;
   skos:definition "IRI of ORCiD"@en;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel <https://orcid.org/> .
 
 gdmt:scopusIRI a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:IdentifierSchemeIRIs;
   skos:definition "IRI of Scopus"@en;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel <https://www.scopus.com/> .
 
 gdmt:researcheridIRI a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:IdentifierSchemeIRIs;
   skos:definition "IRI of ResearcherID"@en;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel <http://www.researcherid.com/> .
 
 gdmt:linkedinIRI a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:IdentifierSchemeIRIs;
   skos:definition "IRI of LindekIn"@en;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel <https://www.linkedin.com/> .
 
 gdmt:rorIRI a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:IdentifierSchemeIRIs;
   skos:definition "IRI of ROR"@en;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel <https://ror.org/> .
 
 gdmt:gridIRI a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:IdentifierSchemeIRIs;
   skos:definition "IRI of Grid"@en;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel <https://www.grid.ac/> .
 
 gdmt:isniIRI a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:IdentifierSchemeIRIs;
   skos:definition "IRI of ISNI"@en;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel <https://isni.org/> .
@@ -4721,2305 +4492,2537 @@ gdmt:SPDX a skos:Concept;
 
 gdmt:LicenseIdentifierSchemeIRIs a skos:Concept;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:narrower gdmt:spdxIRI;
   skos:prefLabel "LicenseIdentifierSchemeIRIs"@en;
   skos:topConceptOf <http://vocab.fairdatacollective.org/gdmt/> .
 
 gdmt:spdxIRI a skos:Concept;
-  skos:broader gdmt:LicenseIdentifierScheme;
+  skos:broader gdmt:LicenseIdentifierSchemeIRIs;
   skos:definition "The Software Package Data Exchange (SPDX), an open standard for communicating software bill of material information, including components, licenses, copyrights, and security references."@en;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel <https://spdx.org/licenses/> .
 
 gdmt:MIMETypes a skos:Concept;
+  skos:narrower <http://vocab.fairdatacollective.org/gdmt/applicaiton/xbytecode.python>,
+    <http://vocab.fairdatacollective.org/gdmt/application/acad>, <http://vocab.fairdatacollective.org/gdmt/application/arj>,
+    <http://vocab.fairdatacollective.org/gdmt/application/base64>, <http://vocab.fairdatacollective.org/gdmt/application/binhex>,
+    <http://vocab.fairdatacollective.org/gdmt/application/binhex4>, <http://vocab.fairdatacollective.org/gdmt/application/book>,
+    <http://vocab.fairdatacollective.org/gdmt/application/cdf>, <http://vocab.fairdatacollective.org/gdmt/application/clariscad>,
+    <http://vocab.fairdatacollective.org/gdmt/application/commonground>, <http://vocab.fairdatacollective.org/gdmt/application/drafting>,
+    <http://vocab.fairdatacollective.org/gdmt/application/dsptype>, <http://vocab.fairdatacollective.org/gdmt/application/dxf>,
+    <http://vocab.fairdatacollective.org/gdmt/application/ecmascript>, <http://vocab.fairdatacollective.org/gdmt/application/envoy>,
+    <http://vocab.fairdatacollective.org/gdmt/application/epub+zip>, <http://vocab.fairdatacollective.org/gdmt/application/excel>,
+    <http://vocab.fairdatacollective.org/gdmt/application/fractals>, <http://vocab.fairdatacollective.org/gdmt/application/freeloader>,
+    <http://vocab.fairdatacollective.org/gdmt/application/futuresplash>, <http://vocab.fairdatacollective.org/gdmt/application/gnutar>,
+    <http://vocab.fairdatacollective.org/gdmt/application/groupwise>, <http://vocab.fairdatacollective.org/gdmt/application/hlp>,
+    <http://vocab.fairdatacollective.org/gdmt/application/hta>, <http://vocab.fairdatacollective.org/gdmt/application/ideas>,
+    <http://vocab.fairdatacollective.org/gdmt/application/iges>, <http://vocab.fairdatacollective.org/gdmt/application/inf>,
+    <http://vocab.fairdatacollective.org/gdmt/application/java>, <http://vocab.fairdatacollective.org/gdmt/application/javaarchive>,
+    <http://vocab.fairdatacollective.org/gdmt/application/javabytecode>, <http://vocab.fairdatacollective.org/gdmt/application/javascript>,
+    <http://vocab.fairdatacollective.org/gdmt/application/json>, <http://vocab.fairdatacollective.org/gdmt/application/ld+json>,
+    <http://vocab.fairdatacollective.org/gdmt/application/lha>, <http://vocab.fairdatacollective.org/gdmt/application/lzx>,
+    <http://vocab.fairdatacollective.org/gdmt/application/macbinary>, <http://vocab.fairdatacollective.org/gdmt/application/macbinhex>,
+    <http://vocab.fairdatacollective.org/gdmt/application/macbinhex40>, <http://vocab.fairdatacollective.org/gdmt/application/maccompactpro>,
+    <http://vocab.fairdatacollective.org/gdmt/application/marc>, <http://vocab.fairdatacollective.org/gdmt/application/mbedlet>,
+    <http://vocab.fairdatacollective.org/gdmt/application/mcad>, <http://vocab.fairdatacollective.org/gdmt/application/mime>,
+    <http://vocab.fairdatacollective.org/gdmt/application/mspowerpoint>, <http://vocab.fairdatacollective.org/gdmt/application/msword>,
+    <http://vocab.fairdatacollective.org/gdmt/application/mswrite>, <http://vocab.fairdatacollective.org/gdmt/application/netmc>,
+    <http://vocab.fairdatacollective.org/gdmt/application/octetstream>, <http://vocab.fairdatacollective.org/gdmt/application/oda>,
+    <http://vocab.fairdatacollective.org/gdmt/application/ogg>, <http://vocab.fairdatacollective.org/gdmt/application/pdf>,
+    <http://vocab.fairdatacollective.org/gdmt/application/pkcs10>, <http://vocab.fairdatacollective.org/gdmt/application/pkcs12>,
+    <http://vocab.fairdatacollective.org/gdmt/application/pkcs7mime>, <http://vocab.fairdatacollective.org/gdmt/application/pkcs7signature>,
+    <http://vocab.fairdatacollective.org/gdmt/application/pkcscrl>, <http://vocab.fairdatacollective.org/gdmt/application/pkixcert>,
+    <http://vocab.fairdatacollective.org/gdmt/application/pkixcrl>, <http://vocab.fairdatacollective.org/gdmt/application/plain>,
+    <http://vocab.fairdatacollective.org/gdmt/application/postscript>, <http://vocab.fairdatacollective.org/gdmt/application/powerpoint>,
+    <http://vocab.fairdatacollective.org/gdmt/application/pro_eng>, <http://vocab.fairdatacollective.org/gdmt/application/ringingtones>,
+    <http://vocab.fairdatacollective.org/gdmt/application/rtf>, <http://vocab.fairdatacollective.org/gdmt/application/sdp>,
+    <http://vocab.fairdatacollective.org/gdmt/application/sea>, <http://vocab.fairdatacollective.org/gdmt/application/set>,
+    <http://vocab.fairdatacollective.org/gdmt/application/sla>, <http://vocab.fairdatacollective.org/gdmt/application/smil>,
+    <http://vocab.fairdatacollective.org/gdmt/application/solids>, <http://vocab.fairdatacollective.org/gdmt/application/sounder>,
+    <http://vocab.fairdatacollective.org/gdmt/application/step>, <http://vocab.fairdatacollective.org/gdmt/application/streamingmedia>,
+    <http://vocab.fairdatacollective.org/gdmt/application/toolbook>, <http://vocab.fairdatacollective.org/gdmt/application/vda>,
+    <http://vocab.fairdatacollective.org/gdmt/application/vnd.amazon.ebook>, <http://vocab.fairdatacollective.org/gdmt/application/vnd.android.packagearchive>,
+    <http://vocab.fairdatacollective.org/gdmt/application/vnd.apple.installer+xml>, <http://vocab.fairdatacollective.org/gdmt/application/vnd.fdf>,
+    <http://vocab.fairdatacollective.org/gdmt/application/vnd.hphpgl>, <http://vocab.fairdatacollective.org/gdmt/application/vnd.hppcl>,
+    <http://vocab.fairdatacollective.org/gdmt/application/vnd.mozilla.xul+xml>, <http://vocab.fairdatacollective.org/gdmt/application/vnd.msexcel>,
+    <http://vocab.fairdatacollective.org/gdmt/application/vnd.msfontobject>, <http://vocab.fairdatacollective.org/gdmt/application/vnd.mspki.certstore>,
+    <http://vocab.fairdatacollective.org/gdmt/application/vnd.mspki.pko>, <http://vocab.fairdatacollective.org/gdmt/application/vnd.mspki.seccat>,
+    <http://vocab.fairdatacollective.org/gdmt/application/vnd.mspki.stl>, <http://vocab.fairdatacollective.org/gdmt/application/vnd.mspowerpoint>,
+    <http://vocab.fairdatacollective.org/gdmt/application/vnd.msproject>, <http://vocab.fairdatacollective.org/gdmt/application/vnd.nokia.configurationmessage>,
+    <http://vocab.fairdatacollective.org/gdmt/application/vnd.nokia.ringingtone>, <http://vocab.fairdatacollective.org/gdmt/application/vnd.oasis.opendocument.presentation>,
+    <http://vocab.fairdatacollective.org/gdmt/application/vnd.oasis.opendocument.spreadsheet>,
+    <http://vocab.fairdatacollective.org/gdmt/application/vnd.oasis.opendocument.text>,
+    <http://vocab.fairdatacollective.org/gdmt/application/vnd.openxmlformatsofficedocument.presentationml.presentation>,
+    <http://vocab.fairdatacollective.org/gdmt/application/vnd.openxmlformatsofficedocument.spreadsheetml.sheet>,
+    <http://vocab.fairdatacollective.org/gdmt/application/vnd.openxmlformatsofficedocument.wordprocessingml.document>,
+    <http://vocab.fairdatacollective.org/gdmt/application/vnd.rnrealmedia>, <http://vocab.fairdatacollective.org/gdmt/application/vnd.rnrealplayer>,
+    <http://vocab.fairdatacollective.org/gdmt/application/vnd.visio>, <http://vocab.fairdatacollective.org/gdmt/application/vnd.wap.wmlc>,
+    <http://vocab.fairdatacollective.org/gdmt/application/vnd.wap.wmlscriptc>, <http://vocab.fairdatacollective.org/gdmt/application/vnd.xara>,
+    <http://vocab.fairdatacollective.org/gdmt/application/vocaltecmediadesc>, <http://vocab.fairdatacollective.org/gdmt/application/vocaltecmediafile>,
+    <http://vocab.fairdatacollective.org/gdmt/application/wordperfect>, <http://vocab.fairdatacollective.org/gdmt/application/wordperfect6.0>,
+    <http://vocab.fairdatacollective.org/gdmt/application/wordperfect6.1>, <http://vocab.fairdatacollective.org/gdmt/application/x123>,
+    <http://vocab.fairdatacollective.org/gdmt/application/x7zcompressed>, <http://vocab.fairdatacollective.org/gdmt/application/xabiword>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xaim>, <http://vocab.fairdatacollective.org/gdmt/application/xauthorwarebin>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xauthorwaremap>, <http://vocab.fairdatacollective.org/gdmt/application/xauthorwareseg>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xbcpio>, <http://vocab.fairdatacollective.org/gdmt/application/xbinary>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xbinhex40>, <http://vocab.fairdatacollective.org/gdmt/application/xbsh>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xbytecode.elisp(compiledelisp)>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xbzip>, <http://vocab.fairdatacollective.org/gdmt/application/xbzip2>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xcdf>, <http://vocab.fairdatacollective.org/gdmt/application/xcdlink>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xchat>, <http://vocab.fairdatacollective.org/gdmt/application/xcmuraster>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xcocoa>, <http://vocab.fairdatacollective.org/gdmt/application/xcompactpro>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xcompress>, <http://vocab.fairdatacollective.org/gdmt/application/xcompressed>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xconference>, <http://vocab.fairdatacollective.org/gdmt/application/xcpio>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xcpt>, <http://vocab.fairdatacollective.org/gdmt/application/xcsh>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xdeepv>, <http://vocab.fairdatacollective.org/gdmt/application/xdirector>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xdvi>, <http://vocab.fairdatacollective.org/gdmt/application/xelc>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xenvoy>, <http://vocab.fairdatacollective.org/gdmt/application/xesrehber>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xexcel>, <http://vocab.fairdatacollective.org/gdmt/application/xfictionbook>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xframe>, <http://vocab.fairdatacollective.org/gdmt/application/xfreearc>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xfreelance>, <http://vocab.fairdatacollective.org/gdmt/application/xgsp>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xgss>, <http://vocab.fairdatacollective.org/gdmt/application/xgtar>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xgzip>, <http://vocab.fairdatacollective.org/gdmt/application/xhdf>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xhelpfile>, <http://vocab.fairdatacollective.org/gdmt/application/xhtml+xml>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xhttpdimap>, <http://vocab.fairdatacollective.org/gdmt/application/xima>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xinternettsignup>, <http://vocab.fairdatacollective.org/gdmt/application/xinventor>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xip2>, <http://vocab.fairdatacollective.org/gdmt/application/xjavaclass>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xjavacommerce>, <http://vocab.fairdatacollective.org/gdmt/application/xjavascript>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xkoan>, <http://vocab.fairdatacollective.org/gdmt/application/xksh>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xlatex>, <http://vocab.fairdatacollective.org/gdmt/application/xlha>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xlisp>, <http://vocab.fairdatacollective.org/gdmt/application/xlivescreen>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xlotus>, <http://vocab.fairdatacollective.org/gdmt/application/xlotusscreencam>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xlzh>, <http://vocab.fairdatacollective.org/gdmt/application/xlzx>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xmacbinary>, <http://vocab.fairdatacollective.org/gdmt/application/xmacbinhex40>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xmagiccappackage1.0>, <http://vocab.fairdatacollective.org/gdmt/application/xmathcad>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xmeme>, <http://vocab.fairdatacollective.org/gdmt/application/xmidi>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xmif>, <http://vocab.fairdatacollective.org/gdmt/application/xmixtransfer>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xml>, <http://vocab.fairdatacollective.org/gdmt/application/xmplayer2>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xmsexcel>, <http://vocab.fairdatacollective.org/gdmt/application/xmspowerpoint>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xnavianimation>, <http://vocab.fairdatacollective.org/gdmt/application/xnavidoc>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xnavimap>, <http://vocab.fairdatacollective.org/gdmt/application/xnavistyle>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xnetcdf>, <http://vocab.fairdatacollective.org/gdmt/application/xnewtoncompatiblepkg>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xnokia9000communicatoraddonsoftware>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xomc>, <http://vocab.fairdatacollective.org/gdmt/application/xomcdatamaker>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xomcregerator>, <http://vocab.fairdatacollective.org/gdmt/application/xpagemaker>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xpcl>, <http://vocab.fairdatacollective.org/gdmt/application/xpixclscript>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xpkcs10>, <http://vocab.fairdatacollective.org/gdmt/application/xpkcs12>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xpkcs7certificates>, <http://vocab.fairdatacollective.org/gdmt/application/xpkcs7certreqresp>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xpkcs7mime>, <http://vocab.fairdatacollective.org/gdmt/application/xpkcs7signature>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xpointplus>, <http://vocab.fairdatacollective.org/gdmt/application/xportableanymap>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xproject>, <http://vocab.fairdatacollective.org/gdmt/application/xqpro>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xrarcompressed>, <http://vocab.fairdatacollective.org/gdmt/application/xrtf>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xsdp>, <http://vocab.fairdatacollective.org/gdmt/application/xsea>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xseelogo>, <http://vocab.fairdatacollective.org/gdmt/application/xsh>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xshar>, <http://vocab.fairdatacollective.org/gdmt/application/xshockwaveflash>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xsit>, <http://vocab.fairdatacollective.org/gdmt/application/xsprite>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xstuffit>, <http://vocab.fairdatacollective.org/gdmt/application/xsv4cpio>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xsv4crc>, <http://vocab.fairdatacollective.org/gdmt/application/xtar>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xtbook>, <http://vocab.fairdatacollective.org/gdmt/application/xtcl>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xtex>, <http://vocab.fairdatacollective.org/gdmt/application/xtexinfo>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xtroff>, <http://vocab.fairdatacollective.org/gdmt/application/xtroffman>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xtroffme>, <http://vocab.fairdatacollective.org/gdmt/application/xtroffms>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xtroffmsvideo>, <http://vocab.fairdatacollective.org/gdmt/application/xustar>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xvisio>, <http://vocab.fairdatacollective.org/gdmt/application/xvnd.audioexplosion.mzz>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xvnd.lsxpix>, <http://vocab.fairdatacollective.org/gdmt/application/xvrml>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xwaissource>, <http://vocab.fairdatacollective.org/gdmt/application/xwinhelp>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xwintalk>, <http://vocab.fairdatacollective.org/gdmt/application/xworld>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xwpwin>, <http://vocab.fairdatacollective.org/gdmt/application/xwri>,
+    <http://vocab.fairdatacollective.org/gdmt/application/xx509cacert>, <http://vocab.fairdatacollective.org/gdmt/application/xx509usercert>,
+    <http://vocab.fairdatacollective.org/gdmt/application/zip>, <http://vocab.fairdatacollective.org/gdmt/audio/aac>,
+    <http://vocab.fairdatacollective.org/gdmt/audio/aiff>, <http://vocab.fairdatacollective.org/gdmt/audio/basic>,
+    <http://vocab.fairdatacollective.org/gdmt/audio/it>, <http://vocab.fairdatacollective.org/gdmt/audio/make>,
+    <http://vocab.fairdatacollective.org/gdmt/audio/make.my.funk>, <http://vocab.fairdatacollective.org/gdmt/audio/mid>,
+    <http://vocab.fairdatacollective.org/gdmt/audio/midi>, <http://vocab.fairdatacollective.org/gdmt/audio/mod>,
+    <http://vocab.fairdatacollective.org/gdmt/audio/mp3>, <http://vocab.fairdatacollective.org/gdmt/audio/mpeg>,
+    <http://vocab.fairdatacollective.org/gdmt/audio/nspaudio>, <http://vocab.fairdatacollective.org/gdmt/audio/ogg>,
+    <http://vocab.fairdatacollective.org/gdmt/audio/s3m>, <http://vocab.fairdatacollective.org/gdmt/audio/tspaudio>,
+    <http://vocab.fairdatacollective.org/gdmt/audio/tsplayer>, <http://vocab.fairdatacollective.org/gdmt/audio/vnd.qcelp>,
+    <http://vocab.fairdatacollective.org/gdmt/audio/voc>, <http://vocab.fairdatacollective.org/gdmt/audio/voxware>,
+    <http://vocab.fairdatacollective.org/gdmt/audio/wav>, <http://vocab.fairdatacollective.org/gdmt/audio/webm>,
+    <http://vocab.fairdatacollective.org/gdmt/audio/xadpcm>, <http://vocab.fairdatacollective.org/gdmt/audio/xaiff>,
+    <http://vocab.fairdatacollective.org/gdmt/audio/xau>, <http://vocab.fairdatacollective.org/gdmt/audio/xgsm>,
+    <http://vocab.fairdatacollective.org/gdmt/audio/xjam>, <http://vocab.fairdatacollective.org/gdmt/audio/xliveaudio>,
+    <http://vocab.fairdatacollective.org/gdmt/audio/xm>, <http://vocab.fairdatacollective.org/gdmt/audio/xmid>,
+    <http://vocab.fairdatacollective.org/gdmt/audio/xmidi>, <http://vocab.fairdatacollective.org/gdmt/audio/xmod>,
+    <http://vocab.fairdatacollective.org/gdmt/audio/xmpeg>, <http://vocab.fairdatacollective.org/gdmt/audio/xmpequrl>,
+    <http://vocab.fairdatacollective.org/gdmt/audio/xnspaudio>, <http://vocab.fairdatacollective.org/gdmt/audio/xpnrealaudio>,
+    <http://vocab.fairdatacollective.org/gdmt/audio/xpnrealaudioplugin>, <http://vocab.fairdatacollective.org/gdmt/audio/xpsid>,
+    <http://vocab.fairdatacollective.org/gdmt/audio/xrealaudio>, <http://vocab.fairdatacollective.org/gdmt/audio/xtwinvq>,
+    <http://vocab.fairdatacollective.org/gdmt/audio/xtwinvqplugin>, <http://vocab.fairdatacollective.org/gdmt/audio/xvnd.audioexplosion.mjuicemediafile>,
+    <http://vocab.fairdatacollective.org/gdmt/audio/xvoc>, <http://vocab.fairdatacollective.org/gdmt/audio/xwav>,
+    <http://vocab.fairdatacollective.org/gdmt/chemical/xpdb>, <http://vocab.fairdatacollective.org/gdmt/drawing/xdwf(old)>,
+    <http://vocab.fairdatacollective.org/gdmt/font/otf>, <http://vocab.fairdatacollective.org/gdmt/font/ttf>,
+    <http://vocab.fairdatacollective.org/gdmt/font/woff>, <http://vocab.fairdatacollective.org/gdmt/font/woff2>,
+    <http://vocab.fairdatacollective.org/gdmt/image/bmp>, <http://vocab.fairdatacollective.org/gdmt/image/cmuraster>,
+    <http://vocab.fairdatacollective.org/gdmt/image/fif>, <http://vocab.fairdatacollective.org/gdmt/image/florian>,
+    <http://vocab.fairdatacollective.org/gdmt/image/g3fax>, <http://vocab.fairdatacollective.org/gdmt/image/gif>,
+    <http://vocab.fairdatacollective.org/gdmt/image/ief>, <http://vocab.fairdatacollective.org/gdmt/image/jpeg>,
+    <http://vocab.fairdatacollective.org/gdmt/image/jutvision>, <http://vocab.fairdatacollective.org/gdmt/image/naplps>,
+    <http://vocab.fairdatacollective.org/gdmt/image/pict>, <http://vocab.fairdatacollective.org/gdmt/image/pjpeg>,
+    <http://vocab.fairdatacollective.org/gdmt/image/png>, <http://vocab.fairdatacollective.org/gdmt/image/svg+xml>,
+    <http://vocab.fairdatacollective.org/gdmt/image/tiff>, <http://vocab.fairdatacollective.org/gdmt/image/vasa>,
+    <http://vocab.fairdatacollective.org/gdmt/image/vnd.djvu>, <http://vocab.fairdatacollective.org/gdmt/image/vnd.dwg>,
+    <http://vocab.fairdatacollective.org/gdmt/image/vnd.fpx>, <http://vocab.fairdatacollective.org/gdmt/image/vnd.microsoft.icon>,
+    <http://vocab.fairdatacollective.org/gdmt/image/vnd.netfpx>, <http://vocab.fairdatacollective.org/gdmt/image/vnd.rnrealflash>,
+    <http://vocab.fairdatacollective.org/gdmt/image/vnd.rnrealpix>, <http://vocab.fairdatacollective.org/gdmt/image/vnd.wap.wbmp>,
+    <http://vocab.fairdatacollective.org/gdmt/image/vnd.xiff>, <http://vocab.fairdatacollective.org/gdmt/image/webp>,
+    <http://vocab.fairdatacollective.org/gdmt/image/xbm>, <http://vocab.fairdatacollective.org/gdmt/image/xcmuraster>,
+    <http://vocab.fairdatacollective.org/gdmt/image/xdwg>, <http://vocab.fairdatacollective.org/gdmt/image/xicon>,
+    <http://vocab.fairdatacollective.org/gdmt/image/xjg>, <http://vocab.fairdatacollective.org/gdmt/image/xjps>,
+    <http://vocab.fairdatacollective.org/gdmt/image/xniff>, <http://vocab.fairdatacollective.org/gdmt/image/xpcx>,
+    <http://vocab.fairdatacollective.org/gdmt/image/xpict>, <http://vocab.fairdatacollective.org/gdmt/image/xpm>,
+    <http://vocab.fairdatacollective.org/gdmt/image/xportableanymap>, <http://vocab.fairdatacollective.org/gdmt/image/xportablebitmap>,
+    <http://vocab.fairdatacollective.org/gdmt/image/xportablegraymap>, <http://vocab.fairdatacollective.org/gdmt/image/xportablegreymap>,
+    <http://vocab.fairdatacollective.org/gdmt/image/xportablepixmap>, <http://vocab.fairdatacollective.org/gdmt/image/xquicktime>,
+    <http://vocab.fairdatacollective.org/gdmt/image/xrgb>, <http://vocab.fairdatacollective.org/gdmt/image/xtiff>,
+    <http://vocab.fairdatacollective.org/gdmt/image/xwindowsbmp>, <http://vocab.fairdatacollective.org/gdmt/image/xxbitmap>,
+    <http://vocab.fairdatacollective.org/gdmt/image/xxbm>, <http://vocab.fairdatacollective.org/gdmt/image/xxpixmap>,
+    <http://vocab.fairdatacollective.org/gdmt/image/xxwd>, <http://vocab.fairdatacollective.org/gdmt/image/xxwindowdump>,
+    <http://vocab.fairdatacollective.org/gdmt/iworld/ivrml>, <http://vocab.fairdatacollective.org/gdmt/message/rfc822>,
+    <http://vocab.fairdatacollective.org/gdmt/model/iges>, <http://vocab.fairdatacollective.org/gdmt/model/vnd.dwf>,
+    <http://vocab.fairdatacollective.org/gdmt/model/vrml>, <http://vocab.fairdatacollective.org/gdmt/model/xpov>,
+    <http://vocab.fairdatacollective.org/gdmt/multipart/xgzip>, <http://vocab.fairdatacollective.org/gdmt/multipart/xustar>,
+    <http://vocab.fairdatacollective.org/gdmt/music/crescendo>, <http://vocab.fairdatacollective.org/gdmt/music/xkaraoke>,
+    <http://vocab.fairdatacollective.org/gdmt/paleovu/xpv>, <http://vocab.fairdatacollective.org/gdmt/text/asp>,
+    <http://vocab.fairdatacollective.org/gdmt/text/calendar>, <http://vocab.fairdatacollective.org/gdmt/text/css>;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:narrower <http://vocab.fairdatacollective.org/gdmt/text/csv>, <http://vocab.fairdatacollective.org/gdmt/text/ecmascript>,
+    <http://vocab.fairdatacollective.org/gdmt/text/fb2>, <http://vocab.fairdatacollective.org/gdmt/text/html>,
+    <http://vocab.fairdatacollective.org/gdmt/text/javascript>, <http://vocab.fairdatacollective.org/gdmt/text/mcf>,
+    <http://vocab.fairdatacollective.org/gdmt/text/pascal>, <http://vocab.fairdatacollective.org/gdmt/text/plain>,
+    <http://vocab.fairdatacollective.org/gdmt/text/richtext>, <http://vocab.fairdatacollective.org/gdmt/text/scriplet>,
+    <http://vocab.fairdatacollective.org/gdmt/text/sgml>, <http://vocab.fairdatacollective.org/gdmt/text/tabseparatedvalues>,
+    <http://vocab.fairdatacollective.org/gdmt/text/urilist>, <http://vocab.fairdatacollective.org/gdmt/text/vnd.abc>,
+    <http://vocab.fairdatacollective.org/gdmt/text/vnd.fmi.flexstor>, <http://vocab.fairdatacollective.org/gdmt/text/vnd.rnrealtext>,
+    <http://vocab.fairdatacollective.org/gdmt/text/vnd.wap.wml>, <http://vocab.fairdatacollective.org/gdmt/text/vnd.wap.wmlscript>,
+    <http://vocab.fairdatacollective.org/gdmt/text/webviewhtml>, <http://vocab.fairdatacollective.org/gdmt/text/xasm>,
+    <http://vocab.fairdatacollective.org/gdmt/text/xaudiosoftintra>, <http://vocab.fairdatacollective.org/gdmt/text/xc>,
+    <http://vocab.fairdatacollective.org/gdmt/text/xcomponent>, <http://vocab.fairdatacollective.org/gdmt/text/xfortran>,
+    <http://vocab.fairdatacollective.org/gdmt/text/xh>, <http://vocab.fairdatacollective.org/gdmt/text/xjavasource>,
+    <http://vocab.fairdatacollective.org/gdmt/text/xlaasf>, <http://vocab.fairdatacollective.org/gdmt/text/xm>,
+    <http://vocab.fairdatacollective.org/gdmt/text/xml>, <http://vocab.fairdatacollective.org/gdmt/text/xpascal>,
+    <http://vocab.fairdatacollective.org/gdmt/text/xscript>, <http://vocab.fairdatacollective.org/gdmt/text/xscript.csh>,
+    <http://vocab.fairdatacollective.org/gdmt/text/xscript.elisp>, <http://vocab.fairdatacollective.org/gdmt/text/xscript.guile>,
+    <http://vocab.fairdatacollective.org/gdmt/text/xscript.ksh>, <http://vocab.fairdatacollective.org/gdmt/text/xscript.lisp>,
+    <http://vocab.fairdatacollective.org/gdmt/text/xscript.perl>, <http://vocab.fairdatacollective.org/gdmt/text/xscript.perlmodule>,
+    <http://vocab.fairdatacollective.org/gdmt/text/xscript.phyton>, <http://vocab.fairdatacollective.org/gdmt/text/xscript.rexx>,
+    <http://vocab.fairdatacollective.org/gdmt/text/xscript.scheme>, <http://vocab.fairdatacollective.org/gdmt/text/xscript.sh>,
+    <http://vocab.fairdatacollective.org/gdmt/text/xscript.tcl>, <http://vocab.fairdatacollective.org/gdmt/text/xscript.tcsh>,
+    <http://vocab.fairdatacollective.org/gdmt/text/xscript.zsh>, <http://vocab.fairdatacollective.org/gdmt/text/xserverparsedhtml>,
+    <http://vocab.fairdatacollective.org/gdmt/text/xsetext>, <http://vocab.fairdatacollective.org/gdmt/text/xsgml>,
+    <http://vocab.fairdatacollective.org/gdmt/text/xspeech>, <http://vocab.fairdatacollective.org/gdmt/text/xuil>,
+    <http://vocab.fairdatacollective.org/gdmt/text/xuuencode>, <http://vocab.fairdatacollective.org/gdmt/text/xvcalendar>,
+    <http://vocab.fairdatacollective.org/gdmt/video/3gpp>, <http://vocab.fairdatacollective.org/gdmt/video/3gpp2>,
+    <http://vocab.fairdatacollective.org/gdmt/video/animaflex>, <http://vocab.fairdatacollective.org/gdmt/video/avi>,
+    <http://vocab.fairdatacollective.org/gdmt/video/avsvideo>, <http://vocab.fairdatacollective.org/gdmt/video/dl>,
+    <http://vocab.fairdatacollective.org/gdmt/video/fli>, <http://vocab.fairdatacollective.org/gdmt/video/gl>,
+    <http://vocab.fairdatacollective.org/gdmt/video/mp2t>, <http://vocab.fairdatacollective.org/gdmt/video/mp4>,
+    <http://vocab.fairdatacollective.org/gdmt/video/mpeg>, <http://vocab.fairdatacollective.org/gdmt/video/msvideo>,
+    <http://vocab.fairdatacollective.org/gdmt/video/ogg>, <http://vocab.fairdatacollective.org/gdmt/video/quicktime>,
+    <http://vocab.fairdatacollective.org/gdmt/video/vdo>, <http://vocab.fairdatacollective.org/gdmt/video/vivo>,
+    <http://vocab.fairdatacollective.org/gdmt/video/vnd.rnrealvideo>, <http://vocab.fairdatacollective.org/gdmt/video/vnd.vivo>,
+    <http://vocab.fairdatacollective.org/gdmt/video/vosaic>, <http://vocab.fairdatacollective.org/gdmt/video/webm>,
+    <http://vocab.fairdatacollective.org/gdmt/video/xamtdemorun>, <http://vocab.fairdatacollective.org/gdmt/video/xamtshowrun>,
+    <http://vocab.fairdatacollective.org/gdmt/video/xatomic3dfeature>, <http://vocab.fairdatacollective.org/gdmt/video/xdl>,
+    <http://vocab.fairdatacollective.org/gdmt/video/xdv>, <http://vocab.fairdatacollective.org/gdmt/video/xfli>,
+    <http://vocab.fairdatacollective.org/gdmt/video/xgl>, <http://vocab.fairdatacollective.org/gdmt/video/xisvideo>,
+    <http://vocab.fairdatacollective.org/gdmt/video/xmotionjpeg>, <http://vocab.fairdatacollective.org/gdmt/video/xmpeg>,
+    <http://vocab.fairdatacollective.org/gdmt/video/xmpeq2a>, <http://vocab.fairdatacollective.org/gdmt/video/xmsasf>,
+    <http://vocab.fairdatacollective.org/gdmt/video/xmsasfplugin>, <http://vocab.fairdatacollective.org/gdmt/video/xmsvideo>,
+    <http://vocab.fairdatacollective.org/gdmt/video/xqtc>, <http://vocab.fairdatacollective.org/gdmt/video/xscm>,
+    <http://vocab.fairdatacollective.org/gdmt/video/xsgimovie>, <http://vocab.fairdatacollective.org/gdmt/windows/metafile>,
+    <http://vocab.fairdatacollective.org/gdmt/www/mime>, <http://vocab.fairdatacollective.org/gdmt/xconference/xcooltalk>,
+    <http://vocab.fairdatacollective.org/gdmt/xgl/drawing>, <http://vocab.fairdatacollective.org/gdmt/xgl/movie>,
+    <http://vocab.fairdatacollective.org/gdmt/xmusic/xmidi>, <http://vocab.fairdatacollective.org/gdmt/xworld/x3dmf>,
+    <http://vocab.fairdatacollective.org/gdmt/xworld/xsvr>, <http://vocab.fairdatacollective.org/gdmt/xworld/xvrml>,
+    <http://vocab.fairdatacollective.org/gdmt/xworld/xvrt>;
   skos:prefLabel "MIMETypes"@en;
   skos:topConceptOf <http://vocab.fairdatacollective.org/gdmt/> .
 
 <http://vocab.fairdatacollective.org/gdmt/applicaiton/xbytecode.python> a skos:Concept;
-  skos:broader gdmt:LicenseIdentifierScheme;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "applicaiton/x-bytecode.python"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/acad> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/acad"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/arj> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/arj"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/base64> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/base64"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/binhex> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/binhex"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/binhex4> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/binhex4"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/book> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/book"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/cdf> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/cdf"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/clariscad> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/clariscad"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/commonground> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/commonground"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/drafting> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/drafting"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/dsptype> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/dsptype"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/dxf> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/dxf"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/ecmascript> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/ecmascript"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/envoy> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/envoy"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/epub+zip> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/epub+zip"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/excel> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/excel"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/fractals> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/fractals"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/freeloader> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/freeloader"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/futuresplash> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/futuresplash"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/gnutar> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/gnutar"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/groupwise> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/groupwise"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/hlp> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/hlp"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/hta> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/hta"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/ideas> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/i-deas"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/iges> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/iges"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/inf> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/inf"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/java> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/java"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/javaarchive> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/java-archive"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/javabytecode> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/java-byte-code"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/javascript> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/javascript"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/json> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/json"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/ld+json> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/ld+json"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/lha> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/lha"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/lzx> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/lzx"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/macbinary> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/mac-binary"@en, "application/macbinary"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/macbinhex> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/mac-binhex"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/macbinhex40> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/mac-binhex40"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/maccompactpro> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/mac-compactpro"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/marc> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/marc"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/mbedlet> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/mbedlet"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/mcad> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/mcad"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/mime> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/mime"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/mspowerpoint> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/mspowerpoint"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/msword> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/msword"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/mswrite> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/mswrite"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/netmc> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/netmc"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/octetstream> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/octet-stream"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/oda> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/oda"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/ogg> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/ogg"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/pdf> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/pdf"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/pkcs12> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/pkcs-12"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/pkcscrl> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/pkcs-crl"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/pkcs10> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/pkcs10"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/pkcs7mime> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/pkcs7-mime"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/pkcs7signature> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/pkcs7-signature"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/pkixcert> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/pkix-cert"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/pkixcrl> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/pkix-crl"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/plain> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/plain"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/postscript> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/postscript"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/powerpoint> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/powerpoint"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/pro_eng> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/pro_eng"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/ringingtones> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/ringing-tones"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/rtf> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/rtf"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/sdp> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/sdp"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/sea> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/sea"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/set> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/set"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/sla> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/sla"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/smil> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/smil"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/solids> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/solids"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/sounder> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/sounder"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/step> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/step"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/streamingmedia> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/streamingmedia"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/toolbook> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/toolbook"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/vda> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/vda"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/vnd.amazon.ebook> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/vnd.amazon.ebook"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/vnd.android.packagearchive>
   a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/vnd.android.package-archive"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/vnd.apple.installer+xml> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/vnd.apple.installer+xml"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/vnd.fdf> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/vnd.fdf"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/vnd.hphpgl> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/vnd.hp-hpgl"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/vnd.hppcl> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/vnd.hp-pcl"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/vnd.mozilla.xul+xml> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/vnd.mozilla.xul+xml"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/vnd.msexcel> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/vnd.ms-excel"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/vnd.msfontobject> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/vnd.ms-fontobject"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/vnd.mspki.certstore> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/vnd.ms-pki.certstore"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/vnd.mspki.pko> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/vnd.ms-pki.pko"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/vnd.mspki.seccat> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/vnd.ms-pki.seccat"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/vnd.mspki.stl> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/vnd.ms-pki.stl"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/vnd.mspowerpoint> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/vnd.ms-powerpoint"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/vnd.msproject> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/vnd.ms-project"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/vnd.nokia.configurationmessage>
   a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/vnd.nokia.configuration-message"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/vnd.nokia.ringingtone> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/vnd.nokia.ringing-tone"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/vnd.oasis.opendocument.presentation>
   a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/vnd.oasis.opendocument.presentation"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/vnd.oasis.opendocument.spreadsheet>
   a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/vnd.oasis.opendocument.spreadsheet"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/vnd.oasis.opendocument.text>
   a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/vnd.oasis.opendocument.text"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/vnd.openxmlformatsofficedocument.presentationml.presentation>
   a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/vnd.openxmlformats-officedocument.presentationml.presentation"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/vnd.openxmlformatsofficedocument.spreadsheetml.sheet>
   a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/vnd.openxmlformatsofficedocument.wordprocessingml.document>
   a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/vnd.openxmlformats-officedocument.wordprocessingml.document"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/vnd.rnrealmedia> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/vnd.rn-realmedia"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/vnd.rnrealplayer> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/vnd.rn-realplayer"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/vnd.visio> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/vnd.visio"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/vnd.wap.wmlc> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/vnd.wap.wmlc"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/vnd.wap.wmlscriptc> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/vnd.wap.wmlscriptc"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/vnd.xara> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/vnd.xara"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/vocaltecmediadesc> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/vocaltec-media-desc"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/vocaltecmediafile> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/vocaltec-media-file"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/wordperfect> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/wordperfect"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/wordperfect6.0> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/wordperfect6.0"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/wordperfect6.1> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/wordperfect6.1"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/x123> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-123"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/x7zcompressed> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-7z-compressed"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xabiword> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-abiword"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xaim> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-aim"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xauthorwarebin> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-authorware-bin"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xauthorwaremap> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-authorware-map"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xauthorwareseg> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-authorware-seg"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xbcpio> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-bcpio"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xbinary> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-binary"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xbinhex40> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-binhex40"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xbsh> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-bsh"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xbytecode.elisp(compiledelisp)>
   a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-bytecode.elisp (compiled elisp)"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xbzip> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-bzip"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xbzip2> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-bzip2"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xcdf> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-cdf"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xcdlink> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-cdlink"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xchat> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-chat"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xcmuraster> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-cmu-raster"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xcocoa> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-cocoa"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xcompactpro> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-compactpro"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xcompress> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-compress"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xcompressed> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-compressed"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xconference> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-conference"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xcpio> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-cpio"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xcpt> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-cpt"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xcsh> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-csh"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xdeepv> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-deepv"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xdirector> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-director"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xdvi> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-dvi"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xelc> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-elc"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xenvoy> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-envoy"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xesrehber> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-esrehber"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xexcel> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-excel"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xfictionbook> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-fictionbook"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xframe> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-frame"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xfreearc> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-freearc"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xfreelance> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-freelance"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xgsp> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-gsp"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xgss> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-gss"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xgtar> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-gtar"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xgzip> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-gzip"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xhdf> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-hdf"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xhelpfile> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-helpfile"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xhttpdimap> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-httpd-imap"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xima> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-ima"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xinternettsignup> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-internett-signup"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xinventor> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-inventor"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xip2> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-ip2"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xjavaclass> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-java-class"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xjavacommerce> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-java-commerce"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xjavascript> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-javascript"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xkoan> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-koan"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xksh> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-ksh"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xlatex> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-latex"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xlha> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-lha"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xlisp> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-lisp"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xlivescreen> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-livescreen"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xlotus> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-lotus"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xlotusscreencam> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-lotusscreencam"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xlzh> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-lzh"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xlzx> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-lzx"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xmacbinhex40> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-mac-binhex40"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xmacbinary> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-macbinary"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xmagiccappackage1.0> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-magic-cap-package-1.0"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xmathcad> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-mathcad"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xmeme> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-meme"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xmidi> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-midi"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xmif> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-mif"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xmixtransfer> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-mix-transfer"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xmplayer2> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-mplayer2"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xmsexcel> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-msexcel"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xmspowerpoint> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-mspowerpoint"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xnavianimation> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-navi-animation"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xnavidoc> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-navidoc"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xnavimap> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-navimap"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xnavistyle> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-navistyle"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xnetcdf> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-netcdf"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xnewtoncompatiblepkg> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-newton-compatible-pkg"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xnokia9000communicatoraddonsoftware>
   a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-nokia-9000-communicator-add-on-software"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xomc> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-omc"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xomcdatamaker> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-omcdatamaker"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xomcregerator> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-omcregerator"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xpagemaker> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-pagemaker"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xpcl> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-pcl"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xpixclscript> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-pixclscript"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xpkcs10> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-pkcs10"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xpkcs12> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-pkcs12"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xpkcs7certificates> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-pkcs7-certificates"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xpkcs7certreqresp> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-pkcs7-certreqresp"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xpkcs7mime> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-pkcs7-mime"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xpkcs7signature> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-pkcs7-signature"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xpointplus> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-pointplus"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xportableanymap> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-portable-anymap"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xproject> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-project"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xqpro> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-qpro"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xrarcompressed> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-rar-compressed"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xrtf> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-rtf"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xsdp> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-sdp"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xsea> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-sea"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xseelogo> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-seelogo"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xsh> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-sh"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xshar> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-shar"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xshockwaveflash> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-shockwave-flash"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xsit> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-sit"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xsprite> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-sprite"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xstuffit> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-stuffit"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xsv4cpio> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-sv4cpio"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xsv4crc> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-sv4crc"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xtar> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-tar"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xtbook> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-tbook"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xtcl> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-tcl"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xtex> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-tex"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xtexinfo> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-texinfo"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xtroff> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-troff"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xtroffman> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-troff-man"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xtroffme> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-troff-me"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xtroffms> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-troff-ms"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xtroffmsvideo> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-troff-msvideo"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xustar> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-ustar"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xvisio> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-visio"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xvnd.audioexplosion.mzz> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-vnd.audioexplosion.mzz"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xvnd.lsxpix> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-vnd.ls-xpix"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xvrml> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-vrml"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xwaissource> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-wais-source"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xwinhelp> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-winhelp"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xwintalk> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-wintalk"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xworld> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-world"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xwpwin> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-wpwin"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xwri> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-wri"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xx509cacert> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-x509-ca-cert"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xx509usercert> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/x-x509-user-cert"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xhtml+xml> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/xhtml+xml"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/xml> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/xml"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/application/zip> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "application/zip"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/audio/aac> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "audio/aac"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/audio/aiff> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "audio/aiff"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/audio/basic> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "audio/basic"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/audio/it> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "audio/it"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/audio/make> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "audio/make"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/audio/make.my.funk> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "audio/make.my.funk"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/audio/mid> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "audio/mid"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/audio/midi> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "audio/midi"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/audio/mod> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "audio/mod"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/audio/mp3> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "audio/mp3"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/audio/mpeg> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "audio/mpeg"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/audio/nspaudio> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "audio/nspaudio"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/audio/ogg> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "audio/ogg"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/audio/s3m> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "audio/s3m"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/audio/tspaudio> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "audio/tsp-audio"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/audio/tsplayer> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "audio/tsplayer"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/audio/vnd.qcelp> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "audio/vnd.qcelp"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/audio/voc> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "audio/voc"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/audio/voxware> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "audio/voxware"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/audio/wav> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "audio/wav"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/audio/webm> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "audio/webm"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/audio/xadpcm> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "audio/x-adpcm"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/audio/xaiff> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "audio/x-aiff"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/audio/xau> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "audio/x-au"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/audio/xgsm> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "audio/x-gsm"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/audio/xjam> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "audio/x-jam"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/audio/xliveaudio> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "audio/x-liveaudio"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/audio/xmid> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "audio/x-mid"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/audio/xmidi> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "audio/x-midi"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/audio/xmod> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "audio/x-mod"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/audio/xmpeg> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "audio/x-mpeg"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/audio/xmpequrl> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "audio/x-mpequrl"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/audio/xnspaudio> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "audio/x-nspaudio"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/audio/xpnrealaudio> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "audio/x-pn-realaudio"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/audio/xpnrealaudioplugin> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "audio/x-pn-realaudio-plugin"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/audio/xpsid> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "audio/x-psid"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/audio/xrealaudio> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "audio/x-realaudio"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/audio/xtwinvq> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "audio/x-twinvq"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/audio/xtwinvqplugin> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "audio/x-twinvq-plugin"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/audio/xvnd.audioexplosion.mjuicemediafile>
   a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "audio/x-vnd.audioexplosion.mjuicemediafile"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/audio/xvoc> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "audio/x-voc"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/audio/xwav> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "audio/x-wav"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/audio/xm> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "audio/xm"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/chemical/xpdb> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "chemical/x-pdb"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/drawing/xdwf(old)> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "drawing/x-dwf (old)"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/font/otf> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "font/otf"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/font/ttf> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "font/ttf"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/font/woff> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "font/woff"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/font/woff2> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "font/woff2"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/iworld/ivrml> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "i-world/i-vrml"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/bmp> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/bmp"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/cmuraster> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/cmu-raster"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/fif> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/fif"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/florian> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/florian"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/g3fax> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/g3fax"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/gif> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/gif"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/ief> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/ief"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/jpeg> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/jpeg"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/jutvision> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/jutvision"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/naplps> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/naplps"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/pict> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/pict"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/pjpeg> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/pjpeg"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/png> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/png"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/svg+xml> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/svg+xml"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/tiff> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/tiff"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/vasa> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/vasa"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/vnd.djvu> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/vnd.djvu"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/vnd.dwg> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/vnd.dwg"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/vnd.fpx> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/vnd.fpx"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/vnd.microsoft.icon> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/vnd.microsoft.icon"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/vnd.netfpx> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/vnd.net-fpx"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/vnd.rnrealflash> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/vnd.rn-realflash"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/vnd.rnrealpix> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/vnd.rn-realpix"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/vnd.wap.wbmp> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/vnd.wap.wbmp"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/vnd.xiff> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/vnd.xiff"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/webp> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/webp"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/xcmuraster> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/x-cmu-raster"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/xdwg> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/x-dwg"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/xicon> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/x-icon"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/xjg> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/x-jg"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/xjps> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/x-jps"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/xniff> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/x-niff"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/xpcx> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/x-pcx"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/xpict> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/x-pict"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/xportableanymap> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/x-portable-anymap"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/xportablebitmap> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/x-portable-bitmap"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/xportablegraymap> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/x-portable-graymap"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/xportablegreymap> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/x-portable-greymap"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/xportablepixmap> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/x-portable-pixmap"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/xquicktime> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/x-quicktime"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/xrgb> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/x-rgb"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/xtiff> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/x-tiff"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/xwindowsbmp> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/x-windows-bmp"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/xxbitmap> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/x-xbitmap"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/xxbm> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/x-xbm"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/xxpixmap> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/x-xpixmap"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/xxwd> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/x-xwd"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/xxwindowdump> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/x-xwindowdump"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/xbm> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/xbm"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/image/xpm> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "image/xpm"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/message/rfc822> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "message/rfc822"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/model/iges> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "model/iges"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/model/vnd.dwf> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "model/vnd.dwf"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/model/vrml> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "model/vrml"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/model/xpov> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "model/x-pov"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/multipart/xgzip> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "multipart/x-gzip"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/multipart/xustar> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "multipart/x-ustar"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/music/crescendo> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "music/crescendo"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/music/xkaraoke> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "music/x-karaoke"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/paleovu/xpv> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "paleovu/x-pv"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/asp> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/asp"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/calendar> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/calendar"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/css> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/css"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/csv> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/csv"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/ecmascript> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/ecmascript"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/fb2> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/fb2"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/html> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/html"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/javascript> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/javascript"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/mcf> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/mcf"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/pascal> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/pascal"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/plain> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/plain"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/richtext> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/richtext"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/scriplet> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/scriplet"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/sgml> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/sgml"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/tabseparatedvalues> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/tab-separated-values"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/urilist> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/uri-list"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/vnd.abc> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/vnd.abc"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/vnd.fmi.flexstor> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/vnd.fmi.flexstor"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/vnd.rnrealtext> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/vnd.rn-realtext"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/vnd.wap.wml> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/vnd.wap.wml"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/vnd.wap.wmlscript> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/vnd.wap.wmlscript"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/webviewhtml> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/webviewhtml"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/xasm> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/x-asm"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/xaudiosoftintra> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/x-audiosoft-intra"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/xc> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/x-c"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/xcomponent> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/x-component"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/xfortran> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/x-fortran"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/xh> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/x-h"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/xjavasource> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/x-java-source"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/xlaasf> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/x-la-asf"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/xm> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/x-m"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/xpascal> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/x-pascal"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/xscript> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/x-script"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/xscript.csh> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/x-script.csh"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/xscript.elisp> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/x-script.elisp"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/xscript.guile> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/x-script.guile"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/xscript.ksh> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/x-script.ksh"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/xscript.lisp> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/x-script.lisp"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/xscript.perl> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/x-script.perl"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/xscript.perlmodule> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/x-script.perl-module"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/xscript.phyton> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/x-script.phyton"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/xscript.rexx> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/x-script.rexx"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/xscript.scheme> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/x-script.scheme"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/xscript.sh> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/x-script.sh"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/xscript.tcl> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/x-script.tcl"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/xscript.tcsh> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/x-script.tcsh"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/xscript.zsh> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/x-script.zsh"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/xserverparsedhtml> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/x-server-parsed-html"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/xsetext> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/x-setext"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/xsgml> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/x-sgml"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/xspeech> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/x-speech"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/xuil> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/x-uil"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/xuuencode> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/x-uuencode"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/xvcalendar> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/x-vcalendar"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/text/xml> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "text/xml"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/video/3gpp> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "video/3gpp"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/video/3gpp2> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "video/3gpp2"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/video/animaflex> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "video/animaflex"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/video/avi> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "video/avi"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/video/avsvideo> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "video/avs-video"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/video/dl> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "video/dl"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/video/fli> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "video/fli"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/video/gl> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "video/gl"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/video/mp2t> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "video/mp2t"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/video/mp4> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "video/mp4"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/video/mpeg> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "video/mpeg"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/video/msvideo> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "video/msvideo"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/video/ogg> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "video/ogg"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/video/quicktime> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "video/quicktime"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/video/vdo> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "video/vdo"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/video/vivo> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "video/vivo"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/video/vnd.rnrealvideo> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "video/vnd.rn-realvideo"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/video/vnd.vivo> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "video/vnd.vivo"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/video/vosaic> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "video/vosaic"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/video/webm> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "video/webm"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/video/xamtdemorun> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "video/x-amt-demorun"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/video/xamtshowrun> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "video/x-amt-showrun"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/video/xatomic3dfeature> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "video/x-atomic3d-feature"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/video/xdl> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "video/x-dl"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/video/xdv> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "video/x-dv"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/video/xfli> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "video/x-fli"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/video/xgl> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "video/x-gl"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/video/xisvideo> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "video/x-isvideo"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/video/xmotionjpeg> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "video/x-motion-jpeg"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/video/xmpeg> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "video/x-mpeg"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/video/xmpeq2a> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "video/x-mpeq2a"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/video/xmsasf> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "video/x-ms-asf"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/video/xmsasfplugin> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "video/x-ms-asf-plugin"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/video/xmsvideo> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "video/x-msvideo"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/video/xqtc> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "video/x-qtc"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/video/xscm> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "video/x-scm"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/video/xsgimovie> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "video/x-sgi-movie"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/windows/metafile> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "windows/metafile"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/www/mime> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "www/mime"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/xconference/xcooltalk> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "x-conference/x-cooltalk"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/xmusic/xmidi> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "x-music/x-midi"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/xworld/x3dmf> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "x-world/x-3dmf"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/xworld/xsvr> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "x-world/x-svr"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/xworld/xvrml> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "x-world/x-vrml"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/xworld/xvrt> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "x-world/x-vrt"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/xgl/drawing> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "xgl/drawing"@en .
 
 <http://vocab.fairdatacollective.org/gdmt/xgl/movie> a skos:Concept;
-  skos:broader gdmt:RelationTypes;
+  skos:broader gdmt:MIMETypes;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "xgl/movie"@en .
 
-gdmt:LicenseIdentifierScheme skos:narrower gdmt:SPDX, <http://vocab.fairdatacollective.org/gdmt/applicaiton/xbytecode.python>,
-    gdmt:spdxIRI .
+gdmt:LicenseIdentifierScheme skos:narrower gdmt:SPDX .
