@@ -23,8 +23,8 @@
   dct:description "Ontology containing the controlled terms and semantic properties used in the Generic Dataset Metadata Template."@en;
   dct:title "Ontology for Generic Dataset Metadata Template"@en;
   pav:createdOn "2020-12-01T00:00:00+01:00"@en;
-  pav:lastUpdatedOn "2020-12-13T23:15:00-08:00"@en;
-  pav:version "0.3"@en;
+  pav:lastUpdatedOn "2020-12-13T23:45:00-08:00"@en;
+  pav:version "0.3.1"@en;
   skos:hasTopConcept gdmt:ContributorRole, gdmt:CreatorType, gdmt:DateType, gdmt:IdentifierScheme,
     gdmt:IdentifierSchemeIRI, gdmt:LicenseIdentifierScheme, gdmt:LicenseIdentifierSchemeIRI,
     gdmt:MIMEType, gdmt:RelatedIdentifierType, gdmt:RelationType, gdmt:ResourceTypeCategory;
