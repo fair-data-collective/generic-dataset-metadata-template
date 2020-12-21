@@ -4,6 +4,7 @@
 @prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix gdmt: <https://vocab.fairdatacollective.org/gdmt/> .
+@prefix gdmt-property: <https://vocab.fairdatacollective.org/gdmt/property/> .
 @prefix org: <http://www.w3.org/ns/org#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix pav: <http://purl.org/pav/> .
@@ -23,753 +24,676 @@
   dct:description "Ontology containing the controlled terms and semantic properties used in the Generic Dataset Metadata Template."@en;
   dct:title "Ontology for Generic Dataset Metadata Template"@en;
   pav:createdOn "2020-12-01T00:00:00+01:00"@en;
-  pav:lastUpdatedOn "2020-12-13T23:45:00-08:00"@en;
-  pav:version "0.3.1"@en;
-  skos:hasTopConcept gdmt:ContributorRole, gdmt:CreatorType, gdmt:DateType, gdmt:IdentifierScheme,
-    gdmt:IdentifierSchemeIRI, gdmt:LicenseIdentifierScheme, gdmt:LicenseIdentifierSchemeIRI,
-    gdmt:MIMEType, gdmt:RelatedIdentifierType, gdmt:RelationType, gdmt:ResourceTypeCategory;
+  pav:lastUpdatedOn "2020-12-21T23:00:00+01:00"@en;
+  pav:version "0.3.2"@en;
+  skos:hasTopConcept gdmt:ContributorRole, gdmt:DateType, gdmt:IdentifierScheme, gdmt:IdentifierSchemeIRI,
+    gdmt:LicenseIdentifier, gdmt:LicenseIdentifierScheme, gdmt:LicenseIdentifierSchemeIRI,
+    gdmt:MIMEType, gdmt:RelationType, gdmt:ResourceCreatorType, gdmt:ResourceIdentifierType,
+    gdmt:ResourceTypeCategory;
   skos:prefLabel "Ontology for Generic Dataset Metadata Template"@en .
 
-gdmt:ResourceType a owl:ObjectProperty;
-  rdfs:label "Resource Type Info"@en;
+gdmt-property:ResourceTypeInfo a owl:ObjectProperty;
+  rdfs:label "ResourceTypeInfo"@en;
   skos:definition "Information about the type of the resource being described with metadata."@en;
-  skos:prefLabel "Resource Type Info"@en .
+  skos:prefLabel "ResourceTypeInfo"@en .
 
-gdmt:DatasetIdentifier a owl:ObjectProperty;
-  rdfs:label "Dataset Identifier Info"@en;
+gdmt-property:DatasetIdentifierInfo a owl:ObjectProperty;
+  rdfs:label "DatasetIdentifierInfo"@en;
   skos:definition "Information about the globally unique and persistent identifier used to identify and optionally access (meta)data of the dataset being described."@en;
-  skos:prefLabel "Dataset Identifier Info"@en .
+  skos:prefLabel "DatasetIdentifierInfo"@en .
 
-gdmt:RelatedResources a owl:ObjectProperty;
-  rdfs:label "Related Resources Info"@en;
+gdmt-property:RelatedResourcesInfo a owl:ObjectProperty;
+  rdfs:label "RelatedResourcesInfo"@en;
   skos:definition "Information about resource related to the dataset or other entity being described."@en;
-  skos:prefLabel "Related Resources Info"@en .
+  skos:prefLabel "RelatedResourcesInfo"@en .
 
-gdmt:Version a owl:ObjectProperty;
-  rdfs:label "Version Info"@en;
+gdmt-property:VersionInfo a owl:ObjectProperty;
+  rdfs:label "VersionInfo"@en;
   skos:definition "Information about the version of the resource being described."@en;
-  skos:prefLabel "Version Info"@en .
+  skos:prefLabel "VersionInfo"@en .
 
-gdmt:Language a owl:ObjectProperty;
-  rdfs:label "Language Info"@en;
+gdmt-property:LanguageInfo a owl:ObjectProperty;
+  rdfs:label "LanguageInfo"@en;
   skos:definition "Information about the language in which the dataset being described is provided."@en;
-  skos:prefLabel "Language Info"@en .
+  skos:prefLabel "LanguageInfo"@en .
 
-gdmt:Title a owl:ObjectProperty;
-  rdfs:label "Title Info"@en;
+gdmt-property:TitleInfo a owl:ObjectProperty;
+  rdfs:label "TitleInfo"@en;
   skos:definition "Information about a name or title by which the dataset being described is known."@en;
-  skos:prefLabel "Title Info"@en .
+  skos:prefLabel "TitleInfo"@en .
 
-gdmt:Description a owl:ObjectProperty;
-  rdfs:label "Description Info"@en;
+gdmt-property:DescriptionInfo a owl:ObjectProperty;
+  rdfs:label "DescriptionInfo"@en;
   skos:definition "Detailed information (typically at the level of an abstract) about the dataset being described."@en;
-  skos:prefLabel "Description Info"@en .
+  skos:prefLabel "DescriptionInfo"@en .
 
-gdmt:Subject a owl:ObjectProperty;
-  rdfs:label "Subject Info"@en;
+gdmt-property:SubjectInfo a owl:ObjectProperty;
+  rdfs:label "SubjectInfo"@en;
   skos:definition "Topic information that defines the dataset's subject or purpose."@en;
-  skos:prefLabel "Subject Info"@en .
+  skos:prefLabel "SubjectInfo"@en .
 
-gdmt:ControlledTerms a owl:ObjectProperty;
-  rdfs:label "Controlled Terms Info"@en;
+gdmt-property:ControlledTermsInfo a owl:ObjectProperty;
+  rdfs:label "ControlledTermsInfo"@en;
   skos:definition "Controlled concepts that define the dataset or purpose."@en;
-  skos:prefLabel "Controlled Terms Info"@en .
+  skos:prefLabel "ControlledTermsInfo"@en .
 
-gdmt:Creator a owl:ObjectProperty;
-  rdfs:label "Creator Info"@en;
+gdmt-property:CreatorInfo a owl:ObjectProperty;
+  rdfs:label "CreatorInfo"@en;
   skos:definition "Information about the Creator entity that brought into existence the dataset being described. Creators can be people, organizations and/or physical or virtual infrastructure (e.g., sensors, software)."@en;
-  skos:prefLabel "Creator Info"@en .
+  skos:prefLabel "CreatorInfo"@en .
 
-gdmt:CreatorName a owl:ObjectProperty;
-  rdfs:label "Creator Name Info"@en;
+gdmt-property:CreatorNameInfo a owl:ObjectProperty;
+  rdfs:label "CreatorNameInfo"@en;
   skos:definition "Information about the creator name."@en;
-  skos:prefLabel "Creator Name Info"@en .
+  skos:prefLabel "CreatorNameInfo"@en .
 
-gdmt:CreatorIdentifier a owl:ObjectProperty;
-  rdfs:label "Creator Identifier Info"@en;
+gdmt-property:CreatorIdentifierInfo a owl:ObjectProperty;
+  rdfs:label "CreatorIdentifierInfo"@en;
   skos:definition "Information about the creator identifier."@en;
-  skos:prefLabel "Creator Identifier Info"@en .
+  skos:prefLabel "CreatorIdentifierInfo"@en .
 
-gdmt:CreatorAffiliation a owl:ObjectProperty;
-  rdfs:label "Creator Affiliation Info"@en;
+gdmt-property:CreatorAffiliationInfo a owl:ObjectProperty;
+  rdfs:label "CreatorAffiliationInfo"@en;
   skos:definition "Information about the creator affiliations."@en;
-  skos:prefLabel "Creator Affiliation Info"@en .
+  skos:prefLabel "CreatorAffiliationInfo"@en .
 
-gdmt:Contributor a owl:ObjectProperty;
-  rdfs:label "Contributor Info"@en;
+gdmt-property:ContributorInfo a owl:ObjectProperty;
+  rdfs:label "ContributorInfo"@en;
   skos:definition "Information about a Contributor entity that helped bring into existence the dataset being described. Contributors can be people, organizations and/or physical or virtual infrastructure (e.g., sensors, software)."@en;
-  skos:prefLabel "Contributor Info"@en .
+  skos:prefLabel "ContributorInfo"@en .
 
-gdmt:ContributorName a owl:ObjectProperty;
-  rdfs:label "Contributor Name Info"@en;
+gdmt-property:ContributorNameInfo a owl:ObjectProperty;
+  rdfs:label "ContributorNameInfo"@en;
   skos:definition "Information about a contributor name."@en;
-  skos:prefLabel "Contributor Name Info"@en .
+  skos:prefLabel "ContributorNameInfo"@en .
 
-gdmt:ContributorIdentifier a owl:ObjectProperty;
-  rdfs:label "Contributor Identifier Info"@en;
+gdmt-property:ContributorIdentifierInfo a owl:ObjectProperty;
+  rdfs:label "ContributorIdentifierInfo"@en;
   skos:definition "Information about a contributor identifier."@en;
-  skos:prefLabel "Contributor Identifier Info"@en .
+  skos:prefLabel "ContributorIdentifierInfo"@en .
 
-gdmt:ContributorAffiliation a owl:ObjectProperty;
-  rdfs:label "Contributor Affiliation Info"@en;
+gdmt-property:ContributorAffiliationInfo a owl:ObjectProperty;
+  rdfs:label "ContributorAffiliationInfo"@en;
   skos:definition "Information about a contributor's affiliations."@en;
-  skos:prefLabel "Contributor Affiliation Info"@en .
+  skos:prefLabel "ContributorAffiliationInfo"@en .
 
-gdmt:Publisher a owl:ObjectProperty;
-  rdfs:label "Publisher Info"@en;
+gdmt-property:PublisherInfo a owl:ObjectProperty;
+  rdfs:label "PublisherInfo"@en;
   skos:definition "Information about the entity that plays the principal role in officially making the dataset public. The role can be to hold, archive, publish, print, distribute, release, issue, or produce the dataset being described. This property is often used to formulate the citation, so consider the prominence of the role and of the entity. For datasets, use the primary repository for serving the data, or the primary organization taking responsibility for serving the data, as the Publisher. The Distribution element can be used to describe the entity(ies) that make the dataset accessible."@en;
-  skos:prefLabel "Publisher Info"@en .
+  skos:prefLabel "PublisherInfo"@en .
 
-gdmt:PublisherIdentifier a owl:ObjectProperty;
-  rdfs:label "Publisher Identifier Info"@en;
+gdmt-property:PublisherIdentifierInfo a owl:ObjectProperty;
+  rdfs:label "PublisherIdentifierInfo"@en;
   skos:definition "Information about the publisher identifier."@en;
-  skos:prefLabel "Publisher Identifier Info"@en .
+  skos:prefLabel "PublisherIdentifierInfo"@en .
 
-gdmt:Rights a owl:ObjectProperty;
-  rdfs:label "Rights Info"@en;
+gdmt-property:RightsInfo a owl:ObjectProperty;
+  rdfs:label "RightsInfo"@en;
   skos:definition "Information about ways in which the dataset may or may not be accessed and used."@en;
-  skos:prefLabel "Rights Info"@en .
+  skos:prefLabel "RightsInfo"@en .
 
-gdmt:LicenseIdentifier a owl:ObjectProperty;
-  rdfs:label "License Identifier Info"@en;
+gdmt-property:LicenseIdentifierInfo a owl:ObjectProperty;
+  rdfs:label "LicenseIdentifierInfo"@en;
   skos:definition "Information about the license identifier."@en;
-  skos:narrower gdmt:0BSD, gdmt:AAL, gdmt:ADSL, gdmt:AFL1.1, gdmt:AFL1.2, gdmt:AFL2.0,
-    gdmt:AFL2.1, gdmt:AFL3.0, gdmt:AGPL1.0only, gdmt:AGPL1.0orlater, gdmt:AGPL3.0only,
-    gdmt:AGPL3.0orlater, gdmt:AMDPLPA, gdmt:AML, gdmt:AMPAS, gdmt:ANTLRPD, gdmt:ANTLRPDfallback,
-    gdmt:APAFML, gdmt:APL1.0, gdmt:APSL1.0, gdmt:APSL1.1, gdmt:APSL1.2, gdmt:APSL2.0,
-    gdmt:Abstyles, gdmt:Adobe2006, gdmt:AdobeGlyph, gdmt:Afmparse, gdmt:Aladdin, gdmt:Apache1.0,
-    gdmt:Apache1.1, gdmt:Apache2.0, gdmt:Artistic1.0, gdmt:Artistic1.0Perl, gdmt:Artistic1.0cl8,
-    gdmt:Artistic2.0, gdmt:BSD1Clause, gdmt:BSD2Clause, gdmt:BSD2ClausePatent, gdmt:BSD2ClauseViews,
-    gdmt:BSD3Clause, gdmt:BSD3ClauseAttribution, gdmt:BSD3ClauseClear, gdmt:BSD3ClauseLBNL,
-    gdmt:BSD3ClauseNoNuclearLicense, gdmt:BSD3ClauseNoNuclearLicense2014, gdmt:BSD3ClauseNoNuclearWarranty,
-    gdmt:BSD3ClauseOpenMPI, gdmt:BSD4Clause, gdmt:BSD4ClauseUC, gdmt:BSDProtection, gdmt:BSDSourceCode,
-    gdmt:BSL1.0, gdmt:BUSL1.1, gdmt:Bahyph, gdmt:Barr, gdmt:Beerware, gdmt:BitTorrent1.0,
-    gdmt:BitTorrent1.1, gdmt:BlueOak1.0.0, gdmt:Borceux, gdmt:CAL1.0, gdmt:CAL1.0CombinedWorkException,
-    gdmt:CATOSL1.1, gdmt:CC01.0, gdmt:CCBY1.0, gdmt:CCBY2.0, gdmt:CCBY2.5, gdmt:CCBY3.0,
-    gdmt:CCBY3.0AT, gdmt:CCBY3.0US, gdmt:CCBY4.0, gdmt:CCBYNC1.0, gdmt:CCBYNC2.0, gdmt:CCBYNC2.5,
-    gdmt:CCBYNC3.0, gdmt:CCBYNC4.0, gdmt:CCBYNCND1.0, gdmt:CCBYNCND2.0, gdmt:CCBYNCND2.5,
-    gdmt:CCBYNCND3.0, gdmt:CCBYNCND3.0IGO, gdmt:CCBYNCND4.0, gdmt:CCBYNCSA1.0, gdmt:CCBYNCSA2.0,
-    gdmt:CCBYNCSA2.5, gdmt:CCBYNCSA3.0, gdmt:CCBYNCSA4.0, gdmt:CCBYND1.0, gdmt:CCBYND2.0,
-    gdmt:CCBYND2.5, gdmt:CCBYND3.0, gdmt:CCBYND4.0, gdmt:CCBYSA1.0, gdmt:CCBYSA2.0, gdmt:CCBYSA2.0UK,
-    gdmt:CCBYSA2.5, gdmt:CCBYSA3.0, gdmt:CCBYSA3.0AT, gdmt:CCBYSA4.0, gdmt:CCPDDC, gdmt:CDDL1.0,
-    gdmt:CDDL1.1, gdmt:CDLAPermissive1.0, gdmt:CDLASharing1.0, gdmt:CECILL1.0, gdmt:CECILL1.1,
-    gdmt:CECILL2.0, gdmt:CECILL2.1, gdmt:CECILLB, gdmt:CECILLC, gdmt:CERNOHL1.1, gdmt:CERNOHL1.2,
-    gdmt:CERNOHLP2.0, gdmt:CERNOHLS2.0, gdmt:CERNOHLW2.0, gdmt:CNRIJython, gdmt:CNRIPython,
-    gdmt:CNRIPythonGPLCompatible, gdmt:CPAL1.0, gdmt:CPL1.0, gdmt:CPOL1.02, gdmt:CUAOPL1.0,
-    gdmt:Caldera, gdmt:ClArtistic, gdmt:Condor1.1, gdmt:Crossword, gdmt:CrystalStacker,
-    gdmt:Cube, gdmt:DFSL1.0, gdmt:DOC, gdmt:DSDP, gdmt:Dotseqn, gdmt:ECL1.0, gdmt:ECL2.0,
-    gdmt:EFL1.0, gdmt:EFL2.0, gdmt:EPICS, gdmt:EPL1.0, gdmt:EPL2.0, gdmt:EUDatagrid, gdmt:EUPL1.0,
-    gdmt:EUPL1.1, gdmt:EUPL1.2, gdmt:Entessa, gdmt:ErlPL1.1, gdmt:Eurosym, gdmt:FSFAP,
-    gdmt:FSFUL, gdmt:FSFULLR, gdmt:FTL, gdmt:Fair, gdmt:Frameworx1.0, gdmt:FreeImage,
-    gdmt:GFDL1.1invariantsonly, gdmt:GFDL1.1invariantsorlater, gdmt:GFDL1.1noinvariantsonly,
-    gdmt:GFDL1.1noinvariantsorlater, gdmt:GFDL1.1only, gdmt:GFDL1.1orlater, gdmt:GFDL1.2invariantsonly,
-    gdmt:GFDL1.2invariantsorlater, gdmt:GFDL1.2noinvariantsonly, gdmt:GFDL1.2noinvariantsorlater,
-    gdmt:GFDL1.2only, gdmt:GFDL1.2orlater, gdmt:GFDL1.3invariantsonly, gdmt:GFDL1.3invariantsorlater,
-    gdmt:GFDL1.3noinvariantsonly, gdmt:GFDL1.3noinvariantsorlater, gdmt:GFDL1.3only, gdmt:GFDL1.3orlater,
-    gdmt:GL2PS, gdmt:GLWTPL, gdmt:GPL1.0only, gdmt:GPL1.0orlater, gdmt:GPL2.0only, gdmt:GPL2.0orlater,
-    gdmt:GPL3.0only, gdmt:GPL3.0orlater, gdmt:Giftware, gdmt:Glide, gdmt:Glulxe, gdmt:HPND,
-    gdmt:HPNDsellvariant, gdmt:HTMLTIDY, gdmt:HaskellReport, gdmt:Hippocratic2.1, gdmt:IBMpibs,
-    gdmt:ICU, gdmt:IJG, gdmt:IPA, gdmt:IPL1.0, gdmt:ISC, gdmt:ImageMagick, gdmt:Imlib2,
-    gdmt:InfoZIP, gdmt:Intel, gdmt:IntelACPI, gdmt:Interbase1.0, gdmt:JPNIC, gdmt:JSON,
-    gdmt:JasPer2.0, gdmt:LAL1.2, gdmt:LAL1.3, gdmt:LGPL2.0only, gdmt:LGPL2.0orlater, gdmt:LGPL2.1only,
-    gdmt:LGPL2.1orlater, gdmt:LGPL3.0only, gdmt:LGPL3.0orlater, gdmt:LGPLLR, gdmt:LPL1.0,
-    gdmt:LPL1.02, gdmt:LPPL1.0, gdmt:LPPL1.1, gdmt:LPPL1.2, gdmt:LPPL1.3a, gdmt:LPPL1.3c,
-    gdmt:Latex2e, gdmt:Leptonica, gdmt:LiLiQP1.1, gdmt:LiLiQR1.1, gdmt:LiLiQRplus1.1,
-    gdmt:Libpng, gdmt:LinuxOpenIB, gdmt:MIT, gdmt:MIT0, gdmt:MITCMU, gdmt:MITNFA, gdmt:MITadvertising,
-    gdmt:MITenna, gdmt:MITfeh, gdmt:MITopengroup, gdmt:MPL1.0, gdmt:MPL1.1, gdmt:MPL2.0,
-    gdmt:MPL2.0nocopyleftexception, gdmt:MSPL, gdmt:MSRL, gdmt:MTLL, gdmt:MakeIndex, gdmt:MirOS,
-    gdmt:Motosoto, gdmt:MulanPSL1.0, gdmt:MulanPSL2.0, gdmt:Multics, gdmt:Mup, gdmt:NASA1.3,
-    gdmt:NBPL1.0, gdmt:NCGLUK2.0, gdmt:NCSA, gdmt:NGPL, gdmt:NISTPD, gdmt:NISTPDfallback,
-    gdmt:NLOD1.0, gdmt:NLPL, gdmt:NOSL, gdmt:NPL1.0, gdmt:NPL1.1, gdmt:NPOSL3.0, gdmt:NRL,
-    gdmt:NTP, gdmt:NTP0, gdmt:Naumen, gdmt:NetCDF, gdmt:NetSNMP, gdmt:Newsletr, gdmt:Nokia,
-    gdmt:Noweb, gdmt:OCCTPL, gdmt:OCLC2.0, gdmt:ODCBy1.0, gdmt:ODbL1.0, gdmt:OFL1.0, gdmt:OFL1.0RFN,
-    gdmt:OFL1.0noRFN, gdmt:OFL1.1, gdmt:OFL1.1RFN, gdmt:OFL1.1noRFN, gdmt:OGC1.0, gdmt:OGLCanada2.0,
-    gdmt:OGLUK1.0, gdmt:OGLUK2.0, gdmt:OGLUK3.0, gdmt:OGTSL, gdmt:OLDAP1.1, gdmt:OLDAP1.2,
-    gdmt:OLDAP1.3, gdmt:OLDAP1.4, gdmt:OLDAP2.0, gdmt:OLDAP2.0.1, gdmt:OLDAP2.1, gdmt:OLDAP2.2,
-    gdmt:OLDAP2.2.1, gdmt:OLDAP2.2.2, gdmt:OLDAP2.3, gdmt:OLDAP2.4, gdmt:OLDAP2.5, gdmt:OLDAP2.6,
-    gdmt:OLDAP2.7, gdmt:OLDAP2.8, gdmt:OML, gdmt:OPL1.0, gdmt:OSETPL2.1, gdmt:OSL1.0,
-    gdmt:OSL1.1, gdmt:OSL2.0, gdmt:OSL2.1, gdmt:OSL3.0, gdmt:OUDA1.0, gdmt:OpenSSL, gdmt:PDDL1.0,
-    gdmt:PHP3.0, gdmt:PHP3.01, gdmt:PSF2.0, gdmt:Parity6.0.0, gdmt:Parity7.0.0, gdmt:Plexus,
-    gdmt:PolyFormNoncommercial1.0.0, gdmt:PolyFormSmallBusiness1.0.0, gdmt:PostgreSQL,
-    gdmt:Python2.0, gdmt:QPL1.0, gdmt:Qhull, gdmt:RHeCos1.1, gdmt:RPL1.1, gdmt:RPL1.5,
-    gdmt:RPSL1.0, gdmt:RSAMD, gdmt:RSCPL, gdmt:Rdisc, gdmt:Ruby, gdmt:SAXPD, gdmt:SCEA,
-    gdmt:SGIB1.0, gdmt:SGIB1.1, gdmt:SGIB2.0, gdmt:SHL0.5, gdmt:SHL0.51, gdmt:SISSL, gdmt:SISSL1.2,
-    gdmt:SMLNJ, gdmt:SMPPL, gdmt:SNIA, gdmt:SPL1.0, gdmt:SSHOpenSSH, gdmt:SSHshort, gdmt:SSPL1.0,
-    gdmt:SWL, gdmt:Saxpath, gdmt:Sendmail, gdmt:Sendmail8.23, gdmt:SimPL2.0, gdmt:Sleepycat,
-    gdmt:Spencer86, gdmt:Spencer94, gdmt:Spencer99, gdmt:SugarCRM1.1.3, gdmt:TAPROHL1.0,
-    gdmt:TCL, gdmt:TCPwrappers, gdmt:TMate, gdmt:TORQUE1.1, gdmt:TOSL, gdmt:TUBerlin1.0,
-    gdmt:TUBerlin2.0, gdmt:UCL1.0, gdmt:UPL1.0, gdmt:UnicodeDFS2015, gdmt:UnicodeDFS2016,
-    gdmt:UnicodeTOU, gdmt:Unlicense, gdmt:VOSTROM, gdmt:VSL1.0, gdmt:Vim, gdmt:W3C, gdmt:W3C19980720,
-    gdmt:W3C20150513, gdmt:WTFPL, gdmt:Watcom1.0, gdmt:Wsuipa, gdmt:X11, gdmt:XFree861.1,
-    gdmt:XSkat, gdmt:Xerox, gdmt:Xnet, gdmt:YPL1.0, gdmt:YPL1.1, gdmt:ZPL1.1, gdmt:ZPL2.0,
-    gdmt:ZPL2.1, gdmt:Zed, gdmt:Zend2.0, gdmt:Zimbra1.3, gdmt:Zimbra1.4, gdmt:Zlib, gdmt:blessing,
-    gdmt:bzip21.0.5, gdmt:bzip21.0.6, gdmt:copyleftnext0.3.0, gdmt:copyleftnext0.3.1,
-    gdmt:curl, gdmt:diffmark, gdmt:dvipdfm, gdmt:eGenix, gdmt:etalab2.0, gdmt:gSOAP1.3b,
-    gdmt:gnuplot, gdmt:iMatix, gdmt:libpng2.0, gdmt:libselinux1.0, gdmt:libtiff, gdmt:mpich2,
-    gdmt:psfrag, gdmt:psutils, gdmt:xinetd, gdmt:xpp, gdmt:zlibacknowledgement;
-  skos:prefLabel "License Identifier"@en, "License Identifier Info"@en .
+  skos:prefLabel "LicenseIdentifierInfo"@en .
 
-gdmt:Date a owl:ObjectProperty;
-  rdfs:label "Date Info"@en;
+gdmt-property:DateInfo a owl:ObjectProperty;
+  rdfs:label "DateInfo"@en;
   skos:definition "Information about relevant dates related to the resource being described. One instance of date must be of datsetDateType=Published."@en;
-  skos:prefLabel "Date Info"@en .
+  skos:prefLabel "DateInfo"@en .
 
-gdmt:Distribution a owl:ObjectProperty;
-  rdfs:label "Distribution Info"@en;
+gdmt-property:DistributionInfo a owl:ObjectProperty;
+  rdfs:label "DistributionInfo"@en;
   skos:definition "Details about the distribution for this individual public presentation of the dataset (if part of the Distribution metadata), or for all the public presentations of the dataset being described (if part of the Dataset metadata)."@en;
-  skos:prefLabel "Distribution Info"@en .
+  skos:prefLabel "DistributionInfo"@en .
 
-gdmt:DistributionAccess a owl:ObjectProperty;
-  rdfs:label "DistributionAccess Info"@en;
+gdmt-property:DistributionAccessInfo a owl:ObjectProperty;
+  rdfs:label "DistributionAccessInfo"@en;
   skos:definition "Details about the distribution access."@en;
-  skos:prefLabel "DistributionAccess Info"@en .
+  skos:prefLabel "DistributionAccessInfo"@en .
 
-gdmt:Distributor a owl:ObjectProperty;
-  rdfs:label "Distributor Info"@en;
-  skos:broader gdmt:ContributorRole;
-  skos:definition "Information about this distributor of the dataset. The Distributor includes primarily the system doing the distribution, but can include the person or persons responsible as well, for example the person who reformsts the dataset for this distribution."@en,
-    "Institution tasked with responsibility to generate/disseminate copies of the resource in either electronic or print form."@en;
-  skos:prefLabel "Distributor"@en, "Distributor Info"@en .
+gdmt-property:DistributorInfo a owl:ObjectProperty;
+  rdfs:label "DistributorInfo"@en;
+  skos:definition "Information about this distributor of the dataset. The Distributor includes primarily the system doing the distribution, but can include the person or persons responsible as well, for example the person who reformsts the dataset for this distribution."@en;
+  skos:prefLabel "DistributorInfo"@en .
 
-gdmt:DistributorName a owl:ObjectProperty;
-  rdfs:label "Distributor Name Info"@en;
+gdmt-property:DistributorNameInfo a owl:ObjectProperty;
+  rdfs:label "DistributorNameInfo"@en;
   skos:definition "Information about the distributor name."@en;
-  skos:prefLabel "Distributor Name Info"@en .
+  skos:prefLabel "DistributorNameInfo"@en .
 
-gdmt:DistributorIdentifier a owl:ObjectProperty;
-  rdfs:label "Distributor Identifier Info"@en;
+gdmt-property:DistributorIdentifierInfo a owl:ObjectProperty;
+  rdfs:label "DistributorIdentifierInfo"@en;
   skos:definition "Information about the distributor identifier."@en;
-  skos:prefLabel "Distributor Identifier Info"@en .
+  skos:prefLabel "DistributorIdentifierInfo"@en .
 
-gdmt:DistributorAffiliation a owl:ObjectProperty;
-  rdfs:label "Distributor Affiliation Info"@en;
+gdmt-property:DistributorAffiliationInfo a owl:ObjectProperty;
+  rdfs:label "DistributorAffiliationInfo"@en;
   skos:definition "Information about the distributor affiliations."@en;
-  skos:prefLabel "Distributor Affiliation Info"@en .
+  skos:prefLabel "DistributorAffiliationInfo"@en .
 
-gdmt:Content a owl:ObjectProperty;
-  rdfs:label "Content Info"@en;
+gdmt-property:ContentInfo a owl:ObjectProperty;
+  rdfs:label "ContentInfo"@en;
   skos:definition "Information describing the entities that constitute the dataset being described, and their organization and provenance. (The dataset is defined as coming from a single Data Source.)"@en;
-  skos:prefLabel "Content Info"@en .
+  skos:prefLabel "ContentInfo"@en .
 
-gdmt:DataStream a owl:ObjectProperty;
-  rdfs:label "DataStream Info"@en;
-  skos:broader gdmt:ResourceTypeCategory;
-  skos:definition "Data stream represent a collection of one or more variable records originating from a single data source (e.g., sensor) which properties remain unchanged during the data stream existence. In some use-cases, the data source location is required to remain unchanged (e.g., sensors attached to a meteorological tower). Data stream can grow over time."@en,
-    "Information about a Data Stream, a collection of one or more variable records originating from a single data source (e.g., sensor, process, or person). A data stream can grow over time."@en;
-  skos:prefLabel "DataStream"@en, "DataStream Info"@en .
+gdmt-property:DataStreamInfo a owl:ObjectProperty;
+  rdfs:label "DataStreamInfo"@en;
+  skos:definition "Information about a Data Stream, a collection of one or more variable records originating from a single data source (e.g., sensor, process, or person). A data stream can grow over time."@en;
+  skos:prefLabel "DataStreamInfo"@en .
 
-gdmt:DataSource a owl:ObjectProperty;
-  rdfs:label "DataSource Info"@en;
+gdmt-property:DataSourceInfo a owl:ObjectProperty;
+  rdfs:label "DataSourceInfo"@en;
   skos:definition "Information about a Data Source, a physical or conceptual entity that creates the data streams that make up the described dataset. The data source may or may not be associated with a fixed location; for example, a series of discrete sensors deployed over time to a single location may be considered a single data source in some systems."@en;
-  skos:prefLabel "DataSource Info"@en .
+  skos:prefLabel "DataSourceInfo"@en .
 
-gdmt:Variable a owl:ObjectProperty;
-  rdfs:label "Variable Info"@en;
+gdmt-property:VariableInfo a owl:ObjectProperty;
+  rdfs:label "VariableInfo"@en;
   skos:definition "Information about a single entity being measured or computed."@en;
-  skos:prefLabel "Variable Info"@en .
+  skos:prefLabel "VariableInfo"@en .
 
-gdmt:SpatialCoverage a owl:ObjectProperty;
-  rdfs:label "Spatial Coverage Info"@en;
+gdmt-property:SpatialCoverageInfo a owl:ObjectProperty;
+  rdfs:label "SpatialCoverageInfo"@en;
   skos:definition "Information about the geospatial area (region on Earth) covered by the dataset being described."@en;
-  skos:prefLabel "Spatial Coverage Info"@en .
+  skos:prefLabel "SpatialCoverageInfo"@en .
 
-gdmt:SpatialCoveragePoint a owl:ObjectProperty;
-  rdfs:label "Spatial Coverage Point Info"@en;
+gdmt-property:SpatialCoveragePointInfo a owl:ObjectProperty;
+  rdfs:label "SpatialCoveragePointInfo"@en;
   skos:definition "Information about a geospatial coverage represented as a single point."@en;
-  skos:prefLabel "Spatial Coverage Point Info"@en .
+  skos:prefLabel "SpatialCoveragePointInfo"@en .
 
-gdmt:SpatialCoverageBoundingBox a owl:ObjectProperty;
-  rdfs:label "Spatial Coverage Bounding Box Info"@en;
+gdmt-property:SpatialCoverageBoundingBoxInfo a owl:ObjectProperty;
+  rdfs:label "SpatialCoverageBoundingBoxInfo"@en;
   skos:definition "Information about a geospatial coverage represented using bounding box."@en;
-  skos:prefLabel "Spatial Coverage Bounding Box Info"@en .
+  skos:prefLabel "SpatialCoverageBoundingBoxInfo"@en .
 
-gdmt:SpatialCoveragePolygon a owl:ObjectProperty;
-  rdfs:label "Spatial Coverage Polygon Info"@en;
+gdmt-property:SpatialCoveragePolygonInfo a owl:ObjectProperty;
+  rdfs:label "SpatialCoveragePolygonInfo"@en;
   skos:definition "Information about a geospatial coverage represented using polygon."@en;
-  skos:prefLabel "Spatial Coverage Polygon Info"@en .
+  skos:prefLabel "SpatialCoveragePolygonInfo"@en .
 
-gdmt:VerticalCoverage a owl:ObjectProperty;
-  rdfs:label "Vertical Coverage Info"@en;
+gdmt-property:VerticalCoverageInfo a owl:ObjectProperty;
+  rdfs:label "VerticalCoverageInfo"@en;
   skos:definition "Information about the vertical area (altitude and/or depth) covered by the dataset being described."@en;
-  skos:prefLabel "Vertical Coverage Info"@en .
+  skos:prefLabel "VerticalCoverageInfo"@en .
 
-gdmt:TemporalCoverage a owl:ObjectProperty;
-  rdfs:label "Temporal Coverage Info"@en;
+gdmt-property:TemporalCoverageInfo a owl:ObjectProperty;
+  rdfs:label "TemporalCoverageInfo"@en;
   skos:definition "Information about the temporal coverage and resolution of the dataset being described."@en;
-  skos:prefLabel "Temporal Coverage Info"@en .
+  skos:prefLabel "TemporalCoverageInfo"@en .
 
-gdmt:Funding a owl:ObjectProperty;
-  rdfs:label "Funding Info"@en;
+gdmt-property:FundingInfo a owl:ObjectProperty;
+  rdfs:label "FundingInfo"@en;
   skos:definition "Information about the sources of funding that enabled and drove the creation of the dataset. (Non-monetary sources are described under Contributor.)"@en;
-  skos:prefLabel "Funding Info"@en .
+  skos:prefLabel "FundingInfo"@en .
 
-gdmt:Award a owl:ObjectProperty;
-  rdfs:label "Award Info"@en;
+gdmt-property:AwardInfo a owl:ObjectProperty;
+  rdfs:label "AwardInfo"@en;
   skos:definition "Information about the project award."@en;
-  skos:prefLabel "Award Info"@en .
+  skos:prefLabel "AwardInfo"@en .
 
-gdmt:Funder a owl:ObjectProperty;
-  rdfs:label "Funder Info"@en;
+gdmt-property:FunderInfo a owl:ObjectProperty;
+  rdfs:label "FunderInfo"@en;
   skos:definition "Information about the award funder."@en;
-  skos:prefLabel "Funder Info"@en .
+  skos:prefLabel "FunderInfo"@en .
 
-gdmt:datasetIdentifierSubType a owl:ObjectProperty;
-  rdfs:label "dataset Identifier SubType"@en;
+gdmt-property:datasetIdentifierSubType a owl:ObjectProperty;
+  rdfs:label "datasetIdentifierSubType"@en;
   skos:definition "The subtype of the identifier used to specify the dataset being described."@en;
   skos:prefLabel "datasetIdentifierSubType"@en .
 
-gdmt:relatedResourceIdentifierSubType a owl:ObjectProperty;
-  rdfs:label "related Resource Identifier SubType"@en;
+gdmt-property:relatedResourceIdentifierSubType a owl:ObjectProperty;
+  rdfs:label "relatedResourceIdentifierSubType"@en;
   skos:definition "The subtype of the identifier used to specify the related resource."@en;
   skos:prefLabel "relatedResourceIdentifierSubType"@en .
 
-gdmt:primaryLanguage a owl:ObjectProperty;
-  rdfs:label "primary Language"@en;
+gdmt-property:primaryLanguage a owl:ObjectProperty;
+  rdfs:label "primaryLanguage"@en;
   skos:definition "Primary language used to present the dataset (if multiple languages are present). Use a code from IETF BCP 47"@en;
   skos:prefLabel "primaryLanguage"@en .
 
-gdmt:subjectIRI a owl:ObjectProperty;
-  rdfs:label "subject IRI"@en;
+gdmt-property:subjectIRI a owl:ObjectProperty;
+  rdfs:label "subjectIRI"@en;
   skos:definition "The IRI of a concept (keyword, classification code, or controlled key phrase) that defines the dataset or indicates for which concepts the dataset can be used."@en;
   skos:prefLabel "subjectIRI"@en .
 
-gdmt:subjectScheme a owl:DataProperty;
-  rdfs:label "subject Scheme"@en;
+gdmt-property:subjectScheme a owl:DataProperty;
+  rdfs:label "subjectScheme"@en;
   skos:definition "The name of the scheme or authority used for the Subject Concept IRI."@en;
   skos:prefLabel "subjectScheme"@en .
 
-gdmt:subjectSchemeIRI a owl:ObjectProperty;
-  rdfs:label "subject Scheme IRI"@en;
+gdmt-property:subjectSchemeIRI a owl:ObjectProperty;
+  rdfs:label "subjectSchemeIRI"@en;
   skos:definition "The IRI of the scheme or authority used for the Subject Concept IRI."@en;
   skos:prefLabel "subjectSchemeIRI"@en .
 
-gdmt:keyword a owl:DataProperty;
+gdmt-property:keyword a owl:DataProperty;
   rdfs:label "keyword"@en;
   skos:definition "Free text subject, keyword, classification code, or key phrase describing the dataset or purpose for which the dataset can be used."@en;
   skos:prefLabel "keyword"@en .
 
-gdmt:creatorIdentifier a owl:DataProperty;
-  rdfs:label "creator Identifier"@en;
+gdmt-property:creatorIdentifier a owl:DataProperty;
+  rdfs:label "creatorIdentifier"@en;
   skos:definition "Globally unique string that identifies the creator (an individual, legal entity or system)."@en;
   skos:prefLabel "creatorIdentifier"@en .
 
-gdmt:creatorIdentifierScheme a owl:DataProperty;
-  rdfs:label "creator Identifier Scheme"@en;
+gdmt-property:creatorIdentifierScheme a owl:DataProperty;
+  rdfs:label "creatorIdentifierScheme"@en;
   skos:definition "The name of the scheme or authority used for the Creator Identifier."@en;
   skos:prefLabel "creatorIdentifierScheme"@en .
 
-gdmt:creatorIdentifierSchemeIRI a owl:ObjectProperty;
-  rdfs:label "creator Identifier SchemeIRI"@en;
+gdmt-property:creatorIdentifierSchemeIRI a owl:ObjectProperty;
+  rdfs:label "creatorIdentifierSchemeIRI"@en;
   skos:definition "The IRI of the scheme or authority used for the Creator Identifier."@en;
   skos:prefLabel "creatorIdentifierSchemeIRI"@en .
 
-gdmt:creatorAffiliation a owl:ObjectProperty;
-  rdfs:label "creator Affiliation"@en;
+gdmt-property:creatorAffiliation a owl:ObjectProperty;
+  rdfs:label "creatorAffiliation"@en;
   skos:definition "The organizational or institutional affiliation of the creator."@en;
   skos:prefLabel "creatorAffiliation"@en .
 
-gdmt:creatorAffiliationIdentifier a owl:DataProperty;
-  rdfs:label "creator Affiliation Identifier"@en;
+gdmt-property:creatorAffiliationIdentifier a owl:DataProperty;
+  rdfs:label "creatorAffiliationIdentifier"@en;
   skos:definition "Globally unique string that identifies the organizational affiliation of the creator."@en;
   skos:prefLabel "creatorAffiliationIdentifier"@en .
 
-gdmt:creatorAffiliationIdentifierScheme a owl:DataProperty;
-  rdfs:label "creator Affiliation Identifier Scheme"@en;
+gdmt-property:creatorAffiliationIdentifierScheme a owl:DataProperty;
+  rdfs:label "creatorAffiliationIdentifierScheme"@en;
   skos:definition "The name of the scheme or authority used for the Creator Affiliation Identifier."@en;
   skos:prefLabel "creatorAffiliationIdentifierScheme"@en .
 
-gdmt:creatorAffiliationIdentifierSchemeIRI a owl:ObjectProperty;
-  rdfs:label "creator Affiliation Identifier Scheme IRI"@en;
+gdmt-property:creatorAffiliationIdentifierSchemeIRI a owl:ObjectProperty;
+  rdfs:label "creatorAffiliationIdentifierSchemeIRI"@en;
   skos:definition "The IRI of the scheme or authority used for the Creator Affiliation Identifier."@en;
   skos:prefLabel "creatorAffiliationIdentifierSchemeIRI"@en .
 
-gdmt:creatorRole a owl:ObjectProperty;
-  rdfs:label "creator Role"@en;
+gdmt-property:creatorRole a owl:ObjectProperty;
+  rdfs:label "creatorRole"@en;
   skos:definition "The role of the creator in bringing the described dataset into existence."@en;
   skos:prefLabel "creatorRole"@en .
 
-gdmt:creatorType a owl:ObjectProperty;
-  rdfs:label "creator Type"@en;
+gdmt-property:creatorType a owl:ObjectProperty;
+  rdfs:label "creatorType"@en;
   skos:definition "The type of the creator of the described dataset (organization, person, or system)."@en;
   skos:prefLabel "creatorType"@en .
 
-gdmt:contributorIdentifier a owl:ObjectProperty;
-  rdfs:label "contributor Identifier"@en;
+gdmt-property:contributorIdentifier a owl:ObjectProperty;
+  rdfs:label "contributorIdentifier"@en;
   skos:definition "Globally unique string that identifies the contributor (an individual, legal entity or system)."@en;
   skos:prefLabel "contributorIdentifier"@en .
 
-gdmt:contributorIdentifierScheme a owl:DataProperty;
-  rdfs:label "contributor Identifier Scheme"@en;
+gdmt-property:contributorIdentifierScheme a owl:DataProperty;
+  rdfs:label "contributorIdentifierScheme"@en;
   skos:definition "The name of the scheme or authority used for the Contributor Identifier."@en;
   skos:prefLabel "contributorIdentifierScheme"@en .
 
-gdmt:contributorIdentifierSchemeIRI a owl:ObjectProperty;
-  rdfs:label "contributor Identifier Scheme IRI"@en;
+gdmt-property:contributorIdentifierSchemeIRI a owl:ObjectProperty;
+  rdfs:label "contributorIdentifierSchemeIRI"@en;
   skos:definition "The IRI of the scheme or authority used for the Contributor Identifier."@en;
   skos:prefLabel "contributorIdentifierSchemeIRI"@en .
 
-gdmt:contributorAffiliation a owl:ObjectProperty;
-  rdfs:label "contributor Affiliation"@en;
+gdmt-property:contributorAffiliation a owl:ObjectProperty;
+  rdfs:label "contributorAffiliation"@en;
   skos:definition "The organizational or institutional affiliation of the contributor."@en;
   skos:prefLabel "contributorAffiliation"@en .
 
-gdmt:contributorAffiliationIdentifier a owl:ObjectProperty;
-  rdfs:label "contributor Affiliation Identifier"@en;
+gdmt-property:contributorAffiliationIdentifier a owl:ObjectProperty;
+  rdfs:label "contributorAffiliationIdentifier"@en;
   skos:definition "Globally unique string that identifies the organizational affiliation of the contributor."@en;
   skos:prefLabel "contributorAffiliationIdentifier"@en .
 
-gdmt:contributorAffiliationIdentifierScheme a owl:DataProperty;
-  rdfs:label "contributor Affiliation Identifier Scheme"@en;
+gdmt-property:contributorAffiliationIdentifierScheme a owl:DataProperty;
+  rdfs:label "contributorAffiliationIdentifierScheme"@en;
   skos:definition "The name of the scheme or authority used for the Contributor Affiliation Identifier."@en;
   skos:prefLabel "contributorAffiliationIdentifierScheme"@en .
 
-gdmt:contributorAffiliationIdentifierSchemeIRI a owl:ObjectProperty;
-  rdfs:label "contributor Affiliation Identifier Scheme IRI"@en;
+gdmt-property:contributorAffiliationIdentifierSchemeIRI a owl:ObjectProperty;
+  rdfs:label "contributorAffiliationIdentifierSchemeIRI"@en;
   skos:definition "The IRI of the scheme or authority used for the Contributor Affiliation Identifier."@en;
   skos:prefLabel "contributorAffiliationIdentifierSchemeIRI"@en .
 
-gdmt:contributorRole a owl:ObjectProperty;
-  rdfs:label "contributor Role"@en;
+gdmt-property:contributorRole a owl:ObjectProperty;
+  rdfs:label "contributorRole"@en;
   skos:definition "The role of the contributor in bringing the described dataset into existence."@en;
   skos:prefLabel "contributorRole"@en .
 
-gdmt:contributorType a owl:ObjectProperty;
-  rdfs:label "contributor Type"@en;
+gdmt-property:contributorType a owl:ObjectProperty;
+  rdfs:label "contributorType"@en;
   skos:definition "The type of the contributor of the described dataset (organization, person, or system)."@en;
   skos:prefLabel "contributorType"@en .
 
-gdmt:publisherIdentifier a owl:ObjectProperty;
-  rdfs:label "publisher Identifier"@en;
+gdmt-property:publisherIdentifier a owl:ObjectProperty;
+  rdfs:label "publisherIdentifier"@en;
   skos:definition "Globally unique string that identifies the publisher."@en;
   skos:prefLabel "publisherIdentifier"@en .
 
-gdmt:publisherIdentifierScheme a owl:DataProperty;
-  rdfs:label "publisher Identifier Scheme"@en;
+gdmt-property:publisherIdentifierScheme a owl:DataProperty;
+  rdfs:label "publisherIdentifierScheme"@en;
   skos:definition "The name of the scheme or authority used for the Publisher Identifier."@en;
   skos:prefLabel "publisherIdentifierScheme"@en .
 
-gdmt:publisherIdentifierSchemeIRI a owl:ObjectProperty;
-  rdfs:label "publisher Identifier Scheme IRI"@en;
+gdmt-property:publisherIdentifierSchemeIRI a owl:ObjectProperty;
+  rdfs:label "publisherIdentifierSchemeIRI"@en;
   skos:definition "The IRI of the scheme or authority used for the Publisher Identifier."@en;
   skos:prefLabel "publisherIdentifierSchemeIRI"@en .
 
-gdmt:publisherAddress a owl:DataProperty;
-  rdfs:label "publisher Address"@en;
+gdmt-property:publisherAddress a owl:DataProperty;
+  rdfs:label "publisherAddress"@en;
   skos:definition "An address of the publisher."@en;
   skos:prefLabel "publisherAddress"@en .
 
-gdmt:licenseName a owl:DataProperty;
-  rdfs:label "license Name"@en;
+gdmt-property:licenseName a owl:DataProperty;
+  rdfs:label "licenseName"@en;
   skos:definition "A standardized version of the license name."@en;
   skos:prefLabel "licenseName"@en .
 
-gdmt:licenseIdentifier a owl:ObjectProperty;
-  rdfs:label "license Identifier"@en;
+gdmt-property:licenseIdentifier a owl:ObjectProperty;
+  rdfs:label "licenseIdentifier"@en;
   skos:definition "IRI of the license for the dataset being described."@en;
   skos:prefLabel "licenseIdentifier"@en .
 
-gdmt:licenseIdentifierScheme a owl:DataProperty;
-  rdfs:label "license Identifier Scheme"@en;
+gdmt-property:licenseIdentifierScheme a owl:DataProperty;
+  rdfs:label "licenseIdentifierScheme"@en;
   skos:definition "The name of the scheme or authority used for the Rights Identifier."@en;
   skos:prefLabel "licenseIdentifierScheme"@en .
 
-gdmt:licenseIdentifierSchemeIRI a owl:ObjectProperty;
-  rdfs:label "license Identifier Scheme IRI"@en;
+gdmt-property:licenseIdentifierSchemeIRI a owl:ObjectProperty;
+  rdfs:label "licenseIdentifierSchemeIRI"@en;
   skos:definition "The IRI of the scheme or authority used for the Rights Identifier."@en;
   skos:prefLabel "licenseIdentifierSchemeIRI"@en .
 
-gdmt:datasetDate a owl:DataProperty;
-  rdfs:label "dataset Date"@en;
+gdmt-property:datasetDate a owl:DataProperty;
+  rdfs:label "datasetDate"@en;
   skos:definition "Date relevant to dataset."@en;
   skos:prefLabel "datasetDate"@en .
 
-gdmt:datasetDateType a owl:ObjectProperty;
-  rdfs:label "dataset Date Type"@en;
+gdmt-property:datasetDateType a owl:ObjectProperty;
+  rdfs:label "datasetDateType"@en;
   skos:definition "Type of the date with respect to the dataset."@en;
   skos:prefLabel "datasetDateType"@en .
 
-gdmt:distributionIdentifier a owl:ObjectProperty;
-  rdfs:label "distribution Identifier"@en;
+gdmt-property:distributionIdentifier a owl:ObjectProperty;
+  rdfs:label "distributionIdentifier"@en;
   skos:definition "A globally unique string that identifies the dataset distribution."@en;
   skos:prefLabel "distributionIdentifier"@en .
 
-gdmt:distributionIdentifierType a owl:ObjectProperty;
-  rdfs:label "distribution Identifier Type"@en;
+gdmt-property:distributionIdentifierType a owl:ObjectProperty;
+  rdfs:label "distributionIdentifierType"@en;
   skos:definition "The identifier type used to identify the dataset distribution."@en;
   skos:prefLabel "distributionIdentifierType"@en .
 
-gdmt:distributionMediaType a owl:ObjectProperty;
-  rdfs:label "distribution Media Type"@en;
+gdmt-property:distributionMediaType a owl:ObjectProperty;
+  rdfs:label "distributionMediaType"@en;
   skos:definition "A media type, formerly known as a MIME type, of dataset distribution."@en;
   skos:prefLabel "distributionMediaType"@en .
 
-gdmt:distributionSize a owl:DataProperty;
-  rdfs:label "distribution Size"@en;
+gdmt-property:distributionSize a owl:DataProperty;
+  rdfs:label "distributionSize"@en;
   skos:definition "Total size of dataset distribution."@en;
   skos:prefLabel "distributionSize"@en .
 
-gdmt:distributionAccessProtocol a owl:DataProperty;
-  rdfs:label "distribution Access Protocol"@en;
+gdmt-property:distributionAccessProtocol a owl:DataProperty;
+  rdfs:label "distributionAccessProtocol"@en;
   skos:definition "The protocol used to access the dataset distribution."@en;
   skos:prefLabel "distributionAccessProtocol"@en .
 
-gdmt:distributionAccessConfiguration a owl:DataProperty;
-  rdfs:label "distribution Access Configuration"@en;
+gdmt-property:distributionAccessConfiguration a owl:DataProperty;
+  rdfs:label "distributionAccessConfiguration"@en;
   skos:definition "The access protocol configuration for quering dataset distribution."@en;
   skos:prefLabel "distributionAccessConfiguration"@en .
 
-gdmt:distributionQueryStatement a owl:DataProperty;
-  rdfs:label "distribution Query Statement"@en;
+gdmt-property:distributionQueryStatement a owl:DataProperty;
+  rdfs:label "distributionQueryStatement"@en;
   skos:definition "Technical statement(s) for querying dataset distribution."@en;
   skos:prefLabel "distributionQueryStatement"@en .
 
-gdmt:distributionDate a owl:DataProperty;
-  rdfs:label "distribution Date"@en;
+gdmt-property:distributionDate a owl:DataProperty;
+  rdfs:label "distributionDate"@en;
   skos:definition "Date when the dataset was distributed."@en;
   skos:prefLabel "distributionDate"@en .
 
-gdmt:distributorIdentifier a owl:ObjectProperty;
-  rdfs:label "distributor Identifier"@en;
+gdmt-property:distributorIdentifier a owl:ObjectProperty;
+  rdfs:label "distributorIdentifier"@en;
   skos:definition "Globally unique string that identifies the distributor (an individual, legal entity or system)."@en;
   skos:prefLabel "distributorIdentifier"@en .
 
-gdmt:distributorIdentifierScheme a owl:DataProperty;
-  rdfs:label "distributor Identifier Scheme"@en;
+gdmt-property:distributorIdentifierScheme a owl:DataProperty;
+  rdfs:label "distributorIdentifierScheme"@en;
   skos:definition "The name of the scheme or authority used for the Distributor Identifier."@en;
   skos:prefLabel "distributorIdentifierScheme"@en .
 
-gdmt:distributorIdentifierSchemeIRI a owl:ObjectProperty;
-  rdfs:label "distributor Identifier Scheme IRI"@en;
+gdmt-property:distributorIdentifierSchemeIRI a owl:ObjectProperty;
+  rdfs:label "distributorIdentifierSchemeIRI"@en;
   skos:definition "The IRI of the scheme or authority used for the Distributor Identifier."@en;
   skos:prefLabel "distributorIdentifierSchemeIRI"@en .
 
-gdmt:distributorAffiliation a owl:ObjectProperty;
-  rdfs:label "distributor Affiliation"@en;
+gdmt-property:distributorAffiliation a owl:ObjectProperty;
+  rdfs:label "distributorAffiliation"@en;
   skos:definition "The organizational or institutional affiliation of the distributor."@en;
   skos:prefLabel "distributorAffiliation"@en .
 
-gdmt:distributorAffiliationIdentifier a owl:ObjectProperty;
-  rdfs:label "distributor Affiliation Identifier"@en;
+gdmt-property:distributorAffiliationIdentifier a owl:ObjectProperty;
+  rdfs:label "distributorAffiliationIdentifier"@en;
   skos:definition "Globally unique string that identifies the organizational affiliation of the distributor."@en;
   skos:prefLabel "distributorAffiliationIdentifier"@en .
 
-gdmt:distributorAffiliationIdentifierScheme a owl:DataProperty;
-  rdfs:label "distributor Affiliation Identifier Scheme"@en;
+gdmt-property:distributorAffiliationIdentifierScheme a owl:DataProperty;
+  rdfs:label "distributorAffiliationIdentifierScheme"@en;
   skos:definition "The name of the scheme or authority used for the Distributor Affiliation Identifier."@en;
   skos:prefLabel "distributorAffiliationIdentifierScheme"@en .
 
-gdmt:distributorAffiliationIdentifierSchemeIRI a owl:ObjectProperty;
-  rdfs:label "distributor Affiliation Identifier Scheme IRI"@en;
+gdmt-property:distributorAffiliationIdentifierSchemeIRI a owl:ObjectProperty;
+  rdfs:label "distributorAffiliationIdentifierSchemeIRI"@en;
   skos:definition "The IRI of the scheme or authority used for the Distributor Affiliation Identifier."@en;
   skos:prefLabel "distributorAffiliationIdentifierSchemeIRI"@en .
 
-gdmt:distributorRole a owl:ObjectProperty;
-  rdfs:label "distributor Role"@en;
+gdmt-property:distributorRole a owl:ObjectProperty;
+  rdfs:label "distributorRole"@en;
   skos:definition "The role of the distributor in bringing the described dataset into existence."@en;
   skos:prefLabel "distributorRole"@en .
 
-gdmt:distributorType a owl:ObjectProperty;
-  rdfs:label "distributor Type"@en;
+gdmt-property:distributorType a owl:ObjectProperty;
+  rdfs:label "distributorType"@en;
   skos:definition "The type of the distributor of the described dataset (organization, person, or system)."@en;
   skos:prefLabel "distributorType"@en .
 
-gdmt:dataStream a owl:DataProperty;
-  rdfs:label "data Stream"@en;
+gdmt-property:dataStream a owl:DataProperty;
+  rdfs:label "dataStream"@en;
   skos:definition "Human readable name of collection of records coming from a data source."@en;
   skos:prefLabel "dataStream"@en .
 
-gdmt:dataStreamIRI a owl:ObjectProperty;
-  rdfs:label "data Stream IRI"@en;
+gdmt-property:dataStreamIRI a owl:ObjectProperty;
+  rdfs:label "dataStreamIRI"@en;
   skos:definition "Unique identifier of collection of records coming from a data source."@en;
   skos:prefLabel "dataStreamIRI"@en .
 
-gdmt:dataStreamScheme a owl:DataProperty;
-  rdfs:label "data Stream Scheme"@en;
+gdmt-property:dataStreamScheme a owl:DataProperty;
+  rdfs:label "dataStreamScheme"@en;
   skos:definition "The name of the scheme or authority used for the Data Stream Identifier."@en;
   skos:prefLabel "dataStreamScheme"@en .
 
-gdmt:dataStreamSchemeIRI a owl:ObjectProperty;
-  rdfs:label "data Stream Scheme IRI"@en;
+gdmt-property:dataStreamSchemeIRI a owl:ObjectProperty;
+  rdfs:label "dataStreamSchemeIRI"@en;
   skos:definition "The IRI of the scheme or authority used for the Data Stream Identifier."@en;
   skos:prefLabel "dataStreamSchemeIRI"@en .
 
-gdmt:dataSource a owl:DataProperty;
-  rdfs:label "data Source"@en;
+gdmt-property:dataSource a owl:DataProperty;
+  rdfs:label "dataSource"@en;
   skos:definition "Human readable name of data source from which the variable(s) come(s)."@en;
   skos:prefLabel "dataSource"@en .
 
-gdmt:dataSourceIRI a owl:ObjectProperty;
-  rdfs:label "data Source IRI"@en;
+gdmt-property:dataSourceIRI a owl:ObjectProperty;
+  rdfs:label "dataSourceIRI"@en;
   skos:definition "IRI describing the data source (e.g., PID of an instrument)."@en;
   skos:prefLabel "dataSourceIRI"@en .
 
-gdmt:dataSourceScheme a owl:DataProperty;
-  rdfs:label "data Source Scheme"@en;
+gdmt-property:dataSourceScheme a owl:DataProperty;
+  rdfs:label "dataSourceScheme"@en;
   skos:definition "The name of the scheme or authority used for the Data Source Identifier."@en;
   skos:prefLabel "dataSourceScheme"@en .
 
-gdmt:dataSourceSchemeIRI a owl:ObjectProperty;
-  rdfs:label "data Source Scheme IRI"@en;
+gdmt-property:dataSourceSchemeIRI a owl:ObjectProperty;
+  rdfs:label "dataSourceSchemeIRI"@en;
   skos:definition "The IRI of the scheme or authority used for the Data Source Identifier."@en;
   skos:prefLabel "dataSourceSchemeIRI"@en .
 
-gdmt:variable a owl:DataProperty;
+gdmt-property:variable a owl:DataProperty;
   rdfs:label "variable"@en;
   skos:definition "Human readable name of variable being recorded in datastream."@en;
   skos:prefLabel "variable"@en .
 
-gdmt:variableIRI a owl:ObjectProperty;
-  rdfs:label "variable IRI"@en;
+gdmt-property:variableIRI a owl:ObjectProperty;
+  rdfs:label "variableIRI"@en;
   skos:definition "IRI describing the variable."@en;
   skos:prefLabel "variableIRI"@en .
 
-gdmt:variableScheme a owl:DataProperty;
+gdmt-property:variableScheme a owl:DataProperty;
   rdfs:label "variableScheme"@en;
   skos:definition "The name of the scheme or authority used for the Variable Identifier."@en;
   skos:prefLabel "variableScheme"@en .
 
-gdmt:variableSchemeIRI a owl:ObjectProperty;
-  rdfs:label "variable Scheme IRI"@en;
+gdmt-property:variableSchemeIRI a owl:ObjectProperty;
+  rdfs:label "variableSchemeIRI"@en;
   skos:definition "The IRI of the scheme or authority used for the Variable Identifier."@en;
   skos:prefLabel "variableSchemeIRI"@en .
 
-gdmt:pointLatitude a owl:DataProperty;
-  rdfs:label "point Latitude"@en;
+gdmt-property:pointLatitude a owl:DataProperty;
+  rdfs:label "pointLatitude"@en;
   skos:definition "Geographic latitude of a point which represents a location of dataset collection."@en;
   skos:prefLabel "pointLatitude"@en .
 
-gdmt:pointLongitude a owl:DataProperty;
-  rdfs:label "point Longitude"@en;
+gdmt-property:pointLongitude a owl:DataProperty;
+  rdfs:label "pointLongitude"@en;
   skos:definition "Geographic longitude of a point which represents a location of dataset collection."@en;
   skos:prefLabel "pointLongitude"@en .
 
-gdmt:westBoundLongitude a owl:DataProperty;
-  rdfs:label "west Bound Longitude"@en;
+gdmt-property:westBoundLongitude a owl:DataProperty;
+  rdfs:label "westBoundLongitude"@en;
   skos:definition "The most west longitude of a bounding box representing an area of dataset collection."@en;
   skos:prefLabel "westBoundLongitude"@en .
 
-gdmt:eastBoundLongitude a owl:DataProperty;
-  rdfs:label "east Bound Longitude"@en;
+gdmt-property:eastBoundLongitude a owl:DataProperty;
+  rdfs:label "eastBoundLongitude"@en;
   skos:definition "The most east longitude of a bounding box representing an area of dataset collection."@en;
   skos:prefLabel "eastBoundLongitude"@en .
 
-gdmt:southBoundLatitude a owl:DataProperty;
-  rdfs:label "south Bound Latitude"@en;
+gdmt-property:southBoundLatitude a owl:DataProperty;
+  rdfs:label "southBoundLatitude"@en;
   skos:definition "The most south latitude of a bounding box representing an area of dataset collection."@en;
   skos:prefLabel "southBoundLatitude"@en .
 
-gdmt:northBoundLatitude a owl:DataProperty;
-  rdfs:label "north Bound Latitude"@en;
+gdmt-property:northBoundLatitude a owl:DataProperty;
+  rdfs:label "northBoundLatitude"@en;
   skos:definition "The most north latitude of a bounding box representing an area of dataset collection."@en;
   skos:prefLabel "northBoundLatitude"@en .
 
-gdmt:polygonPointLatitude a owl:DataProperty;
-  rdfs:label "polygon Point Latitude"@en;
+gdmt-property:polygonPointLatitude a owl:DataProperty;
+  rdfs:label "polygonPointLatitude"@en;
   skos:definition "Geographical latitude of a polygon point which represents one vertex of an area of dataset collection."@en;
   skos:prefLabel "polygonPointLatitude"@en .
 
-gdmt:polygonPointLongitude a owl:DataProperty;
-  rdfs:label "polygon Point Longitude"@en;
+gdmt-property:polygonPointLongitude a owl:DataProperty;
+  rdfs:label "polygonPointLongitude"@en;
   skos:definition "Geographical longitude of a polygon point which represents one vertex of an area of dataset collection."@en;
   skos:prefLabel "polygonPointLongitude"@en .
 
-gdmt:geoLocationDescription a owl:DataProperty;
-  rdfs:label "geo Location Description"@en;
+gdmt-property:geoLocationDescription a owl:DataProperty;
+  rdfs:label "geoLocationDescription"@en;
   skos:definition "The description of a geographical location of dataset collection."@en;
   skos:prefLabel "geoLocationDescription"@en .
 
-gdmt:verticalExtentMaximumValue a owl:DataProperty;
-  rdfs:label "vertical Extent Maximum Value"@en;
+gdmt-property:verticalExtentMaximumValue a owl:DataProperty;
+  rdfs:label "verticalExtentMaximumValue"@en;
   skos:definition "A maximum vertical extent of dataset collection. In case of depth, this represents a minimum depth of dataset collection."@en;
   skos:prefLabel "verticalExtentMaximumValue"@en .
 
-gdmt:verticalExtentMinimumValue a owl:DataProperty;
-  rdfs:label "vertical Extent Minimum Value"@en;
+gdmt-property:verticalExtentMinimumValue a owl:DataProperty;
+  rdfs:label "verticalExtentMinimumValue"@en;
   skos:definition "A minimum vertical extent of dataset collection. In case of depth, this represents a maximum depth of dataset collection."@en;
   skos:prefLabel "verticalExtentMinimumValue"@en .
 
-gdmt:verticalExtentUnit a owl:ObjectProperty;
-  rdfs:label "vertical Extent Unit"@en;
+gdmt-property:verticalExtentUnit a owl:ObjectProperty;
+  rdfs:label "verticalExtentUnit"@en;
   skos:definition "Unit used to specify Vertical Extent."@en;
   skos:prefLabel "verticalExtentUnit"@en .
 
-gdmt:verticalExtentUnitIRI a owl:ObjectProperty;
-  rdfs:label "vertical Extent Unit IRI"@en;
+gdmt-property:verticalExtentUnitIRI a owl:ObjectProperty;
+  rdfs:label "verticalExtentUnitIRI"@en;
   skos:definition "The IRI for the unit used to specify Vertical Extent."@en;
   skos:prefLabel "verticalExtentUnitIRI"@en .
 
-gdmt:verticalExtentUnitScheme a owl:DataProperty;
-  rdfs:label "vertical Extent Unit Scheme"@en;
+gdmt-property:verticalExtentUnitScheme a owl:DataProperty;
+  rdfs:label "verticalExtentUnitScheme"@en;
   skos:definition "The name of the scheme or authority used for the Vertical Extent Unit Identifier."@en;
   skos:prefLabel "verticalExtentUnitScheme"@en .
 
-gdmt:verticalExtentUnitSchemeIRI a owl:ObjectProperty;
-  rdfs:label "vertical Extent Unit Scheme IRI"@en;
+gdmt-property:verticalExtentUnitSchemeIRI a owl:ObjectProperty;
+  rdfs:label "verticalExtentUnitSchemeIRI"@en;
   skos:definition "The IRI of the scheme or authority used for the Vertical Extent Unit Identifier."@en;
   skos:prefLabel "verticalExtentUnitSchemeIRI"@en .
 
-gdmt:verticalExtentDatum a owl:DataProperty;
+gdmt-property:verticalExtentDatum a owl:DataProperty;
   rdfs:label "verticalExtentDatum"@en;
   skos:definition "The name of the Datum (reference frame) used for the Vertical Extent values."@en;
   skos:prefLabel "verticalExtentDatum"@en .
 
-gdmt:verticalExtentDatumIRI a owl:ObjectProperty;
-  rdfs:label "vertical Extent Datum IRI"@en;
+gdmt-property:verticalExtentDatumIRI a owl:ObjectProperty;
+  rdfs:label "verticalExtentDatumIRI"@en;
   skos:definition "The unique identifier of the Datum (reference frame) used for the Vertical Extent values."@en;
   skos:prefLabel "verticalExtentDatumIRI"@en .
 
-gdmt:temporalExtentMinimumValue a owl:DataProperty;
-  rdfs:label "temporal Extent Minimum Value"@en;
+gdmt-property:temporalExtentMinimumValue a owl:DataProperty;
+  rdfs:label "temporalExtentMinimumValue"@en;
   skos:definition "The start date of the data."@en;
   skos:prefLabel "temporalExtentMinimumValue"@en .
 
-gdmt:temporalExtentMaximumValue a owl:DataProperty;
-  rdfs:label "temporal Extent Maximum Value"@en;
+gdmt-property:temporalExtentMaximumValue a owl:DataProperty;
+  rdfs:label "temporalExtentMaximumValue"@en;
   skos:definition "The end date of the data."@en;
   skos:prefLabel "temporalExtentMaximumValue"@en .
 
-gdmt:temporalResolution a owl:ObjectProperty;
-  rdfs:label "temporal Resolution"@en;
+gdmt-property:temporalResolution a owl:ObjectProperty;
+  rdfs:label "temporalResolution"@en;
   skos:definition "Interval between two consecutive data records."@en;
   skos:prefLabel "temporalResolution"@en .
 
-gdmt:duration a owl:DataProperty;
+gdmt-property:duration a owl:DataProperty;
   rdfs:label "duration"@en;
   skos:definition "The total duration of data temporal coverage."@en;
   skos:prefLabel "duration"@en .
 
-gdmt:awardTitle a owl:DataProperty;
-  rdfs:label "award Title"@en;
+gdmt-property:awardTitle a owl:DataProperty;
+  rdfs:label "awardTitle"@en;
   skos:definition "The human readable title of the award, grant, or other specific funding mechanism for the described dataset."@en;
   skos:prefLabel "awardTitle"@en .
 
-gdmt:awardPageIRI a owl:DataProperty;
-  rdfs:label "award Page IRI"@en;
+gdmt-property:awardPageIRI a owl:DataProperty;
+  rdfs:label "awardPageIRI"@en;
   skos:definition "The IRI leading to a page provided by the funder for more information about the award (grant)."@en;
   skos:prefLabel "awardPageIRI"@en .
 
-gdmt:awardLocalIdentifier a owl:DataProperty;
-  rdfs:label "award Local Identifier"@en;
+gdmt-property:awardLocalIdentifier a owl:DataProperty;
+  rdfs:label "awardLocalIdentifier"@en;
   skos:definition "The code assigned by the funding provider to a sponsored award (grant). (Can be an IRI, but typically is not.)"@en;
   skos:prefLabel "awardLocalIdentifier"@en .
 
-gdmt:funderName a owl:DataProperty;
-  rdfs:label "funder Name"@en;
+gdmt-property:funderName a owl:DataProperty;
+  rdfs:label "funderName"@en;
   skos:definition "Name of the organization providing the funding for the described dataset ('funding provider')."@en;
   skos:prefLabel "funderName"@en .
 
-gdmt:funderIdentifier a owl:ObjectProperty;
-  rdfs:label "funder Identifier"@en;
+gdmt-property:funderIdentifier a owl:ObjectProperty;
+  rdfs:label "funderIdentifier"@en;
   skos:definition "Globally unique string that identifies the funding provider."@en;
   skos:prefLabel "funderIdentifier"@en .
 
-gdmt:funderIdentifierScheme a owl:DataProperty;
-  rdfs:label "funder Identifier Scheme"@en;
+gdmt-property:funderIdentifierScheme a owl:DataProperty;
+  rdfs:label "funderIdentifierScheme"@en;
   skos:definition "Name of the schema for the funderIdentifier."@en;
   skos:prefLabel "funderIdentifierScheme"@en .
 
-gdmt:funderIdentifierSchemeIRI a owl:ObjectProperty;
-  rdfs:label "funder Identifier Scheme IRI"@en;
+gdmt-property:funderIdentifierSchemeIRI a owl:ObjectProperty;
+  rdfs:label "funderIdentifierSchemeIRI"@en;
   skos:definition "IRI of the schema for the funder identifier."@en;
   skos:prefLabel "funderIdentifierSchemeIRI"@en .
 
@@ -780,7 +704,7 @@ gdmt:ResourceTypeCategory a skos:Concept;
     gdmt:DataStream, gdmt:Dataset, gdmt:Event, gdmt:Image, gdmt:InteractiveResource, gdmt:Model,
     gdmt:OtherResource, gdmt:PhysicalObject, gdmt:Service, gdmt:Software, gdmt:Sound,
     gdmt:Text, gdmt:Workflow;
-  skos:prefLabel "Resource Type Category"@en;
+  skos:prefLabel "ResourceTypeCategory"@en;
   skos:topConceptOf <https://vocab.fairdatacollective.org/gdmt/> .
 
 gdmt:Audiovisual a skos:Concept;
@@ -812,6 +736,12 @@ gdmt:Dataset a skos:Concept;
   skos:definition "Dataset is a logical grouping of one or more data streams. It is can be provided in various data distributions. Dataset might be part of (parent) data catalog."@en;
   skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "Dataset"@en .
+
+gdmt:DataStream a skos:Concept;
+  skos:broader gdmt:ResourceTypeCategory;
+  skos:definition "Data stream represent a collection of one or more variable records originating from a single data source (e.g., sensor) which properties remain unchanged during the data stream existence. In some use-cases, the data source location is required to remain unchanged (e.g., sensors attached to a meteorological tower). Data stream can grow over time."@en;
+  skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "DataStream"@en .
 
 gdmt:Event a skos:Concept;
   skos:broader gdmt:ResourceTypeCategory;
@@ -887,7 +817,7 @@ gdmt:ContributorRole a skos:Concept;
     gdmt:ProjectLeader, gdmt:ProjectManager, gdmt:ProjectMember, gdmt:RegistrationAgency,
     gdmt:RegistrationAuthority, gdmt:RelatedPerson, gdmt:ResearchGroup, gdmt:Researcher,
     gdmt:RightsHolder, gdmt:Sponsor, gdmt:Supervisor, gdmt:WorkPackageLeader;
-  skos:prefLabel "Contributor Role"@en;
+  skos:prefLabel "ContributorRole"@en;
   skos:topConceptOf <https://vocab.fairdatacollective.org/gdmt/> .
 
 gdmt:ContactPerson a skos:Concept;
@@ -913,6 +843,12 @@ gdmt:DataManager a skos:Concept;
   skos:definition "Person (or organization with a staff of data managers, such as a data centre) responsible for maintaining the finished resource."@en;
   skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "DataManager"@en .
+
+gdmt:Distributor a skos:Concept;
+  skos:broader gdmt:ContributorRole;
+  skos:definition "Institution tasked with responsibility to generate/disseminate copies of the resource in either electronic or print form."@en;
+  skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Distributor"@en .
 
 gdmt:Editor a skos:Concept;
   skos:broader gdmt:ContributorRole;
@@ -1015,7 +951,7 @@ gdmt:DateType a skos:Concept;
   skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
   skos:narrower gdmt:Accepted, gdmt:Available, gdmt:Collected, gdmt:Copyrighted, gdmt:Created,
     gdmt:Issued, gdmt:Published, gdmt:Submitted, gdmt:Updated, gdmt:Valid, gdmt:Withdrawn;
-  skos:prefLabel "Date Type"@en;
+  skos:prefLabel "DateType"@en;
   skos:topConceptOf <https://vocab.fairdatacollective.org/gdmt/> .
 
 gdmt:Published a skos:Concept;
@@ -1084,137 +1020,137 @@ gdmt:Withdrawn a skos:Concept;
   skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "Withdrawn"@en .
 
-gdmt:RelatedIdentifierType a skos:Concept;
-  skos:definition "The type of internet identifier used for the entity. Note many of these identifier types are *not* IRIs."@en;
+gdmt:ResourceIdentifierType a skos:Concept;
+  skos:definition "The type of internet identifier used for the resource. Note many of these identifier types are *not* IRIs."@en;
   skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
   skos:narrower gdmt:ARK, gdmt:DOI, gdmt:EAN13, gdmt:EISSN, gdmt:Handle, gdmt:IGSN,
     gdmt:IRI, gdmt:ISBN, gdmt:ISSN, gdmt:ISTC, gdmt:LISSN, gdmt:LSID, gdmt:PMID, gdmt:PURL,
     gdmt:UPC, gdmt:URI, gdmt:URL, gdmt:URN, gdmt:arXiv, gdmt:bibcode, gdmt:w3id;
-  skos:prefLabel "Related Identifier Type"@en;
+  skos:prefLabel "ResourceIdentifierType"@en;
   skos:topConceptOf <https://vocab.fairdatacollective.org/gdmt/> .
 
 gdmt:ARK a skos:Concept;
-  skos:broader gdmt:RelatedIdentifierType;
+  skos:broader gdmt:ResourceIdentifierType;
   skos:definition "Archival Resource Key; URL designed to support long-term access to information objects. In general, ARK syntax is of the form (brackets indicate [optional] elements: [http://NMA/]ark:/NAAN/Name [Qualifier]"@en;
   skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "ARK"@en .
 
 gdmt:arXiv a skos:Concept;
-  skos:broader gdmt:RelatedIdentifierType;
+  skos:broader gdmt:ResourceIdentifierType;
   skos:definition "arXiv identifier; arXiv.org is a repository of preprints of scientific papers in the fields of mathematics, physics, astronomy, computer science, quantitative biology, statistics, and quantitative finance."@en;
   skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "arXiv"@en .
 
 gdmt:bibcode a skos:Concept;
-  skos:broader gdmt:RelatedIdentifierType;
+  skos:broader gdmt:ResourceIdentifierType;
   skos:definition "Astrophysics Data System bibliographic codes; a standardized 19 character identifier according to the syntax yyyyjjjjjvvvvmppppa. See http://info- uri.info/registry/OAIHandler?ve rb=GetRecord&metadataPrefix= reg&identifier=info:bibcode/"@en;
   skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "bibcode"@en .
 
 gdmt:DOI a skos:Concept;
-  skos:broader gdmt:RelatedIdentifierType;
+  skos:broader gdmt:ResourceIdentifierType;
   skos:definition "Digital Object Identifier; a character string used to uniquely identify an object. A DOI name is divided into two parts, a prefix and a suffix, separated by a slash."@en;
   skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "DOI"@en .
 
 gdmt:EAN13 a skos:Concept;
-  skos:broader gdmt:RelatedIdentifierType;
+  skos:broader gdmt:ResourceIdentifierType;
   skos:definition "European Article Number, now renamed International Article Number, but retaining the original acronym, is a 13-digit barcoding standard which is a superset of the original 12-digit Universal Product Code (UPC) system."@en;
   skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "EAN13"@en .
 
 gdmt:EISSN a skos:Concept;
-  skos:broader gdmt:RelatedIdentifierType;
+  skos:broader gdmt:ResourceIdentifierType;
   skos:definition "Electronic International Standard Serial Number; ISSN used to identify periodicals in electronic form (eISSN or e- ISSN)."@en;
   skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "EISSN"@en .
 
 gdmt:Handle a skos:Concept;
-  skos:broader gdmt:RelatedIdentifierType;
+  skos:broader gdmt:ResourceIdentifierType;
   skos:definition "A handle is an abstract reference to a resource."@en;
   skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "Handle"@en .
 
 gdmt:IGSN a skos:Concept;
-  skos:broader gdmt:RelatedIdentifierType;
+  skos:broader gdmt:ResourceIdentifierType;
   skos:definition "International Geo Sample Number; a 9-digit alphanumeric code that uniquely identifies samples from our natural environment and related sampling features."@en;
   skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "IGSN"@en .
 
 gdmt:ISBN a skos:Concept;
-  skos:broader gdmt:RelatedIdentifierType;
+  skos:broader gdmt:ResourceIdentifierType;
   skos:definition "International Standard Book Number; a unique numeric book identifier. There are 2 formats: a 10-digit ISBN format and a 13- digit ISBN."@en;
   skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "ISBN"@en .
 
 gdmt:ISSN a skos:Concept;
-  skos:broader gdmt:RelatedIdentifierType;
+  skos:broader gdmt:ResourceIdentifierType;
   skos:definition "International Standard Serial Number; a unique 8-digit number used to identify a print or electronic periodical publication."@en;
   skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "ISSN"@en .
 
 gdmt:ISTC a skos:Concept;
-  skos:broader gdmt:RelatedIdentifierType;
+  skos:broader gdmt:ResourceIdentifierType;
   skos:definition "International Standard Text Code; a unique “number” assigned to a textual work. An ISTC consists of 16 numbers and/or letters."@en;
   skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "ISTC"@en .
 
 gdmt:LISSN a skos:Concept;
-  skos:broader gdmt:RelatedIdentifierType;
+  skos:broader gdmt:ResourceIdentifierType;
   skos:definition "The linking ISSN or ISSN-L enables collocation or linking among different media versions of a continuing resource."@en;
   skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "LISSN"@en .
 
 gdmt:LSID a skos:Concept;
-  skos:broader gdmt:RelatedIdentifierType;
+  skos:broader gdmt:ResourceIdentifierType;
   skos:definition "Life Science Identifiers; a unique identifier for data in the Life Science domain. Format: urn:lsid:authority:namespace:id entifier:revision"@en;
   skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "LSID"@en .
 
 gdmt:PMID a skos:Concept;
-  skos:broader gdmt:RelatedIdentifierType;
+  skos:broader gdmt:ResourceIdentifierType;
   skos:definition "PubMed identifier; a unique number assigned to each PubMed record."@en;
   skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "PMID"@en .
 
 gdmt:PURL a skos:Concept;
-  skos:broader gdmt:RelatedIdentifierType;
+  skos:broader gdmt:ResourceIdentifierType;
   skos:definition "Persistent Uniform Resource Locator. A PURL is an IRI, and therefore has three parts: (1) a protocol, (2) a resolver address, and (3) a name."@en;
   skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "PURL"@en .
 
 gdmt:UPC a skos:Concept;
-  skos:broader gdmt:RelatedIdentifierType;
+  skos:broader gdmt:ResourceIdentifierType;
   skos:definition "Universal Product Code is a barcode symbology used for tracking trade items in stores. Its most common form, the UPC-A, consists of 12 numerical digits."@en;
   skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "UPC"@en .
 
 gdmt:URI a skos:Concept;
-  skos:broader gdmt:RelatedIdentifierType;
+  skos:broader gdmt:ResourceIdentifierType;
   skos:definition "Uniform Resource Identifier is a string that provides a unique address (either on the Internet or on another private network, such as a computer filesystem or an Intranet) representing a resource, and implicitly describes where a resource can be found. A resource identification need not suggest the retrieval of resource representations over the Internet, nor need they imply network-based resources at all."@en;
   skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "URI"@en .
 
 gdmt:URL a skos:Concept;
-  skos:broader gdmt:RelatedIdentifierType;
+  skos:broader gdmt:ResourceIdentifierType;
   skos:definition "Uniform Resource Locator, also known as web address, is a specific character string that constitutes a reference to a resource. The syntax is: schema://domain:port/path?qu ery_string#fragment_id"@en;
   skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "URL"@en .
 
 gdmt:URN a skos:Concept;
-  skos:broader gdmt:RelatedIdentifierType;
+  skos:broader gdmt:ResourceIdentifierType;
   skos:definition "Uniform Resource Name; is a unique and persistent identifier of an electronic document. The syntax is: urn:< NID>:<NSS> The leading urn: sequence is case-insensitive, <NID> is the namespace identifier, <NSS> is the namespace-specific string."@en;
   skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "URN"@en .
 
 gdmt:w3id a skos:Concept;
-  skos:broader gdmt:RelatedIdentifierType;
+  skos:broader gdmt:ResourceIdentifierType;
   skos:definition "Permanent identifier for Web applications. Mostly used to publish vocabularies and ontologies. The letters ‘w3’ stand for “World Wide Web”."@en;
   skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "w3id"@en .
 
 gdmt:IRI a skos:Concept;
-  skos:broader gdmt:RelatedIdentifierType;
+  skos:broader gdmt:ResourceIdentifierType;
   skos:definition "The Internationalized Resource Identifier (IRI) is an internet protocol standard which builds on the Uniform Resource Identifier (URI) protocol by greatly expanding the set of permitted characters."@en;
   skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "IRI"@en .
@@ -1229,7 +1165,7 @@ gdmt:RelationType a skos:Concept;
     gdmt:IsPartOf, gdmt:IsPreviousVersionOf, gdmt:IsReferencedBy, gdmt:IsRequiredBy, gdmt:IsReviewedBy,
     gdmt:IsSourceOf, gdmt:IsSupplementTo, gdmt:IsSupplementedBy, gdmt:IsVariantFormOf,
     gdmt:IsVersionOf, gdmt:Obsoletes, gdmt:References, gdmt:Requires, gdmt:Reviews;
-  skos:prefLabel "Relation Type"@en;
+  skos:prefLabel "RelationType"@en;
   skos:topConceptOf <https://vocab.fairdatacollective.org/gdmt/> .
 
 gdmt:IsCitedBy a skos:Concept;
@@ -1430,37 +1366,39 @@ gdmt:IsObsoletedBy a skos:Concept;
   skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "IsObsoletedBy"@en .
 
-gdmt:CreatorType a skos:Concept;
+gdmt:ResourceCreatorType a skos:Concept;
+  skos:definition "Types of creator responsiple for the ressource creation."@en;
   skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
   skos:narrower gdmt:Organization, gdmt:Person, gdmt:System;
-  skos:prefLabel "Creator Type"@en;
+  skos:prefLabel "ResourceCreatorType"@en;
   skos:topConceptOf <https://vocab.fairdatacollective.org/gdmt/> .
 
 gdmt:Person a skos:Concept;
-  skos:broader gdmt:CreatorType;
+  skos:broader gdmt:ResourceCreatorType;
   skos:definition "A person (plural people or persons) is a being that has certain capacities or attributes such as reason, morality, consciousness or self-consciousness, and being a part of a culturally established form of social relations such as kinship, ownership of property, or legal responsibility."@en;
   skos:exactMatch <https://en.wikipedia.org/wiki/Person>;
   skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "Person"@en .
 
 gdmt:Organization a skos:Concept;
-  skos:broader gdmt:CreatorType;
+  skos:broader gdmt:ResourceCreatorType;
   skos:definition "An organization is an entity - such as a company, an institution, or an association - comprising one or more people and having a particular purpose."@en;
   skos:exactMatch <https://en.wikipedia.org/wiki/Organization>;
   skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "Organization"@en .
 
 gdmt:System a skos:Concept;
-  skos:broader gdmt:CreatorType;
+  skos:broader gdmt:ResourceCreatorType;
   skos:definition "A system represent hardware and/or software entities capable of creating data such as instruments and computer models."@en;
   skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "System"@en .
 
 gdmt:IdentifierScheme a skos:Concept;
+  skos:definition "Identifier scheme used for identifying person, organization, system, physical or digital object."@en;
   skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
   skos:narrower gdmt:GRID, gdmt:ISNI, gdmt:LinkedInID, gdmt:ORCiD, gdmt:ROR, gdmt:ResearcherID,
     gdmt:Scopus;
-  skos:prefLabel "Identifier Scheme"@en;
+  skos:prefLabel "IdentifierScheme"@en;
   skos:topConceptOf <https://vocab.fairdatacollective.org/gdmt/> .
 
 gdmt:ORCiD a skos:Concept;
@@ -1507,10 +1445,11 @@ gdmt:ISNI a skos:Concept;
   skos:prefLabel "ISNI"@en .
 
 gdmt:IdentifierSchemeIRI a skos:Concept;
+  skos:definition "IRI of the identifier scheme used for identifying person, organization, system, physical or digital object."@en;
   skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
   skos:narrower gdmt:gridIRI, gdmt:isniIRI, gdmt:linkedinIRI, gdmt:orcidIRI, gdmt:researcheridIRI,
     gdmt:rorIRI, gdmt:scopusIRI;
-  skos:prefLabel "Identifier Scheme IRI"@en;
+  skos:prefLabel "IdentifierSchemeIRI"@en;
   skos:topConceptOf <https://vocab.fairdatacollective.org/gdmt/> .
 
 gdmt:orcidIRI a skos:Concept;
@@ -1554,6 +1493,86 @@ gdmt:isniIRI a skos:Concept;
   skos:definition "IRI of ISNI"@en;
   skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel <https://isni.org/> .
+
+gdmt:LicenseIdentifier a skos:Concept;
+  skos:definition "Information about the license identifier."@en;
+  skos:narrower gdmt:0BSD, gdmt:AAL, gdmt:ADSL, gdmt:AFL1.1, gdmt:AFL1.2, gdmt:AFL2.0,
+    gdmt:AFL2.1, gdmt:AFL3.0, gdmt:AGPL1.0only, gdmt:AGPL1.0orlater, gdmt:AGPL3.0only,
+    gdmt:AGPL3.0orlater, gdmt:AMDPLPA, gdmt:AML, gdmt:AMPAS, gdmt:ANTLRPD, gdmt:ANTLRPDfallback,
+    gdmt:APAFML, gdmt:APL1.0, gdmt:APSL1.0, gdmt:APSL1.1, gdmt:APSL1.2, gdmt:APSL2.0,
+    gdmt:Abstyles, gdmt:Adobe2006, gdmt:AdobeGlyph, gdmt:Afmparse, gdmt:Aladdin, gdmt:Apache1.0,
+    gdmt:Apache1.1, gdmt:Apache2.0, gdmt:Artistic1.0, gdmt:Artistic1.0Perl, gdmt:Artistic1.0cl8,
+    gdmt:Artistic2.0, gdmt:BSD1Clause, gdmt:BSD2Clause, gdmt:BSD2ClausePatent, gdmt:BSD2ClauseViews,
+    gdmt:BSD3Clause, gdmt:BSD3ClauseAttribution, gdmt:BSD3ClauseClear, gdmt:BSD3ClauseLBNL,
+    gdmt:BSD3ClauseNoNuclearLicense, gdmt:BSD3ClauseNoNuclearLicense2014, gdmt:BSD3ClauseNoNuclearWarranty,
+    gdmt:BSD3ClauseOpenMPI, gdmt:BSD4Clause, gdmt:BSD4ClauseUC, gdmt:BSDProtection, gdmt:BSDSourceCode,
+    gdmt:BSL1.0, gdmt:BUSL1.1, gdmt:Bahyph, gdmt:Barr, gdmt:Beerware, gdmt:BitTorrent1.0,
+    gdmt:BitTorrent1.1, gdmt:BlueOak1.0.0, gdmt:Borceux, gdmt:CAL1.0, gdmt:CAL1.0CombinedWorkException,
+    gdmt:CATOSL1.1, gdmt:CC01.0, gdmt:CCBY1.0, gdmt:CCBY2.0, gdmt:CCBY2.5, gdmt:CCBY3.0,
+    gdmt:CCBY3.0AT, gdmt:CCBY3.0US, gdmt:CCBY4.0, gdmt:CCBYNC1.0, gdmt:CCBYNC2.0, gdmt:CCBYNC2.5,
+    gdmt:CCBYNC3.0, gdmt:CCBYNC4.0, gdmt:CCBYNCND1.0, gdmt:CCBYNCND2.0, gdmt:CCBYNCND2.5,
+    gdmt:CCBYNCND3.0, gdmt:CCBYNCND3.0IGO, gdmt:CCBYNCND4.0, gdmt:CCBYNCSA1.0, gdmt:CCBYNCSA2.0,
+    gdmt:CCBYNCSA2.5, gdmt:CCBYNCSA3.0, gdmt:CCBYNCSA4.0, gdmt:CCBYND1.0, gdmt:CCBYND2.0,
+    gdmt:CCBYND2.5, gdmt:CCBYND3.0, gdmt:CCBYND4.0, gdmt:CCBYSA1.0, gdmt:CCBYSA2.0, gdmt:CCBYSA2.0UK,
+    gdmt:CCBYSA2.5, gdmt:CCBYSA3.0, gdmt:CCBYSA3.0AT, gdmt:CCBYSA4.0, gdmt:CCPDDC, gdmt:CDDL1.0,
+    gdmt:CDDL1.1, gdmt:CDLAPermissive1.0, gdmt:CDLASharing1.0, gdmt:CECILL1.0, gdmt:CECILL1.1,
+    gdmt:CECILL2.0, gdmt:CECILL2.1, gdmt:CECILLB, gdmt:CECILLC, gdmt:CERNOHL1.1, gdmt:CERNOHL1.2,
+    gdmt:CERNOHLP2.0, gdmt:CERNOHLS2.0, gdmt:CERNOHLW2.0, gdmt:CNRIJython, gdmt:CNRIPython,
+    gdmt:CNRIPythonGPLCompatible, gdmt:CPAL1.0, gdmt:CPL1.0, gdmt:CPOL1.02, gdmt:CUAOPL1.0,
+    gdmt:Caldera, gdmt:ClArtistic, gdmt:Condor1.1, gdmt:Crossword, gdmt:CrystalStacker,
+    gdmt:Cube, gdmt:DFSL1.0, gdmt:DOC, gdmt:DSDP, gdmt:Dotseqn, gdmt:ECL1.0, gdmt:ECL2.0,
+    gdmt:EFL1.0, gdmt:EFL2.0, gdmt:EPICS, gdmt:EPL1.0, gdmt:EPL2.0, gdmt:EUDatagrid, gdmt:EUPL1.0,
+    gdmt:EUPL1.1, gdmt:EUPL1.2, gdmt:Entessa, gdmt:ErlPL1.1, gdmt:Eurosym, gdmt:FSFAP,
+    gdmt:FSFUL, gdmt:FSFULLR, gdmt:FTL, gdmt:Fair, gdmt:Frameworx1.0, gdmt:FreeImage,
+    gdmt:GFDL1.1invariantsonly, gdmt:GFDL1.1invariantsorlater, gdmt:GFDL1.1noinvariantsonly,
+    gdmt:GFDL1.1noinvariantsorlater, gdmt:GFDL1.1only, gdmt:GFDL1.1orlater, gdmt:GFDL1.2invariantsonly,
+    gdmt:GFDL1.2invariantsorlater, gdmt:GFDL1.2noinvariantsonly, gdmt:GFDL1.2noinvariantsorlater,
+    gdmt:GFDL1.2only, gdmt:GFDL1.2orlater, gdmt:GFDL1.3invariantsonly, gdmt:GFDL1.3invariantsorlater,
+    gdmt:GFDL1.3noinvariantsonly, gdmt:GFDL1.3noinvariantsorlater, gdmt:GFDL1.3only, gdmt:GFDL1.3orlater,
+    gdmt:GL2PS, gdmt:GLWTPL, gdmt:GPL1.0only, gdmt:GPL1.0orlater, gdmt:GPL2.0only, gdmt:GPL2.0orlater,
+    gdmt:GPL3.0only, gdmt:GPL3.0orlater, gdmt:Giftware, gdmt:Glide, gdmt:Glulxe, gdmt:HPND,
+    gdmt:HPNDsellvariant, gdmt:HTMLTIDY, gdmt:HaskellReport, gdmt:Hippocratic2.1, gdmt:IBMpibs,
+    gdmt:ICU, gdmt:IJG, gdmt:IPA, gdmt:IPL1.0, gdmt:ISC, gdmt:ImageMagick, gdmt:Imlib2,
+    gdmt:InfoZIP, gdmt:Intel, gdmt:IntelACPI, gdmt:Interbase1.0, gdmt:JPNIC, gdmt:JSON,
+    gdmt:JasPer2.0, gdmt:LAL1.2, gdmt:LAL1.3, gdmt:LGPL2.0only, gdmt:LGPL2.0orlater, gdmt:LGPL2.1only,
+    gdmt:LGPL2.1orlater, gdmt:LGPL3.0only, gdmt:LGPL3.0orlater, gdmt:LGPLLR, gdmt:LPL1.0,
+    gdmt:LPL1.02, gdmt:LPPL1.0, gdmt:LPPL1.1, gdmt:LPPL1.2, gdmt:LPPL1.3a, gdmt:LPPL1.3c,
+    gdmt:Latex2e, gdmt:Leptonica, gdmt:LiLiQP1.1, gdmt:LiLiQR1.1, gdmt:LiLiQRplus1.1,
+    gdmt:Libpng, gdmt:LinuxOpenIB, gdmt:MIT, gdmt:MIT0, gdmt:MITCMU, gdmt:MITNFA, gdmt:MITadvertising,
+    gdmt:MITenna, gdmt:MITfeh, gdmt:MITopengroup, gdmt:MPL1.0, gdmt:MPL1.1, gdmt:MPL2.0,
+    gdmt:MPL2.0nocopyleftexception, gdmt:MSPL, gdmt:MSRL, gdmt:MTLL, gdmt:MakeIndex, gdmt:MirOS,
+    gdmt:Motosoto, gdmt:MulanPSL1.0, gdmt:MulanPSL2.0, gdmt:Multics, gdmt:Mup, gdmt:NASA1.3,
+    gdmt:NBPL1.0, gdmt:NCGLUK2.0, gdmt:NCSA, gdmt:NGPL, gdmt:NISTPD, gdmt:NISTPDfallback,
+    gdmt:NLOD1.0, gdmt:NLPL, gdmt:NOSL, gdmt:NPL1.0, gdmt:NPL1.1, gdmt:NPOSL3.0, gdmt:NRL,
+    gdmt:NTP, gdmt:NTP0, gdmt:Naumen, gdmt:NetCDF, gdmt:NetSNMP, gdmt:Newsletr, gdmt:Nokia,
+    gdmt:Noweb, gdmt:OCCTPL, gdmt:OCLC2.0, gdmt:ODCBy1.0, gdmt:ODbL1.0, gdmt:OFL1.0, gdmt:OFL1.0RFN,
+    gdmt:OFL1.0noRFN, gdmt:OFL1.1, gdmt:OFL1.1RFN, gdmt:OFL1.1noRFN, gdmt:OGC1.0, gdmt:OGLCanada2.0,
+    gdmt:OGLUK1.0, gdmt:OGLUK2.0, gdmt:OGLUK3.0, gdmt:OGTSL, gdmt:OLDAP1.1, gdmt:OLDAP1.2,
+    gdmt:OLDAP1.3, gdmt:OLDAP1.4, gdmt:OLDAP2.0, gdmt:OLDAP2.0.1, gdmt:OLDAP2.1, gdmt:OLDAP2.2,
+    gdmt:OLDAP2.2.1, gdmt:OLDAP2.2.2, gdmt:OLDAP2.3, gdmt:OLDAP2.4, gdmt:OLDAP2.5, gdmt:OLDAP2.6,
+    gdmt:OLDAP2.7, gdmt:OLDAP2.8, gdmt:OML, gdmt:OPL1.0, gdmt:OSETPL2.1, gdmt:OSL1.0,
+    gdmt:OSL1.1, gdmt:OSL2.0, gdmt:OSL2.1, gdmt:OSL3.0, gdmt:OUDA1.0, gdmt:OpenSSL, gdmt:PDDL1.0,
+    gdmt:PHP3.0, gdmt:PHP3.01, gdmt:PSF2.0, gdmt:Parity6.0.0, gdmt:Parity7.0.0, gdmt:Plexus,
+    gdmt:PolyFormNoncommercial1.0.0;
+  skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
+  skos:narrower gdmt:PolyFormSmallBusiness1.0.0, gdmt:PostgreSQL, gdmt:Python2.0, gdmt:QPL1.0,
+    gdmt:Qhull, gdmt:RHeCos1.1, gdmt:RPL1.1, gdmt:RPL1.5, gdmt:RPSL1.0, gdmt:RSAMD, gdmt:RSCPL,
+    gdmt:Rdisc, gdmt:Ruby, gdmt:SAXPD, gdmt:SCEA, gdmt:SGIB1.0, gdmt:SGIB1.1, gdmt:SGIB2.0,
+    gdmt:SHL0.5, gdmt:SHL0.51, gdmt:SISSL, gdmt:SISSL1.2, gdmt:SMLNJ, gdmt:SMPPL, gdmt:SNIA,
+    gdmt:SPL1.0, gdmt:SSHOpenSSH, gdmt:SSHshort, gdmt:SSPL1.0, gdmt:SWL, gdmt:Saxpath,
+    gdmt:Sendmail, gdmt:Sendmail8.23, gdmt:SimPL2.0, gdmt:Sleepycat, gdmt:Spencer86, gdmt:Spencer94,
+    gdmt:Spencer99, gdmt:SugarCRM1.1.3, gdmt:TAPROHL1.0, gdmt:TCL, gdmt:TCPwrappers, gdmt:TMate,
+    gdmt:TORQUE1.1, gdmt:TOSL, gdmt:TUBerlin1.0, gdmt:TUBerlin2.0, gdmt:UCL1.0, gdmt:UPL1.0,
+    gdmt:UnicodeDFS2015, gdmt:UnicodeDFS2016, gdmt:UnicodeTOU, gdmt:Unlicense, gdmt:VOSTROM,
+    gdmt:VSL1.0, gdmt:Vim, gdmt:W3C, gdmt:W3C19980720, gdmt:W3C20150513, gdmt:WTFPL, gdmt:Watcom1.0,
+    gdmt:Wsuipa, gdmt:X11, gdmt:XFree861.1, gdmt:XSkat, gdmt:Xerox, gdmt:Xnet, gdmt:YPL1.0,
+    gdmt:YPL1.1, gdmt:ZPL1.1, gdmt:ZPL2.0, gdmt:ZPL2.1, gdmt:Zed, gdmt:Zend2.0, gdmt:Zimbra1.3,
+    gdmt:Zimbra1.4, gdmt:Zlib, gdmt:blessing, gdmt:bzip21.0.5, gdmt:bzip21.0.6, gdmt:copyleftnext0.3.0,
+    gdmt:copyleftnext0.3.1, gdmt:curl, gdmt:diffmark, gdmt:dvipdfm, gdmt:eGenix, gdmt:etalab2.0,
+    gdmt:gSOAP1.3b, gdmt:gnuplot, gdmt:iMatix, gdmt:libpng2.0, gdmt:libselinux1.0, gdmt:libtiff,
+    gdmt:mpich2, gdmt:psfrag, gdmt:psutils, gdmt:xinetd, gdmt:xpp, gdmt:zlibacknowledgement;
+  skos:prefLabel "LicenseIdentifier"@en;
+  skos:topConceptOf <https://vocab.fairdatacollective.org/gdmt/> .
 
 gdmt:0BSD a skos:Concept;
   skos:broader gdmt:LicenseIdentifier;
@@ -4485,7 +4504,7 @@ gdmt:LicenseIdentifierScheme a skos:Concept;
   skos:definition "Identifier scheme used for defining licenses."@en;
   skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
   skos:narrower gdmt:SPDX;
-  skos:prefLabel "License Identifier Scheme"@en;
+  skos:prefLabel "LicenseIdentifierScheme"@en;
   skos:topConceptOf <https://vocab.fairdatacollective.org/gdmt/> .
 
 gdmt:SPDX a skos:Concept;
@@ -4498,7 +4517,7 @@ gdmt:LicenseIdentifierSchemeIRI a skos:Concept;
   skos:definition "IRI of the identifier scheme used for defining licenses."@en;
   skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
   skos:narrower gdmt:spdxIRI;
-  skos:prefLabel "License Identifier Scheme IRI"@en;
+  skos:prefLabel "LicenseIdentifierSchemeIRI"@en;
   skos:topConceptOf <https://vocab.fairdatacollective.org/gdmt/> .
 
 gdmt:spdxIRI a skos:Concept;
@@ -4636,7 +4655,7 @@ gdmt:MIMEType a skos:Concept;
     gdmt:video-x-qtc, gdmt:video-x-scm, gdmt:video-x-sgi-movie, gdmt:windows-metafile,
     gdmt:www-mime, gdmt:x-conference-x-cooltalk, gdmt:x-music-x-midi, gdmt:x-world-x-3dmf,
     gdmt:x-world-x-svr, gdmt:x-world-x-vrml, gdmt:x-world-x-vrt, gdmt:xgl-drawing, gdmt:xgl-movie;
-  skos:prefLabel "MIME Type"@en;
+  skos:prefLabel "MIMEType"@en;
   skos:topConceptOf <https://vocab.fairdatacollective.org/gdmt/> .
 
 gdmt:application-x-bytecode.python a skos:Concept;
