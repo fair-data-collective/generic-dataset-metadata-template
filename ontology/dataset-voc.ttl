@@ -26,10 +26,9 @@
   pav:createdOn "2020-12-01T00:00:00+01:00"@en;
   pav:lastUpdatedOn "2020-12-21T23:00:00+01:00"@en;
   pav:version "0.3.2"@en;
-  skos:hasTopConcept gdmt:ContributorRole, gdmt:DateType, gdmt:IdentifierScheme, gdmt:IdentifierSchemeIRI,
-    gdmt:LicenseIdentifier, gdmt:LicenseIdentifierScheme, gdmt:LicenseIdentifierSchemeIRI,
-    gdmt:MIMEType, gdmt:RelationType, gdmt:ResourceCreatorType, gdmt:ResourceIdentifierType,
-    gdmt:ResourceTypeCategory;
+  skos:hasTopConcept gdmt:ContributorRole, gdmt:DateType, gdmt:IdentifierScheme, gdmt:LicenseIdentifier,
+    gdmt:LicenseIdentifierScheme, gdmt:MIMEType, gdmt:RelationType, gdmt:ResourceCreatorType,
+    gdmt:ResourceIdentifierType, gdmt:ResourceTypeCategory;
   skos:prefLabel "Ontology for Generic Dataset Metadata Template"@en .
 
 gdmt-property:ResourceTypeInfo a owl:ObjectProperty;
@@ -1396,103 +1395,53 @@ gdmt:System a skos:Concept;
 gdmt:IdentifierScheme a skos:Concept;
   skos:definition "Identifier scheme used for identifying person, organization, system, physical or digital object."@en;
   skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
-  skos:narrower gdmt:GRID, gdmt:ISNI, gdmt:LinkedInID, gdmt:ORCiD, gdmt:ROR, gdmt:ResearcherID,
-    gdmt:Scopus;
+  skos:narrower <http://www.researcherid.com/>, <https://isni.org/>, <https://orcid.org/>,
+    <https://ror.org/>, <https://www.grid.ac/>, <https://www.linkedin.com/>, <https://www.scopus.com/>;
   skos:prefLabel "IdentifierScheme"@en;
   skos:topConceptOf <https://vocab.fairdatacollective.org/gdmt/> .
 
-gdmt:ORCiD a skos:Concept;
+<https://orcid.org/> a skos:Concept;
   skos:broader gdmt:IdentifierScheme;
   skos:definition "The ORCID (Open Researcher and Contributor ID) is a nonproprietary alphanumeric code to uniquely identify scientific and other academic authors and contributors."@en;
   skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "ORCiD"@en .
 
-gdmt:Scopus a skos:Concept;
+<https://www.scopus.com/> a skos:Concept;
   skos:broader gdmt:IdentifierScheme;
   skos:definition "The Scopus author identifier distinguishes authors among themselves by assigning a unique number to each author."@en;
   skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "Scopus"@en .
 
-gdmt:ResearcherID a skos:Concept;
+<http://www.researcherid.com/> a skos:Concept;
   skos:broader gdmt:IdentifierScheme;
   skos:definition "ResearcherID is an identifying system for scientific authors."@en;
   skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "ResearcherID"@en .
 
-gdmt:LinkedInID a skos:Concept;
+<https://www.linkedin.com/> a skos:Concept;
   skos:broader gdmt:IdentifierScheme;
   skos:definition "The LinkedIn ID is a permanent number assigned to person's LinkedIn profile."@en;
   skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "LinkedIn ID"@en .
 
-gdmt:ROR a skos:Concept;
+<https://ror.org/> a skos:Concept;
   skos:broader gdmt:IdentifierScheme;
   skos:definition "ROR is the Research Organization Registry, a community-led project to develop an open, sustainable, usable, and unique identifier for every research organization in the world."@en;
   skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "ROR"@en .
 
-gdmt:GRID a skos:Concept;
+<https://www.grid.ac/> a skos:Concept;
   skos:broader gdmt:IdentifierScheme;
   skos:definition "GRID (Global Research Identifier Database) is a free and openly available global database of research-related organisations, cataloging research-related organisations and providing each with a unique and persistent identifier."@en;
   skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "GRID"@en .
 
-gdmt:ISNI a skos:Concept;
+<https://isni.org/> a skos:Concept;
   skos:broader gdmt:IdentifierScheme;
   skos:definition "ISNI (International Standard Name Identifier) is an ISO standard, in use by numerous libraries, publishers, databases, and rights management organizations around the world. It is used to uniquely identify persons and organizations involved in creative activities, as well as public personas of both, such as pseudonyms, stage names, record labels or publishing imprints."@en;
   skos:exactMatch <https://isni.org/page/what-is-isni/>;
   skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "ISNI"@en .
-
-gdmt:IdentifierSchemeIRI a skos:Concept;
-  skos:definition "IRI of the identifier scheme used for identifying person, organization, system, physical or digital object."@en;
-  skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
-  skos:narrower gdmt:gridIRI, gdmt:isniIRI, gdmt:linkedinIRI, gdmt:orcidIRI, gdmt:researcheridIRI,
-    gdmt:rorIRI, gdmt:scopusIRI;
-  skos:prefLabel "IdentifierSchemeIRI"@en;
-  skos:topConceptOf <https://vocab.fairdatacollective.org/gdmt/> .
-
-gdmt:orcidIRI a skos:Concept;
-  skos:broader gdmt:IdentifierSchemeIRI;
-  skos:definition "IRI of ORCiD"@en;
-  skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
-  skos:prefLabel <https://orcid.org/> .
-
-gdmt:scopusIRI a skos:Concept;
-  skos:broader gdmt:IdentifierSchemeIRI;
-  skos:definition "IRI of Scopus"@en;
-  skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
-  skos:prefLabel <https://www.scopus.com/> .
-
-gdmt:researcheridIRI a skos:Concept;
-  skos:broader gdmt:IdentifierSchemeIRI;
-  skos:definition "IRI of ResearcherID"@en;
-  skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
-  skos:prefLabel <http://www.researcherid.com/> .
-
-gdmt:linkedinIRI a skos:Concept;
-  skos:broader gdmt:IdentifierSchemeIRI;
-  skos:definition "IRI of LinkedIn"@en;
-  skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
-  skos:prefLabel <https://www.linkedin.com/> .
-
-gdmt:rorIRI a skos:Concept;
-  skos:broader gdmt:IdentifierSchemeIRI;
-  skos:definition "IRI of ROR"@en;
-  skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
-  skos:prefLabel <https://ror.org/> .
-
-gdmt:gridIRI a skos:Concept;
-  skos:broader gdmt:IdentifierSchemeIRI;
-  skos:definition "IRI of Grid"@en;
-  skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
-  skos:prefLabel <https://www.grid.ac/> .
-
-gdmt:isniIRI a skos:Concept;
-  skos:broader gdmt:IdentifierSchemeIRI;
-  skos:definition "IRI of ISNI"@en;
-  skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
-  skos:prefLabel <https://isni.org/> .
 
 gdmt:LicenseIdentifier a skos:Concept;
   skos:definition "Information about the license identifier."@en;
@@ -4503,28 +4452,15 @@ gdmt:ZPL2.1 a skos:Concept;
 gdmt:LicenseIdentifierScheme a skos:Concept;
   skos:definition "Identifier scheme used for defining licenses."@en;
   skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
-  skos:narrower gdmt:SPDX;
+  skos:narrower <https://spdx.org/licenses/>;
   skos:prefLabel "LicenseIdentifierScheme"@en;
   skos:topConceptOf <https://vocab.fairdatacollective.org/gdmt/> .
 
-gdmt:SPDX a skos:Concept;
+<https://spdx.org/licenses/> a skos:Concept;
   skos:broader gdmt:LicenseIdentifierScheme;
   skos:definition "The Software Package Data Exchange (SPDX), an open standard for communicating software bill of material information, including components, licenses, copyrights, and security references."@en;
   skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "SPDX"@en .
-
-gdmt:LicenseIdentifierSchemeIRI a skos:Concept;
-  skos:definition "IRI of the identifier scheme used for defining licenses."@en;
-  skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
-  skos:narrower gdmt:spdxIRI;
-  skos:prefLabel "LicenseIdentifierSchemeIRI"@en;
-  skos:topConceptOf <https://vocab.fairdatacollective.org/gdmt/> .
-
-gdmt:spdxIRI a skos:Concept;
-  skos:broader gdmt:LicenseIdentifierSchemeIRI;
-  skos:definition "The Software Package Data Exchange (SPDX), an open standard for communicating software bill of material information, including components, licenses, copyrights, and security references."@en;
-  skos:inScheme <https://vocab.fairdatacollective.org/gdmt/>;
-  skos:prefLabel <https://spdx.org/licenses/> .
 
 gdmt:MIMEType a skos:Concept;
   skos:definition "MIME type of the digital object"@en;
