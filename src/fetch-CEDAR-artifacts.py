@@ -101,15 +101,26 @@ def store_artifact(artifact_id, api_key, base_path="./cedar-assets/"):
 
 CEDAR_API = os.environ["CEDAR_API"]
 
-FOLDER_URL = "https://resource.metadatacenter.org/folders/https%3A%2F%2Frepo.metadatacenter.org%2Ffolders%2Fdaf80275-83d3-4034-bfbf-2c62ff39902b/"
+
+folder_1 = "https:%2F%2Frepo.metadatacenter.org%2Ffolders%2Ff19822c6-d828-41e5-8767-22ab78bef384/"
+folder_2 = "https:%2F%2Frepo.metadatacenter.org%2Ffolders%2Ff3bf9683-9d3a-4773-aba5-dd433d4e690b/"
+FOLDER_URL = "https://resource.metadatacenter.org/folders/"
 FOLDER_CMD = "contents?version=latest&publication_status=all&sort=name"
 HEADER = {
     "Accept": "application/json",
     "Authorization": "apiKey " + CEDAR_API,
 }
 
-folder_content = requests.get(FOLDER_URL + FOLDER_CMD, headers=HEADER).json()
+folder_1_content = requests.get(
+    FOLDER_URL + folder_1 + FOLDER_CMD, headers=HEADER
+).json()
+folder_2_content = requests.get(
+    FOLDER_URL + folder_2 + FOLDER_CMD, headers=HEADER
+).json()
 
-for artifact in folder_content["resources"]:
+for artifact in folder_1_content["resources"]:
+    store_artifact(artifact["@id"], CEDAR_API)
+
+for artifact in folder_2_content["resources"]:
     store_artifact(artifact["@id"], CEDAR_API)
 
