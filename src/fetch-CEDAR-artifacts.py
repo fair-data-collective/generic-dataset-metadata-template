@@ -25,6 +25,7 @@ def _detect_artifact(artifact_id):
         "element": "/template-elements/",
         "template": "/templates/",
         "instance": "/template-instances/",
+        "folder": "/folders/",
     }
     if artifact_id.find(artifact_type["field"]) != -1:
         return "field", artifact_type["field"].replace("/", "")
@@ -34,6 +35,8 @@ def _detect_artifact(artifact_id):
         return "template", artifact_type["template"].replace("/", "")
     if artifact_id.find(artifact_type["instance"]) != -1:
         return "instance", artifact_type["instance"].replace("/", "")
+    if artifact_id.find(artifact_type["folder"]) != -1:
+        return "folder", artifact_type["folder"].replace("/", "")
     else:
         raise ValueError(
             "artifact_id does not contain information about CEDAR artifact."
@@ -119,8 +122,10 @@ folder_2_content = requests.get(
 ).json()
 
 for artifact in folder_1_content["resources"]:
-    store_artifact(artifact["@id"], CEDAR_API)
+    if artifact["resourceType"] != "folder":
+        store_artifact(artifact["@id"], CEDAR_API)
 
 for artifact in folder_2_content["resources"]:
-    store_artifact(artifact["@id"], CEDAR_API)
+    if artifact["resourceType"] != "folder":
+        store_artifact(artifact["@id"], CEDAR_API)
 
