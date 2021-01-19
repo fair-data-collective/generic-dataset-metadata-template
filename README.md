@@ -26,7 +26,7 @@ but must be addressed by the data aggregator and distributor.
 These differences will be highlighted as we fill out the details of the template specification.
 
 # Resources
-- [CEDAR OpenView representation of the template](https://openview.metadatacenter.org/template-instances/https:%2F%2Frepo.metadatacenter.org%2Ftemplate-instances%2F33b76e0c-b09d-4742-9b2d-70aaaa408345) showing structure of the generic metadata template.
+- [CEDAR OpenView representation of the template](https://openview.metadatacenter.org/templates/https:%2F%2Frepo.metadatacenter.org%2Ftemplates%2Fdd6231ef-5890-48cb-9621-04c5b5577c1e) showing structure of the generic metadata template.
 - [Folder](./cedar/assets) containing [CEDAR](https://cedar.metadatacenter.org/) assets, specifically metadata elements, fields and templates provided as [JSON-LD](https://json-ld.org/) files.
 - [Slides](./template-presentation.pdf) presenting the generic data metadata template
 - [Excel Sheet](./template-description.xlsx) containing details about the metadata fields and elements
