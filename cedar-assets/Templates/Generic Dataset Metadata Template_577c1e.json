@@ -729,9 +729,9 @@
                 "resourceTypeCategory",
                 "resourceTypeDetail"
             ],
-            "pav:createdOn": "2021-01-19T05:53:15-08:00",
+            "pav:createdOn": "2021-01-20T03:11:47-08:00",
             "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-01-19T05:53:15-08:00",
+            "pav:lastUpdatedOn": "2021-01-20T03:11:47-08:00",
             "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
@@ -1030,9 +1030,9 @@
                 "datasetIdentifier",
                 "datasetIdentifierType"
             ],
-            "pav:createdOn": "2021-01-19T05:53:15-08:00",
+            "pav:createdOn": "2021-01-20T03:11:47-08:00",
             "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-01-19T05:53:15-08:00",
+            "pav:lastUpdatedOn": "2021-01-20T03:11:47-08:00",
             "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
@@ -1218,9 +1218,9 @@
                 "@id",
                 "title"
             ],
-            "pav:createdOn": "2021-01-19T05:53:15-08:00",
+            "pav:createdOn": "2021-01-20T03:11:47-08:00",
             "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-01-19T05:53:15-08:00",
+            "pav:lastUpdatedOn": "2021-01-20T03:11:47-08:00",
             "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
@@ -1406,9 +1406,9 @@
                 "@id",
                 "description"
             ],
-            "pav:createdOn": "2021-01-19T05:53:15-08:00",
+            "pav:createdOn": "2021-01-20T03:11:47-08:00",
             "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-01-19T05:53:15-08:00",
+            "pav:lastUpdatedOn": "2021-01-20T03:11:47-08:00",
             "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
@@ -1713,9 +1713,9 @@
                 "primaryLanguage",
                 "language"
             ],
-            "pav:createdOn": "2021-01-19T05:53:15-08:00",
+            "pav:createdOn": "2021-01-20T03:11:47-08:00",
             "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-01-19T05:53:15-08:00",
+            "pav:lastUpdatedOn": "2021-01-20T03:11:47-08:00",
             "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
@@ -1901,9 +1901,9 @@
                 "@id",
                 "version"
             ],
-            "pav:createdOn": "2021-01-19T05:53:15-08:00",
+            "pav:createdOn": "2021-01-20T03:11:47-08:00",
             "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-01-19T05:53:15-08:00",
+            "pav:lastUpdatedOn": "2021-01-20T03:11:47-08:00",
             "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
@@ -2198,9 +2198,9 @@
                 "subject",
                 "keyword"
             ],
-            "pav:createdOn": "2021-01-19T05:53:15-08:00",
+            "pav:createdOn": "2021-01-20T03:11:47-08:00",
             "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-01-19T05:53:15-08:00",
+            "pav:lastUpdatedOn": "2021-01-20T03:11:47-08:00",
             "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
@@ -3744,9 +3744,9 @@
                     "creatorEmail"
                 ],
                 "additionalProperties": false,
-                "pav:createdOn": "2021-01-19T05:53:15-08:00",
+                "pav:createdOn": "2021-01-20T03:11:47-08:00",
                 "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-                "pav:lastUpdatedOn": "2021-01-19T05:53:15-08:00",
+                "pav:lastUpdatedOn": "2021-01-20T03:11:47-08:00",
                 "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
                 "schema:schemaVersion": "1.6.0",
                 "schema:name": "Creator",
@@ -5294,9 +5294,9 @@
                     "contributorEmail"
                 ],
                 "additionalProperties": false,
-                "pav:createdOn": "2021-01-19T05:53:15-08:00",
+                "pav:createdOn": "2021-01-20T03:11:47-08:00",
                 "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-                "pav:lastUpdatedOn": "2021-01-19T05:53:15-08:00",
+                "pav:lastUpdatedOn": "2021-01-20T03:11:47-08:00",
                 "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
                 "schema:schemaVersion": "1.6.0",
                 "schema:name": "Contributor",
@@ -6003,9 +6003,9 @@
                 "publisherEmail",
                 "publisherAddress"
             ],
-            "pav:createdOn": "2021-01-19T05:53:15-08:00",
+            "pav:createdOn": "2021-01-20T03:11:47-08:00",
             "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-01-19T05:53:15-08:00",
+            "pav:lastUpdatedOn": "2021-01-20T03:11:47-08:00",
             "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
@@ -6613,9 +6613,9 @@
                 "licenseText",
                 "LicenseIdentifier"
             ],
-            "pav:createdOn": "2021-01-19T05:53:15-08:00",
+            "pav:createdOn": "2021-01-20T03:11:47-08:00",
             "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-01-19T05:53:15-08:00",
+            "pav:lastUpdatedOn": "2021-01-20T03:11:47-08:00",
             "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
@@ -6861,7 +6861,7 @@
                             "inputTimeFormat": "24h"
                         },
                         "_valueConstraints": {
-                            "requiredValue": false,
+                            "requiredValue": true,
                             "temporalType": "xsd:dateTime"
                         },
                         "properties": {
@@ -6919,9 +6919,9 @@
                     "datasetDate"
                 ],
                 "additionalProperties": false,
-                "pav:createdOn": "2021-01-19T05:53:15-08:00",
+                "pav:createdOn": "2021-01-20T03:11:47-08:00",
                 "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-                "pav:lastUpdatedOn": "2021-01-19T05:53:15-08:00",
+                "pav:lastUpdatedOn": "2021-01-20T03:11:47-08:00",
                 "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
                 "schema:schemaVersion": "1.6.0",
                 "schema:name": "Date",
@@ -7308,10 +7308,14 @@
                         "title": "distributionDate schema",
                         "description": "distributionDate schema generated by ...",
                         "_ui": {
-                            "inputType": "textfield"
+                            "inputType": "temporal",
+                            "temporalGranularity": "second",
+                            "timezoneEnabled": true,
+                            "inputTimeFormat": "24h"
                         },
                         "_valueConstraints": {
-                            "requiredValue": true
+                            "requiredValue": true,
+                            "temporalType": "xsd:dateTime"
                         },
                         "properties": {
                             "@type": {
@@ -8073,7 +8077,7 @@
                                 "DistributorName",
                                 "DistributorIdentifier",
                                 "DistributorAffiliation",
-                                "distributorEmail1",
+                                "distributorEmail",
                                 "distributorRole",
                                 "distributorType"
                             ],
@@ -8083,7 +8087,7 @@
                                 "DistributorAffiliation": "DistributorAffiliation",
                                 "distributorRole": "distributorRole",
                                 "distributorType": "distributorType",
-                                "distributorEmail1": "distributorEmail"
+                                "distributorEmail": "distributorEmail"
                             },
                             "propertyDescriptions": {
                                 "DistributorName": "Information about the distributor name.",
@@ -8091,7 +8095,7 @@
                                 "DistributorAffiliation": "Information about the distributor affiliations.",
                                 "distributorRole": "The role of the distributor in bringing the described dataset into existence.",
                                 "distributorType": "The type of the distributor of the described dataset (organization, person, or system).",
-                                "distributorEmail1": "An email address of the distributor."
+                                "distributorEmail": "An email address of the distributor."
                             }
                         },
                         "properties": {
@@ -8123,7 +8127,7 @@
                                             "http://vocab.fairdatacollective.org/gdmt/hasDistributorType"
                                         ]
                                     },
-                                    "distributorEmail1": {
+                                    "distributorEmail": {
                                         "enum": [
                                             "https://schema.metadatacenter.org/properties/b048b599-034c-48a3-b6ac-8098b10066f5"
                                         ]
@@ -8136,7 +8140,7 @@
                                     "DistributorAffiliation",
                                     "distributorRole",
                                     "distributorType",
-                                    "distributorEmail1"
+                                    "distributorEmail"
                                 ]
                             },
                             "@id": {
@@ -9468,7 +9472,7 @@
                                 "skos:prefLabel": "Distributor Type",
                                 "$schema": "http://json-schema.org/draft-04/schema#"
                             },
-                            "distributorEmail1": {
+                            "distributorEmail": {
                                 "type": "array",
                                 "minItems": 0,
                                 "items": {
@@ -9572,7 +9576,7 @@
                             "DistributorAffiliation",
                             "distributorRole",
                             "distributorType",
-                            "distributorEmail1"
+                            "distributorEmail"
                         ],
                         "additionalProperties": false,
                         "pav:createdOn": "2021-01-19T03:17:53-08:00",
@@ -9600,9 +9604,9 @@
                     "Distributor"
                 ],
                 "additionalProperties": false,
-                "pav:createdOn": "2021-01-19T05:53:15-08:00",
+                "pav:createdOn": "2021-01-20T03:11:47-08:00",
                 "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-                "pav:lastUpdatedOn": "2021-01-19T05:53:15-08:00",
+                "pav:lastUpdatedOn": "2021-01-20T03:11:47-08:00",
                 "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
                 "schema:schemaVersion": "1.6.0",
                 "schema:name": "Distribution",
@@ -11098,9 +11102,9 @@
                     "DataStream"
                 ],
                 "additionalProperties": false,
-                "pav:createdOn": "2021-01-19T05:53:15-08:00",
+                "pav:createdOn": "2021-01-20T03:11:47-08:00",
                 "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-                "pav:lastUpdatedOn": "2021-01-19T05:53:15-08:00",
+                "pav:lastUpdatedOn": "2021-01-20T03:11:47-08:00",
                 "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
                 "schema:schemaVersion": "1.6.0",
                 "schema:name": "Content",
@@ -11997,9 +12001,9 @@
                 "verticalExtentDatum",
                 "verticalExtentDatumIRI"
             ],
-            "pav:createdOn": "2021-01-19T05:53:15-08:00",
+            "pav:createdOn": "2021-01-20T03:11:47-08:00",
             "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-01-19T05:53:15-08:00",
+            "pav:lastUpdatedOn": "2021-01-20T03:11:47-08:00",
             "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
@@ -12987,9 +12991,9 @@
                 "Award",
                 "Funder"
             ],
-            "pav:createdOn": "2021-01-19T05:53:15-08:00",
+            "pav:createdOn": "2021-01-20T03:11:47-08:00",
             "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-01-19T05:53:15-08:00",
+            "pav:lastUpdatedOn": "2021-01-20T03:11:47-08:00",
             "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
@@ -14185,9 +14189,9 @@
                 "SpatialCoverageBoundingBox",
                 "SpatialCoveragePolygon"
             ],
-            "pav:createdOn": "2021-01-19T05:53:15-08:00",
+            "pav:createdOn": "2021-01-20T03:11:47-08:00",
             "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-01-19T05:53:15-08:00",
+            "pav:lastUpdatedOn": "2021-01-20T03:11:47-08:00",
             "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
@@ -14692,9 +14696,9 @@
                 "temporalResolution",
                 "duration"
             ],
-            "pav:createdOn": "2021-01-19T05:53:15-08:00",
+            "pav:createdOn": "2021-01-20T03:11:47-08:00",
             "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-01-19T05:53:15-08:00",
+            "pav:lastUpdatedOn": "2021-01-20T03:11:47-08:00",
             "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
@@ -14737,7 +14741,7 @@
     "schema:description": "Generic Dataset Metadata Template",
     "pav:createdOn": "2021-01-19T01:11:35-08:00",
     "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-    "pav:lastUpdatedOn": "2021-01-19T05:53:15-08:00",
+    "pav:lastUpdatedOn": "2021-01-20T03:11:47-08:00",
     "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
     "schema:schemaVersion": "1.6.0",
     "additionalProperties": false,
