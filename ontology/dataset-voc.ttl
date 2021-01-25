@@ -23,8 +23,8 @@
   dct:description "Ontology containing the controlled terms and semantic properties used in the Generic Dataset Metadata Template."@en;
   dct:title "Ontology for Generic Dataset Metadata Template"@en;
   pav:createdOn "2020-12-01T00:00:00+01:00"@en;
-  pav:lastUpdatedOn "2021-01-19T20:29:00-08:00"@en;
-  pav:version "0.3.3"@en;
+  pav:lastUpdatedOn "2021-01-24T18:57:00-08:00"@en;
+  pav:version "0.3.4"@en;
   skos:hasTopConcept gdmt:ContributorRole, gdmt:DateType, gdmt:IdentifierScheme, gdmt:IdentifierType,
     gdmt:LicenseIdentifier, gdmt:LicenseIdentifierScheme, gdmt:MIMEType, gdmt:RelationType,
     gdmt:ResourceCreatorType, gdmt:ResourceTypeCategory;
@@ -947,8 +947,9 @@ gdmt:OtherRole a skos:Concept;
 gdmt:DateType a skos:Concept;
   skos:definition "The type( or role) of the date being provided."@en;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
-  skos:narrower gdmt:Accepted, gdmt:Available, gdmt:Collected, gdmt:Copyrighted, gdmt:Created,
-    gdmt:Issued, gdmt:Published, gdmt:Submitted, gdmt:Updated, gdmt:Valid, gdmt:Withdrawn;
+  skos:narrower gdmt:Accepted, gdmt:Available, gdmt:Cited, gdmt:Collected, gdmt:Copyrighted,
+    gdmt:Created, gdmt:Issued, gdmt:Published, gdmt:Submitted, gdmt:Updated, gdmt:Valid,
+    gdmt:Withdrawn;
   skos:prefLabel "Date Type"@en;
   skos:topConceptOf <http://vocab.fairdatacollective.org/gdmt/> .
 
@@ -969,6 +970,12 @@ gdmt:Available a skos:Concept;
   skos:definition "The date the resource is made publicly available. May be a range."@en;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "Available"@en .
+
+gdmt:Cited a skos:Concept;
+  skos:broader gdmt:DateType;
+  skos:definition "The date the resource is cited in a publication or other reference."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
+  skos:prefLabel "Cited"@en .
 
 gdmt:Copyrighted a skos:Concept;
   skos:broader gdmt:DateType;
