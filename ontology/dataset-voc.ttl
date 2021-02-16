@@ -23,7 +23,7 @@
   dct:description "Ontology containing the controlled terms and semantic properties used in the Generic Dataset Metadata Template."@en;
   dct:title "Ontology for Generic Dataset Metadata Template"@en;
   pav:createdOn "2020-12-01T00:00:00+01:00"@en;
-  pav:lastUpdatedOn "2021-01-24T18:57:00-08:00"@en;
+  pav:lastUpdatedOn "2021-01-16T14:30:00+01:00"@en;
   pav:version "0.3.4"@en;
   skos:hasTopConcept gdmt:ContributorRole, gdmt:DateType, gdmt:IdentifierScheme, gdmt:IdentifierType,
     gdmt:LicenseIdentifier, gdmt:LicenseIdentifierScheme, gdmt:MIMEType, gdmt:RelationType,
@@ -152,7 +152,7 @@ gdmt:hasDistributionAccessInfo a owl:ObjectProperty;
 
 gdmt:hasDistributorInfo a owl:ObjectProperty;
   rdfs:label "has Distributor Info"@en;
-  skos:definition "Information about this distributor of the dataset. The Distributor includes primarily the system doing the distribution, but can include the person or persons responsible as well, for example the person who reformsts the dataset for this distribution."@en;
+  skos:definition "Information about the distributor of this dataset distribution. The Distributor includes persons or legal entities that responsible for distributing the dataset distribution."@en;
   skos:prefLabel "has Distributor Info"@en .
 
 gdmt:hasDistributorNameInfo a owl:ObjectProperty;
@@ -272,7 +272,7 @@ gdmt:hasKeyword a owl:DatatypeProperty;
 
 gdmt:hasCreatorIdentifier a owl:DatatypeProperty;
   rdfs:label "has Creator Identifier"@en;
-  skos:definition "Globally unique string that identifies the creator (an individual, legal entity or system)."@en;
+  skos:definition "Globally unique string that identifies the creator (an individual or legal entity)."@en;
   skos:prefLabel "has Creator Identifier"@en .
 
 gdmt:hasCreatorIdentifierScheme a owl:DatatypeProperty;
@@ -312,12 +312,12 @@ gdmt:hasCreatorRole a owl:ObjectProperty;
 
 gdmt:hasCreatorType a owl:ObjectProperty;
   rdfs:label "has Creator Type"@en;
-  skos:definition "The type of the creator of the described dataset (organization, person, or system)."@en;
+  skos:definition "The type of the creator of the described dataset (organization or person)."@en;
   skos:prefLabel "has Creator Type"@en .
 
 gdmt:hasContributorIdentifier a owl:DatatypeProperty;
   rdfs:label "has Contributor Identifier"@en;
-  skos:definition "Globally unique string that identifies the contributor (an individual, legal entity or system)."@en;
+  skos:definition "Globally unique string that identifies the contributor (an individual or legal entity)."@en;
   skos:prefLabel "has Contributor Identifier"@en .
 
 gdmt:hasContributorIdentifierScheme a owl:DatatypeProperty;
@@ -357,7 +357,7 @@ gdmt:hasContributorRole a owl:ObjectProperty;
 
 gdmt:hasContributorType a owl:ObjectProperty;
   rdfs:label "has Contributor Type"@en;
-  skos:definition "The type of the contributor of the described dataset (organization, person, or system)."@en;
+  skos:definition "The type of the contributor of the described dataset (organization or person)."@en;
   skos:prefLabel "has Contributor Type"@en .
 
 gdmt:hasPublisherIdentifier a owl:DatatypeProperty;
@@ -452,7 +452,7 @@ gdmt:hasDistributionDate a owl:DatatypeProperty;
 
 gdmt:hasDistributorIdentifier a owl:DatatypeProperty;
   rdfs:label "has Distributor Identifier"@en;
-  skos:definition "Globally unique string that identifies the distributor (an individual, legal entity or system)."@en;
+  skos:definition "Globally unique string that identifies the distributor (an individual or legal entity)."@en;
   skos:prefLabel "has Distributor Identifier"@en .
 
 gdmt:hasDistributorIdentifierScheme a owl:DatatypeProperty;
@@ -492,7 +492,7 @@ gdmt:hasDistributorRole a owl:ObjectProperty;
 
 gdmt:hasDistributorType a owl:ObjectProperty;
   rdfs:label "has Distributor Type"@en;
-  skos:definition "The type of the distributor of the described dataset (organization, person, or system)."@en;
+  skos:definition "The type of the distributor of the described dataset (organization, or person)."@en;
   skos:prefLabel "has Distributor Type"@en .
 
 gdmt:hasDataStream a owl:DatatypeProperty;
@@ -947,9 +947,8 @@ gdmt:OtherRole a skos:Concept;
 gdmt:DateType a skos:Concept;
   skos:definition "The type( or role) of the date being provided."@en;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
-  skos:narrower gdmt:Accepted, gdmt:Available, gdmt:Cited, gdmt:Collected, gdmt:Copyrighted,
-    gdmt:Created, gdmt:Issued, gdmt:Published, gdmt:Submitted, gdmt:Updated, gdmt:Valid,
-    gdmt:Withdrawn;
+  skos:narrower gdmt:Accepted, gdmt:Available, gdmt:Collected, gdmt:Copyrighted, gdmt:Created,
+    gdmt:Issued, gdmt:Published, gdmt:Submitted, gdmt:Updated, gdmt:Valid, gdmt:Withdrawn;
   skos:prefLabel "Date Type"@en;
   skos:topConceptOf <http://vocab.fairdatacollective.org/gdmt/> .
 
@@ -970,12 +969,6 @@ gdmt:Available a skos:Concept;
   skos:definition "The date the resource is made publicly available. May be a range."@en;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "Available"@en .
-
-gdmt:Cited a skos:Concept;
-  skos:broader gdmt:DateType;
-  skos:definition "The date the resource is cited in a publication or other reference."@en;
-  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
-  skos:prefLabel "Cited"@en .
 
 gdmt:Copyrighted a skos:Concept;
   skos:broader gdmt:DateType;
@@ -1374,7 +1367,7 @@ gdmt:IsObsoletedBy a skos:Concept;
 gdmt:ResourceCreatorType a skos:Concept;
   skos:definition "Types of creator responsiple for the ressource creation."@en;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
-  skos:narrower gdmt:Organization, gdmt:Person, gdmt:System;
+  skos:narrower gdmt:Organization, gdmt:Person;
   skos:prefLabel "Resource Creator Type"@en;
   skos:topConceptOf <http://vocab.fairdatacollective.org/gdmt/> .
 
@@ -1391,12 +1384,6 @@ gdmt:Organization a skos:Concept;
   skos:exactMatch <https://en.wikipedia.org/wiki/Organization>;
   skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
   skos:prefLabel "Organization"@en .
-
-gdmt:System a skos:Concept;
-  skos:broader gdmt:ResourceCreatorType;
-  skos:definition "A system represent hardware and/or software entities capable of creating data such as instruments and computer models."@en;
-  skos:inScheme <http://vocab.fairdatacollective.org/gdmt/>;
-  skos:prefLabel "System"@en .
 
 gdmt:IdentifierScheme a skos:Concept;
   skos:definition "Identifier scheme used for identifying person, organization, system, physical or digital object."@en;
