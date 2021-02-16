@@ -38,7 +38,8 @@
             "version",
             "Language",
             "Title",
-            "SubjectAndKeyword"
+            "SubjectAndKeyword",
+            "Creator"
         ],
         "propertyLabels": {
             "ResourceType": "ResourceType",
@@ -47,7 +48,8 @@
             "version": "version",
             "Language": "Language",
             "Title": "Title",
-            "SubjectAndKeyword": "SubjectAndKeyword"
+            "SubjectAndKeyword": "SubjectAndKeyword",
+            "Creator": "Creator"
         },
         "propertyDescriptions": {
             "ResourceType": "Information about the type of the resource being described with metadata.",
@@ -56,7 +58,8 @@
             "version": "The string identifying the version of the dataset or other object being described.",
             "Language": "Language in which the dataset being described is provided.",
             "Title": "A name or title by which the dataset being described is known.",
-            "SubjectAndKeyword": "Concepts (keywords, classification, or free text terms) that define the dataset or purpose (subjects which can be addressed) using the dataset."
+            "SubjectAndKeyword": "Concepts (keywords, classification, or free text terms) that define the dataset or purpose (subjects which can be addressed) using the dataset.",
+            "Creator": "An entity that brought into existence the dataset being described. Creators can be people, organizations and/or physical or virtual infrastructure (e.g., sensors, software)."
         }
     },
     "properties": {
@@ -249,6 +252,11 @@
                     "enum": [
                         "http://vocab.fairdatacollective.org/gdmt/hasSubjectInfo"
                     ]
+                },
+                "Creator": {
+                    "enum": [
+                        "http://vocab.fairdatacollective.org/gdmt/hasCreatorInfo"
+                    ]
                 }
             },
             "required": [
@@ -269,7 +277,8 @@
                 "version",
                 "Language",
                 "Title",
-                "SubjectAndKeyword"
+                "SubjectAndKeyword",
+                "Creator"
             ],
             "additionalProperties": false
         },
@@ -630,9 +639,9 @@
                 "resourceTypeCategory",
                 "resourceTypeDetail"
             ],
-            "pav:createdOn": "2021-02-16T10:23:34-08:00",
+            "pav:createdOn": "2021-02-16T11:37:09-08:00",
             "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-02-16T10:23:34-08:00",
+            "pav:lastUpdatedOn": "2021-02-16T11:37:09-08:00",
             "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
@@ -933,9 +942,9 @@
                 "datasetIdentifier",
                 "datasetIdentifierType"
             ],
-            "pav:createdOn": "2021-02-16T10:23:34-08:00",
+            "pav:createdOn": "2021-02-16T11:37:09-08:00",
             "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-02-16T10:23:34-08:00",
+            "pav:lastUpdatedOn": "2021-02-16T11:37:09-08:00",
             "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
@@ -1455,9 +1464,9 @@
                     "relationType"
                 ],
                 "additionalProperties": false,
-                "pav:createdOn": "2021-02-16T10:23:34-08:00",
+                "pav:createdOn": "2021-02-16T11:37:09-08:00",
                 "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-                "pav:lastUpdatedOn": "2021-02-16T10:23:34-08:00",
+                "pav:lastUpdatedOn": "2021-02-16T11:37:09-08:00",
                 "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
                 "schema:schemaVersion": "1.6.0",
                 "schema:name": "RelatedResources",
@@ -1548,9 +1557,9 @@
             ],
             "schema:name": "version",
             "schema:description": "The string identifying the version of the dataset or other object being described.",
-            "pav:createdOn": "2021-02-16T10:23:34-08:00",
+            "pav:createdOn": "2021-02-16T11:37:09-08:00",
             "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-02-16T10:23:34-08:00",
+            "pav:lastUpdatedOn": "2021-02-16T11:37:09-08:00",
             "pav:version": "0.0.1",
             "bibo:status": "bibo:draft",
             "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
@@ -1855,9 +1864,9 @@
                 "primaryLanguage",
                 "language"
             ],
-            "pav:createdOn": "2021-02-16T10:23:34-08:00",
+            "pav:createdOn": "2021-02-16T11:37:09-08:00",
             "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-02-16T10:23:34-08:00",
+            "pav:lastUpdatedOn": "2021-02-16T11:37:09-08:00",
             "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
@@ -2157,9 +2166,9 @@
                     "language"
                 ],
                 "additionalProperties": false,
-                "pav:createdOn": "2021-02-16T10:23:34-08:00",
+                "pav:createdOn": "2021-02-16T11:37:09-08:00",
                 "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-                "pav:lastUpdatedOn": "2021-02-16T10:23:34-08:00",
+                "pav:lastUpdatedOn": "2021-02-16T11:37:09-08:00",
                 "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
                 "schema:schemaVersion": "1.6.0",
                 "schema:name": "Title",
@@ -2856,15 +2865,1546 @@
                 "Subject",
                 "keyword"
             ],
-            "pav:createdOn": "2021-02-16T10:23:34-08:00",
+            "pav:createdOn": "2021-02-16T11:37:09-08:00",
             "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-02-16T10:23:34-08:00",
+            "pav:lastUpdatedOn": "2021-02-16T11:37:09-08:00",
             "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
             "pav:version": "0.0.1",
             "bibo:status": "bibo:draft",
             "skos:prefLabel": "Subjects and Keywords",
+            "$schema": "http://json-schema.org/draft-04/schema#"
+        },
+        "Creator": {
+            "@id": "https://repo.metadatacenter.org/template-elements/3fc77b7e-777a-4a6f-91f7-3f29417ca2a6",
+            "@type": "https://schema.metadatacenter.org/core/TemplateElement",
+            "@context": {
+                "xsd": "http://www.w3.org/2001/XMLSchema#",
+                "pav": "http://purl.org/pav/",
+                "bibo": "http://purl.org/ontology/bibo/",
+                "oslc": "http://open-services.net/ns/core#",
+                "schema": "http://schema.org/",
+                "schema:name": {
+                    "@type": "xsd:string"
+                },
+                "schema:description": {
+                    "@type": "xsd:string"
+                },
+                "pav:createdOn": {
+                    "@type": "xsd:dateTime"
+                },
+                "pav:createdBy": {
+                    "@type": "@id"
+                },
+                "pav:lastUpdatedOn": {
+                    "@type": "xsd:dateTime"
+                },
+                "oslc:modifiedBy": {
+                    "@type": "@id"
+                }
+            },
+            "type": "object",
+            "title": "Creator element schema",
+            "description": "Creator element schema generated by the CEDAR Template Editor 2.5.38",
+            "_ui": {
+                "order": [
+                    "creatorType",
+                    "CreatorName",
+                    "CreatorIdentifier",
+                    "CreatorAffiliation",
+                    "creatorEmail",
+                    "creatorRole"
+                ],
+                "propertyLabels": {
+                    "CreatorName": "CreatorName",
+                    "CreatorAffiliation": "has Creator Affiliation Info",
+                    "creatorType": "creatorType",
+                    "creatorEmail": "personal mailbox",
+                    "creatorRole": "has Creator Role",
+                    "CreatorIdentifier": "CreatorIdentifier"
+                },
+                "propertyDescriptions": {
+                    "CreatorName": "Information about the creator name.",
+                    "CreatorAffiliation": "Information about the creator affiliations.",
+                    "creatorType": "",
+                    "creatorEmail": "",
+                    "creatorRole": "The role of the creator in bringing the described dataset into existence.",
+                    "CreatorIdentifier": "Information about the creator identifier."
+                }
+            },
+            "properties": {
+                "@context": {
+                    "type": "object",
+                    "properties": {
+                        "CreatorName": {
+                            "enum": [
+                                "http://vocab.fairdatacollective.org/gdmt/hasCreatorNameInfo"
+                            ]
+                        },
+                        "CreatorAffiliation": {
+                            "enum": [
+                                "http://vocab.fairdatacollective.org/gdmt/hasCreatorAffiliationInfo"
+                            ]
+                        },
+                        "creatorType": {
+                            "enum": [
+                                "http://vocab.fairdatacollective.org/gdmt/hasCreatorType"
+                            ]
+                        },
+                        "creatorEmail": {
+                            "enum": [
+                                "http://xmlns.com/foaf/0.1/mbox"
+                            ]
+                        },
+                        "creatorRole": {
+                            "enum": [
+                                "http://vocab.fairdatacollective.org/gdmt/hasCreatorRole"
+                            ]
+                        },
+                        "CreatorIdentifier": {
+                            "enum": [
+                                "https://schema.metadatacenter.org/properties/8a34627f-a50c-4386-b803-161b531df004"
+                            ]
+                        }
+                    },
+                    "additionalProperties": false,
+                    "required": [
+                        "CreatorName",
+                        "CreatorAffiliation",
+                        "creatorType",
+                        "creatorEmail",
+                        "creatorRole",
+                        "CreatorIdentifier"
+                    ]
+                },
+                "@id": {
+                    "type": "string",
+                    "format": "uri"
+                },
+                "@type": {
+                    "oneOf": [
+                        {
+                            "type": "string",
+                            "format": "uri"
+                        },
+                        {
+                            "type": "array",
+                            "minItems": 1,
+                            "items": {
+                                "type": "string",
+                                "format": "uri"
+                            },
+                            "uniqueItems": true
+                        }
+                    ]
+                },
+                "CreatorName": {
+                    "@id": "https://repo.metadatacenter.org/template-elements/2b8272d5-4f7b-4214-ae8b-15e9ea52600d",
+                    "@type": "https://schema.metadatacenter.org/core/TemplateElement",
+                    "@context": {
+                        "xsd": "http://www.w3.org/2001/XMLSchema#",
+                        "pav": "http://purl.org/pav/",
+                        "bibo": "http://purl.org/ontology/bibo/",
+                        "oslc": "http://open-services.net/ns/core#",
+                        "schema": "http://schema.org/",
+                        "schema:name": {
+                            "@type": "xsd:string"
+                        },
+                        "schema:description": {
+                            "@type": "xsd:string"
+                        },
+                        "pav:createdOn": {
+                            "@type": "xsd:dateTime"
+                        },
+                        "pav:createdBy": {
+                            "@type": "@id"
+                        },
+                        "pav:lastUpdatedOn": {
+                            "@type": "xsd:dateTime"
+                        },
+                        "oslc:modifiedBy": {
+                            "@type": "@id"
+                        }
+                    },
+                    "type": "object",
+                    "title": "Creatorname element schema",
+                    "description": "Creatorname element schema generated by the CEDAR Template Editor 2.5.38",
+                    "_ui": {
+                        "order": [
+                            "creatorName",
+                            "creatorGivenName",
+                            "creatorFamilyName"
+                        ],
+                        "propertyLabels": {
+                            "creatorName": "CreatorName",
+                            "creatorGivenName": "creatorGivenName",
+                            "creatorFamilyName": "creatorFamilyName"
+                        },
+                        "propertyDescriptions": {
+                            "creatorName": "",
+                            "creatorGivenName": "",
+                            "creatorFamilyName": "If the creator is a person, the surname(s) of the creator (e.g., last name in Western languagues, first name in Asian languages)."
+                        }
+                    },
+                    "properties": {
+                        "@context": {
+                            "type": "object",
+                            "properties": {
+                                "creatorName": {
+                                    "enum": [
+                                        "http://purl.org/dc/terms/creator"
+                                    ]
+                                },
+                                "creatorGivenName": {
+                                    "enum": [
+                                        "http://xmlns.com/foaf/0.1/givenName"
+                                    ]
+                                },
+                                "creatorFamilyName": {
+                                    "enum": [
+                                        "http://xmlns.com/foaf/0.1/familyName"
+                                    ]
+                                }
+                            },
+                            "additionalProperties": false,
+                            "required": [
+                                "creatorName",
+                                "creatorGivenName",
+                                "creatorFamilyName"
+                            ]
+                        },
+                        "@id": {
+                            "type": "string",
+                            "format": "uri"
+                        },
+                        "@type": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri"
+                                },
+                                {
+                                    "type": "array",
+                                    "minItems": 1,
+                                    "items": {
+                                        "type": "string",
+                                        "format": "uri"
+                                    },
+                                    "uniqueItems": true
+                                }
+                            ]
+                        },
+                        "creatorName": {
+                            "@id": "https://repo.metadatacenter.org/template-fields/1dab222d-9f41-4d31-afc7-0fbefb73e422",
+                            "@type": "https://schema.metadatacenter.org/core/TemplateField",
+                            "@context": {
+                                "xsd": "http://www.w3.org/2001/XMLSchema#",
+                                "pav": "http://purl.org/pav/",
+                                "bibo": "http://purl.org/ontology/bibo/",
+                                "oslc": "http://open-services.net/ns/core#",
+                                "schema": "http://schema.org/",
+                                "skos": "http://www.w3.org/2004/02/skos/core#",
+                                "schema:name": {
+                                    "@type": "xsd:string"
+                                },
+                                "schema:description": {
+                                    "@type": "xsd:string"
+                                },
+                                "skos:prefLabel": {
+                                    "@type": "xsd:string"
+                                },
+                                "skos:altLabel": {
+                                    "@type": "xsd:string"
+                                },
+                                "pav:createdOn": {
+                                    "@type": "xsd:dateTime"
+                                },
+                                "pav:createdBy": {
+                                    "@type": "@id"
+                                },
+                                "pav:lastUpdatedOn": {
+                                    "@type": "xsd:dateTime"
+                                },
+                                "oslc:modifiedBy": {
+                                    "@type": "@id"
+                                }
+                            },
+                            "type": "object",
+                            "title": "CreatorName field schema",
+                            "description": "CreatorName field schema generated by the CEDAR Template Editor 2.5.38",
+                            "_ui": {
+                                "inputType": "textfield"
+                            },
+                            "_valueConstraints": {
+                                "requiredValue": true
+                            },
+                            "properties": {
+                                "@type": {
+                                    "oneOf": [
+                                        {
+                                            "type": "string",
+                                            "format": "uri"
+                                        },
+                                        {
+                                            "type": "array",
+                                            "minItems": 1,
+                                            "items": {
+                                                "type": "string",
+                                                "format": "uri"
+                                            },
+                                            "uniqueItems": true
+                                        }
+                                    ]
+                                },
+                                "@value": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "rdfs:label": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            },
+                            "required": [
+                                "@value"
+                            ],
+                            "schema:name": "CreatorName",
+                            "schema:description": "",
+                            "pav:createdOn": "2021-02-16T11:16:48-08:00",
+                            "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                            "pav:lastUpdatedOn": "2021-02-16T11:16:48-08:00",
+                            "pav:version": "0.0.1",
+                            "bibo:status": "bibo:draft",
+                            "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                            "schema:schemaVersion": "1.6.0",
+                            "additionalProperties": false,
+                            "skos:prefLabel": "Creator Name",
+                            "$schema": "http://json-schema.org/draft-04/schema#"
+                        },
+                        "creatorGivenName": {
+                            "@id": "https://repo.metadatacenter.org/template-fields/891881d1-2f52-4078-8417-4fdd4ddffe44",
+                            "@type": "https://schema.metadatacenter.org/core/TemplateField",
+                            "@context": {
+                                "xsd": "http://www.w3.org/2001/XMLSchema#",
+                                "pav": "http://purl.org/pav/",
+                                "bibo": "http://purl.org/ontology/bibo/",
+                                "oslc": "http://open-services.net/ns/core#",
+                                "schema": "http://schema.org/",
+                                "skos": "http://www.w3.org/2004/02/skos/core#",
+                                "schema:name": {
+                                    "@type": "xsd:string"
+                                },
+                                "schema:description": {
+                                    "@type": "xsd:string"
+                                },
+                                "skos:prefLabel": {
+                                    "@type": "xsd:string"
+                                },
+                                "skos:altLabel": {
+                                    "@type": "xsd:string"
+                                },
+                                "pav:createdOn": {
+                                    "@type": "xsd:dateTime"
+                                },
+                                "pav:createdBy": {
+                                    "@type": "@id"
+                                },
+                                "pav:lastUpdatedOn": {
+                                    "@type": "xsd:dateTime"
+                                },
+                                "oslc:modifiedBy": {
+                                    "@type": "@id"
+                                }
+                            },
+                            "type": "object",
+                            "title": "creatorGivenName field schema",
+                            "description": "creatorGivenName field schema generated by the CEDAR Template Editor 2.5.38",
+                            "_ui": {
+                                "inputType": "textfield"
+                            },
+                            "_valueConstraints": {
+                                "requiredValue": false
+                            },
+                            "properties": {
+                                "@type": {
+                                    "oneOf": [
+                                        {
+                                            "type": "string",
+                                            "format": "uri"
+                                        },
+                                        {
+                                            "type": "array",
+                                            "minItems": 1,
+                                            "items": {
+                                                "type": "string",
+                                                "format": "uri"
+                                            },
+                                            "uniqueItems": true
+                                        }
+                                    ]
+                                },
+                                "@value": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "rdfs:label": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            },
+                            "required": [
+                                "@value"
+                            ],
+                            "schema:name": "creatorGivenName",
+                            "schema:description": "",
+                            "pav:createdOn": "2021-02-16T11:16:48-08:00",
+                            "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                            "pav:lastUpdatedOn": "2021-02-16T11:16:48-08:00",
+                            "pav:version": "0.0.1",
+                            "bibo:status": "bibo:draft",
+                            "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                            "schema:schemaVersion": "1.6.0",
+                            "additionalProperties": false,
+                            "skos:prefLabel": "Creator Given Name",
+                            "$schema": "http://json-schema.org/draft-04/schema#"
+                        },
+                        "creatorFamilyName": {
+                            "@id": "https://repo.metadatacenter.org/template-fields/e7480ca7-b3d0-46e9-84e7-e7eeff2de87d",
+                            "@type": "https://schema.metadatacenter.org/core/TemplateField",
+                            "@context": {
+                                "xsd": "http://www.w3.org/2001/XMLSchema#",
+                                "pav": "http://purl.org/pav/",
+                                "bibo": "http://purl.org/ontology/bibo/",
+                                "oslc": "http://open-services.net/ns/core#",
+                                "schema": "http://schema.org/",
+                                "skos": "http://www.w3.org/2004/02/skos/core#",
+                                "schema:name": {
+                                    "@type": "xsd:string"
+                                },
+                                "schema:description": {
+                                    "@type": "xsd:string"
+                                },
+                                "skos:prefLabel": {
+                                    "@type": "xsd:string"
+                                },
+                                "skos:altLabel": {
+                                    "@type": "xsd:string"
+                                },
+                                "pav:createdOn": {
+                                    "@type": "xsd:dateTime"
+                                },
+                                "pav:createdBy": {
+                                    "@type": "@id"
+                                },
+                                "pav:lastUpdatedOn": {
+                                    "@type": "xsd:dateTime"
+                                },
+                                "oslc:modifiedBy": {
+                                    "@type": "@id"
+                                }
+                            },
+                            "type": "object",
+                            "title": "creatorFamilyName field schema",
+                            "description": "creatorFamilyName field schema generated by the CEDAR Template Editor 2.5.38",
+                            "_ui": {
+                                "inputType": "textfield"
+                            },
+                            "_valueConstraints": {
+                                "requiredValue": false
+                            },
+                            "properties": {
+                                "@type": {
+                                    "oneOf": [
+                                        {
+                                            "type": "string",
+                                            "format": "uri"
+                                        },
+                                        {
+                                            "type": "array",
+                                            "minItems": 1,
+                                            "items": {
+                                                "type": "string",
+                                                "format": "uri"
+                                            },
+                                            "uniqueItems": true
+                                        }
+                                    ]
+                                },
+                                "@value": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "rdfs:label": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            },
+                            "required": [
+                                "@value"
+                            ],
+                            "schema:name": "creatorFamilyName",
+                            "schema:description": "If the creator is a person, the surname(s) of the creator (e.g., last name in Western languagues, first name in Asian languages).",
+                            "pav:createdOn": "2021-02-16T11:16:48-08:00",
+                            "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                            "pav:lastUpdatedOn": "2021-02-16T11:16:48-08:00",
+                            "pav:version": "0.0.1",
+                            "bibo:status": "bibo:draft",
+                            "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                            "schema:schemaVersion": "1.6.0",
+                            "additionalProperties": false,
+                            "skos:prefLabel": "Creator Family Name",
+                            "$schema": "http://json-schema.org/draft-04/schema#"
+                        }
+                    },
+                    "schema:name": "CreatorName",
+                    "schema:description": "Information about the creator name.",
+                    "required": [
+                        "@context",
+                        "@id",
+                        "creatorName",
+                        "creatorGivenName",
+                        "creatorFamilyName"
+                    ],
+                    "pav:createdOn": "2021-02-16T11:36:11-08:00",
+                    "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                    "pav:lastUpdatedOn": "2021-02-16T11:36:11-08:00",
+                    "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                    "schema:schemaVersion": "1.6.0",
+                    "additionalProperties": false,
+                    "pav:version": "0.0.1",
+                    "bibo:status": "bibo:draft",
+                    "skos:prefLabel": "Creator Name",
+                    "$schema": "http://json-schema.org/draft-04/schema#"
+                },
+                "CreatorAffiliation": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                        "type": "object",
+                        "@id": "https://repo.metadatacenter.org/template-elements/c06362c2-0e5c-4a04-b825-f46e5ab15fe3",
+                        "@type": "https://schema.metadatacenter.org/core/TemplateElement",
+                        "@context": {
+                            "xsd": "http://www.w3.org/2001/XMLSchema#",
+                            "pav": "http://purl.org/pav/",
+                            "bibo": "http://purl.org/ontology/bibo/",
+                            "oslc": "http://open-services.net/ns/core#",
+                            "schema": "http://schema.org/",
+                            "schema:name": {
+                                "@type": "xsd:string"
+                            },
+                            "schema:description": {
+                                "@type": "xsd:string"
+                            },
+                            "pav:createdOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "pav:createdBy": {
+                                "@type": "@id"
+                            },
+                            "pav:lastUpdatedOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "oslc:modifiedBy": {
+                                "@type": "@id"
+                            }
+                        },
+                        "title": "CreatorAffiliation field schema",
+                        "description": "CreatorAffiliation field schema generated by the CEDAR Template Editor 2.5.38",
+                        "_ui": {
+                            "order": [
+                                "creatorAffiliation",
+                                "creatorAffiliationIdentifier",
+                                "creatorAffiliationIdentifierScheme"
+                            ],
+                            "propertyLabels": {
+                                "creatorAffiliation": "creatorAffiliation",
+                                "creatorAffiliationIdentifier": "creatorAffiliationIdentifier",
+                                "creatorAffiliationIdentifierScheme": "creatorAffiliationIdentifierScheme"
+                            },
+                            "propertyDescriptions": {
+                                "creatorAffiliation": "The organizational or institutional affiliation of the creator.",
+                                "creatorAffiliationIdentifier": "",
+                                "creatorAffiliationIdentifierScheme": "",
+                                "creatorAffiliationIdentifierSchemeIRI": ""
+                            }
+                        },
+                        "properties": {
+                            "@context": {
+                                "type": "object",
+                                "properties": {
+                                    "creatorAffiliation": {
+                                        "enum": [
+                                            "http://vocab.fairdatacollective.org/gdmt/hasCreatorAffiliation"
+                                        ]
+                                    },
+                                    "creatorAffiliationIdentifier": {
+                                        "enum": [
+                                            "http://vocab.fairdatacollective.org/gdmt/hasCreatorAffiliationIdentifier"
+                                        ]
+                                    },
+                                    "creatorAffiliationIdentifierScheme": {
+                                        "enum": [
+                                            "http://vocab.fairdatacollective.org/gdmt/hasCreatorAffiliationIdentifierScheme"
+                                        ]
+                                    }
+                                },
+                                "additionalProperties": false,
+                                "required": [
+                                    "creatorAffiliation",
+                                    "creatorAffiliationIdentifier",
+                                    "creatorAffiliationIdentifierScheme"
+                                ]
+                            },
+                            "@id": {
+                                "type": "string",
+                                "format": "uri"
+                            },
+                            "@type": {
+                                "oneOf": [
+                                    {
+                                        "type": "string",
+                                        "format": "uri"
+                                    },
+                                    {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "string",
+                                            "format": "uri"
+                                        },
+                                        "uniqueItems": true
+                                    }
+                                ]
+                            },
+                            "creatorAffiliation": {
+                                "@id": "https://repo.metadatacenter.org/template-fields/e5763625-8070-4a56-a07d-01ffb0488e4b",
+                                "@type": "https://schema.metadatacenter.org/core/TemplateField",
+                                "@context": {
+                                    "xsd": "http://www.w3.org/2001/XMLSchema#",
+                                    "pav": "http://purl.org/pav/",
+                                    "bibo": "http://purl.org/ontology/bibo/",
+                                    "oslc": "http://open-services.net/ns/core#",
+                                    "schema": "http://schema.org/",
+                                    "skos": "http://www.w3.org/2004/02/skos/core#",
+                                    "schema:name": {
+                                        "@type": "xsd:string"
+                                    },
+                                    "schema:description": {
+                                        "@type": "xsd:string"
+                                    },
+                                    "skos:prefLabel": {
+                                        "@type": "xsd:string"
+                                    },
+                                    "skos:altLabel": {
+                                        "@type": "xsd:string"
+                                    },
+                                    "pav:createdOn": {
+                                        "@type": "xsd:dateTime"
+                                    },
+                                    "pav:createdBy": {
+                                        "@type": "@id"
+                                    },
+                                    "pav:lastUpdatedOn": {
+                                        "@type": "xsd:dateTime"
+                                    },
+                                    "oslc:modifiedBy": {
+                                        "@type": "@id"
+                                    }
+                                },
+                                "type": "object",
+                                "title": "creatorAffiliation field schema",
+                                "description": "creatorAffiliation field schema generated by the CEDAR Template Editor 2.5.38",
+                                "_ui": {
+                                    "inputType": "textfield"
+                                },
+                                "_valueConstraints": {
+                                    "requiredValue": false
+                                },
+                                "properties": {
+                                    "@type": {
+                                        "oneOf": [
+                                            {
+                                                "type": "string",
+                                                "format": "uri"
+                                            },
+                                            {
+                                                "type": "array",
+                                                "minItems": 1,
+                                                "items": {
+                                                    "type": "string",
+                                                    "format": "uri"
+                                                },
+                                                "uniqueItems": true
+                                            }
+                                        ]
+                                    },
+                                    "@value": {
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ]
+                                    },
+                                    "rdfs:label": {
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ]
+                                    }
+                                },
+                                "required": [
+                                    "@value"
+                                ],
+                                "schema:name": "creatorAffiliation",
+                                "schema:description": "The organizational or institutional affiliation of the creator.",
+                                "pav:createdOn": "2021-02-16T11:27:58-08:00",
+                                "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                                "pav:lastUpdatedOn": "2021-02-16T11:27:58-08:00",
+                                "pav:version": "0.0.1",
+                                "bibo:status": "bibo:draft",
+                                "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                                "schema:schemaVersion": "1.6.0",
+                                "additionalProperties": false,
+                                "skos:prefLabel": "Creator Affiliation",
+                                "$schema": "http://json-schema.org/draft-04/schema#"
+                            },
+                            "creatorAffiliationIdentifier": {
+                                "@id": "https://repo.metadatacenter.org/template-fields/3146302d-2a65-4437-b624-2b8450b4e8be",
+                                "@type": "https://schema.metadatacenter.org/core/TemplateField",
+                                "@context": {
+                                    "xsd": "http://www.w3.org/2001/XMLSchema#",
+                                    "pav": "http://purl.org/pav/",
+                                    "bibo": "http://purl.org/ontology/bibo/",
+                                    "oslc": "http://open-services.net/ns/core#",
+                                    "schema": "http://schema.org/",
+                                    "skos": "http://www.w3.org/2004/02/skos/core#",
+                                    "schema:name": {
+                                        "@type": "xsd:string"
+                                    },
+                                    "schema:description": {
+                                        "@type": "xsd:string"
+                                    },
+                                    "skos:prefLabel": {
+                                        "@type": "xsd:string"
+                                    },
+                                    "skos:altLabel": {
+                                        "@type": "xsd:string"
+                                    },
+                                    "pav:createdOn": {
+                                        "@type": "xsd:dateTime"
+                                    },
+                                    "pav:createdBy": {
+                                        "@type": "@id"
+                                    },
+                                    "pav:lastUpdatedOn": {
+                                        "@type": "xsd:dateTime"
+                                    },
+                                    "oslc:modifiedBy": {
+                                        "@type": "@id"
+                                    }
+                                },
+                                "type": "object",
+                                "title": "creatorAffiliationIdentifier field schema",
+                                "description": "creatorAffiliationIdentifier field schema generated by the CEDAR Template Editor 2.5.38",
+                                "_ui": {
+                                    "inputType": "textfield"
+                                },
+                                "_valueConstraints": {
+                                    "requiredValue": false
+                                },
+                                "properties": {
+                                    "@type": {
+                                        "oneOf": [
+                                            {
+                                                "type": "string",
+                                                "format": "uri"
+                                            },
+                                            {
+                                                "type": "array",
+                                                "minItems": 1,
+                                                "items": {
+                                                    "type": "string",
+                                                    "format": "uri"
+                                                },
+                                                "uniqueItems": true
+                                            }
+                                        ]
+                                    },
+                                    "@value": {
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ]
+                                    },
+                                    "rdfs:label": {
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ]
+                                    }
+                                },
+                                "required": [
+                                    "@value"
+                                ],
+                                "schema:name": "creatorAffiliationIdentifier",
+                                "schema:description": "",
+                                "pav:createdOn": "2021-02-16T11:27:58-08:00",
+                                "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                                "pav:lastUpdatedOn": "2021-02-16T11:27:58-08:00",
+                                "pav:version": "0.0.1",
+                                "bibo:status": "bibo:draft",
+                                "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                                "schema:schemaVersion": "1.6.0",
+                                "additionalProperties": false,
+                                "skos:prefLabel": "Creator Affiliation Identifier",
+                                "$schema": "http://json-schema.org/draft-04/schema#"
+                            },
+                            "creatorAffiliationIdentifierScheme": {
+                                "@id": "https://repo.metadatacenter.org/template-fields/3a006775-67f6-42e1-8843-e81ac390f5f4",
+                                "@type": "https://schema.metadatacenter.org/core/TemplateField",
+                                "@context": {
+                                    "xsd": "http://www.w3.org/2001/XMLSchema#",
+                                    "pav": "http://purl.org/pav/",
+                                    "bibo": "http://purl.org/ontology/bibo/",
+                                    "oslc": "http://open-services.net/ns/core#",
+                                    "schema": "http://schema.org/",
+                                    "skos": "http://www.w3.org/2004/02/skos/core#",
+                                    "schema:name": {
+                                        "@type": "xsd:string"
+                                    },
+                                    "schema:description": {
+                                        "@type": "xsd:string"
+                                    },
+                                    "skos:prefLabel": {
+                                        "@type": "xsd:string"
+                                    },
+                                    "skos:altLabel": {
+                                        "@type": "xsd:string"
+                                    },
+                                    "pav:createdOn": {
+                                        "@type": "xsd:dateTime"
+                                    },
+                                    "pav:createdBy": {
+                                        "@type": "@id"
+                                    },
+                                    "pav:lastUpdatedOn": {
+                                        "@type": "xsd:dateTime"
+                                    },
+                                    "oslc:modifiedBy": {
+                                        "@type": "@id"
+                                    }
+                                },
+                                "type": "object",
+                                "title": "creatorAffiliationIdentifierScheme field schema",
+                                "description": "creatorAffiliationIdentifierScheme field schema generated by the CEDAR Template Editor 2.5.38",
+                                "_ui": {
+                                    "inputType": "textfield"
+                                },
+                                "_valueConstraints": {
+                                    "requiredValue": false,
+                                    "ontologies": [],
+                                    "valueSets": [],
+                                    "classes": [],
+                                    "branches": [
+                                        {
+                                            "source": "Ontology for Generic Dataset Metadata Template (FDC-GDMT)",
+                                            "acronym": "FDC-GDMT",
+                                            "uri": "http://vocab.fairdatacollective.org/gdmt/IdentifierScheme",
+                                            "name": "Identifier Scheme",
+                                            "maxDepth": 0
+                                        }
+                                    ],
+                                    "multipleChoice": false,
+                                    "defaultValue": {
+                                        "termUri": "https://ror.org/",
+                                        "rdfs:label": "ROR"
+                                    }
+                                },
+                                "properties": {
+                                    "@type": {
+                                        "oneOf": [
+                                            {
+                                                "type": "string",
+                                                "format": "uri"
+                                            },
+                                            {
+                                                "type": "array",
+                                                "minItems": 1,
+                                                "items": {
+                                                    "type": "string",
+                                                    "format": "uri"
+                                                },
+                                                "uniqueItems": true
+                                            }
+                                        ]
+                                    },
+                                    "rdfs:label": {
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ]
+                                    },
+                                    "@id": {
+                                        "type": "string",
+                                        "format": "uri"
+                                    }
+                                },
+                                "schema:name": "creatorAffiliationIdentifierScheme",
+                                "schema:description": "",
+                                "pav:createdOn": "2021-02-16T11:27:58-08:00",
+                                "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                                "pav:lastUpdatedOn": "2021-02-16T11:27:58-08:00",
+                                "pav:version": "0.0.1",
+                                "bibo:status": "bibo:draft",
+                                "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                                "schema:schemaVersion": "1.6.0",
+                                "additionalProperties": false,
+                                "skos:prefLabel": "Creator Affiliation Identifier Scheme",
+                                "$schema": "http://json-schema.org/draft-04/schema#"
+                            }
+                        },
+                        "required": [
+                            "@context",
+                            "@id",
+                            "creatorAffiliation",
+                            "creatorAffiliationIdentifier",
+                            "creatorAffiliationIdentifierScheme"
+                        ],
+                        "additionalProperties": false,
+                        "pav:createdOn": "2021-02-16T11:36:11-08:00",
+                        "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "pav:lastUpdatedOn": "2021-02-16T11:36:11-08:00",
+                        "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "schema:schemaVersion": "1.6.0",
+                        "schema:name": "CreatorAffiliation",
+                        "schema:description": "Information about the creator affiliations.",
+                        "pav:version": "0.0.1",
+                        "bibo:status": "bibo:draft",
+                        "skos:prefLabel": "Creator Affiliation",
+                        "$schema": "http://json-schema.org/draft-04/schema#"
+                    }
+                },
+                "creatorType": {
+                    "@id": "https://repo.metadatacenter.org/template-fields/e4353b04-cdef-444c-9700-794b6a7dcdae",
+                    "@type": "https://schema.metadatacenter.org/core/TemplateField",
+                    "@context": {
+                        "xsd": "http://www.w3.org/2001/XMLSchema#",
+                        "pav": "http://purl.org/pav/",
+                        "bibo": "http://purl.org/ontology/bibo/",
+                        "oslc": "http://open-services.net/ns/core#",
+                        "schema": "http://schema.org/",
+                        "skos": "http://www.w3.org/2004/02/skos/core#",
+                        "schema:name": {
+                            "@type": "xsd:string"
+                        },
+                        "schema:description": {
+                            "@type": "xsd:string"
+                        },
+                        "skos:prefLabel": {
+                            "@type": "xsd:string"
+                        },
+                        "skos:altLabel": {
+                            "@type": "xsd:string"
+                        },
+                        "pav:createdOn": {
+                            "@type": "xsd:dateTime"
+                        },
+                        "pav:createdBy": {
+                            "@type": "@id"
+                        },
+                        "pav:lastUpdatedOn": {
+                            "@type": "xsd:dateTime"
+                        },
+                        "oslc:modifiedBy": {
+                            "@type": "@id"
+                        }
+                    },
+                    "type": "object",
+                    "title": "creatorType field schema",
+                    "description": "creatorType field schema generated by the CEDAR Template Editor 2.5.38",
+                    "_ui": {
+                        "inputType": "textfield"
+                    },
+                    "_valueConstraints": {
+                        "requiredValue": false
+                    },
+                    "properties": {
+                        "@type": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri"
+                                },
+                                {
+                                    "type": "array",
+                                    "minItems": 1,
+                                    "items": {
+                                        "type": "string",
+                                        "format": "uri"
+                                    },
+                                    "uniqueItems": true
+                                }
+                            ]
+                        },
+                        "@value": {
+                            "type": [
+                                "string",
+                                "null"
+                            ]
+                        },
+                        "rdfs:label": {
+                            "type": [
+                                "string",
+                                "null"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "@value"
+                    ],
+                    "schema:name": "creatorType",
+                    "schema:description": "",
+                    "pav:createdOn": "2021-02-16T11:36:11-08:00",
+                    "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                    "pav:lastUpdatedOn": "2021-02-16T11:36:11-08:00",
+                    "pav:version": "0.0.1",
+                    "bibo:status": "bibo:draft",
+                    "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                    "schema:schemaVersion": "1.6.0",
+                    "additionalProperties": false,
+                    "skos:prefLabel": "Creator Type",
+                    "$schema": "http://json-schema.org/draft-04/schema#"
+                },
+                "creatorEmail": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                        "type": "object",
+                        "@id": "https://repo.metadatacenter.org/template-fields/11435cda-39cc-4ba2-b460-7a23dca1d82d",
+                        "@type": "https://schema.metadatacenter.org/core/TemplateField",
+                        "@context": {
+                            "xsd": "http://www.w3.org/2001/XMLSchema#",
+                            "pav": "http://purl.org/pav/",
+                            "bibo": "http://purl.org/ontology/bibo/",
+                            "oslc": "http://open-services.net/ns/core#",
+                            "schema": "http://schema.org/",
+                            "skos": "http://www.w3.org/2004/02/skos/core#",
+                            "schema:name": {
+                                "@type": "xsd:string"
+                            },
+                            "schema:description": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:prefLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:altLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "pav:createdOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "pav:createdBy": {
+                                "@type": "@id"
+                            },
+                            "pav:lastUpdatedOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "oslc:modifiedBy": {
+                                "@type": "@id"
+                            }
+                        },
+                        "title": "personal mailbox field schema",
+                        "description": "personal mailbox field schema generated by the CEDAR Template Editor 2.5.38",
+                        "_ui": {
+                            "inputType": "textfield"
+                        },
+                        "_valueConstraints": {
+                            "requiredValue": false
+                        },
+                        "properties": {
+                            "@type": {
+                                "oneOf": [
+                                    {
+                                        "type": "string",
+                                        "format": "uri"
+                                    },
+                                    {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "string",
+                                            "format": "uri"
+                                        },
+                                        "uniqueItems": true
+                                    }
+                                ]
+                            },
+                            "@value": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "rdfs:label": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        },
+                        "required": [
+                            "@value"
+                        ],
+                        "additionalProperties": false,
+                        "pav:createdOn": "2021-02-16T11:36:11-08:00",
+                        "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "pav:lastUpdatedOn": "2021-02-16T11:36:11-08:00",
+                        "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "schema:schemaVersion": "1.6.0",
+                        "schema:name": "personal mailbox",
+                        "schema:description": "",
+                        "pav:version": "0.0.1",
+                        "bibo:status": "bibo:draft",
+                        "skos:prefLabel": "Creator Email",
+                        "$schema": "http://json-schema.org/draft-04/schema#"
+                    }
+                },
+                "creatorRole": {
+                    "@id": "https://repo.metadatacenter.org/template-fields/04f1141d-caef-4dc7-a869-19366a250217",
+                    "@type": "https://schema.metadatacenter.org/core/TemplateField",
+                    "@context": {
+                        "xsd": "http://www.w3.org/2001/XMLSchema#",
+                        "pav": "http://purl.org/pav/",
+                        "bibo": "http://purl.org/ontology/bibo/",
+                        "oslc": "http://open-services.net/ns/core#",
+                        "schema": "http://schema.org/",
+                        "skos": "http://www.w3.org/2004/02/skos/core#",
+                        "schema:name": {
+                            "@type": "xsd:string"
+                        },
+                        "schema:description": {
+                            "@type": "xsd:string"
+                        },
+                        "skos:prefLabel": {
+                            "@type": "xsd:string"
+                        },
+                        "skos:altLabel": {
+                            "@type": "xsd:string"
+                        },
+                        "pav:createdOn": {
+                            "@type": "xsd:dateTime"
+                        },
+                        "pav:createdBy": {
+                            "@type": "@id"
+                        },
+                        "pav:lastUpdatedOn": {
+                            "@type": "xsd:dateTime"
+                        },
+                        "oslc:modifiedBy": {
+                            "@type": "@id"
+                        }
+                    },
+                    "type": "object",
+                    "title": "has Creator Role field schema",
+                    "description": "has Creator Role field schema generated by the CEDAR Template Editor 2.5.38",
+                    "_ui": {
+                        "inputType": "textfield"
+                    },
+                    "_valueConstraints": {
+                        "requiredValue": false,
+                        "ontologies": [],
+                        "valueSets": [],
+                        "classes": [],
+                        "branches": [
+                            {
+                                "source": "Ontology for Generic Dataset Metadata Template (FDC-GDMT)",
+                                "acronym": "FDC-GDMT",
+                                "uri": "http://vocab.fairdatacollective.org/gdmt/ContributorRole",
+                                "name": "Contributor Role",
+                                "maxDepth": 0
+                            }
+                        ],
+                        "multipleChoice": false
+                    },
+                    "properties": {
+                        "@type": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri"
+                                },
+                                {
+                                    "type": "array",
+                                    "minItems": 1,
+                                    "items": {
+                                        "type": "string",
+                                        "format": "uri"
+                                    },
+                                    "uniqueItems": true
+                                }
+                            ]
+                        },
+                        "rdfs:label": {
+                            "type": [
+                                "string",
+                                "null"
+                            ]
+                        },
+                        "@id": {
+                            "type": "string",
+                            "format": "uri"
+                        }
+                    },
+                    "schema:name": "has Creator Role",
+                    "schema:description": "The role of the creator in bringing the described dataset into existence.",
+                    "pav:createdOn": "2021-02-16T11:36:11-08:00",
+                    "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                    "pav:lastUpdatedOn": "2021-02-16T11:36:11-08:00",
+                    "pav:version": "0.0.1",
+                    "bibo:status": "bibo:draft",
+                    "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                    "schema:schemaVersion": "1.6.0",
+                    "additionalProperties": false,
+                    "skos:prefLabel": "Creator Role",
+                    "$schema": "http://json-schema.org/draft-04/schema#"
+                },
+                "CreatorIdentifier": {
+                    "@id": "https://repo.metadatacenter.org/template-elements/e73bf521-c793-4914-ae01-c2ae8e089bac",
+                    "@type": "https://schema.metadatacenter.org/core/TemplateElement",
+                    "@context": {
+                        "xsd": "http://www.w3.org/2001/XMLSchema#",
+                        "pav": "http://purl.org/pav/",
+                        "bibo": "http://purl.org/ontology/bibo/",
+                        "oslc": "http://open-services.net/ns/core#",
+                        "schema": "http://schema.org/",
+                        "schema:name": {
+                            "@type": "xsd:string"
+                        },
+                        "schema:description": {
+                            "@type": "xsd:string"
+                        },
+                        "pav:createdOn": {
+                            "@type": "xsd:dateTime"
+                        },
+                        "pav:createdBy": {
+                            "@type": "@id"
+                        },
+                        "pav:lastUpdatedOn": {
+                            "@type": "xsd:dateTime"
+                        },
+                        "oslc:modifiedBy": {
+                            "@type": "@id"
+                        }
+                    },
+                    "type": "object",
+                    "title": "Creatoridentifier element schema",
+                    "description": "Creatoridentifier element schema generated by the CEDAR Template Editor 2.5.38",
+                    "_ui": {
+                        "order": [
+                            "creatorIdentifier",
+                            "creatorIdentifierScheme"
+                        ],
+                        "propertyLabels": {
+                            "creatorIdentifier": "creatorIdentifier",
+                            "creatorIdentifierScheme": "creatorIdentifierScheme"
+                        },
+                        "propertyDescriptions": {
+                            "creatorAffiliationIdentifier": "",
+                            "creatorIdentifier": "Globally unique string that identifies the creator (an individual or legal entity).",
+                            "creatorIdentifierScheme": "The name of the scheme or authority used for the Creator Identifier.",
+                            "creatorIdentifierSchemeIRI": ""
+                        }
+                    },
+                    "properties": {
+                        "@context": {
+                            "type": "object",
+                            "properties": {
+                                "creatorIdentifier": {
+                                    "enum": [
+                                        "http://vocab.fairdatacollective.org/gdmt/hasCreatorIdentifier"
+                                    ]
+                                },
+                                "creatorIdentifierScheme": {
+                                    "enum": [
+                                        "http://vocab.fairdatacollective.org/gdmt/hasCreatorIdentifierScheme"
+                                    ]
+                                }
+                            },
+                            "additionalProperties": false,
+                            "required": [
+                                "creatorIdentifier",
+                                "creatorIdentifierScheme"
+                            ]
+                        },
+                        "@id": {
+                            "type": "string",
+                            "format": "uri"
+                        },
+                        "@type": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri"
+                                },
+                                {
+                                    "type": "array",
+                                    "minItems": 1,
+                                    "items": {
+                                        "type": "string",
+                                        "format": "uri"
+                                    },
+                                    "uniqueItems": true
+                                }
+                            ]
+                        },
+                        "creatorIdentifier": {
+                            "@id": "https://repo.metadatacenter.org/template-fields/d221f8bc-d533-4799-ad7d-b33d6846ee98",
+                            "@type": "https://schema.metadatacenter.org/core/TemplateField",
+                            "@context": {
+                                "xsd": "http://www.w3.org/2001/XMLSchema#",
+                                "pav": "http://purl.org/pav/",
+                                "bibo": "http://purl.org/ontology/bibo/",
+                                "oslc": "http://open-services.net/ns/core#",
+                                "schema": "http://schema.org/",
+                                "skos": "http://www.w3.org/2004/02/skos/core#",
+                                "schema:name": {
+                                    "@type": "xsd:string"
+                                },
+                                "schema:description": {
+                                    "@type": "xsd:string"
+                                },
+                                "skos:prefLabel": {
+                                    "@type": "xsd:string"
+                                },
+                                "skos:altLabel": {
+                                    "@type": "xsd:string"
+                                },
+                                "pav:createdOn": {
+                                    "@type": "xsd:dateTime"
+                                },
+                                "pav:createdBy": {
+                                    "@type": "@id"
+                                },
+                                "pav:lastUpdatedOn": {
+                                    "@type": "xsd:dateTime"
+                                },
+                                "oslc:modifiedBy": {
+                                    "@type": "@id"
+                                }
+                            },
+                            "type": "object",
+                            "title": "creatorIdentifier field schema",
+                            "description": "creatorIdentifier field schema generated by the CEDAR Template Editor 2.5.38",
+                            "_ui": {
+                                "inputType": "textfield"
+                            },
+                            "_valueConstraints": {
+                                "requiredValue": true
+                            },
+                            "properties": {
+                                "@type": {
+                                    "oneOf": [
+                                        {
+                                            "type": "string",
+                                            "format": "uri"
+                                        },
+                                        {
+                                            "type": "array",
+                                            "minItems": 1,
+                                            "items": {
+                                                "type": "string",
+                                                "format": "uri"
+                                            },
+                                            "uniqueItems": true
+                                        }
+                                    ]
+                                },
+                                "@value": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "rdfs:label": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            },
+                            "required": [
+                                "@value"
+                            ],
+                            "schema:name": "creatorIdentifier",
+                            "schema:description": "Globally unique string that identifies the creator (an individual or legal entity).",
+                            "pav:createdOn": "2021-02-16T11:35:56-08:00",
+                            "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                            "pav:lastUpdatedOn": "2021-02-16T11:35:56-08:00",
+                            "pav:version": "0.0.1",
+                            "bibo:status": "bibo:draft",
+                            "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                            "schema:schemaVersion": "1.6.0",
+                            "additionalProperties": false,
+                            "skos:prefLabel": "Creator Identifier",
+                            "$schema": "http://json-schema.org/draft-04/schema#"
+                        },
+                        "creatorIdentifierScheme": {
+                            "@id": "https://repo.metadatacenter.org/template-fields/7bf1cf76-2edc-4d4b-9c67-a84bb161c6ec",
+                            "@type": "https://schema.metadatacenter.org/core/TemplateField",
+                            "@context": {
+                                "xsd": "http://www.w3.org/2001/XMLSchema#",
+                                "pav": "http://purl.org/pav/",
+                                "bibo": "http://purl.org/ontology/bibo/",
+                                "oslc": "http://open-services.net/ns/core#",
+                                "schema": "http://schema.org/",
+                                "skos": "http://www.w3.org/2004/02/skos/core#",
+                                "schema:name": {
+                                    "@type": "xsd:string"
+                                },
+                                "schema:description": {
+                                    "@type": "xsd:string"
+                                },
+                                "skos:prefLabel": {
+                                    "@type": "xsd:string"
+                                },
+                                "skos:altLabel": {
+                                    "@type": "xsd:string"
+                                },
+                                "pav:createdOn": {
+                                    "@type": "xsd:dateTime"
+                                },
+                                "pav:createdBy": {
+                                    "@type": "@id"
+                                },
+                                "pav:lastUpdatedOn": {
+                                    "@type": "xsd:dateTime"
+                                },
+                                "oslc:modifiedBy": {
+                                    "@type": "@id"
+                                }
+                            },
+                            "type": "object",
+                            "title": "creatorIdentifierScheme field schema",
+                            "description": "creatorIdentifierScheme field schema generated by the CEDAR Template Editor 2.5.38",
+                            "_ui": {
+                                "inputType": "textfield"
+                            },
+                            "_valueConstraints": {
+                                "requiredValue": true,
+                                "ontologies": [],
+                                "valueSets": [],
+                                "classes": [],
+                                "branches": [
+                                    {
+                                        "source": "Ontology for Generic Dataset Metadata Template (FDC-GDMT)",
+                                        "acronym": "FDC-GDMT",
+                                        "uri": "http://vocab.fairdatacollective.org/gdmt/IdentifierScheme",
+                                        "name": "Identifier Scheme",
+                                        "maxDepth": 0
+                                    }
+                                ],
+                                "multipleChoice": false,
+                                "defaultValue": {
+                                    "termUri": "https://orcid.org/",
+                                    "rdfs:label": "ORCiD"
+                                }
+                            },
+                            "properties": {
+                                "@type": {
+                                    "oneOf": [
+                                        {
+                                            "type": "string",
+                                            "format": "uri"
+                                        },
+                                        {
+                                            "type": "array",
+                                            "minItems": 1,
+                                            "items": {
+                                                "type": "string",
+                                                "format": "uri"
+                                            },
+                                            "uniqueItems": true
+                                        }
+                                    ]
+                                },
+                                "rdfs:label": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "@id": {
+                                    "type": "string",
+                                    "format": "uri"
+                                }
+                            },
+                            "schema:name": "creatorIdentifierScheme",
+                            "schema:description": "The name of the scheme or authority used for the Creator Identifier.",
+                            "pav:createdOn": "2021-02-16T11:35:56-08:00",
+                            "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                            "pav:lastUpdatedOn": "2021-02-16T11:35:56-08:00",
+                            "pav:version": "0.0.1",
+                            "bibo:status": "bibo:draft",
+                            "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                            "schema:schemaVersion": "1.6.0",
+                            "additionalProperties": false,
+                            "skos:prefLabel": "Creator Identifier Scheme",
+                            "$schema": "http://json-schema.org/draft-04/schema#"
+                        }
+                    },
+                    "schema:name": "CreatorIdentifier",
+                    "schema:description": "Information about the creator identifier.",
+                    "required": [
+                        "@context",
+                        "@id",
+                        "creatorIdentifier",
+                        "creatorIdentifierScheme"
+                    ],
+                    "pav:createdOn": "2021-02-16T11:36:11-08:00",
+                    "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                    "pav:lastUpdatedOn": "2021-02-16T11:36:11-08:00",
+                    "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                    "schema:schemaVersion": "1.6.0",
+                    "additionalProperties": false,
+                    "pav:version": "0.0.1",
+                    "bibo:status": "bibo:draft",
+                    "$schema": "http://json-schema.org/draft-04/schema#"
+                }
+            },
+            "schema:name": "Creator",
+            "schema:description": "An entity that brought into existence the dataset being described. Creators can be people, organizations and/or physical or virtual infrastructure (e.g., sensors, software).",
+            "required": [
+                "@context",
+                "@id",
+                "CreatorName",
+                "CreatorAffiliation",
+                "creatorType",
+                "creatorEmail",
+                "creatorRole",
+                "CreatorIdentifier"
+            ],
+            "pav:createdOn": "2021-02-16T11:37:09-08:00",
+            "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+            "pav:lastUpdatedOn": "2021-02-16T11:37:09-08:00",
+            "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+            "schema:schemaVersion": "1.6.0",
+            "additionalProperties": false,
+            "pav:version": "0.0.1",
+            "bibo:status": "bibo:draft",
+            "skos:prefLabel": "Creator",
             "$schema": "http://json-schema.org/draft-04/schema#"
         }
     },
@@ -2884,13 +4424,14 @@
         "version",
         "Language",
         "Title",
-        "SubjectAndKeyword"
+        "SubjectAndKeyword",
+        "Creator"
     ],
     "schema:name": "Generic Metadata Template",
     "schema:description": "",
     "pav:createdOn": "2021-02-16T07:39:21-08:00",
     "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-    "pav:lastUpdatedOn": "2021-02-16T10:23:34-08:00",
+    "pav:lastUpdatedOn": "2021-02-16T11:37:09-08:00",
     "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
     "schema:schemaVersion": "1.6.0",
     "additionalProperties": false,

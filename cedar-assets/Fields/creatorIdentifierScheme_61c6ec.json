@@ -40,7 +40,24 @@
         "inputType": "textfield"
     },
     "_valueConstraints": {
-        "requiredValue": false
+        "requiredValue": false,
+        "ontologies": [],
+        "valueSets": [],
+        "classes": [],
+        "branches": [
+            {
+                "source": "Ontology for Generic Dataset Metadata Template (FDC-GDMT)",
+                "acronym": "FDC-GDMT",
+                "uri": "http://vocab.fairdatacollective.org/gdmt/IdentifierScheme",
+                "name": "Identifier Scheme",
+                "maxDepth": 0
+            }
+        ],
+        "multipleChoice": false,
+        "defaultValue": {
+            "termUri": "https://orcid.org/",
+            "rdfs:label": "ORCiD"
+        }
     },
     "properties": {
         "@type": {
@@ -60,27 +77,22 @@
                 }
             ]
         },
-        "@value": {
-            "type": [
-                "string",
-                "null"
-            ]
-        },
         "rdfs:label": {
             "type": [
                 "string",
                 "null"
             ]
+        },
+        "@id": {
+            "type": "string",
+            "format": "uri"
         }
     },
-    "required": [
-        "@value"
-    ],
     "schema:name": "creatorIdentifierScheme",
     "schema:description": "",
     "pav:createdOn": "2021-02-16T11:00:50-08:00",
     "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-    "pav:lastUpdatedOn": "2021-02-16T11:00:50-08:00",
+    "pav:lastUpdatedOn": "2021-02-16T11:23:12-08:00",
     "pav:version": "0.0.1",
     "bibo:status": "bibo:draft",
     "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
