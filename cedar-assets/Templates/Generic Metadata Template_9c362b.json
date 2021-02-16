@@ -37,7 +37,8 @@
             "RelatedResources",
             "version",
             "Language",
-            "Title"
+            "Title",
+            "SubjectAndKeyword"
         ],
         "propertyLabels": {
             "ResourceType": "ResourceType",
@@ -45,7 +46,8 @@
             "RelatedResources": "RelatedResources",
             "version": "version",
             "Language": "Language",
-            "Title": "Title"
+            "Title": "Title",
+            "SubjectAndKeyword": "SubjectAndKeyword"
         },
         "propertyDescriptions": {
             "ResourceType": "Information about the type of the resource being described with metadata.",
@@ -53,7 +55,8 @@
             "RelatedResources": "Information about resource related to the dataset or other entity being described.",
             "version": "The string identifying the version of the dataset or other object being described.",
             "Language": "Language in which the dataset being described is provided.",
-            "Title": "A name or title by which the dataset being described is known."
+            "Title": "A name or title by which the dataset being described is known.",
+            "SubjectAndKeyword": "Concepts (keywords, classification, or free text terms) that define the dataset or purpose (subjects which can be addressed) using the dataset."
         }
     },
     "properties": {
@@ -241,6 +244,11 @@
                     "enum": [
                         "http://vocab.fairdatacollective.org/gdmt/hasTitleInfo"
                     ]
+                },
+                "SubjectAndKeyword": {
+                    "enum": [
+                        "http://vocab.fairdatacollective.org/gdmt/hasSubjectInfo"
+                    ]
                 }
             },
             "required": [
@@ -260,7 +268,8 @@
                 "RelatedResources",
                 "version",
                 "Language",
-                "Title"
+                "Title",
+                "SubjectAndKeyword"
             ],
             "additionalProperties": false
         },
@@ -621,9 +630,9 @@
                 "resourceTypeCategory",
                 "resourceTypeDetail"
             ],
-            "pav:createdOn": "2021-02-16T09:32:26-08:00",
+            "pav:createdOn": "2021-02-16T10:23:34-08:00",
             "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-02-16T09:32:26-08:00",
+            "pav:lastUpdatedOn": "2021-02-16T10:23:34-08:00",
             "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
@@ -924,9 +933,9 @@
                 "datasetIdentifier",
                 "datasetIdentifierType"
             ],
-            "pav:createdOn": "2021-02-16T09:32:26-08:00",
+            "pav:createdOn": "2021-02-16T10:23:34-08:00",
             "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-02-16T09:32:26-08:00",
+            "pav:lastUpdatedOn": "2021-02-16T10:23:34-08:00",
             "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
@@ -1446,9 +1455,9 @@
                     "relationType"
                 ],
                 "additionalProperties": false,
-                "pav:createdOn": "2021-02-16T09:32:26-08:00",
+                "pav:createdOn": "2021-02-16T10:23:34-08:00",
                 "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-                "pav:lastUpdatedOn": "2021-02-16T09:32:26-08:00",
+                "pav:lastUpdatedOn": "2021-02-16T10:23:34-08:00",
                 "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
                 "schema:schemaVersion": "1.6.0",
                 "schema:name": "RelatedResources",
@@ -1539,9 +1548,9 @@
             ],
             "schema:name": "version",
             "schema:description": "The string identifying the version of the dataset or other object being described.",
-            "pav:createdOn": "2021-02-16T09:32:26-08:00",
+            "pav:createdOn": "2021-02-16T10:23:34-08:00",
             "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-02-16T09:32:26-08:00",
+            "pav:lastUpdatedOn": "2021-02-16T10:23:34-08:00",
             "pav:version": "0.0.1",
             "bibo:status": "bibo:draft",
             "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
@@ -1846,9 +1855,9 @@
                 "primaryLanguage",
                 "language"
             ],
-            "pav:createdOn": "2021-02-16T09:32:26-08:00",
+            "pav:createdOn": "2021-02-16T10:23:34-08:00",
             "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-02-16T09:32:26-08:00",
+            "pav:lastUpdatedOn": "2021-02-16T10:23:34-08:00",
             "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
@@ -2148,9 +2157,9 @@
                     "language"
                 ],
                 "additionalProperties": false,
-                "pav:createdOn": "2021-02-16T09:32:26-08:00",
+                "pav:createdOn": "2021-02-16T10:23:34-08:00",
                 "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-                "pav:lastUpdatedOn": "2021-02-16T09:32:26-08:00",
+                "pav:lastUpdatedOn": "2021-02-16T10:23:34-08:00",
                 "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
                 "schema:schemaVersion": "1.6.0",
                 "schema:name": "Title",
@@ -2160,6 +2169,703 @@
                 "skos:prefLabel": "Title",
                 "$schema": "http://json-schema.org/draft-04/schema#"
             }
+        },
+        "SubjectAndKeyword": {
+            "@id": "https://repo.metadatacenter.org/template-elements/47ac2481-8a5e-47cb-b3d2-fb47b4632b1c",
+            "@type": "https://schema.metadatacenter.org/core/TemplateElement",
+            "@context": {
+                "xsd": "http://www.w3.org/2001/XMLSchema#",
+                "pav": "http://purl.org/pav/",
+                "bibo": "http://purl.org/ontology/bibo/",
+                "oslc": "http://open-services.net/ns/core#",
+                "schema": "http://schema.org/",
+                "schema:name": {
+                    "@type": "xsd:string"
+                },
+                "schema:description": {
+                    "@type": "xsd:string"
+                },
+                "pav:createdOn": {
+                    "@type": "xsd:dateTime"
+                },
+                "pav:createdBy": {
+                    "@type": "@id"
+                },
+                "pav:lastUpdatedOn": {
+                    "@type": "xsd:dateTime"
+                },
+                "oslc:modifiedBy": {
+                    "@type": "@id"
+                }
+            },
+            "type": "object",
+            "title": "Subjectandkeyword element schema",
+            "description": "Subjectandkeyword element schema generated by the CEDAR Template Editor 2.5.38",
+            "_ui": {
+                "order": [
+                    "Subject",
+                    "keyword"
+                ],
+                "propertyLabels": {
+                    "Subject": "Subject",
+                    "keyword": "keyword"
+                },
+                "propertyDescriptions": {
+                    "Subject": "Concepts that define the dataset or purpose sourced from controlled vocabulary.",
+                    "keyword": "Free text subject, keyword, classification code, or key phrase describing the dataset or purpose for which the dataset can be used."
+                }
+            },
+            "properties": {
+                "@context": {
+                    "type": "object",
+                    "properties": {
+                        "Subject": {
+                            "enum": [
+                                "http://vocab.fairdatacollective.org/gdmt/hasSubjectInfo"
+                            ]
+                        },
+                        "keyword": {
+                            "enum": [
+                                "http://www.w3.org/ns/dcat#keyword"
+                            ]
+                        }
+                    },
+                    "additionalProperties": false,
+                    "required": [
+                        "Subject",
+                        "keyword"
+                    ]
+                },
+                "@id": {
+                    "type": "string",
+                    "format": "uri"
+                },
+                "@type": {
+                    "oneOf": [
+                        {
+                            "type": "string",
+                            "format": "uri"
+                        },
+                        {
+                            "type": "array",
+                            "minItems": 1,
+                            "items": {
+                                "type": "string",
+                                "format": "uri"
+                            },
+                            "uniqueItems": true
+                        }
+                    ]
+                },
+                "Subject": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                        "type": "object",
+                        "@id": "https://repo.metadatacenter.org/template-elements/087b8f3f-cde8-4ccb-8015-1f093f62a8d2",
+                        "@type": "https://schema.metadatacenter.org/core/TemplateElement",
+                        "@context": {
+                            "xsd": "http://www.w3.org/2001/XMLSchema#",
+                            "pav": "http://purl.org/pav/",
+                            "bibo": "http://purl.org/ontology/bibo/",
+                            "oslc": "http://open-services.net/ns/core#",
+                            "schema": "http://schema.org/",
+                            "schema:name": {
+                                "@type": "xsd:string"
+                            },
+                            "schema:description": {
+                                "@type": "xsd:string"
+                            },
+                            "pav:createdOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "pav:createdBy": {
+                                "@type": "@id"
+                            },
+                            "pav:lastUpdatedOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "oslc:modifiedBy": {
+                                "@type": "@id"
+                            }
+                        },
+                        "title": "Subject field schema",
+                        "description": "Subject field schema generated by the CEDAR Template Editor 2.5.38",
+                        "_ui": {
+                            "order": [
+                                "subjectLabel",
+                                "subjectIRI",
+                                "subjectScheme",
+                                "subjectSchemeIRI"
+                            ],
+                            "propertyLabels": {
+                                "subjectLabel": "subjectLabel",
+                                "subjectIRI": "subjectIRI",
+                                "subjectScheme": "subjectScheme",
+                                "subjectSchemeIRI": "subjectSchemeIRI"
+                            },
+                            "propertyDescriptions": {
+                                "subjectLabel": "Text string corresponding to the subjectIRI attribute.",
+                                "subjectIRI": "The IRI of a concept (keyword, classification code, or controlled key phrase) that defines the dataset or indicates for which concepts the dataset can be used.",
+                                "subjectScheme": "",
+                                "subjectSchemeIRI": ""
+                            }
+                        },
+                        "properties": {
+                            "@context": {
+                                "type": "object",
+                                "properties": {
+                                    "subjectLabel": {
+                                        "enum": [
+                                            "http://purl.org/dc/terms/subject"
+                                        ]
+                                    },
+                                    "subjectIRI": {
+                                        "enum": [
+                                            "http://vocab.fairdatacollective.org/gdmt/hasSubjectIRI"
+                                        ]
+                                    },
+                                    "subjectScheme": {
+                                        "enum": [
+                                            "http://vocab.fairdatacollective.org/gdmt/hasSubjectScheme"
+                                        ]
+                                    },
+                                    "subjectSchemeIRI": {
+                                        "enum": [
+                                            "http://vocab.fairdatacollective.org/gdmt/hasSubjectSchemeIRI"
+                                        ]
+                                    }
+                                },
+                                "additionalProperties": false,
+                                "required": [
+                                    "subjectLabel",
+                                    "subjectIRI",
+                                    "subjectScheme",
+                                    "subjectSchemeIRI"
+                                ]
+                            },
+                            "@id": {
+                                "type": "string",
+                                "format": "uri"
+                            },
+                            "@type": {
+                                "oneOf": [
+                                    {
+                                        "type": "string",
+                                        "format": "uri"
+                                    },
+                                    {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "string",
+                                            "format": "uri"
+                                        },
+                                        "uniqueItems": true
+                                    }
+                                ]
+                            },
+                            "subjectLabel": {
+                                "@id": "https://repo.metadatacenter.org/template-fields/2df2493a-8520-4026-a2ee-4b6b1176e21a",
+                                "@type": "https://schema.metadatacenter.org/core/TemplateField",
+                                "@context": {
+                                    "xsd": "http://www.w3.org/2001/XMLSchema#",
+                                    "pav": "http://purl.org/pav/",
+                                    "bibo": "http://purl.org/ontology/bibo/",
+                                    "oslc": "http://open-services.net/ns/core#",
+                                    "schema": "http://schema.org/",
+                                    "skos": "http://www.w3.org/2004/02/skos/core#",
+                                    "schema:name": {
+                                        "@type": "xsd:string"
+                                    },
+                                    "schema:description": {
+                                        "@type": "xsd:string"
+                                    },
+                                    "skos:prefLabel": {
+                                        "@type": "xsd:string"
+                                    },
+                                    "skos:altLabel": {
+                                        "@type": "xsd:string"
+                                    },
+                                    "pav:createdOn": {
+                                        "@type": "xsd:dateTime"
+                                    },
+                                    "pav:createdBy": {
+                                        "@type": "@id"
+                                    },
+                                    "pav:lastUpdatedOn": {
+                                        "@type": "xsd:dateTime"
+                                    },
+                                    "oslc:modifiedBy": {
+                                        "@type": "@id"
+                                    }
+                                },
+                                "type": "object",
+                                "title": "subjectLabel field schema",
+                                "description": "subjectLabel field schema generated by the CEDAR Template Editor 2.5.38",
+                                "_ui": {
+                                    "inputType": "textfield"
+                                },
+                                "_valueConstraints": {
+                                    "requiredValue": false
+                                },
+                                "properties": {
+                                    "@type": {
+                                        "oneOf": [
+                                            {
+                                                "type": "string",
+                                                "format": "uri"
+                                            },
+                                            {
+                                                "type": "array",
+                                                "minItems": 1,
+                                                "items": {
+                                                    "type": "string",
+                                                    "format": "uri"
+                                                },
+                                                "uniqueItems": true
+                                            }
+                                        ]
+                                    },
+                                    "@value": {
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ]
+                                    },
+                                    "rdfs:label": {
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ]
+                                    }
+                                },
+                                "required": [
+                                    "@value"
+                                ],
+                                "schema:name": "subjectLabel",
+                                "schema:description": "Text string corresponding to the subjectIRI attribute.",
+                                "pav:createdOn": "2021-02-16T10:16:27-08:00",
+                                "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                                "pav:lastUpdatedOn": "2021-02-16T10:16:27-08:00",
+                                "pav:version": "0.0.1",
+                                "bibo:status": "bibo:draft",
+                                "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                                "schema:schemaVersion": "1.6.0",
+                                "additionalProperties": false,
+                                "skos:prefLabel": "Subject Label",
+                                "$schema": "http://json-schema.org/draft-04/schema#"
+                            },
+                            "subjectIRI": {
+                                "@id": "https://repo.metadatacenter.org/template-fields/082d384e-e54a-4d31-a945-dd2aadbf771e",
+                                "@type": "https://schema.metadatacenter.org/core/TemplateField",
+                                "@context": {
+                                    "xsd": "http://www.w3.org/2001/XMLSchema#",
+                                    "pav": "http://purl.org/pav/",
+                                    "bibo": "http://purl.org/ontology/bibo/",
+                                    "oslc": "http://open-services.net/ns/core#",
+                                    "schema": "http://schema.org/",
+                                    "skos": "http://www.w3.org/2004/02/skos/core#",
+                                    "schema:name": {
+                                        "@type": "xsd:string"
+                                    },
+                                    "schema:description": {
+                                        "@type": "xsd:string"
+                                    },
+                                    "skos:prefLabel": {
+                                        "@type": "xsd:string"
+                                    },
+                                    "skos:altLabel": {
+                                        "@type": "xsd:string"
+                                    },
+                                    "pav:createdOn": {
+                                        "@type": "xsd:dateTime"
+                                    },
+                                    "pav:createdBy": {
+                                        "@type": "@id"
+                                    },
+                                    "pav:lastUpdatedOn": {
+                                        "@type": "xsd:dateTime"
+                                    },
+                                    "oslc:modifiedBy": {
+                                        "@type": "@id"
+                                    }
+                                },
+                                "type": "object",
+                                "title": "subjectIRI field schema",
+                                "description": "subjectIRI field schema generated by the CEDAR Template Editor 2.5.38",
+                                "_ui": {
+                                    "inputType": "textfield"
+                                },
+                                "_valueConstraints": {
+                                    "requiredValue": false
+                                },
+                                "properties": {
+                                    "@type": {
+                                        "oneOf": [
+                                            {
+                                                "type": "string",
+                                                "format": "uri"
+                                            },
+                                            {
+                                                "type": "array",
+                                                "minItems": 1,
+                                                "items": {
+                                                    "type": "string",
+                                                    "format": "uri"
+                                                },
+                                                "uniqueItems": true
+                                            }
+                                        ]
+                                    },
+                                    "@value": {
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ]
+                                    },
+                                    "rdfs:label": {
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ]
+                                    }
+                                },
+                                "required": [
+                                    "@value"
+                                ],
+                                "schema:name": "subjectIRI",
+                                "schema:description": "The IRI of a concept (keyword, classification code, or controlled key phrase) that defines the dataset or indicates for which concepts the dataset can be used.",
+                                "pav:createdOn": "2021-02-16T10:16:27-08:00",
+                                "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                                "pav:lastUpdatedOn": "2021-02-16T10:16:27-08:00",
+                                "pav:version": "0.0.1",
+                                "bibo:status": "bibo:draft",
+                                "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                                "schema:schemaVersion": "1.6.0",
+                                "additionalProperties": false,
+                                "skos:prefLabel": "Subject IRI",
+                                "$schema": "http://json-schema.org/draft-04/schema#"
+                            },
+                            "subjectScheme": {
+                                "@id": "https://repo.metadatacenter.org/template-fields/822ea02b-57a4-467b-82b8-f7ab3466c671",
+                                "@type": "https://schema.metadatacenter.org/core/TemplateField",
+                                "@context": {
+                                    "xsd": "http://www.w3.org/2001/XMLSchema#",
+                                    "pav": "http://purl.org/pav/",
+                                    "bibo": "http://purl.org/ontology/bibo/",
+                                    "oslc": "http://open-services.net/ns/core#",
+                                    "schema": "http://schema.org/",
+                                    "skos": "http://www.w3.org/2004/02/skos/core#",
+                                    "schema:name": {
+                                        "@type": "xsd:string"
+                                    },
+                                    "schema:description": {
+                                        "@type": "xsd:string"
+                                    },
+                                    "skos:prefLabel": {
+                                        "@type": "xsd:string"
+                                    },
+                                    "skos:altLabel": {
+                                        "@type": "xsd:string"
+                                    },
+                                    "pav:createdOn": {
+                                        "@type": "xsd:dateTime"
+                                    },
+                                    "pav:createdBy": {
+                                        "@type": "@id"
+                                    },
+                                    "pav:lastUpdatedOn": {
+                                        "@type": "xsd:dateTime"
+                                    },
+                                    "oslc:modifiedBy": {
+                                        "@type": "@id"
+                                    }
+                                },
+                                "type": "object",
+                                "title": "subjectScheme field schema",
+                                "description": "subjectScheme field schema generated by the CEDAR Template Editor 2.5.38",
+                                "_ui": {
+                                    "inputType": "textfield"
+                                },
+                                "_valueConstraints": {
+                                    "requiredValue": false
+                                },
+                                "properties": {
+                                    "@type": {
+                                        "oneOf": [
+                                            {
+                                                "type": "string",
+                                                "format": "uri"
+                                            },
+                                            {
+                                                "type": "array",
+                                                "minItems": 1,
+                                                "items": {
+                                                    "type": "string",
+                                                    "format": "uri"
+                                                },
+                                                "uniqueItems": true
+                                            }
+                                        ]
+                                    },
+                                    "@value": {
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ]
+                                    },
+                                    "rdfs:label": {
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ]
+                                    }
+                                },
+                                "required": [
+                                    "@value"
+                                ],
+                                "schema:name": "subjectScheme",
+                                "schema:description": "",
+                                "pav:createdOn": "2021-02-16T10:16:27-08:00",
+                                "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                                "pav:lastUpdatedOn": "2021-02-16T10:16:27-08:00",
+                                "pav:version": "0.0.1",
+                                "bibo:status": "bibo:draft",
+                                "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                                "schema:schemaVersion": "1.6.0",
+                                "additionalProperties": false,
+                                "skos:prefLabel": "Subject Scheme",
+                                "$schema": "http://json-schema.org/draft-04/schema#"
+                            },
+                            "subjectSchemeIRI": {
+                                "@id": "https://repo.metadatacenter.org/template-fields/070ba7de-0695-48b5-acc3-a5da2fddf3b4",
+                                "@type": "https://schema.metadatacenter.org/core/TemplateField",
+                                "@context": {
+                                    "xsd": "http://www.w3.org/2001/XMLSchema#",
+                                    "pav": "http://purl.org/pav/",
+                                    "bibo": "http://purl.org/ontology/bibo/",
+                                    "oslc": "http://open-services.net/ns/core#",
+                                    "schema": "http://schema.org/",
+                                    "skos": "http://www.w3.org/2004/02/skos/core#",
+                                    "schema:name": {
+                                        "@type": "xsd:string"
+                                    },
+                                    "schema:description": {
+                                        "@type": "xsd:string"
+                                    },
+                                    "skos:prefLabel": {
+                                        "@type": "xsd:string"
+                                    },
+                                    "skos:altLabel": {
+                                        "@type": "xsd:string"
+                                    },
+                                    "pav:createdOn": {
+                                        "@type": "xsd:dateTime"
+                                    },
+                                    "pav:createdBy": {
+                                        "@type": "@id"
+                                    },
+                                    "pav:lastUpdatedOn": {
+                                        "@type": "xsd:dateTime"
+                                    },
+                                    "oslc:modifiedBy": {
+                                        "@type": "@id"
+                                    }
+                                },
+                                "type": "object",
+                                "title": "subjectSchemeIRI field schema",
+                                "description": "subjectSchemeIRI field schema generated by the CEDAR Template Editor 2.5.38",
+                                "_ui": {
+                                    "inputType": "textfield"
+                                },
+                                "_valueConstraints": {
+                                    "requiredValue": false
+                                },
+                                "properties": {
+                                    "@type": {
+                                        "oneOf": [
+                                            {
+                                                "type": "string",
+                                                "format": "uri"
+                                            },
+                                            {
+                                                "type": "array",
+                                                "minItems": 1,
+                                                "items": {
+                                                    "type": "string",
+                                                    "format": "uri"
+                                                },
+                                                "uniqueItems": true
+                                            }
+                                        ]
+                                    },
+                                    "@value": {
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ]
+                                    },
+                                    "rdfs:label": {
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ]
+                                    }
+                                },
+                                "required": [
+                                    "@value"
+                                ],
+                                "schema:name": "subjectSchemeIRI",
+                                "schema:description": "",
+                                "pav:createdOn": "2021-02-16T10:16:27-08:00",
+                                "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                                "pav:lastUpdatedOn": "2021-02-16T10:16:27-08:00",
+                                "pav:version": "0.0.1",
+                                "bibo:status": "bibo:draft",
+                                "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                                "schema:schemaVersion": "1.6.0",
+                                "additionalProperties": false,
+                                "skos:prefLabel": "Subject Scheme IRI",
+                                "$schema": "http://json-schema.org/draft-04/schema#"
+                            }
+                        },
+                        "required": [
+                            "@context",
+                            "@id",
+                            "subjectLabel",
+                            "subjectIRI",
+                            "subjectScheme",
+                            "subjectSchemeIRI"
+                        ],
+                        "additionalProperties": false,
+                        "pav:createdOn": "2021-02-16T10:22:40-08:00",
+                        "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "pav:lastUpdatedOn": "2021-02-16T10:22:40-08:00",
+                        "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "schema:schemaVersion": "1.6.0",
+                        "schema:name": "Subject",
+                        "schema:description": "Concepts that define the dataset or purpose sourced from controlled vocabulary.",
+                        "pav:version": "0.0.1",
+                        "bibo:status": "bibo:draft",
+                        "skos:prefLabel": "Subject",
+                        "$schema": "http://json-schema.org/draft-04/schema#"
+                    }
+                },
+                "keyword": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                        "type": "object",
+                        "@id": "https://repo.metadatacenter.org/template-fields/a37fb051-3b58-4fb6-96be-e1be41a9e5d8",
+                        "@type": "https://schema.metadatacenter.org/core/TemplateField",
+                        "@context": {
+                            "xsd": "http://www.w3.org/2001/XMLSchema#",
+                            "pav": "http://purl.org/pav/",
+                            "bibo": "http://purl.org/ontology/bibo/",
+                            "oslc": "http://open-services.net/ns/core#",
+                            "schema": "http://schema.org/",
+                            "skos": "http://www.w3.org/2004/02/skos/core#",
+                            "schema:name": {
+                                "@type": "xsd:string"
+                            },
+                            "schema:description": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:prefLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:altLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "pav:createdOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "pav:createdBy": {
+                                "@type": "@id"
+                            },
+                            "pav:lastUpdatedOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "oslc:modifiedBy": {
+                                "@type": "@id"
+                            }
+                        },
+                        "title": "keyword field schema",
+                        "description": "keyword field schema generated by the CEDAR Template Editor 2.5.38",
+                        "_ui": {
+                            "inputType": "textfield"
+                        },
+                        "_valueConstraints": {
+                            "requiredValue": false
+                        },
+                        "properties": {
+                            "@type": {
+                                "oneOf": [
+                                    {
+                                        "type": "string",
+                                        "format": "uri"
+                                    },
+                                    {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "string",
+                                            "format": "uri"
+                                        },
+                                        "uniqueItems": true
+                                    }
+                                ]
+                            },
+                            "@value": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "rdfs:label": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        },
+                        "required": [
+                            "@value"
+                        ],
+                        "additionalProperties": false,
+                        "pav:createdOn": "2021-02-16T10:22:40-08:00",
+                        "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "pav:lastUpdatedOn": "2021-02-16T10:22:40-08:00",
+                        "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "schema:schemaVersion": "1.6.0",
+                        "schema:name": "keyword",
+                        "schema:description": "Free text subject, keyword, classification code, or key phrase describing the dataset or purpose for which the dataset can be used.",
+                        "pav:version": "0.0.1",
+                        "bibo:status": "bibo:draft",
+                        "skos:prefLabel": "Keyword",
+                        "$schema": "http://json-schema.org/draft-04/schema#"
+                    }
+                }
+            },
+            "schema:name": "SubjectAndKeyword",
+            "schema:description": "Concepts (keywords, classification, or free text terms) that define the dataset or purpose (subjects which can be addressed) using the dataset.",
+            "required": [
+                "@context",
+                "@id",
+                "Subject",
+                "keyword"
+            ],
+            "pav:createdOn": "2021-02-16T10:23:34-08:00",
+            "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+            "pav:lastUpdatedOn": "2021-02-16T10:23:34-08:00",
+            "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+            "schema:schemaVersion": "1.6.0",
+            "additionalProperties": false,
+            "pav:version": "0.0.1",
+            "bibo:status": "bibo:draft",
+            "skos:prefLabel": "Subjects and Keywords",
+            "$schema": "http://json-schema.org/draft-04/schema#"
         }
     },
     "required": [
@@ -2177,13 +2883,14 @@
         "RelatedResources",
         "version",
         "Language",
-        "Title"
+        "Title",
+        "SubjectAndKeyword"
     ],
     "schema:name": "Generic Metadata Template",
     "schema:description": "",
     "pav:createdOn": "2021-02-16T07:39:21-08:00",
     "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-    "pav:lastUpdatedOn": "2021-02-16T09:32:26-08:00",
+    "pav:lastUpdatedOn": "2021-02-16T10:23:34-08:00",
     "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
     "schema:schemaVersion": "1.6.0",
     "additionalProperties": false,
