@@ -1,5 +1,4 @@
 {
-    "@id": "https://repo.metadatacenter.org/templates/dd6231ef-5890-48cb-9621-04c5b5577c1e",
     "@type": "https://schema.metadatacenter.org/core/Template",
     "@context": {
         "xsd": "http://www.w3.org/2001/XMLSchema#",
@@ -34,12 +33,12 @@
         "order": [
             "ResourceType",
             "DatasetIdentifier",
+            "RelatedResources",
             "Title",
             "Description",
             "Language",
             "Version",
             "Subject",
-            "RelatedResource",
             "Creator",
             "Contributor",
             "Publisher",
@@ -71,7 +70,7 @@
             "Funding": "Funding",
             "SpatialCoverage": "SpatialCoverage",
             "TemporalCoverage": "TemporalCoverage",
-            "RelatedResource": "RelatedResource"
+            "RelatedResources": "Related Resources Info"
         },
         "propertyDescriptions": {
             "ResourceType": "Information about the type of the resource being described with metadata.",
@@ -92,7 +91,7 @@
             "Funding": "The sources of funding that enabled and drove the creation of the dataset. (Non-monetary sources are described under Contributor.)",
             "SpatialCoverage": "The geospatial area (region on Earth) covered by the dataset being described. ",
             "TemporalCoverage": "The temporal coverage and resolution of the dataset being described.",
-            "RelatedResource": "Information about resource related to the dataset or other entity being described."
+            "RelatedResources": "Information about resource related to the dataset or other entity being described."
         }
     },
     "properties": {
@@ -341,9 +340,9 @@
                         "http://vocab.fairdatacollective.org/gdmt/hasTemporalCoverageInfo"
                     ]
                 },
-                "RelatedResource": {
+                "RelatedResources": {
                     "enum": [
-                        "https://schema.metadatacenter.org/properties/eaf3df58-712f-45bf-932e-9ccfc27b3179"
+                        "https://schema.metadatacenter.org/properties/1ad56c8d-6988-44e5-a3d1-6f74e85fcd72"
                     ]
                 }
             },
@@ -377,7 +376,7 @@
                 "Funding",
                 "SpatialCoverage",
                 "TemporalCoverage",
-                "RelatedResource"
+                "RelatedResources"
             ],
             "additionalProperties": false
         },
@@ -738,10 +737,10 @@
                 "resourceTypeCategory",
                 "resourceTypeDetail"
             ],
-            "pav:createdOn": "2021-01-24T23:47:11-08:00",
-            "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-01-24T23:47:11-08:00",
-            "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+            "pav:createdOn": "2021-01-24T20:18:05-08:00",
+            "pav:createdBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
+            "pav:lastUpdatedOn": "2021-01-24T20:18:05-08:00",
+            "oslc:modifiedBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
             "pav:version": "0.0.1",
@@ -1039,10 +1038,10 @@
                 "datasetIdentifier",
                 "datasetIdentifierType"
             ],
-            "pav:createdOn": "2021-01-24T23:47:11-08:00",
-            "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-01-24T23:47:11-08:00",
-            "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+            "pav:createdOn": "2021-01-24T20:18:05-08:00",
+            "pav:createdBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
+            "pav:lastUpdatedOn": "2021-01-24T20:18:05-08:00",
+            "oslc:modifiedBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
             "pav:version": "0.0.1",
@@ -1227,10 +1226,10 @@
                 "@id",
                 "title"
             ],
-            "pav:createdOn": "2021-01-24T23:47:11-08:00",
-            "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-01-24T23:47:11-08:00",
-            "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+            "pav:createdOn": "2021-01-24T20:18:05-08:00",
+            "pav:createdBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
+            "pav:lastUpdatedOn": "2021-01-24T20:18:05-08:00",
+            "oslc:modifiedBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
             "pav:version": "0.0.1",
@@ -1415,10 +1414,10 @@
                 "@id",
                 "description"
             ],
-            "pav:createdOn": "2021-01-24T23:47:11-08:00",
-            "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-01-24T23:47:11-08:00",
-            "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+            "pav:createdOn": "2021-01-24T20:18:05-08:00",
+            "pav:createdBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
+            "pav:lastUpdatedOn": "2021-01-24T20:18:05-08:00",
+            "oslc:modifiedBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
             "pav:version": "0.0.1",
@@ -1722,10 +1721,10 @@
                 "primaryLanguage",
                 "language"
             ],
-            "pav:createdOn": "2021-01-24T23:47:11-08:00",
-            "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-01-24T23:47:11-08:00",
-            "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+            "pav:createdOn": "2021-01-24T20:18:05-08:00",
+            "pav:createdBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
+            "pav:lastUpdatedOn": "2021-01-24T20:18:05-08:00",
+            "oslc:modifiedBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
             "pav:version": "0.0.1",
@@ -1910,10 +1909,10 @@
                 "@id",
                 "version"
             ],
-            "pav:createdOn": "2021-01-24T23:47:11-08:00",
-            "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-01-24T23:47:11-08:00",
-            "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+            "pav:createdOn": "2021-01-24T20:18:05-08:00",
+            "pav:createdBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
+            "pav:lastUpdatedOn": "2021-01-24T20:18:05-08:00",
+            "oslc:modifiedBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
             "pav:version": "0.0.1",
@@ -2207,10 +2206,10 @@
                 "subject",
                 "keyword"
             ],
-            "pav:createdOn": "2021-01-24T23:47:11-08:00",
-            "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-01-24T23:47:11-08:00",
-            "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+            "pav:createdOn": "2021-01-24T20:18:05-08:00",
+            "pav:createdBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
+            "pav:lastUpdatedOn": "2021-01-24T20:18:05-08:00",
+            "oslc:modifiedBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
             "pav:version": "0.0.1",
@@ -3753,10 +3752,10 @@
                     "creatorEmail"
                 ],
                 "additionalProperties": false,
-                "pav:createdOn": "2021-01-24T23:47:11-08:00",
-                "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-                "pav:lastUpdatedOn": "2021-01-24T23:47:11-08:00",
-                "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                "pav:createdOn": "2021-01-24T20:18:05-08:00",
+                "pav:createdBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
+                "pav:lastUpdatedOn": "2021-01-24T20:18:05-08:00",
+                "oslc:modifiedBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
                 "schema:schemaVersion": "1.6.0",
                 "schema:name": "Creator",
                 "schema:description": "An entity that brought into existence the dataset being described. Creators can be people, organizations and/or physical or virtual infrastructure (e.g., sensors, software). ",
@@ -5303,10 +5302,10 @@
                     "contributorEmail"
                 ],
                 "additionalProperties": false,
-                "pav:createdOn": "2021-01-24T23:47:11-08:00",
-                "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-                "pav:lastUpdatedOn": "2021-01-24T23:47:11-08:00",
-                "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                "pav:createdOn": "2021-01-24T20:18:05-08:00",
+                "pav:createdBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
+                "pav:lastUpdatedOn": "2021-01-24T20:18:05-08:00",
+                "oslc:modifiedBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
                 "schema:schemaVersion": "1.6.0",
                 "schema:name": "Contributor",
                 "schema:description": "An entity that contributed in bringing into existence the dataset being described. Contributors can be people, organizations and/or physical or virtual infrastructure (e.g., sensors, software). ",
@@ -6012,10 +6011,10 @@
                 "publisherEmail",
                 "publisherAddress"
             ],
-            "pav:createdOn": "2021-01-24T23:47:11-08:00",
-            "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-01-24T23:47:11-08:00",
-            "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+            "pav:createdOn": "2021-01-24T20:18:05-08:00",
+            "pav:createdBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
+            "pav:lastUpdatedOn": "2021-01-24T20:18:05-08:00",
+            "oslc:modifiedBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
             "pav:version": "0.0.1",
@@ -6622,10 +6621,10 @@
                 "licenseText",
                 "LicenseIdentifier"
             ],
-            "pav:createdOn": "2021-01-24T23:47:11-08:00",
-            "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-01-24T23:47:11-08:00",
-            "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+            "pav:createdOn": "2021-01-24T20:18:05-08:00",
+            "pav:createdBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
+            "pav:lastUpdatedOn": "2021-01-24T20:18:05-08:00",
+            "oslc:modifiedBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
             "pav:version": "0.0.1",
@@ -6928,10 +6927,10 @@
                     "datasetDate"
                 ],
                 "additionalProperties": false,
-                "pav:createdOn": "2021-01-24T23:47:11-08:00",
-                "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-                "pav:lastUpdatedOn": "2021-01-24T23:47:11-08:00",
-                "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                "pav:createdOn": "2021-01-24T20:18:05-08:00",
+                "pav:createdBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
+                "pav:lastUpdatedOn": "2021-01-24T20:18:05-08:00",
+                "oslc:modifiedBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
                 "schema:schemaVersion": "1.6.0",
                 "schema:name": "Date",
                 "schema:description": "Relevant dates related to the resource being described. One instance of date must be of datsetDateType=Published.",
@@ -9613,10 +9612,10 @@
                     "Distributor"
                 ],
                 "additionalProperties": false,
-                "pav:createdOn": "2021-01-24T23:47:11-08:00",
-                "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-                "pav:lastUpdatedOn": "2021-01-24T23:47:11-08:00",
-                "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                "pav:createdOn": "2021-01-24T20:18:05-08:00",
+                "pav:createdBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
+                "pav:lastUpdatedOn": "2021-01-24T20:18:05-08:00",
+                "oslc:modifiedBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
                 "schema:schemaVersion": "1.6.0",
                 "schema:name": "Distribution",
                 "schema:description": "Details about the distribution for this individual public presentation of the dataset (if part of the Distribution metadata), or for all the public presentations of the dataset being described (if part of the Dataset metadata). ",
@@ -11111,10 +11110,10 @@
                     "DataStream"
                 ],
                 "additionalProperties": false,
-                "pav:createdOn": "2021-01-24T23:47:11-08:00",
-                "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-                "pav:lastUpdatedOn": "2021-01-24T23:47:11-08:00",
-                "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                "pav:createdOn": "2021-01-24T20:18:05-08:00",
+                "pav:createdBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
+                "pav:lastUpdatedOn": "2021-01-24T20:18:05-08:00",
+                "oslc:modifiedBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
                 "schema:schemaVersion": "1.6.0",
                 "schema:name": "Content",
                 "schema:description": "The specific entities that constitute the dataset being described, and the organization and provenance of those entities. (The dataset is defined as coming from a single Data Source.)",
@@ -12010,10 +12009,10 @@
                 "verticalExtentDatum",
                 "verticalExtentDatumIRI"
             ],
-            "pav:createdOn": "2021-01-24T23:47:11-08:00",
-            "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-01-24T23:47:11-08:00",
-            "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+            "pav:createdOn": "2021-01-24T20:18:05-08:00",
+            "pav:createdBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
+            "pav:lastUpdatedOn": "2021-01-24T20:18:05-08:00",
+            "oslc:modifiedBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
             "pav:version": "0.0.1",
@@ -13000,10 +12999,10 @@
                 "Award",
                 "Funder"
             ],
-            "pav:createdOn": "2021-01-24T23:47:11-08:00",
-            "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-01-24T23:47:11-08:00",
-            "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+            "pav:createdOn": "2021-01-24T20:18:05-08:00",
+            "pav:createdBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
+            "pav:lastUpdatedOn": "2021-01-24T20:18:05-08:00",
+            "oslc:modifiedBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
             "pav:version": "0.0.1",
@@ -14198,10 +14197,10 @@
                 "SpatialCoverageBoundingBox",
                 "SpatialCoveragePolygon"
             ],
-            "pav:createdOn": "2021-01-24T23:47:11-08:00",
-            "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-01-24T23:47:11-08:00",
-            "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+            "pav:createdOn": "2021-01-24T20:18:05-08:00",
+            "pav:createdBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
+            "pav:lastUpdatedOn": "2021-01-24T20:18:05-08:00",
+            "oslc:modifiedBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
             "pav:version": "0.0.1",
@@ -14705,10 +14704,10 @@
                 "temporalResolution",
                 "duration"
             ],
-            "pav:createdOn": "2021-01-24T23:47:11-08:00",
-            "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-01-24T23:47:11-08:00",
-            "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+            "pav:createdOn": "2021-01-24T20:18:05-08:00",
+            "pav:createdBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
+            "pav:lastUpdatedOn": "2021-01-24T20:18:05-08:00",
+            "oslc:modifiedBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
             "pav:version": "0.0.1",
@@ -14716,517 +14715,520 @@
             "skos:prefLabel": "Temporal Coverage Info",
             "$schema": "http://json-schema.org/draft-04/schema#"
         },
-        "RelatedResource": {
-            "@type": "https://schema.metadatacenter.org/core/TemplateElement",
-            "@context": {
-                "xsd": "http://www.w3.org/2001/XMLSchema#",
-                "pav": "http://purl.org/pav/",
-                "bibo": "http://purl.org/ontology/bibo/",
-                "oslc": "http://open-services.net/ns/core#",
-                "schema": "http://schema.org/",
-                "schema:name": {
-                    "@type": "xsd:string"
+        "RelatedResources": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "type": "object",
+                "@id": "https://repo.metadatacenter.org/template-elements/ef2fcda3-0886-4fc1-b089-a3cf6ccd2c66",
+                "@type": "https://schema.metadatacenter.org/core/TemplateElement",
+                "@context": {
+                    "xsd": "http://www.w3.org/2001/XMLSchema#",
+                    "pav": "http://purl.org/pav/",
+                    "bibo": "http://purl.org/ontology/bibo/",
+                    "oslc": "http://open-services.net/ns/core#",
+                    "schema": "http://schema.org/",
+                    "schema:name": {
+                        "@type": "xsd:string"
+                    },
+                    "schema:description": {
+                        "@type": "xsd:string"
+                    },
+                    "pav:createdOn": {
+                        "@type": "xsd:dateTime"
+                    },
+                    "pav:createdBy": {
+                        "@type": "@id"
+                    },
+                    "pav:lastUpdatedOn": {
+                        "@type": "xsd:dateTime"
+                    },
+                    "oslc:modifiedBy": {
+                        "@type": "@id"
+                    }
                 },
-                "schema:description": {
-                    "@type": "xsd:string"
+                "title": "RelatedResources field schema",
+                "description": "RelatedResources field schema generated by the CEDAR Template Editor 2.5.38",
+                "_ui": {
+                    "order": [
+                        "relatedResourceIdentifier",
+                        "relatedResourceIdentifierType",
+                        "relationType",
+                        "relatedResourceTypeCategory"
+                    ],
+                    "propertyLabels": {
+                        "relatedResourceIdentifier": "relatedResourceIdentifier",
+                        "relatedResourceIdentifierType": "relatedResourceIdentifierType",
+                        "relationType": "relationType",
+                        "relatedResourceTypeCategory": "relatedResourceTypeCategory"
+                    },
+                    "propertyDescriptions": {
+                        "relatedResourceIdentifier": "A globally unique string that identifies a resource that is related to the dataset being described.",
+                        "relatedResourceIdentifierType": "The identifier type used to identify the related resource.",
+                        "relationType": "Description of the relationship of the object being described (A) to the related resource (B).",
+                        "relatedResourceTypeCategory": "The categorical type of the related resource."
+                    }
                 },
-                "pav:createdOn": {
-                    "@type": "xsd:dateTime"
+                "properties": {
+                    "@context": {
+                        "type": "object",
+                        "properties": {
+                            "relatedResourceIdentifier": {
+                                "enum": [
+                                    "http://purl.org/dc/terms/identifier"
+                                ]
+                            },
+                            "relatedResourceIdentifierType": {
+                                "enum": [
+                                    "https://schema.org/propertyID"
+                                ]
+                            },
+                            "relationType": {
+                                "enum": [
+                                    "http://rs.tdwg.org/dwc/terms/relationshipOfResource"
+                                ]
+                            },
+                            "relatedResourceTypeCategory": {
+                                "enum": [
+                                    "http://purl.org/dc/elements/1.1/type"
+                                ]
+                            }
+                        },
+                        "additionalProperties": false,
+                        "required": [
+                            "relatedResourceIdentifier",
+                            "relatedResourceIdentifierType",
+                            "relationType",
+                            "relatedResourceTypeCategory"
+                        ]
+                    },
+                    "@id": {
+                        "type": "string",
+                        "format": "uri"
+                    },
+                    "@type": {
+                        "oneOf": [
+                            {
+                                "type": "string",
+                                "format": "uri"
+                            },
+                            {
+                                "type": "array",
+                                "minItems": 1,
+                                "items": {
+                                    "type": "string",
+                                    "format": "uri"
+                                },
+                                "uniqueItems": true
+                            }
+                        ]
+                    },
+                    "relatedResourceIdentifier": {
+                        "@id": "https://repo.metadatacenter.org/template-fields/b15f9fe5-d418-4553-8c52-078bef1b34f2",
+                        "@type": "https://schema.metadatacenter.org/core/TemplateField",
+                        "@context": {
+                            "xsd": "http://www.w3.org/2001/XMLSchema#",
+                            "pav": "http://purl.org/pav/",
+                            "bibo": "http://purl.org/ontology/bibo/",
+                            "oslc": "http://open-services.net/ns/core#",
+                            "schema": "http://schema.org/",
+                            "skos": "http://www.w3.org/2004/02/skos/core#",
+                            "schema:name": {
+                                "@type": "xsd:string"
+                            },
+                            "schema:description": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:prefLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:altLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "pav:createdOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "pav:createdBy": {
+                                "@type": "@id"
+                            },
+                            "pav:lastUpdatedOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "oslc:modifiedBy": {
+                                "@type": "@id"
+                            }
+                        },
+                        "type": "object",
+                        "title": "relatedResourceIdentifier schema",
+                        "description": "relatedResourceIdentifier schema generated by ...",
+                        "_ui": {
+                            "inputType": "textfield"
+                        },
+                        "_valueConstraints": {
+                            "requiredValue": false
+                        },
+                        "properties": {
+                            "@type": {
+                                "oneOf": [
+                                    {
+                                        "type": "string",
+                                        "format": "uri"
+                                    },
+                                    {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "string",
+                                            "format": "uri"
+                                        },
+                                        "uniqueItems": true
+                                    }
+                                ]
+                            },
+                            "@value": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "rdfs:label": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        },
+                        "required": [
+                            "@value"
+                        ],
+                        "schema:name": "relatedResourceIdentifier",
+                        "schema:description": "A globally unique string that identifies a resource that is related to the dataset being described.",
+                        "pav:createdOn": "2021-01-19T01:18:22-08:00",
+                        "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "pav:lastUpdatedOn": "2021-01-19T01:18:22-08:00",
+                        "pav:version": "0.0.1",
+                        "bibo:status": "bibo:draft",
+                        "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "schema:schemaVersion": "1.6.0",
+                        "additionalProperties": false,
+                        "skos:prefLabel": "Related Resource Identifier",
+                        "$schema": "http://json-schema.org/draft-04/schema#"
+                    },
+                    "relatedResourceIdentifierType": {
+                        "@id": "https://repo.metadatacenter.org/template-fields/41d9b8f4-677b-48ff-b307-d35b4a9cf61a",
+                        "@type": "https://schema.metadatacenter.org/core/TemplateField",
+                        "@context": {
+                            "xsd": "http://www.w3.org/2001/XMLSchema#",
+                            "pav": "http://purl.org/pav/",
+                            "bibo": "http://purl.org/ontology/bibo/",
+                            "oslc": "http://open-services.net/ns/core#",
+                            "schema": "http://schema.org/",
+                            "skos": "http://www.w3.org/2004/02/skos/core#",
+                            "schema:name": {
+                                "@type": "xsd:string"
+                            },
+                            "schema:description": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:prefLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:altLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "pav:createdOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "pav:createdBy": {
+                                "@type": "@id"
+                            },
+                            "pav:lastUpdatedOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "oslc:modifiedBy": {
+                                "@type": "@id"
+                            }
+                        },
+                        "type": "object",
+                        "title": "relatedResourceIdentifierType schema",
+                        "description": "relatedResourceIdentifierType schema generated by ...",
+                        "_ui": {
+                            "inputType": "textfield"
+                        },
+                        "_valueConstraints": {
+                            "requiredValue": false,
+                            "valueSets": [],
+                            "classes": [],
+                            "branches": [
+                                {
+                                    "source": "FDC-GDMT",
+                                    "acronym": "FDC-GDMT",
+                                    "uri": "http://vocab.fairdatacollective.org/gdmt/IdentifierType",
+                                    "name": "Identifier Type",
+                                    "maxDepth": 0
+                                }
+                            ],
+                            "multipleChoice": false
+                        },
+                        "properties": {
+                            "@type": {
+                                "oneOf": [
+                                    {
+                                        "type": "string",
+                                        "format": "uri"
+                                    },
+                                    {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "string",
+                                            "format": "uri"
+                                        },
+                                        "uniqueItems": true
+                                    }
+                                ]
+                            },
+                            "rdfs:label": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "@id": {
+                                "type": "string",
+                                "format": "uri"
+                            }
+                        },
+                        "schema:name": "relatedResourceIdentifierType",
+                        "schema:description": "The identifier type used to identify the related resource.",
+                        "pav:createdOn": "2021-01-19T01:18:22-08:00",
+                        "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "pav:lastUpdatedOn": "2021-01-19T01:18:22-08:00",
+                        "pav:version": "0.0.1",
+                        "bibo:status": "bibo:draft",
+                        "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "schema:schemaVersion": "1.6.0",
+                        "additionalProperties": false,
+                        "skos:prefLabel": "Related Resource Identifier Type",
+                        "$schema": "http://json-schema.org/draft-04/schema#"
+                    },
+                    "relationType": {
+                        "@id": "https://repo.metadatacenter.org/template-fields/85c34c61-ac46-4ae9-963e-d58ed50f3a2e",
+                        "@type": "https://schema.metadatacenter.org/core/TemplateField",
+                        "@context": {
+                            "xsd": "http://www.w3.org/2001/XMLSchema#",
+                            "pav": "http://purl.org/pav/",
+                            "bibo": "http://purl.org/ontology/bibo/",
+                            "oslc": "http://open-services.net/ns/core#",
+                            "schema": "http://schema.org/",
+                            "skos": "http://www.w3.org/2004/02/skos/core#",
+                            "schema:name": {
+                                "@type": "xsd:string"
+                            },
+                            "schema:description": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:prefLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:altLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "pav:createdOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "pav:createdBy": {
+                                "@type": "@id"
+                            },
+                            "pav:lastUpdatedOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "oslc:modifiedBy": {
+                                "@type": "@id"
+                            }
+                        },
+                        "type": "object",
+                        "title": "relationType schema",
+                        "description": "relationType schema generated by ...",
+                        "_ui": {
+                            "inputType": "textfield"
+                        },
+                        "_valueConstraints": {
+                            "requiredValue": false,
+                            "valueSets": [],
+                            "classes": [],
+                            "branches": [
+                                {
+                                    "source": "FDC-GDMT",
+                                    "acronym": "FDC-GDMT",
+                                    "uri": "http://vocab.fairdatacollective.org/gdmt/RelationType",
+                                    "name": "Relation Type",
+                                    "maxDepth": 0
+                                }
+                            ],
+                            "multipleChoice": false
+                        },
+                        "properties": {
+                            "@type": {
+                                "oneOf": [
+                                    {
+                                        "type": "string",
+                                        "format": "uri"
+                                    },
+                                    {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "string",
+                                            "format": "uri"
+                                        },
+                                        "uniqueItems": true
+                                    }
+                                ]
+                            },
+                            "rdfs:label": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "@id": {
+                                "type": "string",
+                                "format": "uri"
+                            }
+                        },
+                        "schema:name": "relationType",
+                        "schema:description": "Description of the relationship of the object being described (A) to the related resource (B).",
+                        "pav:createdOn": "2021-01-19T01:18:22-08:00",
+                        "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "pav:lastUpdatedOn": "2021-01-19T01:18:22-08:00",
+                        "pav:version": "0.0.1",
+                        "bibo:status": "bibo:draft",
+                        "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "schema:schemaVersion": "1.6.0",
+                        "additionalProperties": false,
+                        "skos:prefLabel": "Relation Type",
+                        "$schema": "http://json-schema.org/draft-04/schema#"
+                    },
+                    "relatedResourceTypeCategory": {
+                        "@id": "https://repo.metadatacenter.org/template-fields/eb197f83-c372-4018-b789-d8922954d336",
+                        "@type": "https://schema.metadatacenter.org/core/TemplateField",
+                        "@context": {
+                            "xsd": "http://www.w3.org/2001/XMLSchema#",
+                            "pav": "http://purl.org/pav/",
+                            "bibo": "http://purl.org/ontology/bibo/",
+                            "oslc": "http://open-services.net/ns/core#",
+                            "schema": "http://schema.org/",
+                            "skos": "http://www.w3.org/2004/02/skos/core#",
+                            "schema:name": {
+                                "@type": "xsd:string"
+                            },
+                            "schema:description": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:prefLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:altLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "pav:createdOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "pav:createdBy": {
+                                "@type": "@id"
+                            },
+                            "pav:lastUpdatedOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "oslc:modifiedBy": {
+                                "@type": "@id"
+                            }
+                        },
+                        "type": "object",
+                        "title": "relatedResourceTypeCategory schema",
+                        "description": "relatedResourceTypeCategory schema generated by ...",
+                        "_ui": {
+                            "inputType": "textfield"
+                        },
+                        "_valueConstraints": {
+                            "requiredValue": false,
+                            "valueSets": [],
+                            "classes": [],
+                            "branches": [
+                                {
+                                    "source": "FDC-GDMT",
+                                    "acronym": "FDC-GDMT",
+                                    "uri": "http://vocab.fairdatacollective.org/gdmt/ResourceTypeCategory",
+                                    "name": "Resource Type Category",
+                                    "maxDepth": 0
+                                }
+                            ],
+                            "multipleChoice": false
+                        },
+                        "properties": {
+                            "@type": {
+                                "oneOf": [
+                                    {
+                                        "type": "string",
+                                        "format": "uri"
+                                    },
+                                    {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "string",
+                                            "format": "uri"
+                                        },
+                                        "uniqueItems": true
+                                    }
+                                ]
+                            },
+                            "rdfs:label": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "@id": {
+                                "type": "string",
+                                "format": "uri"
+                            }
+                        },
+                        "schema:name": "relatedResourceTypeCategory",
+                        "schema:description": "The categorical type of the related resource.",
+                        "pav:createdOn": "2021-01-19T01:18:22-08:00",
+                        "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "pav:lastUpdatedOn": "2021-01-19T01:18:22-08:00",
+                        "pav:version": "0.0.1",
+                        "bibo:status": "bibo:draft",
+                        "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "schema:schemaVersion": "1.6.0",
+                        "additionalProperties": false,
+                        "skos:prefLabel": "Related Resource Type Category",
+                        "$schema": "http://json-schema.org/draft-04/schema#"
+                    }
                 },
-                "pav:createdBy": {
-                    "@type": "@id"
-                },
-                "pav:lastUpdatedOn": {
-                    "@type": "xsd:dateTime"
-                },
-                "oslc:modifiedBy": {
-                    "@type": "@id"
-                }
-            },
-            "type": "object",
-            "title": "Untitled element schema",
-            "description": "RelatedResources generated by ...",
-            "_ui": {
-                "order": [
+                "required": [
+                    "@context",
+                    "@id",
                     "relatedResourceIdentifier",
                     "relatedResourceIdentifierType",
                     "relationType",
                     "relatedResourceTypeCategory"
                 ],
-                "propertyLabels": {
-                    "relatedResourceIdentifier": "relatedResourceIdentifier",
-                    "relatedResourceIdentifierType": "relatedResourceIdentifierType",
-                    "relationType": "relationType",
-                    "relatedResourceTypeCategory": "relatedResourceTypeCategory"
-                },
-                "propertyDescriptions": {
-                    "relatedResourceIdentifier": "A globally unique string that identifies a resource that is related to the dataset being described.",
-                    "relatedResourceIdentifierType": "The identifier type used to identify the related resource.",
-                    "relationType": "Description of the relationship of the object being described (A) to the related resource (B).",
-                    "relatedResourceTypeCategory": "The categorical type of the related resource."
-                }
-            },
-            "properties": {
-                "@context": {
-                    "type": "object",
-                    "properties": {
-                        "relatedResourceIdentifier": {
-                            "enum": [
-                                "http://purl.org/dc/terms/identifier"
-                            ]
-                        },
-                        "relatedResourceIdentifierType": {
-                            "enum": [
-                                "https://schema.org/propertyID"
-                            ]
-                        },
-                        "relationType": {
-                            "enum": [
-                                "http://rs.tdwg.org/dwc/terms/relationshipOfResource"
-                            ]
-                        },
-                        "relatedResourceTypeCategory": {
-                            "enum": [
-                                "http://purl.org/dc/elements/1.1/type"
-                            ]
-                        }
-                    },
-                    "additionalProperties": false,
-                    "required": [
-                        "relatedResourceIdentifier",
-                        "relatedResourceIdentifierType",
-                        "relationType",
-                        "relatedResourceTypeCategory"
-                    ]
-                },
-                "@id": {
-                    "type": "string",
-                    "format": "uri"
-                },
-                "@type": {
-                    "oneOf": [
-                        {
-                            "type": "string",
-                            "format": "uri"
-                        },
-                        {
-                            "type": "array",
-                            "minItems": 1,
-                            "items": {
-                                "type": "string",
-                                "format": "uri"
-                            },
-                            "uniqueItems": true
-                        }
-                    ]
-                },
-                "relatedResourceIdentifier": {
-                    "@id": "https://repo.metadatacenter.org/template-fields/b15f9fe5-d418-4553-8c52-078bef1b34f2",
-                    "@type": "https://schema.metadatacenter.org/core/TemplateField",
-                    "@context": {
-                        "xsd": "http://www.w3.org/2001/XMLSchema#",
-                        "pav": "http://purl.org/pav/",
-                        "bibo": "http://purl.org/ontology/bibo/",
-                        "oslc": "http://open-services.net/ns/core#",
-                        "schema": "http://schema.org/",
-                        "skos": "http://www.w3.org/2004/02/skos/core#",
-                        "schema:name": {
-                            "@type": "xsd:string"
-                        },
-                        "schema:description": {
-                            "@type": "xsd:string"
-                        },
-                        "skos:prefLabel": {
-                            "@type": "xsd:string"
-                        },
-                        "skos:altLabel": {
-                            "@type": "xsd:string"
-                        },
-                        "pav:createdOn": {
-                            "@type": "xsd:dateTime"
-                        },
-                        "pav:createdBy": {
-                            "@type": "@id"
-                        },
-                        "pav:lastUpdatedOn": {
-                            "@type": "xsd:dateTime"
-                        },
-                        "oslc:modifiedBy": {
-                            "@type": "@id"
-                        }
-                    },
-                    "type": "object",
-                    "title": "relatedResourceIdentifier schema",
-                    "description": "relatedResourceIdentifier schema generated by ...",
-                    "_ui": {
-                        "inputType": "textfield"
-                    },
-                    "_valueConstraints": {
-                        "requiredValue": false
-                    },
-                    "properties": {
-                        "@type": {
-                            "oneOf": [
-                                {
-                                    "type": "string",
-                                    "format": "uri"
-                                },
-                                {
-                                    "type": "array",
-                                    "minItems": 1,
-                                    "items": {
-                                        "type": "string",
-                                        "format": "uri"
-                                    },
-                                    "uniqueItems": true
-                                }
-                            ]
-                        },
-                        "@value": {
-                            "type": [
-                                "string",
-                                "null"
-                            ]
-                        },
-                        "rdfs:label": {
-                            "type": [
-                                "string",
-                                "null"
-                            ]
-                        }
-                    },
-                    "required": [
-                        "@value"
-                    ],
-                    "schema:name": "relatedResourceIdentifier",
-                    "schema:description": "A globally unique string that identifies a resource that is related to the dataset being described.",
-                    "pav:createdOn": "2021-01-24T20:23:49-08:00",
-                    "pav:createdBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
-                    "pav:lastUpdatedOn": "2021-01-24T20:23:49-08:00",
-                    "pav:version": "0.0.1",
-                    "bibo:status": "bibo:draft",
-                    "oslc:modifiedBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
-                    "schema:schemaVersion": "1.6.0",
-                    "additionalProperties": false,
-                    "skos:prefLabel": "Related Resource Identifier",
-                    "$schema": "http://json-schema.org/draft-04/schema#"
-                },
-                "relatedResourceIdentifierType": {
-                    "@id": "https://repo.metadatacenter.org/template-fields/41d9b8f4-677b-48ff-b307-d35b4a9cf61a",
-                    "@type": "https://schema.metadatacenter.org/core/TemplateField",
-                    "@context": {
-                        "xsd": "http://www.w3.org/2001/XMLSchema#",
-                        "pav": "http://purl.org/pav/",
-                        "bibo": "http://purl.org/ontology/bibo/",
-                        "oslc": "http://open-services.net/ns/core#",
-                        "schema": "http://schema.org/",
-                        "skos": "http://www.w3.org/2004/02/skos/core#",
-                        "schema:name": {
-                            "@type": "xsd:string"
-                        },
-                        "schema:description": {
-                            "@type": "xsd:string"
-                        },
-                        "skos:prefLabel": {
-                            "@type": "xsd:string"
-                        },
-                        "skos:altLabel": {
-                            "@type": "xsd:string"
-                        },
-                        "pav:createdOn": {
-                            "@type": "xsd:dateTime"
-                        },
-                        "pav:createdBy": {
-                            "@type": "@id"
-                        },
-                        "pav:lastUpdatedOn": {
-                            "@type": "xsd:dateTime"
-                        },
-                        "oslc:modifiedBy": {
-                            "@type": "@id"
-                        }
-                    },
-                    "type": "object",
-                    "title": "relatedResourceIdentifierType schema",
-                    "description": "relatedResourceIdentifierType schema generated by ...",
-                    "_ui": {
-                        "inputType": "textfield"
-                    },
-                    "_valueConstraints": {
-                        "requiredValue": false,
-                        "valueSets": [],
-                        "classes": [],
-                        "branches": [
-                            {
-                                "source": "FDC-GDMT",
-                                "acronym": "FDC-GDMT",
-                                "uri": "http://vocab.fairdatacollective.org/gdmt/IdentifierType",
-                                "name": "Identifier Type",
-                                "maxDepth": 0
-                            }
-                        ],
-                        "multipleChoice": false
-                    },
-                    "properties": {
-                        "@type": {
-                            "oneOf": [
-                                {
-                                    "type": "string",
-                                    "format": "uri"
-                                },
-                                {
-                                    "type": "array",
-                                    "minItems": 1,
-                                    "items": {
-                                        "type": "string",
-                                        "format": "uri"
-                                    },
-                                    "uniqueItems": true
-                                }
-                            ]
-                        },
-                        "rdfs:label": {
-                            "type": [
-                                "string",
-                                "null"
-                            ]
-                        },
-                        "@id": {
-                            "type": "string",
-                            "format": "uri"
-                        }
-                    },
-                    "schema:name": "relatedResourceIdentifierType",
-                    "schema:description": "The identifier type used to identify the related resource.",
-                    "pav:createdOn": "2021-01-24T20:23:49-08:00",
-                    "pav:createdBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
-                    "pav:lastUpdatedOn": "2021-01-24T20:23:49-08:00",
-                    "pav:version": "0.0.1",
-                    "bibo:status": "bibo:draft",
-                    "oslc:modifiedBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
-                    "schema:schemaVersion": "1.6.0",
-                    "additionalProperties": false,
-                    "skos:prefLabel": "Related Resource Identifier Type",
-                    "$schema": "http://json-schema.org/draft-04/schema#"
-                },
-                "relationType": {
-                    "@id": "https://repo.metadatacenter.org/template-fields/85c34c61-ac46-4ae9-963e-d58ed50f3a2e",
-                    "@type": "https://schema.metadatacenter.org/core/TemplateField",
-                    "@context": {
-                        "xsd": "http://www.w3.org/2001/XMLSchema#",
-                        "pav": "http://purl.org/pav/",
-                        "bibo": "http://purl.org/ontology/bibo/",
-                        "oslc": "http://open-services.net/ns/core#",
-                        "schema": "http://schema.org/",
-                        "skos": "http://www.w3.org/2004/02/skos/core#",
-                        "schema:name": {
-                            "@type": "xsd:string"
-                        },
-                        "schema:description": {
-                            "@type": "xsd:string"
-                        },
-                        "skos:prefLabel": {
-                            "@type": "xsd:string"
-                        },
-                        "skos:altLabel": {
-                            "@type": "xsd:string"
-                        },
-                        "pav:createdOn": {
-                            "@type": "xsd:dateTime"
-                        },
-                        "pav:createdBy": {
-                            "@type": "@id"
-                        },
-                        "pav:lastUpdatedOn": {
-                            "@type": "xsd:dateTime"
-                        },
-                        "oslc:modifiedBy": {
-                            "@type": "@id"
-                        }
-                    },
-                    "type": "object",
-                    "title": "relationType schema",
-                    "description": "relationType schema generated by ...",
-                    "_ui": {
-                        "inputType": "textfield"
-                    },
-                    "_valueConstraints": {
-                        "requiredValue": false,
-                        "valueSets": [],
-                        "classes": [],
-                        "branches": [
-                            {
-                                "source": "FDC-GDMT",
-                                "acronym": "FDC-GDMT",
-                                "uri": "http://vocab.fairdatacollective.org/gdmt/RelationType",
-                                "name": "Relation Type",
-                                "maxDepth": 0
-                            }
-                        ],
-                        "multipleChoice": false
-                    },
-                    "properties": {
-                        "@type": {
-                            "oneOf": [
-                                {
-                                    "type": "string",
-                                    "format": "uri"
-                                },
-                                {
-                                    "type": "array",
-                                    "minItems": 1,
-                                    "items": {
-                                        "type": "string",
-                                        "format": "uri"
-                                    },
-                                    "uniqueItems": true
-                                }
-                            ]
-                        },
-                        "rdfs:label": {
-                            "type": [
-                                "string",
-                                "null"
-                            ]
-                        },
-                        "@id": {
-                            "type": "string",
-                            "format": "uri"
-                        }
-                    },
-                    "schema:name": "relationType",
-                    "schema:description": "Description of the relationship of the object being described (A) to the related resource (B).",
-                    "pav:createdOn": "2021-01-24T20:23:49-08:00",
-                    "pav:createdBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
-                    "pav:lastUpdatedOn": "2021-01-24T20:23:49-08:00",
-                    "pav:version": "0.0.1",
-                    "bibo:status": "bibo:draft",
-                    "oslc:modifiedBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
-                    "schema:schemaVersion": "1.6.0",
-                    "additionalProperties": false,
-                    "skos:prefLabel": "Relation Type",
-                    "$schema": "http://json-schema.org/draft-04/schema#"
-                },
-                "relatedResourceTypeCategory": {
-                    "@id": "https://repo.metadatacenter.org/template-fields/eb197f83-c372-4018-b789-d8922954d336",
-                    "@type": "https://schema.metadatacenter.org/core/TemplateField",
-                    "@context": {
-                        "xsd": "http://www.w3.org/2001/XMLSchema#",
-                        "pav": "http://purl.org/pav/",
-                        "bibo": "http://purl.org/ontology/bibo/",
-                        "oslc": "http://open-services.net/ns/core#",
-                        "schema": "http://schema.org/",
-                        "skos": "http://www.w3.org/2004/02/skos/core#",
-                        "schema:name": {
-                            "@type": "xsd:string"
-                        },
-                        "schema:description": {
-                            "@type": "xsd:string"
-                        },
-                        "skos:prefLabel": {
-                            "@type": "xsd:string"
-                        },
-                        "skos:altLabel": {
-                            "@type": "xsd:string"
-                        },
-                        "pav:createdOn": {
-                            "@type": "xsd:dateTime"
-                        },
-                        "pav:createdBy": {
-                            "@type": "@id"
-                        },
-                        "pav:lastUpdatedOn": {
-                            "@type": "xsd:dateTime"
-                        },
-                        "oslc:modifiedBy": {
-                            "@type": "@id"
-                        }
-                    },
-                    "type": "object",
-                    "title": "relatedResourceTypeCategory schema",
-                    "description": "relatedResourceTypeCategory schema generated by ...",
-                    "_ui": {
-                        "inputType": "textfield"
-                    },
-                    "_valueConstraints": {
-                        "requiredValue": false,
-                        "valueSets": [],
-                        "classes": [],
-                        "branches": [
-                            {
-                                "source": "FDC-GDMT",
-                                "acronym": "FDC-GDMT",
-                                "uri": "http://vocab.fairdatacollective.org/gdmt/ResourceTypeCategory",
-                                "name": "Resource Type Category",
-                                "maxDepth": 0
-                            }
-                        ],
-                        "multipleChoice": false
-                    },
-                    "properties": {
-                        "@type": {
-                            "oneOf": [
-                                {
-                                    "type": "string",
-                                    "format": "uri"
-                                },
-                                {
-                                    "type": "array",
-                                    "minItems": 1,
-                                    "items": {
-                                        "type": "string",
-                                        "format": "uri"
-                                    },
-                                    "uniqueItems": true
-                                }
-                            ]
-                        },
-                        "rdfs:label": {
-                            "type": [
-                                "string",
-                                "null"
-                            ]
-                        },
-                        "@id": {
-                            "type": "string",
-                            "format": "uri"
-                        }
-                    },
-                    "schema:name": "relatedResourceTypeCategory",
-                    "schema:description": "The categorical type of the related resource.",
-                    "pav:createdOn": "2021-01-24T20:23:49-08:00",
-                    "pav:createdBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
-                    "pav:lastUpdatedOn": "2021-01-24T20:23:49-08:00",
-                    "pav:version": "0.0.1",
-                    "bibo:status": "bibo:draft",
-                    "oslc:modifiedBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
-                    "schema:schemaVersion": "1.6.0",
-                    "additionalProperties": false,
-                    "skos:prefLabel": "Related Resource Type Category",
-                    "$schema": "http://json-schema.org/draft-04/schema#"
-                }
-            },
-            "schema:name": "RelatedResource",
-            "schema:description": "Information about resource related to the dataset or other entity being described.",
-            "required": [
-                "@context",
-                "@id",
-                "relatedResourceIdentifier",
-                "relatedResourceIdentifierType",
-                "relationType",
-                "relatedResourceTypeCategory"
-            ],
-            "pav:createdOn": "2021-01-24T23:47:11-08:00",
-            "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-01-24T23:47:11-08:00",
-            "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "schema:schemaVersion": "1.6.0",
-            "additionalProperties": false,
-            "pav:version": "0.0.1",
-            "bibo:status": "bibo:draft",
-            "pav:derivedFrom": "https://repo.metadatacenter.org/template-elements/ef2fcda3-0886-4fc1-b089-a3cf6ccd2c66",
-            "@id": "https://repo.metadatacenter.org/template-elements/9f70c554-01aa-4a21-b2a7-a5819555bd0b",
-            "$schema": "http://json-schema.org/draft-04/schema#"
+                "additionalProperties": false,
+                "pav:createdOn": "2021-01-24T20:18:05-08:00",
+                "pav:createdBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
+                "pav:lastUpdatedOn": "2021-01-24T20:18:05-08:00",
+                "oslc:modifiedBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
+                "schema:schemaVersion": "1.6.0",
+                "schema:name": "RelatedResources",
+                "schema:description": "Information about resource related to the dataset or other entity being described.",
+                "pav:version": "0.0.1",
+                "bibo:status": "bibo:draft",
+                "$schema": "http://json-schema.org/draft-04/schema#"
+            }
         }
     },
     "required": [
@@ -15257,17 +15259,19 @@
         "Funding",
         "SpatialCoverage",
         "TemporalCoverage",
-        "RelatedResource"
+        "RelatedResources"
     ],
     "schema:name": "Generic Dataset Metadata Template",
     "schema:description": "General-purpose description of any dataset using IRIs for property relations and values wherever possible.",
-    "pav:createdOn": "2021-01-19T01:11:35-08:00",
-    "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-    "pav:lastUpdatedOn": "2021-01-24T23:47:11-08:00",
-    "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+    "pav:createdOn": "2021-01-24T20:14:09-08:00",
+    "pav:createdBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
+    "pav:lastUpdatedOn": "2021-01-24T20:18:05-08:00",
+    "oslc:modifiedBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
     "schema:schemaVersion": "1.6.0",
     "additionalProperties": false,
     "pav:version": "0.0.1",
     "bibo:status": "bibo:draft",
+    "pav:derivedFrom": "https://repo.metadatacenter.org/templates/dd6231ef-5890-48cb-9621-04c5b5577c1e",
+    "@id": "https://repo.metadatacenter.org/templates/c27e3ca3-3379-4cbc-a8aa-e432d5b4c89c",
     "$schema": "http://json-schema.org/draft-04/schema#"
 }
