@@ -41,7 +41,7 @@
             "contributorFamilyName": "contributorFamilyName"
         },
         "propertyDescriptions": {
-            "contributorName": "",
+            "contributorName": "The full name of the contributor.",
             "contributorGivenName": "If the contributor is a person, the personal name(s) of the contributor (e.g., first and optionally middle name in Western languagues, optionally middle and last name in Asian languages).",
             "contributorFamilyName": "If the contributor is a person, the surname(s) of the contributor (e.g., last name in Western languagues, first name in Asian languages)."
         }
@@ -173,10 +173,10 @@
                 "@value"
             ],
             "schema:name": "contributorName",
-            "schema:description": "An entity responsible for making contributions to the resource.",
-            "pav:createdOn": "2021-02-16T12:02:15-08:00",
+            "schema:description": "The full name of the contributor.",
+            "pav:createdOn": "2021-02-16T12:16:04-08:00",
             "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-02-16T12:02:15-08:00",
+            "pav:lastUpdatedOn": "2021-02-16T12:16:04-08:00",
             "pav:version": "0.0.1",
             "bibo:status": "bibo:draft",
             "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
@@ -267,9 +267,9 @@
                     "@value"
                 ],
                 "additionalProperties": false,
-                "pav:createdOn": "2021-02-16T12:02:15-08:00",
+                "pav:createdOn": "2021-02-16T12:16:04-08:00",
                 "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-                "pav:lastUpdatedOn": "2021-02-16T12:02:15-08:00",
+                "pav:lastUpdatedOn": "2021-02-16T12:16:04-08:00",
                 "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
                 "schema:schemaVersion": "1.6.0",
                 "schema:name": "contributorGivenName",
@@ -362,9 +362,9 @@
                     "@value"
                 ],
                 "additionalProperties": false,
-                "pav:createdOn": "2021-02-16T12:02:15-08:00",
+                "pav:createdOn": "2021-02-16T12:16:04-08:00",
                 "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-                "pav:lastUpdatedOn": "2021-02-16T12:02:15-08:00",
+                "pav:lastUpdatedOn": "2021-02-16T12:16:04-08:00",
                 "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
                 "schema:schemaVersion": "1.6.0",
                 "schema:name": "contributorFamilyName",
@@ -387,7 +387,7 @@
     ],
     "pav:createdOn": "2021-02-16T12:00:44-08:00",
     "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-    "pav:lastUpdatedOn": "2021-02-16T12:02:15-08:00",
+    "pav:lastUpdatedOn": "2021-02-16T12:16:04-08:00",
     "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
     "schema:schemaVersion": "1.6.0",
     "additionalProperties": false,
