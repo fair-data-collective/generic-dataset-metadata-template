@@ -43,7 +43,10 @@
             "Contributor",
             "Rights",
             "Date",
-            "Funding"
+            "Funding",
+            "Variable",
+            "DataSource",
+            "DataStream"
         ],
         "propertyLabels": {
             "ResourceType": "ResourceType",
@@ -57,7 +60,10 @@
             "Contributor": "Contributor",
             "Rights": "Rights",
             "Date": "Date",
-            "Funding": "Funding"
+            "Funding": "Funding",
+            "Variable": "Variable",
+            "DataSource": "DataSource",
+            "DataStream": "DataStream"
         },
         "propertyDescriptions": {
             "ResourceType": "Information about the type of the resource being described with metadata.",
@@ -71,7 +77,10 @@
             "Contributor": "An entity that contributed in bringing into existence the dataset being described. Contributors can be people, organizations and/or physical or virtual infrastructure (e.g., sensors, software).",
             "Rights": "Ways in which the dataset may or may not be accessed and used.",
             "Date": "Relevant dates related to the resource being described. One instance of date must be of datsetDateType=Published.",
-            "Funding": "The sources of funding that enabled and drove the creation of the dataset. (Non-monetary sources are described under Contributor.)"
+            "Funding": "The sources of funding that enabled and drove the creation of the dataset. (Non-monetary sources are described under Contributor.)",
+            "Variable": "A single entity being measured or computed.",
+            "DataSource": "Physical or conceptual entity that creates the data streams that make up the described dataset. The data source may or may not be associated with a fixed location; for example, a series of discrete sensors deployed over time to a single location may be considered a single data source in some systems.",
+            "DataStream": "A collection of one or more variable records originating from a single data source (e.g., sensor, process, or person). A data stream can grow over time."
         }
     },
     "properties": {
@@ -289,6 +298,21 @@
                     "enum": [
                         "http://vocab.fairdatacollective.org/gdmt/hasFundingInfo"
                     ]
+                },
+                "Variable": {
+                    "enum": [
+                        "http://vocab.fairdatacollective.org/gdmt/hasVariableInfo"
+                    ]
+                },
+                "DataSource": {
+                    "enum": [
+                        "http://vocab.fairdatacollective.org/gdmt/hasDataSourceInfo"
+                    ]
+                },
+                "DataStream": {
+                    "enum": [
+                        "http://vocab.fairdatacollective.org/gdmt/hasDataStreamInfo"
+                    ]
                 }
             },
             "required": [
@@ -314,7 +338,10 @@
                 "Contributor",
                 "Rights",
                 "Date",
-                "Funding"
+                "Funding",
+                "Variable",
+                "DataSource",
+                "DataStream"
             ],
             "additionalProperties": false
         },
@@ -675,9 +702,9 @@
                 "resourceTypeCategory",
                 "resourceTypeDetail"
             ],
-            "pav:createdOn": "2021-02-17T09:36:51-08:00",
+            "pav:createdOn": "2021-02-17T10:07:05-08:00",
             "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-02-17T09:36:51-08:00",
+            "pav:lastUpdatedOn": "2021-02-17T10:07:05-08:00",
             "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
@@ -978,9 +1005,9 @@
                 "datasetIdentifier",
                 "datasetIdentifierType"
             ],
-            "pav:createdOn": "2021-02-17T09:36:51-08:00",
+            "pav:createdOn": "2021-02-17T10:07:05-08:00",
             "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-02-17T09:36:51-08:00",
+            "pav:lastUpdatedOn": "2021-02-17T10:07:05-08:00",
             "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
@@ -1500,9 +1527,9 @@
                     "relationType"
                 ],
                 "additionalProperties": false,
-                "pav:createdOn": "2021-02-17T09:36:51-08:00",
+                "pav:createdOn": "2021-02-17T10:07:05-08:00",
                 "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-                "pav:lastUpdatedOn": "2021-02-17T09:36:51-08:00",
+                "pav:lastUpdatedOn": "2021-02-17T10:07:05-08:00",
                 "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
                 "schema:schemaVersion": "1.6.0",
                 "schema:name": "RelatedResources",
@@ -1593,9 +1620,9 @@
             ],
             "schema:name": "version",
             "schema:description": "The string identifying the version of the dataset or other object being described.",
-            "pav:createdOn": "2021-02-17T09:36:51-08:00",
+            "pav:createdOn": "2021-02-17T10:07:05-08:00",
             "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-02-17T09:36:51-08:00",
+            "pav:lastUpdatedOn": "2021-02-17T10:07:05-08:00",
             "pav:version": "0.0.1",
             "bibo:status": "bibo:draft",
             "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
@@ -1900,9 +1927,9 @@
                 "primaryLanguage",
                 "language"
             ],
-            "pav:createdOn": "2021-02-17T09:36:51-08:00",
+            "pav:createdOn": "2021-02-17T10:07:05-08:00",
             "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-02-17T09:36:51-08:00",
+            "pav:lastUpdatedOn": "2021-02-17T10:07:05-08:00",
             "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
@@ -2202,9 +2229,9 @@
                     "language"
                 ],
                 "additionalProperties": false,
-                "pav:createdOn": "2021-02-17T09:36:51-08:00",
+                "pav:createdOn": "2021-02-17T10:07:05-08:00",
                 "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-                "pav:lastUpdatedOn": "2021-02-17T09:36:51-08:00",
+                "pav:lastUpdatedOn": "2021-02-17T10:07:05-08:00",
                 "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
                 "schema:schemaVersion": "1.6.0",
                 "schema:name": "Title",
@@ -2901,9 +2928,9 @@
                 "Subject",
                 "keyword"
             ],
-            "pav:createdOn": "2021-02-17T09:36:51-08:00",
+            "pav:createdOn": "2021-02-17T10:07:05-08:00",
             "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-02-17T09:36:51-08:00",
+            "pav:lastUpdatedOn": "2021-02-17T10:07:05-08:00",
             "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
@@ -4451,9 +4478,9 @@
                     "CreatorIdentifier"
                 ],
                 "additionalProperties": false,
-                "pav:createdOn": "2021-02-17T09:36:51-08:00",
+                "pav:createdOn": "2021-02-17T10:07:05-08:00",
                 "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-                "pav:lastUpdatedOn": "2021-02-17T09:36:51-08:00",
+                "pav:lastUpdatedOn": "2021-02-17T10:07:05-08:00",
                 "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
                 "schema:schemaVersion": "1.6.0",
                 "schema:name": "Creator",
@@ -6010,9 +6037,9 @@
                     "ContributorAffiliation"
                 ],
                 "additionalProperties": false,
-                "pav:createdOn": "2021-02-17T09:36:51-08:00",
+                "pav:createdOn": "2021-02-17T10:07:05-08:00",
                 "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-                "pav:lastUpdatedOn": "2021-02-17T09:36:51-08:00",
+                "pav:lastUpdatedOn": "2021-02-17T10:07:05-08:00",
                 "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
                 "schema:schemaVersion": "1.6.0",
                 "schema:name": "Contributor",
@@ -6413,9 +6440,9 @@
                 "licenseIdentifier",
                 "licenseText"
             ],
-            "pav:createdOn": "2021-02-17T09:36:51-08:00",
+            "pav:createdOn": "2021-02-17T10:07:05-08:00",
             "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-02-17T09:36:51-08:00",
+            "pav:lastUpdatedOn": "2021-02-17T10:07:05-08:00",
             "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
@@ -6718,9 +6745,9 @@
                     "datasetDate"
                 ],
                 "additionalProperties": false,
-                "pav:createdOn": "2021-02-17T09:36:51-08:00",
+                "pav:createdOn": "2021-02-17T10:07:05-08:00",
                 "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-                "pav:lastUpdatedOn": "2021-02-17T09:36:51-08:00",
+                "pav:lastUpdatedOn": "2021-02-17T10:07:05-08:00",
                 "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
                 "schema:schemaVersion": "1.6.0",
                 "schema:name": "Date",
@@ -7516,9 +7543,9 @@
                     "funderIdentifierSchemeIRI"
                 ],
                 "additionalProperties": false,
-                "pav:createdOn": "2021-02-17T09:36:51-08:00",
+                "pav:createdOn": "2021-02-17T10:07:05-08:00",
                 "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-                "pav:lastUpdatedOn": "2021-02-17T09:36:51-08:00",
+                "pav:lastUpdatedOn": "2021-02-17T10:07:05-08:00",
                 "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
                 "schema:schemaVersion": "1.6.0",
                 "schema:name": "Funding",
@@ -7526,6 +7553,1491 @@
                 "pav:version": "0.0.1",
                 "bibo:status": "bibo:draft",
                 "skos:prefLabel": "Funding",
+                "$schema": "http://json-schema.org/draft-04/schema#"
+            }
+        },
+        "Variable": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "type": "object",
+                "@id": "https://repo.metadatacenter.org/template-elements/ec67d413-2ea5-4f50-98b0-4abb7751187b",
+                "@type": "https://schema.metadatacenter.org/core/TemplateElement",
+                "@context": {
+                    "xsd": "http://www.w3.org/2001/XMLSchema#",
+                    "pav": "http://purl.org/pav/",
+                    "bibo": "http://purl.org/ontology/bibo/",
+                    "oslc": "http://open-services.net/ns/core#",
+                    "schema": "http://schema.org/",
+                    "schema:name": {
+                        "@type": "xsd:string"
+                    },
+                    "schema:description": {
+                        "@type": "xsd:string"
+                    },
+                    "pav:createdOn": {
+                        "@type": "xsd:dateTime"
+                    },
+                    "pav:createdBy": {
+                        "@type": "@id"
+                    },
+                    "pav:lastUpdatedOn": {
+                        "@type": "xsd:dateTime"
+                    },
+                    "oslc:modifiedBy": {
+                        "@type": "@id"
+                    }
+                },
+                "title": "Variable field schema",
+                "description": "Variable field schema generated by the CEDAR Template Editor 2.5.38",
+                "_ui": {
+                    "order": [
+                        "variable",
+                        "variableIRI",
+                        "variableScheme",
+                        "variableSchemeIRI"
+                    ],
+                    "propertyLabels": {
+                        "variable": "variable",
+                        "variableIRI": "variableIRI",
+                        "variableScheme": "variableScheme",
+                        "variableSchemeIRI": "variableSchemeIRI"
+                    },
+                    "propertyDescriptions": {
+                        "variable": "Human readable name of variable contained in the dataset being described. A variable is a single entity being measured or computed.",
+                        "variableIRI": "IRI describing the variable.",
+                        "variableScheme": "The name of the scheme or authority used for the Variable Identifier.",
+                        "variableSchemeIRI": "The IRI of the scheme or authority used for the Variable Identifier."
+                    }
+                },
+                "properties": {
+                    "@context": {
+                        "type": "object",
+                        "properties": {
+                            "variable": {
+                                "enum": [
+                                    "http://vocab.fairdatacollective.org/gdmt/hasVariable"
+                                ]
+                            },
+                            "variableIRI": {
+                                "enum": [
+                                    "http://vocab.fairdatacollective.org/gdmt/hasVariableIRI"
+                                ]
+                            },
+                            "variableScheme": {
+                                "enum": [
+                                    "http://vocab.fairdatacollective.org/gdmt/hasVariableScheme"
+                                ]
+                            },
+                            "variableSchemeIRI": {
+                                "enum": [
+                                    "http://vocab.fairdatacollective.org/gdmt/hasVariableSchemeIRI"
+                                ]
+                            }
+                        },
+                        "additionalProperties": false,
+                        "required": [
+                            "variable",
+                            "variableIRI",
+                            "variableScheme",
+                            "variableSchemeIRI"
+                        ]
+                    },
+                    "@id": {
+                        "type": "string",
+                        "format": "uri"
+                    },
+                    "@type": {
+                        "oneOf": [
+                            {
+                                "type": "string",
+                                "format": "uri"
+                            },
+                            {
+                                "type": "array",
+                                "minItems": 1,
+                                "items": {
+                                    "type": "string",
+                                    "format": "uri"
+                                },
+                                "uniqueItems": true
+                            }
+                        ]
+                    },
+                    "variable": {
+                        "@id": "https://repo.metadatacenter.org/template-fields/dbd05221-5106-4a55-90e6-97a66361d2ea",
+                        "@type": "https://schema.metadatacenter.org/core/TemplateField",
+                        "@context": {
+                            "xsd": "http://www.w3.org/2001/XMLSchema#",
+                            "pav": "http://purl.org/pav/",
+                            "bibo": "http://purl.org/ontology/bibo/",
+                            "oslc": "http://open-services.net/ns/core#",
+                            "schema": "http://schema.org/",
+                            "skos": "http://www.w3.org/2004/02/skos/core#",
+                            "schema:name": {
+                                "@type": "xsd:string"
+                            },
+                            "schema:description": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:prefLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:altLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "pav:createdOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "pav:createdBy": {
+                                "@type": "@id"
+                            },
+                            "pav:lastUpdatedOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "oslc:modifiedBy": {
+                                "@type": "@id"
+                            }
+                        },
+                        "type": "object",
+                        "title": "variable field schema",
+                        "description": "variable field schema generated by the CEDAR Template Editor 2.5.38",
+                        "_ui": {
+                            "inputType": "textfield"
+                        },
+                        "_valueConstraints": {
+                            "requiredValue": false
+                        },
+                        "properties": {
+                            "@type": {
+                                "oneOf": [
+                                    {
+                                        "type": "string",
+                                        "format": "uri"
+                                    },
+                                    {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "string",
+                                            "format": "uri"
+                                        },
+                                        "uniqueItems": true
+                                    }
+                                ]
+                            },
+                            "@value": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "rdfs:label": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        },
+                        "required": [
+                            "@value"
+                        ],
+                        "schema:name": "variable",
+                        "schema:description": "Human readable name of variable contained in the dataset being described. A variable is a single entity being measured or computed.",
+                        "pav:createdOn": "2021-02-17T10:03:34-08:00",
+                        "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "pav:lastUpdatedOn": "2021-02-17T10:03:34-08:00",
+                        "pav:version": "0.0.1",
+                        "bibo:status": "bibo:draft",
+                        "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "schema:schemaVersion": "1.6.0",
+                        "additionalProperties": false,
+                        "skos:prefLabel": "Variable",
+                        "$schema": "http://json-schema.org/draft-04/schema#"
+                    },
+                    "variableIRI": {
+                        "@id": "https://repo.metadatacenter.org/template-fields/04bc1ab3-d7a6-4afe-a258-7e350a2aa003",
+                        "@type": "https://schema.metadatacenter.org/core/TemplateField",
+                        "@context": {
+                            "xsd": "http://www.w3.org/2001/XMLSchema#",
+                            "pav": "http://purl.org/pav/",
+                            "bibo": "http://purl.org/ontology/bibo/",
+                            "oslc": "http://open-services.net/ns/core#",
+                            "schema": "http://schema.org/",
+                            "skos": "http://www.w3.org/2004/02/skos/core#",
+                            "schema:name": {
+                                "@type": "xsd:string"
+                            },
+                            "schema:description": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:prefLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:altLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "pav:createdOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "pav:createdBy": {
+                                "@type": "@id"
+                            },
+                            "pav:lastUpdatedOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "oslc:modifiedBy": {
+                                "@type": "@id"
+                            }
+                        },
+                        "type": "object",
+                        "title": "variableIRI field schema",
+                        "description": "variableIRI field schema generated by the CEDAR Template Editor 2.5.38",
+                        "_ui": {
+                            "inputType": "textfield"
+                        },
+                        "_valueConstraints": {
+                            "requiredValue": false
+                        },
+                        "properties": {
+                            "@type": {
+                                "oneOf": [
+                                    {
+                                        "type": "string",
+                                        "format": "uri"
+                                    },
+                                    {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "string",
+                                            "format": "uri"
+                                        },
+                                        "uniqueItems": true
+                                    }
+                                ]
+                            },
+                            "@value": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "rdfs:label": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        },
+                        "required": [
+                            "@value"
+                        ],
+                        "schema:name": "variableIRI",
+                        "schema:description": "IRI describing the variable.",
+                        "pav:createdOn": "2021-02-17T10:03:34-08:00",
+                        "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "pav:lastUpdatedOn": "2021-02-17T10:03:34-08:00",
+                        "pav:version": "0.0.1",
+                        "bibo:status": "bibo:draft",
+                        "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "schema:schemaVersion": "1.6.0",
+                        "additionalProperties": false,
+                        "skos:prefLabel": "Variable IRI",
+                        "$schema": "http://json-schema.org/draft-04/schema#"
+                    },
+                    "variableScheme": {
+                        "@id": "https://repo.metadatacenter.org/template-fields/52fd5f93-20ba-4f84-8237-7a38b982aa22",
+                        "@type": "https://schema.metadatacenter.org/core/TemplateField",
+                        "@context": {
+                            "xsd": "http://www.w3.org/2001/XMLSchema#",
+                            "pav": "http://purl.org/pav/",
+                            "bibo": "http://purl.org/ontology/bibo/",
+                            "oslc": "http://open-services.net/ns/core#",
+                            "schema": "http://schema.org/",
+                            "skos": "http://www.w3.org/2004/02/skos/core#",
+                            "schema:name": {
+                                "@type": "xsd:string"
+                            },
+                            "schema:description": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:prefLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:altLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "pav:createdOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "pav:createdBy": {
+                                "@type": "@id"
+                            },
+                            "pav:lastUpdatedOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "oslc:modifiedBy": {
+                                "@type": "@id"
+                            }
+                        },
+                        "type": "object",
+                        "title": "variableScheme field schema",
+                        "description": "variableScheme field schema generated by the CEDAR Template Editor 2.5.38",
+                        "_ui": {
+                            "inputType": "textfield"
+                        },
+                        "_valueConstraints": {
+                            "requiredValue": false
+                        },
+                        "properties": {
+                            "@type": {
+                                "oneOf": [
+                                    {
+                                        "type": "string",
+                                        "format": "uri"
+                                    },
+                                    {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "string",
+                                            "format": "uri"
+                                        },
+                                        "uniqueItems": true
+                                    }
+                                ]
+                            },
+                            "@value": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "rdfs:label": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        },
+                        "required": [
+                            "@value"
+                        ],
+                        "schema:name": "variableScheme",
+                        "schema:description": "The name of the scheme or authority used for the Variable Identifier.",
+                        "pav:createdOn": "2021-02-17T10:03:34-08:00",
+                        "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "pav:lastUpdatedOn": "2021-02-17T10:03:34-08:00",
+                        "pav:version": "0.0.1",
+                        "bibo:status": "bibo:draft",
+                        "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "schema:schemaVersion": "1.6.0",
+                        "additionalProperties": false,
+                        "skos:prefLabel": "Variable Scheme",
+                        "$schema": "http://json-schema.org/draft-04/schema#"
+                    },
+                    "variableSchemeIRI": {
+                        "@id": "https://repo.metadatacenter.org/template-fields/31d13a27-49e2-4da6-b679-9cc2430b4518",
+                        "@type": "https://schema.metadatacenter.org/core/TemplateField",
+                        "@context": {
+                            "xsd": "http://www.w3.org/2001/XMLSchema#",
+                            "pav": "http://purl.org/pav/",
+                            "bibo": "http://purl.org/ontology/bibo/",
+                            "oslc": "http://open-services.net/ns/core#",
+                            "schema": "http://schema.org/",
+                            "skos": "http://www.w3.org/2004/02/skos/core#",
+                            "schema:name": {
+                                "@type": "xsd:string"
+                            },
+                            "schema:description": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:prefLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:altLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "pav:createdOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "pav:createdBy": {
+                                "@type": "@id"
+                            },
+                            "pav:lastUpdatedOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "oslc:modifiedBy": {
+                                "@type": "@id"
+                            }
+                        },
+                        "type": "object",
+                        "title": "variableSchemeIRI field schema",
+                        "description": "variableSchemeIRI field schema generated by the CEDAR Template Editor 2.5.38",
+                        "_ui": {
+                            "inputType": "textfield"
+                        },
+                        "_valueConstraints": {
+                            "requiredValue": false
+                        },
+                        "properties": {
+                            "@type": {
+                                "oneOf": [
+                                    {
+                                        "type": "string",
+                                        "format": "uri"
+                                    },
+                                    {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "string",
+                                            "format": "uri"
+                                        },
+                                        "uniqueItems": true
+                                    }
+                                ]
+                            },
+                            "@value": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "rdfs:label": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        },
+                        "required": [
+                            "@value"
+                        ],
+                        "schema:name": "variableSchemeIRI",
+                        "schema:description": "The IRI of the scheme or authority used for the Variable Identifier.",
+                        "pav:createdOn": "2021-02-17T10:03:34-08:00",
+                        "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "pav:lastUpdatedOn": "2021-02-17T10:03:34-08:00",
+                        "pav:version": "0.0.1",
+                        "bibo:status": "bibo:draft",
+                        "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "schema:schemaVersion": "1.6.0",
+                        "additionalProperties": false,
+                        "skos:prefLabel": "Variable Scheme IRI",
+                        "$schema": "http://json-schema.org/draft-04/schema#"
+                    }
+                },
+                "required": [
+                    "@context",
+                    "@id",
+                    "variable",
+                    "variableIRI",
+                    "variableScheme",
+                    "variableSchemeIRI"
+                ],
+                "additionalProperties": false,
+                "pav:createdOn": "2021-02-17T10:07:05-08:00",
+                "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                "pav:lastUpdatedOn": "2021-02-17T10:07:05-08:00",
+                "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                "schema:schemaVersion": "1.6.0",
+                "schema:name": "Variable",
+                "schema:description": "A single entity being measured or computed.",
+                "pav:version": "0.0.1",
+                "bibo:status": "bibo:draft",
+                "skos:prefLabel": "Variable",
+                "$schema": "http://json-schema.org/draft-04/schema#"
+            }
+        },
+        "DataSource": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "type": "object",
+                "@id": "https://repo.metadatacenter.org/template-elements/65c09f49-2984-4bff-b4ac-62f03af2a6fb",
+                "@type": "https://schema.metadatacenter.org/core/TemplateElement",
+                "@context": {
+                    "xsd": "http://www.w3.org/2001/XMLSchema#",
+                    "pav": "http://purl.org/pav/",
+                    "bibo": "http://purl.org/ontology/bibo/",
+                    "oslc": "http://open-services.net/ns/core#",
+                    "schema": "http://schema.org/",
+                    "schema:name": {
+                        "@type": "xsd:string"
+                    },
+                    "schema:description": {
+                        "@type": "xsd:string"
+                    },
+                    "pav:createdOn": {
+                        "@type": "xsd:dateTime"
+                    },
+                    "pav:createdBy": {
+                        "@type": "@id"
+                    },
+                    "pav:lastUpdatedOn": {
+                        "@type": "xsd:dateTime"
+                    },
+                    "oslc:modifiedBy": {
+                        "@type": "@id"
+                    }
+                },
+                "title": "DataSource field schema",
+                "description": "DataSource field schema generated by the CEDAR Template Editor 2.5.38",
+                "_ui": {
+                    "order": [
+                        "dataSource",
+                        "dataSourceIRI",
+                        "dataSourceScheme",
+                        "dataSourceSchemeIRI"
+                    ],
+                    "propertyLabels": {
+                        "dataSource": "dataSource",
+                        "dataSourceIRI": "dataSourceIRI",
+                        "dataSourceScheme": "dataSourceScheme",
+                        "dataSourceSchemeIRI": "has Data Source Scheme IRI"
+                    },
+                    "propertyDescriptions": {
+                        "dataSource": "Human readable name of data source from which the variable(s) come(s). Physical or conceptual entity that creates the data streams that make up the described dataset. The data source may or may not be associated with a fixed location; for example, a series of discrete sensors deployed over time to a single location may be considered a single data source in some systems.",
+                        "dataSourceIRI": "IRI describing the data source (e.g., PID of an instrument).",
+                        "dataSourceScheme": "The name of the scheme or authority used for the Data Source Identifier.",
+                        "dataSourceSchemeIRI": "The IRI of the scheme or authority used for the Data Source Identifier."
+                    }
+                },
+                "properties": {
+                    "@context": {
+                        "type": "object",
+                        "properties": {
+                            "dataSource": {
+                                "enum": [
+                                    "http://vocab.fairdatacollective.org/gdmt/hasDataSource"
+                                ]
+                            },
+                            "dataSourceIRI": {
+                                "enum": [
+                                    "http://vocab.fairdatacollective.org/gdmt/hasDataSourceIRI"
+                                ]
+                            },
+                            "dataSourceScheme": {
+                                "enum": [
+                                    "http://vocab.fairdatacollective.org/gdmt/hasDataSourceScheme"
+                                ]
+                            },
+                            "dataSourceSchemeIRI": {
+                                "enum": [
+                                    "http://vocab.fairdatacollective.org/gdmt/hasDataSourceSchemeIRI"
+                                ]
+                            }
+                        },
+                        "additionalProperties": false,
+                        "required": [
+                            "dataSource",
+                            "dataSourceIRI",
+                            "dataSourceScheme",
+                            "dataSourceSchemeIRI"
+                        ]
+                    },
+                    "@id": {
+                        "type": "string",
+                        "format": "uri"
+                    },
+                    "@type": {
+                        "oneOf": [
+                            {
+                                "type": "string",
+                                "format": "uri"
+                            },
+                            {
+                                "type": "array",
+                                "minItems": 1,
+                                "items": {
+                                    "type": "string",
+                                    "format": "uri"
+                                },
+                                "uniqueItems": true
+                            }
+                        ]
+                    },
+                    "dataSource": {
+                        "@id": "https://repo.metadatacenter.org/template-fields/50b8eb6a-1073-44ff-9a4a-e9ae856653e4",
+                        "@type": "https://schema.metadatacenter.org/core/TemplateField",
+                        "@context": {
+                            "xsd": "http://www.w3.org/2001/XMLSchema#",
+                            "pav": "http://purl.org/pav/",
+                            "bibo": "http://purl.org/ontology/bibo/",
+                            "oslc": "http://open-services.net/ns/core#",
+                            "schema": "http://schema.org/",
+                            "skos": "http://www.w3.org/2004/02/skos/core#",
+                            "schema:name": {
+                                "@type": "xsd:string"
+                            },
+                            "schema:description": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:prefLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:altLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "pav:createdOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "pav:createdBy": {
+                                "@type": "@id"
+                            },
+                            "pav:lastUpdatedOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "oslc:modifiedBy": {
+                                "@type": "@id"
+                            }
+                        },
+                        "type": "object",
+                        "title": "dataSource field schema",
+                        "description": "dataSource field schema generated by the CEDAR Template Editor 2.5.38",
+                        "_ui": {
+                            "inputType": "textfield"
+                        },
+                        "_valueConstraints": {
+                            "requiredValue": false
+                        },
+                        "properties": {
+                            "@type": {
+                                "oneOf": [
+                                    {
+                                        "type": "string",
+                                        "format": "uri"
+                                    },
+                                    {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "string",
+                                            "format": "uri"
+                                        },
+                                        "uniqueItems": true
+                                    }
+                                ]
+                            },
+                            "@value": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "rdfs:label": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        },
+                        "required": [
+                            "@value"
+                        ],
+                        "schema:name": "dataSource",
+                        "schema:description": "Human readable name of data source from which the variable(s) come(s). Physical or conceptual entity that creates the data streams that make up the described dataset. The data source may or may not be associated with a fixed location; for example, a series of discrete sensors deployed over time to a single location may be considered a single data source in some systems.",
+                        "pav:createdOn": "2021-02-17T09:58:05-08:00",
+                        "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "pav:lastUpdatedOn": "2021-02-17T09:58:05-08:00",
+                        "pav:version": "0.0.1",
+                        "bibo:status": "bibo:draft",
+                        "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "schema:schemaVersion": "1.6.0",
+                        "additionalProperties": false,
+                        "skos:prefLabel": "Data Source",
+                        "$schema": "http://json-schema.org/draft-04/schema#"
+                    },
+                    "dataSourceIRI": {
+                        "@id": "https://repo.metadatacenter.org/template-fields/1e215033-9baa-4816-b66e-fc7cc0589443",
+                        "@type": "https://schema.metadatacenter.org/core/TemplateField",
+                        "@context": {
+                            "xsd": "http://www.w3.org/2001/XMLSchema#",
+                            "pav": "http://purl.org/pav/",
+                            "bibo": "http://purl.org/ontology/bibo/",
+                            "oslc": "http://open-services.net/ns/core#",
+                            "schema": "http://schema.org/",
+                            "skos": "http://www.w3.org/2004/02/skos/core#",
+                            "schema:name": {
+                                "@type": "xsd:string"
+                            },
+                            "schema:description": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:prefLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:altLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "pav:createdOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "pav:createdBy": {
+                                "@type": "@id"
+                            },
+                            "pav:lastUpdatedOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "oslc:modifiedBy": {
+                                "@type": "@id"
+                            }
+                        },
+                        "type": "object",
+                        "title": "dataSourceIRI field schema",
+                        "description": "dataSourceIRI field schema generated by the CEDAR Template Editor 2.5.38",
+                        "_ui": {
+                            "inputType": "textfield"
+                        },
+                        "_valueConstraints": {
+                            "requiredValue": false
+                        },
+                        "properties": {
+                            "@type": {
+                                "oneOf": [
+                                    {
+                                        "type": "string",
+                                        "format": "uri"
+                                    },
+                                    {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "string",
+                                            "format": "uri"
+                                        },
+                                        "uniqueItems": true
+                                    }
+                                ]
+                            },
+                            "@value": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "rdfs:label": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        },
+                        "required": [
+                            "@value"
+                        ],
+                        "schema:name": "dataSourceIRI",
+                        "schema:description": "IRI describing the data source (e.g., PID of an instrument).",
+                        "pav:createdOn": "2021-02-17T09:58:05-08:00",
+                        "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "pav:lastUpdatedOn": "2021-02-17T09:58:05-08:00",
+                        "pav:version": "0.0.1",
+                        "bibo:status": "bibo:draft",
+                        "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "schema:schemaVersion": "1.6.0",
+                        "additionalProperties": false,
+                        "skos:prefLabel": "Data Source IRI",
+                        "$schema": "http://json-schema.org/draft-04/schema#"
+                    },
+                    "dataSourceScheme": {
+                        "@id": "https://repo.metadatacenter.org/template-fields/b108a516-99c7-4d2f-88b9-415a08028645",
+                        "@type": "https://schema.metadatacenter.org/core/TemplateField",
+                        "@context": {
+                            "xsd": "http://www.w3.org/2001/XMLSchema#",
+                            "pav": "http://purl.org/pav/",
+                            "bibo": "http://purl.org/ontology/bibo/",
+                            "oslc": "http://open-services.net/ns/core#",
+                            "schema": "http://schema.org/",
+                            "skos": "http://www.w3.org/2004/02/skos/core#",
+                            "schema:name": {
+                                "@type": "xsd:string"
+                            },
+                            "schema:description": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:prefLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:altLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "pav:createdOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "pav:createdBy": {
+                                "@type": "@id"
+                            },
+                            "pav:lastUpdatedOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "oslc:modifiedBy": {
+                                "@type": "@id"
+                            }
+                        },
+                        "type": "object",
+                        "title": "dataSourceScheme field schema",
+                        "description": "dataSourceScheme field schema generated by the CEDAR Template Editor 2.5.38",
+                        "_ui": {
+                            "inputType": "textfield"
+                        },
+                        "_valueConstraints": {
+                            "requiredValue": false
+                        },
+                        "properties": {
+                            "@type": {
+                                "oneOf": [
+                                    {
+                                        "type": "string",
+                                        "format": "uri"
+                                    },
+                                    {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "string",
+                                            "format": "uri"
+                                        },
+                                        "uniqueItems": true
+                                    }
+                                ]
+                            },
+                            "@value": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "rdfs:label": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        },
+                        "required": [
+                            "@value"
+                        ],
+                        "schema:name": "dataSourceScheme",
+                        "schema:description": "The name of the scheme or authority used for the Data Source Identifier.",
+                        "pav:createdOn": "2021-02-17T09:58:05-08:00",
+                        "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "pav:lastUpdatedOn": "2021-02-17T09:58:05-08:00",
+                        "pav:version": "0.0.1",
+                        "bibo:status": "bibo:draft",
+                        "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "schema:schemaVersion": "1.6.0",
+                        "additionalProperties": false,
+                        "skos:prefLabel": "Data Source Scheme",
+                        "$schema": "http://json-schema.org/draft-04/schema#"
+                    },
+                    "dataSourceSchemeIRI": {
+                        "@id": "https://repo.metadatacenter.org/template-fields/6807731e-9e1a-4f25-a515-41d632a5acc0",
+                        "@type": "https://schema.metadatacenter.org/core/TemplateField",
+                        "@context": {
+                            "xsd": "http://www.w3.org/2001/XMLSchema#",
+                            "pav": "http://purl.org/pav/",
+                            "bibo": "http://purl.org/ontology/bibo/",
+                            "oslc": "http://open-services.net/ns/core#",
+                            "schema": "http://schema.org/",
+                            "skos": "http://www.w3.org/2004/02/skos/core#",
+                            "schema:name": {
+                                "@type": "xsd:string"
+                            },
+                            "schema:description": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:prefLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:altLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "pav:createdOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "pav:createdBy": {
+                                "@type": "@id"
+                            },
+                            "pav:lastUpdatedOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "oslc:modifiedBy": {
+                                "@type": "@id"
+                            }
+                        },
+                        "type": "object",
+                        "title": "has Data Source Scheme IRI field schema",
+                        "description": "has Data Source Scheme IRI field schema generated by the CEDAR Template Editor 2.5.38",
+                        "_ui": {
+                            "inputType": "textfield"
+                        },
+                        "_valueConstraints": {
+                            "requiredValue": false
+                        },
+                        "properties": {
+                            "@type": {
+                                "oneOf": [
+                                    {
+                                        "type": "string",
+                                        "format": "uri"
+                                    },
+                                    {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "string",
+                                            "format": "uri"
+                                        },
+                                        "uniqueItems": true
+                                    }
+                                ]
+                            },
+                            "@value": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "rdfs:label": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        },
+                        "required": [
+                            "@value"
+                        ],
+                        "schema:name": "has Data Source Scheme IRI",
+                        "schema:description": "The IRI of the scheme or authority used for the Data Source Identifier.",
+                        "pav:createdOn": "2021-02-17T09:58:05-08:00",
+                        "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "pav:lastUpdatedOn": "2021-02-17T09:58:05-08:00",
+                        "pav:version": "0.0.1",
+                        "bibo:status": "bibo:draft",
+                        "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "schema:schemaVersion": "1.6.0",
+                        "additionalProperties": false,
+                        "skos:prefLabel": "Data Source Schema IRI",
+                        "$schema": "http://json-schema.org/draft-04/schema#"
+                    }
+                },
+                "required": [
+                    "@context",
+                    "@id",
+                    "dataSource",
+                    "dataSourceIRI",
+                    "dataSourceScheme",
+                    "dataSourceSchemeIRI"
+                ],
+                "additionalProperties": false,
+                "pav:createdOn": "2021-02-17T10:07:05-08:00",
+                "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                "pav:lastUpdatedOn": "2021-02-17T10:07:05-08:00",
+                "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                "schema:schemaVersion": "1.6.0",
+                "schema:name": "DataSource",
+                "schema:description": "Physical or conceptual entity that creates the data streams that make up the described dataset. The data source may or may not be associated with a fixed location; for example, a series of discrete sensors deployed over time to a single location may be considered a single data source in some systems.",
+                "pav:version": "0.0.1",
+                "bibo:status": "bibo:draft",
+                "skos:prefLabel": "Data Source",
+                "$schema": "http://json-schema.org/draft-04/schema#"
+            }
+        },
+        "DataStream": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "type": "object",
+                "@id": "https://repo.metadatacenter.org/template-elements/56233160-380f-4b6d-95dc-690994b4bada",
+                "@type": "https://schema.metadatacenter.org/core/TemplateElement",
+                "@context": {
+                    "xsd": "http://www.w3.org/2001/XMLSchema#",
+                    "pav": "http://purl.org/pav/",
+                    "bibo": "http://purl.org/ontology/bibo/",
+                    "oslc": "http://open-services.net/ns/core#",
+                    "schema": "http://schema.org/",
+                    "schema:name": {
+                        "@type": "xsd:string"
+                    },
+                    "schema:description": {
+                        "@type": "xsd:string"
+                    },
+                    "pav:createdOn": {
+                        "@type": "xsd:dateTime"
+                    },
+                    "pav:createdBy": {
+                        "@type": "@id"
+                    },
+                    "pav:lastUpdatedOn": {
+                        "@type": "xsd:dateTime"
+                    },
+                    "oslc:modifiedBy": {
+                        "@type": "@id"
+                    }
+                },
+                "title": "DataStream field schema",
+                "description": "DataStream field schema generated by the CEDAR Template Editor 2.5.38",
+                "_ui": {
+                    "order": [
+                        "dataStream",
+                        "dataStreamIRI",
+                        "datastreamScheme",
+                        "dataStreamSchemeIRI"
+                    ],
+                    "propertyLabels": {
+                        "dataStream": "dataStream",
+                        "dataStreamIRI": "dataStreamIRI",
+                        "datastreamScheme": "datastreamScheme",
+                        "dataStreamSchemeIRI": "dataStreamSchemeIRI"
+                    },
+                    "propertyDescriptions": {
+                        "dataStream": "Human readable name of collection of records coming from a data source. A data stream is a collection of one or more variable records originating from a single data source (e.g., sensor, process, or person). A data stream can grow over time.",
+                        "dataStreamIRI": "Unique identifier of collection of records coming from a data source.",
+                        "datastreamScheme": "The name of the scheme or authority used for the Data Stream Identifier.",
+                        "dataStreamSchemeIRI": "The IRI of the scheme or authority used for the Data Stream Identifier."
+                    }
+                },
+                "properties": {
+                    "@context": {
+                        "type": "object",
+                        "properties": {
+                            "dataStream": {
+                                "enum": [
+                                    "http://vocab.fairdatacollective.org/gdmt/hasDataStream"
+                                ]
+                            },
+                            "dataStreamIRI": {
+                                "enum": [
+                                    "http://vocab.fairdatacollective.org/gdmt/hasDataStreamIRI"
+                                ]
+                            },
+                            "datastreamScheme": {
+                                "enum": [
+                                    "http://vocab.fairdatacollective.org/gdmt/hasDataStreamScheme"
+                                ]
+                            },
+                            "dataStreamSchemeIRI": {
+                                "enum": [
+                                    "http://vocab.fairdatacollective.org/gdmt/hasDataStreamSchemeIRI"
+                                ]
+                            }
+                        },
+                        "additionalProperties": false,
+                        "required": [
+                            "dataStream",
+                            "dataStreamIRI",
+                            "datastreamScheme",
+                            "dataStreamSchemeIRI"
+                        ]
+                    },
+                    "@id": {
+                        "type": "string",
+                        "format": "uri"
+                    },
+                    "@type": {
+                        "oneOf": [
+                            {
+                                "type": "string",
+                                "format": "uri"
+                            },
+                            {
+                                "type": "array",
+                                "minItems": 1,
+                                "items": {
+                                    "type": "string",
+                                    "format": "uri"
+                                },
+                                "uniqueItems": true
+                            }
+                        ]
+                    },
+                    "dataStream": {
+                        "@id": "https://repo.metadatacenter.org/template-fields/3fa150a6-9d46-4491-b6cf-0c6bf315808c",
+                        "@type": "https://schema.metadatacenter.org/core/TemplateField",
+                        "@context": {
+                            "xsd": "http://www.w3.org/2001/XMLSchema#",
+                            "pav": "http://purl.org/pav/",
+                            "bibo": "http://purl.org/ontology/bibo/",
+                            "oslc": "http://open-services.net/ns/core#",
+                            "schema": "http://schema.org/",
+                            "skos": "http://www.w3.org/2004/02/skos/core#",
+                            "schema:name": {
+                                "@type": "xsd:string"
+                            },
+                            "schema:description": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:prefLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:altLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "pav:createdOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "pav:createdBy": {
+                                "@type": "@id"
+                            },
+                            "pav:lastUpdatedOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "oslc:modifiedBy": {
+                                "@type": "@id"
+                            }
+                        },
+                        "type": "object",
+                        "title": "dataStream field schema",
+                        "description": "dataStream field schema generated by the CEDAR Template Editor 2.5.38",
+                        "_ui": {
+                            "inputType": "textfield"
+                        },
+                        "_valueConstraints": {
+                            "requiredValue": false
+                        },
+                        "properties": {
+                            "@type": {
+                                "oneOf": [
+                                    {
+                                        "type": "string",
+                                        "format": "uri"
+                                    },
+                                    {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "string",
+                                            "format": "uri"
+                                        },
+                                        "uniqueItems": true
+                                    }
+                                ]
+                            },
+                            "@value": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "rdfs:label": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        },
+                        "required": [
+                            "@value"
+                        ],
+                        "schema:name": "dataStream",
+                        "schema:description": "Human readable name of collection of records coming from a data source. A data stream is a collection of one or more variable records originating from a single data source (e.g., sensor, process, or person). A data stream can grow over time.",
+                        "pav:createdOn": "2021-02-17T09:55:47-08:00",
+                        "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "pav:lastUpdatedOn": "2021-02-17T09:55:47-08:00",
+                        "pav:version": "0.0.1",
+                        "bibo:status": "bibo:draft",
+                        "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "schema:schemaVersion": "1.6.0",
+                        "additionalProperties": false,
+                        "skos:prefLabel": "Data Stream",
+                        "$schema": "http://json-schema.org/draft-04/schema#"
+                    },
+                    "dataStreamIRI": {
+                        "@id": "https://repo.metadatacenter.org/template-fields/be16016b-ac10-430c-bc28-10ef51a08716",
+                        "@type": "https://schema.metadatacenter.org/core/TemplateField",
+                        "@context": {
+                            "xsd": "http://www.w3.org/2001/XMLSchema#",
+                            "pav": "http://purl.org/pav/",
+                            "bibo": "http://purl.org/ontology/bibo/",
+                            "oslc": "http://open-services.net/ns/core#",
+                            "schema": "http://schema.org/",
+                            "skos": "http://www.w3.org/2004/02/skos/core#",
+                            "schema:name": {
+                                "@type": "xsd:string"
+                            },
+                            "schema:description": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:prefLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:altLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "pav:createdOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "pav:createdBy": {
+                                "@type": "@id"
+                            },
+                            "pav:lastUpdatedOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "oslc:modifiedBy": {
+                                "@type": "@id"
+                            }
+                        },
+                        "type": "object",
+                        "title": "dataStreamIRI field schema",
+                        "description": "dataStreamIRI field schema generated by the CEDAR Template Editor 2.5.38",
+                        "_ui": {
+                            "inputType": "textfield"
+                        },
+                        "_valueConstraints": {
+                            "requiredValue": false
+                        },
+                        "properties": {
+                            "@type": {
+                                "oneOf": [
+                                    {
+                                        "type": "string",
+                                        "format": "uri"
+                                    },
+                                    {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "string",
+                                            "format": "uri"
+                                        },
+                                        "uniqueItems": true
+                                    }
+                                ]
+                            },
+                            "@value": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "rdfs:label": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        },
+                        "required": [
+                            "@value"
+                        ],
+                        "schema:name": "dataStreamIRI",
+                        "schema:description": "Unique identifier of collection of records coming from a data source.",
+                        "pav:createdOn": "2021-02-17T09:55:47-08:00",
+                        "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "pav:lastUpdatedOn": "2021-02-17T09:55:47-08:00",
+                        "pav:version": "0.0.1",
+                        "bibo:status": "bibo:draft",
+                        "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "schema:schemaVersion": "1.6.0",
+                        "additionalProperties": false,
+                        "skos:prefLabel": "Data Stream IRI",
+                        "$schema": "http://json-schema.org/draft-04/schema#"
+                    },
+                    "datastreamScheme": {
+                        "@id": "https://repo.metadatacenter.org/template-fields/18f66fd5-ce5a-4aeb-8235-83c9b73e2986",
+                        "@type": "https://schema.metadatacenter.org/core/TemplateField",
+                        "@context": {
+                            "xsd": "http://www.w3.org/2001/XMLSchema#",
+                            "pav": "http://purl.org/pav/",
+                            "bibo": "http://purl.org/ontology/bibo/",
+                            "oslc": "http://open-services.net/ns/core#",
+                            "schema": "http://schema.org/",
+                            "skos": "http://www.w3.org/2004/02/skos/core#",
+                            "schema:name": {
+                                "@type": "xsd:string"
+                            },
+                            "schema:description": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:prefLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:altLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "pav:createdOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "pav:createdBy": {
+                                "@type": "@id"
+                            },
+                            "pav:lastUpdatedOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "oslc:modifiedBy": {
+                                "@type": "@id"
+                            }
+                        },
+                        "type": "object",
+                        "title": "datastreamScheme field schema",
+                        "description": "datastreamScheme field schema generated by the CEDAR Template Editor 2.5.38",
+                        "_ui": {
+                            "inputType": "textfield"
+                        },
+                        "_valueConstraints": {
+                            "requiredValue": false
+                        },
+                        "properties": {
+                            "@type": {
+                                "oneOf": [
+                                    {
+                                        "type": "string",
+                                        "format": "uri"
+                                    },
+                                    {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "string",
+                                            "format": "uri"
+                                        },
+                                        "uniqueItems": true
+                                    }
+                                ]
+                            },
+                            "@value": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "rdfs:label": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        },
+                        "required": [
+                            "@value"
+                        ],
+                        "schema:name": "datastreamScheme",
+                        "schema:description": "The name of the scheme or authority used for the Data Stream Identifier.",
+                        "pav:createdOn": "2021-02-17T09:55:47-08:00",
+                        "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "pav:lastUpdatedOn": "2021-02-17T09:55:47-08:00",
+                        "pav:version": "0.0.1",
+                        "bibo:status": "bibo:draft",
+                        "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "schema:schemaVersion": "1.6.0",
+                        "additionalProperties": false,
+                        "skos:prefLabel": "Data Stream Scheme",
+                        "$schema": "http://json-schema.org/draft-04/schema#"
+                    },
+                    "dataStreamSchemeIRI": {
+                        "@id": "https://repo.metadatacenter.org/template-fields/51388d99-7c2e-47d2-92c4-852c5ceaa41d",
+                        "@type": "https://schema.metadatacenter.org/core/TemplateField",
+                        "@context": {
+                            "xsd": "http://www.w3.org/2001/XMLSchema#",
+                            "pav": "http://purl.org/pav/",
+                            "bibo": "http://purl.org/ontology/bibo/",
+                            "oslc": "http://open-services.net/ns/core#",
+                            "schema": "http://schema.org/",
+                            "skos": "http://www.w3.org/2004/02/skos/core#",
+                            "schema:name": {
+                                "@type": "xsd:string"
+                            },
+                            "schema:description": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:prefLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:altLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "pav:createdOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "pav:createdBy": {
+                                "@type": "@id"
+                            },
+                            "pav:lastUpdatedOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "oslc:modifiedBy": {
+                                "@type": "@id"
+                            }
+                        },
+                        "type": "object",
+                        "title": "dataStreamSchemeIRI field schema",
+                        "description": "dataStreamSchemeIRI field schema generated by the CEDAR Template Editor 2.5.38",
+                        "_ui": {
+                            "inputType": "textfield"
+                        },
+                        "_valueConstraints": {
+                            "requiredValue": false
+                        },
+                        "properties": {
+                            "@type": {
+                                "oneOf": [
+                                    {
+                                        "type": "string",
+                                        "format": "uri"
+                                    },
+                                    {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "string",
+                                            "format": "uri"
+                                        },
+                                        "uniqueItems": true
+                                    }
+                                ]
+                            },
+                            "@value": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "rdfs:label": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        },
+                        "required": [
+                            "@value"
+                        ],
+                        "schema:name": "dataStreamSchemeIRI",
+                        "schema:description": "The IRI of the scheme or authority used for the Data Stream Identifier.",
+                        "pav:createdOn": "2021-02-17T09:55:47-08:00",
+                        "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "pav:lastUpdatedOn": "2021-02-17T09:55:47-08:00",
+                        "pav:version": "0.0.1",
+                        "bibo:status": "bibo:draft",
+                        "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "schema:schemaVersion": "1.6.0",
+                        "additionalProperties": false,
+                        "skos:prefLabel": "Data Stream Scheme IRI",
+                        "$schema": "http://json-schema.org/draft-04/schema#"
+                    }
+                },
+                "required": [
+                    "@context",
+                    "@id",
+                    "dataStream",
+                    "dataStreamIRI",
+                    "datastreamScheme",
+                    "dataStreamSchemeIRI"
+                ],
+                "additionalProperties": false,
+                "pav:createdOn": "2021-02-17T10:07:05-08:00",
+                "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                "pav:lastUpdatedOn": "2021-02-17T10:07:05-08:00",
+                "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                "schema:schemaVersion": "1.6.0",
+                "schema:name": "DataStream",
+                "schema:description": "A collection of one or more variable records originating from a single data source (e.g., sensor, process, or person). A data stream can grow over time.",
+                "pav:version": "0.0.1",
+                "bibo:status": "bibo:draft",
+                "skos:prefLabel": "Data Source",
                 "$schema": "http://json-schema.org/draft-04/schema#"
             }
         }
@@ -7551,13 +9063,16 @@
         "Contributor",
         "Rights",
         "Date",
-        "Funding"
+        "Funding",
+        "Variable",
+        "DataSource",
+        "DataStream"
     ],
     "schema:name": "Generic Metadata Template",
     "schema:description": "",
     "pav:createdOn": "2021-02-16T07:39:21-08:00",
     "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-    "pav:lastUpdatedOn": "2021-02-17T09:36:51-08:00",
+    "pav:lastUpdatedOn": "2021-02-17T10:07:05-08:00",
     "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
     "schema:schemaVersion": "1.6.0",
     "additionalProperties": false,
