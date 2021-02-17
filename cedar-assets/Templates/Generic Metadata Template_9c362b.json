@@ -49,7 +49,8 @@
             "DataStream",
             "SpatialCoverage",
             "VerticalCoverage",
-            "TemporalCoverage"
+            "TemporalCoverage",
+            "Distribution"
         ],
         "propertyLabels": {
             "ResourceType": "ResourceType",
@@ -69,7 +70,8 @@
             "DataStream": "DataStream",
             "SpatialCoverage": "SpatialCoverage",
             "VerticalCoverage": "has Vertical Coverage Info",
-            "TemporalCoverage": "TemporalCoverage"
+            "TemporalCoverage": "TemporalCoverage",
+            "Distribution": "Distribution"
         },
         "propertyDescriptions": {
             "ResourceType": "Information about the type of the resource being described with metadata.",
@@ -89,7 +91,8 @@
             "DataStream": "A collection of one or more variable records originating from a single data source (e.g., sensor, process, or person). A data stream can grow over time.",
             "SpatialCoverage": "The geospatial area (region on Earth) covered by the dataset being described.",
             "VerticalCoverage": "The vertical area (altitude and/or depth)  covered by the dataset being described.",
-            "TemporalCoverage": "The temporal coverage and resolution of the dataset being described."
+            "TemporalCoverage": "The temporal coverage and resolution of the dataset being described.",
+            "Distribution": "Details about the distribution for this individual public presentation of the dataset (if part of the Distribution metadata), or for all the public presentations of the dataset being described (if part of the Dataset metadata)."
         }
     },
     "properties": {
@@ -337,6 +340,11 @@
                     "enum": [
                         "http://vocab.fairdatacollective.org/gdmt/hasTemporalCoverageInfo"
                     ]
+                },
+                "Distribution": {
+                    "enum": [
+                        "http://vocab.fairdatacollective.org/gdmt/hasDistributionInfo"
+                    ]
                 }
             },
             "required": [
@@ -368,7 +376,8 @@
                 "DataStream",
                 "SpatialCoverage",
                 "VerticalCoverage",
-                "TemporalCoverage"
+                "TemporalCoverage",
+                "Distribution"
             ],
             "additionalProperties": false
         },
@@ -729,9 +738,9 @@
                 "resourceTypeCategory",
                 "resourceTypeDetail"
             ],
-            "pav:createdOn": "2021-02-17T10:51:30-08:00",
+            "pav:createdOn": "2021-02-17T12:14:03-08:00",
             "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-02-17T10:51:30-08:00",
+            "pav:lastUpdatedOn": "2021-02-17T12:14:03-08:00",
             "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
@@ -1032,9 +1041,9 @@
                 "datasetIdentifier",
                 "datasetIdentifierType"
             ],
-            "pav:createdOn": "2021-02-17T10:51:30-08:00",
+            "pav:createdOn": "2021-02-17T12:14:03-08:00",
             "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-02-17T10:51:30-08:00",
+            "pav:lastUpdatedOn": "2021-02-17T12:14:03-08:00",
             "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
@@ -1554,9 +1563,9 @@
                     "relationType"
                 ],
                 "additionalProperties": false,
-                "pav:createdOn": "2021-02-17T10:51:30-08:00",
+                "pav:createdOn": "2021-02-17T12:14:03-08:00",
                 "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-                "pav:lastUpdatedOn": "2021-02-17T10:51:30-08:00",
+                "pav:lastUpdatedOn": "2021-02-17T12:14:03-08:00",
                 "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
                 "schema:schemaVersion": "1.6.0",
                 "schema:name": "RelatedResources",
@@ -1647,9 +1656,9 @@
             ],
             "schema:name": "version",
             "schema:description": "The string identifying the version of the dataset or other object being described.",
-            "pav:createdOn": "2021-02-17T10:51:30-08:00",
+            "pav:createdOn": "2021-02-17T12:14:03-08:00",
             "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-02-17T10:51:30-08:00",
+            "pav:lastUpdatedOn": "2021-02-17T12:14:03-08:00",
             "pav:version": "0.0.1",
             "bibo:status": "bibo:draft",
             "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
@@ -1954,9 +1963,9 @@
                 "primaryLanguage",
                 "language"
             ],
-            "pav:createdOn": "2021-02-17T10:51:30-08:00",
+            "pav:createdOn": "2021-02-17T12:14:03-08:00",
             "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-02-17T10:51:30-08:00",
+            "pav:lastUpdatedOn": "2021-02-17T12:14:03-08:00",
             "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
@@ -2256,9 +2265,9 @@
                     "language"
                 ],
                 "additionalProperties": false,
-                "pav:createdOn": "2021-02-17T10:51:30-08:00",
+                "pav:createdOn": "2021-02-17T12:14:03-08:00",
                 "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-                "pav:lastUpdatedOn": "2021-02-17T10:51:30-08:00",
+                "pav:lastUpdatedOn": "2021-02-17T12:14:03-08:00",
                 "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
                 "schema:schemaVersion": "1.6.0",
                 "schema:name": "Title",
@@ -2955,9 +2964,9 @@
                 "Subject",
                 "keyword"
             ],
-            "pav:createdOn": "2021-02-17T10:51:30-08:00",
+            "pav:createdOn": "2021-02-17T12:14:03-08:00",
             "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-02-17T10:51:30-08:00",
+            "pav:lastUpdatedOn": "2021-02-17T12:14:03-08:00",
             "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
@@ -4505,9 +4514,9 @@
                     "CreatorIdentifier"
                 ],
                 "additionalProperties": false,
-                "pav:createdOn": "2021-02-17T10:51:30-08:00",
+                "pav:createdOn": "2021-02-17T12:14:03-08:00",
                 "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-                "pav:lastUpdatedOn": "2021-02-17T10:51:30-08:00",
+                "pav:lastUpdatedOn": "2021-02-17T12:14:03-08:00",
                 "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
                 "schema:schemaVersion": "1.6.0",
                 "schema:name": "Creator",
@@ -6064,9 +6073,9 @@
                     "ContributorAffiliation"
                 ],
                 "additionalProperties": false,
-                "pav:createdOn": "2021-02-17T10:51:30-08:00",
+                "pav:createdOn": "2021-02-17T12:14:03-08:00",
                 "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-                "pav:lastUpdatedOn": "2021-02-17T10:51:30-08:00",
+                "pav:lastUpdatedOn": "2021-02-17T12:14:03-08:00",
                 "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
                 "schema:schemaVersion": "1.6.0",
                 "schema:name": "Contributor",
@@ -6467,9 +6476,9 @@
                 "licenseIdentifier",
                 "licenseText"
             ],
-            "pav:createdOn": "2021-02-17T10:51:30-08:00",
+            "pav:createdOn": "2021-02-17T12:14:03-08:00",
             "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-02-17T10:51:30-08:00",
+            "pav:lastUpdatedOn": "2021-02-17T12:14:03-08:00",
             "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
@@ -6772,9 +6781,9 @@
                     "datasetDate"
                 ],
                 "additionalProperties": false,
-                "pav:createdOn": "2021-02-17T10:51:30-08:00",
+                "pav:createdOn": "2021-02-17T12:14:03-08:00",
                 "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-                "pav:lastUpdatedOn": "2021-02-17T10:51:30-08:00",
+                "pav:lastUpdatedOn": "2021-02-17T12:14:03-08:00",
                 "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
                 "schema:schemaVersion": "1.6.0",
                 "schema:name": "Date",
@@ -7570,9 +7579,9 @@
                     "funderIdentifierSchemeIRI"
                 ],
                 "additionalProperties": false,
-                "pav:createdOn": "2021-02-17T10:51:30-08:00",
+                "pav:createdOn": "2021-02-17T12:14:03-08:00",
                 "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-                "pav:lastUpdatedOn": "2021-02-17T10:51:30-08:00",
+                "pav:lastUpdatedOn": "2021-02-17T12:14:03-08:00",
                 "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
                 "schema:schemaVersion": "1.6.0",
                 "schema:name": "Funding",
@@ -8065,9 +8074,9 @@
                     "variableSchemeIRI"
                 ],
                 "additionalProperties": false,
-                "pav:createdOn": "2021-02-17T10:51:30-08:00",
+                "pav:createdOn": "2021-02-17T12:14:03-08:00",
                 "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-                "pav:lastUpdatedOn": "2021-02-17T10:51:30-08:00",
+                "pav:lastUpdatedOn": "2021-02-17T12:14:03-08:00",
                 "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
                 "schema:schemaVersion": "1.6.0",
                 "schema:name": "Variable",
@@ -8560,9 +8569,9 @@
                     "dataSourceSchemeIRI"
                 ],
                 "additionalProperties": false,
-                "pav:createdOn": "2021-02-17T10:51:30-08:00",
+                "pav:createdOn": "2021-02-17T12:14:03-08:00",
                 "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-                "pav:lastUpdatedOn": "2021-02-17T10:51:30-08:00",
+                "pav:lastUpdatedOn": "2021-02-17T12:14:03-08:00",
                 "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
                 "schema:schemaVersion": "1.6.0",
                 "schema:name": "DataSource",
@@ -9055,16 +9064,16 @@
                     "dataStreamSchemeIRI"
                 ],
                 "additionalProperties": false,
-                "pav:createdOn": "2021-02-17T10:51:30-08:00",
+                "pav:createdOn": "2021-02-17T12:14:03-08:00",
                 "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-                "pav:lastUpdatedOn": "2021-02-17T10:51:30-08:00",
+                "pav:lastUpdatedOn": "2021-02-17T12:14:03-08:00",
                 "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
                 "schema:schemaVersion": "1.6.0",
                 "schema:name": "DataStream",
                 "schema:description": "A collection of one or more variable records originating from a single data source (e.g., sensor, process, or person). A data stream can grow over time.",
                 "pav:version": "0.0.1",
                 "bibo:status": "bibo:draft",
-                "skos:prefLabel": "Data Source",
+                "skos:prefLabel": "Data Stream",
                 "$schema": "http://json-schema.org/draft-04/schema#"
             }
         },
@@ -9512,9 +9521,9 @@
                 "southBoundLatitude",
                 "northBoundLatitude"
             ],
-            "pav:createdOn": "2021-02-17T10:51:30-08:00",
+            "pav:createdOn": "2021-02-17T12:14:03-08:00",
             "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-02-17T10:51:30-08:00",
+            "pav:lastUpdatedOn": "2021-02-17T12:14:03-08:00",
             "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
@@ -10094,9 +10103,9 @@
                 "verticalExtentDatum",
                 "verticalExtentDatumIRI"
             ],
-            "pav:createdOn": "2021-02-17T10:51:30-08:00",
+            "pav:createdOn": "2021-02-17T12:14:03-08:00",
             "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-02-17T10:51:30-08:00",
+            "pav:lastUpdatedOn": "2021-02-17T12:14:03-08:00",
             "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
@@ -10601,9 +10610,9 @@
                 "temporalResolution",
                 "duration"
             ],
-            "pav:createdOn": "2021-02-17T10:51:30-08:00",
+            "pav:createdOn": "2021-02-17T12:14:03-08:00",
             "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-02-17T10:51:30-08:00",
+            "pav:lastUpdatedOn": "2021-02-17T12:14:03-08:00",
             "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
@@ -10611,6 +10620,929 @@
             "bibo:status": "bibo:draft",
             "skos:prefLabel": "Temporal Coverage",
             "$schema": "http://json-schema.org/draft-04/schema#"
+        },
+        "Distribution": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "type": "object",
+                "@id": "https://repo.metadatacenter.org/template-elements/b68320bd-a840-4ffe-b11a-413f974d47f6",
+                "@type": "https://schema.metadatacenter.org/core/TemplateElement",
+                "@context": {
+                    "xsd": "http://www.w3.org/2001/XMLSchema#",
+                    "pav": "http://purl.org/pav/",
+                    "bibo": "http://purl.org/ontology/bibo/",
+                    "oslc": "http://open-services.net/ns/core#",
+                    "schema": "http://schema.org/",
+                    "schema:name": {
+                        "@type": "xsd:string"
+                    },
+                    "schema:description": {
+                        "@type": "xsd:string"
+                    },
+                    "pav:createdOn": {
+                        "@type": "xsd:dateTime"
+                    },
+                    "pav:createdBy": {
+                        "@type": "@id"
+                    },
+                    "pav:lastUpdatedOn": {
+                        "@type": "xsd:dateTime"
+                    },
+                    "oslc:modifiedBy": {
+                        "@type": "@id"
+                    }
+                },
+                "title": "Distribution field schema",
+                "description": "Distribution field schema generated by the CEDAR Template Editor 2.5.38",
+                "_ui": {
+                    "order": [
+                        "distributionIdentifier",
+                        "distributionIdentifierType",
+                        "distributionFormat",
+                        "distributionMediaType",
+                        "distributionSize",
+                        "distributionAccessProtocol",
+                        "distributionAccessConfiguration",
+                        "distributionQueryStatement"
+                    ],
+                    "propertyLabels": {
+                        "distributionIdentifier": "distributionIdentifier",
+                        "distributionIdentifierType": "distributionIdentifierType",
+                        "distributionFormat": "distributionFormat",
+                        "distributionMediaType": "DistributionMediaType",
+                        "distributionSize": "distributionSize",
+                        "distributionAccessProtocol": "distributionAccessProtocol",
+                        "distributionAccessConfiguration": "distributionAccessConfiguration",
+                        "distributionQueryStatement": "distributionQueryStatement"
+                    },
+                    "propertyDescriptions": {
+                        "distributionIdentifier": "A globally unique string that identifies the dataset distribution.",
+                        "distributionIdentifierType": "The identifier type used to identify the dataset distribution.",
+                        "distributionFormat": "An established standard to which the dataset distribution conforms to.",
+                        "distributionMediaType": "A media type, formerly known as a MIME type, of dataset distribution.",
+                        "distributionSize": "Total size of dataset distribution.",
+                        "distributionAccessProtocol": "The protocol used to access the dataset distribution.",
+                        "distributionAccessConfiguration": "The access protocol configuration for querying dataset distribution.",
+                        "distributionQueryStatement": "Technical statement(s) for querying dataset distribution."
+                    }
+                },
+                "properties": {
+                    "@context": {
+                        "type": "object",
+                        "properties": {
+                            "distributionIdentifier": {
+                                "enum": [
+                                    "http://vocab.fairdatacollective.org/gdmt/hasDistributionIdentifier"
+                                ]
+                            },
+                            "distributionIdentifierType": {
+                                "enum": [
+                                    "http://vocab.fairdatacollective.org/gdmt/hasDistributionIdentifierType"
+                                ]
+                            },
+                            "distributionFormat": {
+                                "enum": [
+                                    "http://purl.org/dc/terms/conformsTo"
+                                ]
+                            },
+                            "distributionMediaType": {
+                                "enum": [
+                                    "http://www.w3.org/ns/dcat#mediaType"
+                                ]
+                            },
+                            "distributionSize": {
+                                "enum": [
+                                    "http://vocab.fairdatacollective.org/gdmt/hasDistributionSize"
+                                ]
+                            },
+                            "distributionAccessProtocol": {
+                                "enum": [
+                                    "http://vocab.fairdatacollective.org/gdmt/hasDistributionAccessProtocol"
+                                ]
+                            },
+                            "distributionAccessConfiguration": {
+                                "enum": [
+                                    "http://vocab.fairdatacollective.org/gdmt/hasDistributionAccessConfiguration"
+                                ]
+                            },
+                            "distributionQueryStatement": {
+                                "enum": [
+                                    "http://vocab.fairdatacollective.org/gdmt/hasDistributionQueryStatement"
+                                ]
+                            }
+                        },
+                        "additionalProperties": false,
+                        "required": [
+                            "distributionIdentifier",
+                            "distributionIdentifierType",
+                            "distributionFormat",
+                            "distributionMediaType",
+                            "distributionSize",
+                            "distributionAccessProtocol",
+                            "distributionAccessConfiguration",
+                            "distributionQueryStatement"
+                        ]
+                    },
+                    "@id": {
+                        "type": "string",
+                        "format": "uri"
+                    },
+                    "@type": {
+                        "oneOf": [
+                            {
+                                "type": "string",
+                                "format": "uri"
+                            },
+                            {
+                                "type": "array",
+                                "minItems": 1,
+                                "items": {
+                                    "type": "string",
+                                    "format": "uri"
+                                },
+                                "uniqueItems": true
+                            }
+                        ]
+                    },
+                    "distributionIdentifier": {
+                        "@id": "https://repo.metadatacenter.org/template-fields/df33247c-769c-440d-8d38-ed89c1e0734b",
+                        "@type": "https://schema.metadatacenter.org/core/TemplateField",
+                        "@context": {
+                            "xsd": "http://www.w3.org/2001/XMLSchema#",
+                            "pav": "http://purl.org/pav/",
+                            "bibo": "http://purl.org/ontology/bibo/",
+                            "oslc": "http://open-services.net/ns/core#",
+                            "schema": "http://schema.org/",
+                            "skos": "http://www.w3.org/2004/02/skos/core#",
+                            "schema:name": {
+                                "@type": "xsd:string"
+                            },
+                            "schema:description": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:prefLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:altLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "pav:createdOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "pav:createdBy": {
+                                "@type": "@id"
+                            },
+                            "pav:lastUpdatedOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "oslc:modifiedBy": {
+                                "@type": "@id"
+                            }
+                        },
+                        "type": "object",
+                        "title": "distributionIdentifier field schema",
+                        "description": "distributionIdentifier field schema generated by the CEDAR Template Editor 2.5.38",
+                        "_ui": {
+                            "inputType": "textfield"
+                        },
+                        "_valueConstraints": {
+                            "requiredValue": false
+                        },
+                        "properties": {
+                            "@type": {
+                                "oneOf": [
+                                    {
+                                        "type": "string",
+                                        "format": "uri"
+                                    },
+                                    {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "string",
+                                            "format": "uri"
+                                        },
+                                        "uniqueItems": true
+                                    }
+                                ]
+                            },
+                            "@value": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "rdfs:label": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        },
+                        "required": [
+                            "@value"
+                        ],
+                        "schema:name": "distributionIdentifier",
+                        "schema:description": "A globally unique string that identifies the dataset distribution.",
+                        "pav:createdOn": "2021-02-17T12:12:42-08:00",
+                        "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "pav:lastUpdatedOn": "2021-02-17T12:12:42-08:00",
+                        "pav:version": "0.0.1",
+                        "bibo:status": "bibo:draft",
+                        "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "schema:schemaVersion": "1.6.0",
+                        "additionalProperties": false,
+                        "skos:prefLabel": "Distribution Identifier",
+                        "$schema": "http://json-schema.org/draft-04/schema#"
+                    },
+                    "distributionIdentifierType": {
+                        "@id": "https://repo.metadatacenter.org/template-fields/2e9067f0-1d64-4d3a-a355-455b66f5d0dd",
+                        "@type": "https://schema.metadatacenter.org/core/TemplateField",
+                        "@context": {
+                            "xsd": "http://www.w3.org/2001/XMLSchema#",
+                            "pav": "http://purl.org/pav/",
+                            "bibo": "http://purl.org/ontology/bibo/",
+                            "oslc": "http://open-services.net/ns/core#",
+                            "schema": "http://schema.org/",
+                            "skos": "http://www.w3.org/2004/02/skos/core#",
+                            "schema:name": {
+                                "@type": "xsd:string"
+                            },
+                            "schema:description": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:prefLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:altLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "pav:createdOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "pav:createdBy": {
+                                "@type": "@id"
+                            },
+                            "pav:lastUpdatedOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "oslc:modifiedBy": {
+                                "@type": "@id"
+                            }
+                        },
+                        "type": "object",
+                        "title": "distributionIdentifierType field schema",
+                        "description": "distributionIdentifierType field schema generated by the CEDAR Template Editor 2.5.38",
+                        "_ui": {
+                            "inputType": "textfield"
+                        },
+                        "_valueConstraints": {
+                            "requiredValue": false,
+                            "ontologies": [],
+                            "valueSets": [],
+                            "classes": [],
+                            "branches": [
+                                {
+                                    "source": "Ontology for Generic Dataset Metadata Template (FDC-GDMT)",
+                                    "acronym": "FDC-GDMT",
+                                    "uri": "http://vocab.fairdatacollective.org/gdmt/IdentifierType",
+                                    "name": "Identifier Type",
+                                    "maxDepth": 0
+                                }
+                            ],
+                            "multipleChoice": false
+                        },
+                        "properties": {
+                            "@type": {
+                                "oneOf": [
+                                    {
+                                        "type": "string",
+                                        "format": "uri"
+                                    },
+                                    {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "string",
+                                            "format": "uri"
+                                        },
+                                        "uniqueItems": true
+                                    }
+                                ]
+                            },
+                            "rdfs:label": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "@id": {
+                                "type": "string",
+                                "format": "uri"
+                            }
+                        },
+                        "schema:name": "distributionIdentifierType",
+                        "schema:description": "The identifier type used to identify the dataset distribution.",
+                        "pav:createdOn": "2021-02-17T12:12:42-08:00",
+                        "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "pav:lastUpdatedOn": "2021-02-17T12:12:42-08:00",
+                        "pav:version": "0.0.1",
+                        "bibo:status": "bibo:draft",
+                        "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "schema:schemaVersion": "1.6.0",
+                        "additionalProperties": false,
+                        "skos:prefLabel": "Distribution Identifier Type",
+                        "$schema": "http://json-schema.org/draft-04/schema#"
+                    },
+                    "distributionFormat": {
+                        "@id": "https://repo.metadatacenter.org/template-fields/160464ac-1fa5-449c-83eb-8294d268db03",
+                        "@type": "https://schema.metadatacenter.org/core/TemplateField",
+                        "@context": {
+                            "xsd": "http://www.w3.org/2001/XMLSchema#",
+                            "pav": "http://purl.org/pav/",
+                            "bibo": "http://purl.org/ontology/bibo/",
+                            "oslc": "http://open-services.net/ns/core#",
+                            "schema": "http://schema.org/",
+                            "skos": "http://www.w3.org/2004/02/skos/core#",
+                            "schema:name": {
+                                "@type": "xsd:string"
+                            },
+                            "schema:description": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:prefLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:altLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "pav:createdOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "pav:createdBy": {
+                                "@type": "@id"
+                            },
+                            "pav:lastUpdatedOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "oslc:modifiedBy": {
+                                "@type": "@id"
+                            }
+                        },
+                        "type": "object",
+                        "title": "distributionFormat field schema",
+                        "description": "distributionFormat field schema generated by the CEDAR Template Editor 2.5.38",
+                        "_ui": {
+                            "inputType": "textfield"
+                        },
+                        "_valueConstraints": {
+                            "requiredValue": false
+                        },
+                        "properties": {
+                            "@type": {
+                                "oneOf": [
+                                    {
+                                        "type": "string",
+                                        "format": "uri"
+                                    },
+                                    {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "string",
+                                            "format": "uri"
+                                        },
+                                        "uniqueItems": true
+                                    }
+                                ]
+                            },
+                            "@value": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "rdfs:label": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        },
+                        "required": [
+                            "@value"
+                        ],
+                        "schema:name": "distributionFormat",
+                        "schema:description": "An established standard to which the dataset distribution conforms to.",
+                        "pav:createdOn": "2021-02-17T12:12:42-08:00",
+                        "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "pav:lastUpdatedOn": "2021-02-17T12:12:42-08:00",
+                        "pav:version": "0.0.1",
+                        "bibo:status": "bibo:draft",
+                        "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "schema:schemaVersion": "1.6.0",
+                        "additionalProperties": false,
+                        "skos:prefLabel": "Distribution Format",
+                        "$schema": "http://json-schema.org/draft-04/schema#"
+                    },
+                    "distributionMediaType": {
+                        "@id": "https://repo.metadatacenter.org/template-fields/e3edbcf9-76f6-4579-bb8c-4dfa34edbcce",
+                        "@type": "https://schema.metadatacenter.org/core/TemplateField",
+                        "@context": {
+                            "xsd": "http://www.w3.org/2001/XMLSchema#",
+                            "pav": "http://purl.org/pav/",
+                            "bibo": "http://purl.org/ontology/bibo/",
+                            "oslc": "http://open-services.net/ns/core#",
+                            "schema": "http://schema.org/",
+                            "skos": "http://www.w3.org/2004/02/skos/core#",
+                            "schema:name": {
+                                "@type": "xsd:string"
+                            },
+                            "schema:description": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:prefLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:altLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "pav:createdOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "pav:createdBy": {
+                                "@type": "@id"
+                            },
+                            "pav:lastUpdatedOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "oslc:modifiedBy": {
+                                "@type": "@id"
+                            }
+                        },
+                        "type": "object",
+                        "title": "DistributionMediaType field schema",
+                        "description": "DistributionMediaType field schema generated by the CEDAR Template Editor 2.5.38",
+                        "_ui": {
+                            "inputType": "textfield"
+                        },
+                        "_valueConstraints": {
+                            "requiredValue": false,
+                            "ontologies": [],
+                            "valueSets": [],
+                            "classes": [],
+                            "branches": [
+                                {
+                                    "source": "Ontology for Generic Dataset Metadata Template (FDC-GDMT)",
+                                    "acronym": "FDC-GDMT",
+                                    "uri": "http://vocab.fairdatacollective.org/gdmt/MIMEType",
+                                    "name": "MIME Type",
+                                    "maxDepth": 0
+                                }
+                            ],
+                            "multipleChoice": false
+                        },
+                        "properties": {
+                            "@type": {
+                                "oneOf": [
+                                    {
+                                        "type": "string",
+                                        "format": "uri"
+                                    },
+                                    {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "string",
+                                            "format": "uri"
+                                        },
+                                        "uniqueItems": true
+                                    }
+                                ]
+                            },
+                            "rdfs:label": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "@id": {
+                                "type": "string",
+                                "format": "uri"
+                            }
+                        },
+                        "schema:name": "DistributionMediaType",
+                        "schema:description": "A media type, formerly known as a MIME type, of dataset distribution.",
+                        "pav:createdOn": "2021-02-17T12:12:42-08:00",
+                        "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "pav:lastUpdatedOn": "2021-02-17T12:12:42-08:00",
+                        "pav:version": "0.0.1",
+                        "bibo:status": "bibo:draft",
+                        "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "schema:schemaVersion": "1.6.0",
+                        "additionalProperties": false,
+                        "skos:prefLabel": "Distribution Media Type",
+                        "$schema": "http://json-schema.org/draft-04/schema#"
+                    },
+                    "distributionSize": {
+                        "@id": "https://repo.metadatacenter.org/template-fields/82291e6b-3270-43fc-9048-a3fa6ecbba85",
+                        "@type": "https://schema.metadatacenter.org/core/TemplateField",
+                        "@context": {
+                            "xsd": "http://www.w3.org/2001/XMLSchema#",
+                            "pav": "http://purl.org/pav/",
+                            "bibo": "http://purl.org/ontology/bibo/",
+                            "oslc": "http://open-services.net/ns/core#",
+                            "schema": "http://schema.org/",
+                            "skos": "http://www.w3.org/2004/02/skos/core#",
+                            "schema:name": {
+                                "@type": "xsd:string"
+                            },
+                            "schema:description": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:prefLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:altLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "pav:createdOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "pav:createdBy": {
+                                "@type": "@id"
+                            },
+                            "pav:lastUpdatedOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "oslc:modifiedBy": {
+                                "@type": "@id"
+                            }
+                        },
+                        "type": "object",
+                        "title": "distributionSize field schema",
+                        "description": "distributionSize field schema generated by the CEDAR Template Editor 2.5.38",
+                        "_ui": {
+                            "inputType": "textfield"
+                        },
+                        "_valueConstraints": {
+                            "requiredValue": false
+                        },
+                        "properties": {
+                            "@type": {
+                                "oneOf": [
+                                    {
+                                        "type": "string",
+                                        "format": "uri"
+                                    },
+                                    {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "string",
+                                            "format": "uri"
+                                        },
+                                        "uniqueItems": true
+                                    }
+                                ]
+                            },
+                            "@value": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "rdfs:label": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        },
+                        "required": [
+                            "@value"
+                        ],
+                        "schema:name": "distributionSize",
+                        "schema:description": "Total size of dataset distribution.",
+                        "pav:createdOn": "2021-02-17T12:12:42-08:00",
+                        "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "pav:lastUpdatedOn": "2021-02-17T12:12:42-08:00",
+                        "pav:version": "0.0.1",
+                        "bibo:status": "bibo:draft",
+                        "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "schema:schemaVersion": "1.6.0",
+                        "additionalProperties": false,
+                        "skos:prefLabel": "Distribution Size",
+                        "$schema": "http://json-schema.org/draft-04/schema#"
+                    },
+                    "distributionAccessProtocol": {
+                        "@id": "https://repo.metadatacenter.org/template-fields/031043b4-7baa-41b5-8303-de3c7bdf8749",
+                        "@type": "https://schema.metadatacenter.org/core/TemplateField",
+                        "@context": {
+                            "xsd": "http://www.w3.org/2001/XMLSchema#",
+                            "pav": "http://purl.org/pav/",
+                            "bibo": "http://purl.org/ontology/bibo/",
+                            "oslc": "http://open-services.net/ns/core#",
+                            "schema": "http://schema.org/",
+                            "skos": "http://www.w3.org/2004/02/skos/core#",
+                            "schema:name": {
+                                "@type": "xsd:string"
+                            },
+                            "schema:description": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:prefLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:altLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "pav:createdOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "pav:createdBy": {
+                                "@type": "@id"
+                            },
+                            "pav:lastUpdatedOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "oslc:modifiedBy": {
+                                "@type": "@id"
+                            }
+                        },
+                        "type": "object",
+                        "title": "distributionAccessProtocol field schema",
+                        "description": "distributionAccessProtocol field schema generated by the CEDAR Template Editor 2.5.38",
+                        "_ui": {
+                            "inputType": "textfield"
+                        },
+                        "_valueConstraints": {
+                            "requiredValue": false
+                        },
+                        "properties": {
+                            "@type": {
+                                "oneOf": [
+                                    {
+                                        "type": "string",
+                                        "format": "uri"
+                                    },
+                                    {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "string",
+                                            "format": "uri"
+                                        },
+                                        "uniqueItems": true
+                                    }
+                                ]
+                            },
+                            "@value": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "rdfs:label": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        },
+                        "required": [
+                            "@value"
+                        ],
+                        "schema:name": "distributionAccessProtocol",
+                        "schema:description": "The protocol used to access the dataset distribution.",
+                        "pav:createdOn": "2021-02-17T12:12:42-08:00",
+                        "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "pav:lastUpdatedOn": "2021-02-17T12:12:42-08:00",
+                        "pav:version": "0.0.1",
+                        "bibo:status": "bibo:draft",
+                        "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "schema:schemaVersion": "1.6.0",
+                        "additionalProperties": false,
+                        "skos:prefLabel": "Distribution Access Protocol",
+                        "$schema": "http://json-schema.org/draft-04/schema#"
+                    },
+                    "distributionAccessConfiguration": {
+                        "type": "array",
+                        "minItems": 1,
+                        "items": {
+                            "type": "object",
+                            "@id": "https://repo.metadatacenter.org/template-fields/c54283c7-94e6-47ea-8746-9421422bdc27",
+                            "@type": "https://schema.metadatacenter.org/core/TemplateField",
+                            "@context": {
+                                "xsd": "http://www.w3.org/2001/XMLSchema#",
+                                "pav": "http://purl.org/pav/",
+                                "bibo": "http://purl.org/ontology/bibo/",
+                                "oslc": "http://open-services.net/ns/core#",
+                                "schema": "http://schema.org/",
+                                "skos": "http://www.w3.org/2004/02/skos/core#",
+                                "schema:name": {
+                                    "@type": "xsd:string"
+                                },
+                                "schema:description": {
+                                    "@type": "xsd:string"
+                                },
+                                "skos:prefLabel": {
+                                    "@type": "xsd:string"
+                                },
+                                "skos:altLabel": {
+                                    "@type": "xsd:string"
+                                },
+                                "pav:createdOn": {
+                                    "@type": "xsd:dateTime"
+                                },
+                                "pav:createdBy": {
+                                    "@type": "@id"
+                                },
+                                "pav:lastUpdatedOn": {
+                                    "@type": "xsd:dateTime"
+                                },
+                                "oslc:modifiedBy": {
+                                    "@type": "@id"
+                                }
+                            },
+                            "title": "distributionAccessConfiguration field schema",
+                            "description": "distributionAccessConfiguration field schema generated by the CEDAR Template Editor 2.5.38",
+                            "_ui": {
+                                "inputType": "textfield"
+                            },
+                            "_valueConstraints": {
+                                "requiredValue": false
+                            },
+                            "properties": {
+                                "@type": {
+                                    "oneOf": [
+                                        {
+                                            "type": "string",
+                                            "format": "uri"
+                                        },
+                                        {
+                                            "type": "array",
+                                            "minItems": 1,
+                                            "items": {
+                                                "type": "string",
+                                                "format": "uri"
+                                            },
+                                            "uniqueItems": true
+                                        }
+                                    ]
+                                },
+                                "@value": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "rdfs:label": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            },
+                            "required": [
+                                "@value"
+                            ],
+                            "additionalProperties": false,
+                            "pav:createdOn": "2021-02-17T12:12:42-08:00",
+                            "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                            "pav:lastUpdatedOn": "2021-02-17T12:12:42-08:00",
+                            "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                            "schema:schemaVersion": "1.6.0",
+                            "schema:name": "distributionAccessConfiguration",
+                            "schema:description": "The access protocol configuration for querying dataset distribution.",
+                            "pav:version": "0.0.1",
+                            "bibo:status": "bibo:draft",
+                            "skos:prefLabel": "Distribution Access Configuration",
+                            "$schema": "http://json-schema.org/draft-04/schema#"
+                        }
+                    },
+                    "distributionQueryStatement": {
+                        "type": "array",
+                        "minItems": 1,
+                        "items": {
+                            "type": "object",
+                            "@id": "https://repo.metadatacenter.org/template-fields/753e530f-c927-4d64-8a49-9142608265bf",
+                            "@type": "https://schema.metadatacenter.org/core/TemplateField",
+                            "@context": {
+                                "xsd": "http://www.w3.org/2001/XMLSchema#",
+                                "pav": "http://purl.org/pav/",
+                                "bibo": "http://purl.org/ontology/bibo/",
+                                "oslc": "http://open-services.net/ns/core#",
+                                "schema": "http://schema.org/",
+                                "skos": "http://www.w3.org/2004/02/skos/core#",
+                                "schema:name": {
+                                    "@type": "xsd:string"
+                                },
+                                "schema:description": {
+                                    "@type": "xsd:string"
+                                },
+                                "skos:prefLabel": {
+                                    "@type": "xsd:string"
+                                },
+                                "skos:altLabel": {
+                                    "@type": "xsd:string"
+                                },
+                                "pav:createdOn": {
+                                    "@type": "xsd:dateTime"
+                                },
+                                "pav:createdBy": {
+                                    "@type": "@id"
+                                },
+                                "pav:lastUpdatedOn": {
+                                    "@type": "xsd:dateTime"
+                                },
+                                "oslc:modifiedBy": {
+                                    "@type": "@id"
+                                }
+                            },
+                            "title": "distributionQueryStatement field schema",
+                            "description": "distributionQueryStatement field schema generated by the CEDAR Template Editor 2.5.38",
+                            "_ui": {
+                                "inputType": "textfield"
+                            },
+                            "_valueConstraints": {
+                                "requiredValue": false
+                            },
+                            "properties": {
+                                "@type": {
+                                    "oneOf": [
+                                        {
+                                            "type": "string",
+                                            "format": "uri"
+                                        },
+                                        {
+                                            "type": "array",
+                                            "minItems": 1,
+                                            "items": {
+                                                "type": "string",
+                                                "format": "uri"
+                                            },
+                                            "uniqueItems": true
+                                        }
+                                    ]
+                                },
+                                "@value": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "rdfs:label": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            },
+                            "required": [
+                                "@value"
+                            ],
+                            "additionalProperties": false,
+                            "pav:createdOn": "2021-02-17T12:12:42-08:00",
+                            "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                            "pav:lastUpdatedOn": "2021-02-17T12:12:42-08:00",
+                            "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                            "schema:schemaVersion": "1.6.0",
+                            "schema:name": "distributionQueryStatement",
+                            "schema:description": "Technical statement(s) for querying dataset distribution.",
+                            "pav:version": "0.0.1",
+                            "bibo:status": "bibo:draft",
+                            "skos:prefLabel": "Distribution Query Statement",
+                            "$schema": "http://json-schema.org/draft-04/schema#"
+                        }
+                    }
+                },
+                "required": [
+                    "@context",
+                    "@id",
+                    "distributionIdentifier",
+                    "distributionIdentifierType",
+                    "distributionFormat",
+                    "distributionMediaType",
+                    "distributionSize",
+                    "distributionAccessProtocol",
+                    "distributionAccessConfiguration",
+                    "distributionQueryStatement"
+                ],
+                "additionalProperties": false,
+                "pav:createdOn": "2021-02-17T12:14:03-08:00",
+                "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                "pav:lastUpdatedOn": "2021-02-17T12:14:03-08:00",
+                "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                "schema:schemaVersion": "1.6.0",
+                "schema:name": "Distribution",
+                "schema:description": "Details about the distribution for this individual public presentation of the dataset (if part of the Distribution metadata), or for all the public presentations of the dataset being described (if part of the Dataset metadata).",
+                "pav:version": "0.0.1",
+                "bibo:status": "bibo:draft",
+                "skos:prefLabel": "Distribution",
+                "$schema": "http://json-schema.org/draft-04/schema#"
+            }
         }
     },
     "required": [
@@ -10640,13 +11572,14 @@
         "DataStream",
         "SpatialCoverage",
         "VerticalCoverage",
-        "TemporalCoverage"
+        "TemporalCoverage",
+        "Distribution"
     ],
     "schema:name": "Generic Metadata Template",
     "schema:description": "",
     "pav:createdOn": "2021-02-16T07:39:21-08:00",
     "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-    "pav:lastUpdatedOn": "2021-02-17T10:51:30-08:00",
+    "pav:lastUpdatedOn": "2021-02-17T12:14:03-08:00",
     "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
     "schema:schemaVersion": "1.6.0",
     "additionalProperties": false,
