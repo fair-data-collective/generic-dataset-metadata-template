@@ -42,7 +42,8 @@
             "Creator",
             "Contributor",
             "Rights",
-            "Date"
+            "Date",
+            "Funding"
         ],
         "propertyLabels": {
             "ResourceType": "ResourceType",
@@ -55,7 +56,8 @@
             "Creator": "Creator",
             "Contributor": "Contributor",
             "Rights": "Rights",
-            "Date": "Date"
+            "Date": "Date",
+            "Funding": "Funding"
         },
         "propertyDescriptions": {
             "ResourceType": "Information about the type of the resource being described with metadata.",
@@ -68,7 +70,8 @@
             "Creator": "An entity that brought into existence the dataset being described. Creators can be people, organizations and/or physical or virtual infrastructure (e.g., sensors, software).",
             "Contributor": "An entity that contributed in bringing into existence the dataset being described. Contributors can be people, organizations and/or physical or virtual infrastructure (e.g., sensors, software).",
             "Rights": "Ways in which the dataset may or may not be accessed and used.",
-            "Date": "Relevant dates related to the resource being described. One instance of date must be of datsetDateType=Published."
+            "Date": "Relevant dates related to the resource being described. One instance of date must be of datsetDateType=Published.",
+            "Funding": "The sources of funding that enabled and drove the creation of the dataset. (Non-monetary sources are described under Contributor.)"
         }
     },
     "properties": {
@@ -281,6 +284,11 @@
                     "enum": [
                         "http://vocab.fairdatacollective.org/gdmt/hasDateInfo"
                     ]
+                },
+                "Funding": {
+                    "enum": [
+                        "http://vocab.fairdatacollective.org/gdmt/hasFundingInfo"
+                    ]
                 }
             },
             "required": [
@@ -305,7 +313,8 @@
                 "Creator",
                 "Contributor",
                 "Rights",
-                "Date"
+                "Date",
+                "Funding"
             ],
             "additionalProperties": false
         },
@@ -666,9 +675,9 @@
                 "resourceTypeCategory",
                 "resourceTypeDetail"
             ],
-            "pav:createdOn": "2021-02-17T09:26:32-08:00",
+            "pav:createdOn": "2021-02-17T09:36:51-08:00",
             "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-02-17T09:26:32-08:00",
+            "pav:lastUpdatedOn": "2021-02-17T09:36:51-08:00",
             "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
@@ -969,9 +978,9 @@
                 "datasetIdentifier",
                 "datasetIdentifierType"
             ],
-            "pav:createdOn": "2021-02-17T09:26:32-08:00",
+            "pav:createdOn": "2021-02-17T09:36:51-08:00",
             "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-02-17T09:26:32-08:00",
+            "pav:lastUpdatedOn": "2021-02-17T09:36:51-08:00",
             "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
@@ -1491,9 +1500,9 @@
                     "relationType"
                 ],
                 "additionalProperties": false,
-                "pav:createdOn": "2021-02-17T09:26:32-08:00",
+                "pav:createdOn": "2021-02-17T09:36:51-08:00",
                 "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-                "pav:lastUpdatedOn": "2021-02-17T09:26:32-08:00",
+                "pav:lastUpdatedOn": "2021-02-17T09:36:51-08:00",
                 "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
                 "schema:schemaVersion": "1.6.0",
                 "schema:name": "RelatedResources",
@@ -1584,9 +1593,9 @@
             ],
             "schema:name": "version",
             "schema:description": "The string identifying the version of the dataset or other object being described.",
-            "pav:createdOn": "2021-02-17T09:26:32-08:00",
+            "pav:createdOn": "2021-02-17T09:36:51-08:00",
             "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-02-17T09:26:32-08:00",
+            "pav:lastUpdatedOn": "2021-02-17T09:36:51-08:00",
             "pav:version": "0.0.1",
             "bibo:status": "bibo:draft",
             "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
@@ -1891,9 +1900,9 @@
                 "primaryLanguage",
                 "language"
             ],
-            "pav:createdOn": "2021-02-17T09:26:32-08:00",
+            "pav:createdOn": "2021-02-17T09:36:51-08:00",
             "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-02-17T09:26:32-08:00",
+            "pav:lastUpdatedOn": "2021-02-17T09:36:51-08:00",
             "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
@@ -2193,9 +2202,9 @@
                     "language"
                 ],
                 "additionalProperties": false,
-                "pav:createdOn": "2021-02-17T09:26:32-08:00",
+                "pav:createdOn": "2021-02-17T09:36:51-08:00",
                 "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-                "pav:lastUpdatedOn": "2021-02-17T09:26:32-08:00",
+                "pav:lastUpdatedOn": "2021-02-17T09:36:51-08:00",
                 "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
                 "schema:schemaVersion": "1.6.0",
                 "schema:name": "Title",
@@ -2892,9 +2901,9 @@
                 "Subject",
                 "keyword"
             ],
-            "pav:createdOn": "2021-02-17T09:26:32-08:00",
+            "pav:createdOn": "2021-02-17T09:36:51-08:00",
             "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-02-17T09:26:32-08:00",
+            "pav:lastUpdatedOn": "2021-02-17T09:36:51-08:00",
             "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
@@ -4442,9 +4451,9 @@
                     "CreatorIdentifier"
                 ],
                 "additionalProperties": false,
-                "pav:createdOn": "2021-02-17T09:26:32-08:00",
+                "pav:createdOn": "2021-02-17T09:36:51-08:00",
                 "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-                "pav:lastUpdatedOn": "2021-02-17T09:26:32-08:00",
+                "pav:lastUpdatedOn": "2021-02-17T09:36:51-08:00",
                 "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
                 "schema:schemaVersion": "1.6.0",
                 "schema:name": "Creator",
@@ -6001,9 +6010,9 @@
                     "ContributorAffiliation"
                 ],
                 "additionalProperties": false,
-                "pav:createdOn": "2021-02-17T09:26:32-08:00",
+                "pav:createdOn": "2021-02-17T09:36:51-08:00",
                 "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-                "pav:lastUpdatedOn": "2021-02-17T09:26:32-08:00",
+                "pav:lastUpdatedOn": "2021-02-17T09:36:51-08:00",
                 "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
                 "schema:schemaVersion": "1.6.0",
                 "schema:name": "Contributor",
@@ -6404,9 +6413,9 @@
                 "licenseIdentifier",
                 "licenseText"
             ],
-            "pav:createdOn": "2021-02-17T09:26:32-08:00",
+            "pav:createdOn": "2021-02-17T09:36:51-08:00",
             "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-            "pav:lastUpdatedOn": "2021-02-17T09:26:32-08:00",
+            "pav:lastUpdatedOn": "2021-02-17T09:36:51-08:00",
             "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
             "schema:schemaVersion": "1.6.0",
             "additionalProperties": false,
@@ -6709,9 +6718,9 @@
                     "datasetDate"
                 ],
                 "additionalProperties": false,
-                "pav:createdOn": "2021-02-17T09:26:32-08:00",
+                "pav:createdOn": "2021-02-17T09:36:51-08:00",
                 "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-                "pav:lastUpdatedOn": "2021-02-17T09:26:32-08:00",
+                "pav:lastUpdatedOn": "2021-02-17T09:36:51-08:00",
                 "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
                 "schema:schemaVersion": "1.6.0",
                 "schema:name": "Date",
@@ -6719,6 +6728,804 @@
                 "pav:version": "0.0.1",
                 "bibo:status": "bibo:draft",
                 "skos:prefLabel": "Date",
+                "$schema": "http://json-schema.org/draft-04/schema#"
+            }
+        },
+        "Funding": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "type": "object",
+                "@id": "https://repo.metadatacenter.org/template-elements/b1a3fec1-27b2-4e1b-acbe-8b4f3d6a3c99",
+                "@type": "https://schema.metadatacenter.org/core/TemplateElement",
+                "@context": {
+                    "xsd": "http://www.w3.org/2001/XMLSchema#",
+                    "pav": "http://purl.org/pav/",
+                    "bibo": "http://purl.org/ontology/bibo/",
+                    "oslc": "http://open-services.net/ns/core#",
+                    "schema": "http://schema.org/",
+                    "schema:name": {
+                        "@type": "xsd:string"
+                    },
+                    "schema:description": {
+                        "@type": "xsd:string"
+                    },
+                    "pav:createdOn": {
+                        "@type": "xsd:dateTime"
+                    },
+                    "pav:createdBy": {
+                        "@type": "@id"
+                    },
+                    "pav:lastUpdatedOn": {
+                        "@type": "xsd:dateTime"
+                    },
+                    "oslc:modifiedBy": {
+                        "@type": "@id"
+                    }
+                },
+                "title": "Funding field schema",
+                "description": "Funding field schema generated by the CEDAR Template Editor 2.5.38",
+                "_ui": {
+                    "order": [
+                        "awardTitle",
+                        "awardPageIRI",
+                        "awardLocalIdentifier",
+                        "funderName",
+                        "funderIdentifier",
+                        "funderIdentifierScheme",
+                        "funderIdentifierSchemeIRI"
+                    ],
+                    "propertyLabels": {
+                        "awardTitle": "awardTitle",
+                        "awardPageIRI": "awardPageIRI",
+                        "awardLocalIdentifier": "awardLocalIdentifier",
+                        "funderName": "funderName",
+                        "funderIdentifier": "funderIdentifier",
+                        "funderIdentifierScheme": "funderIdentifierScheme",
+                        "funderIdentifierSchemeIRI": "has Funder Identifier Scheme IRI"
+                    },
+                    "propertyDescriptions": {
+                        "awardTitle": "The human readable title of the award, grant, or other specific funding mechanism for the described dataset.",
+                        "awardPageIRI": "The IRI leading to a page provided by the funder for more information about the award (grant).",
+                        "awardLocalIdentifier": "The code assigned by the funding provider to a sponsored award (grant). (Can be an IRI, but typically is not.)",
+                        "funderName": "Name of the organization providing the funding for the described dataset ('funding provider').",
+                        "funderIdentifier": "Globally unique string that identifies the funding provider.",
+                        "funderIdentifierScheme": "Name of the schema for the funderIdentifier.",
+                        "funderIdentifierSchemeIRI": "IRI of the schema for the funder identifier."
+                    }
+                },
+                "properties": {
+                    "@context": {
+                        "type": "object",
+                        "properties": {
+                            "awardTitle": {
+                                "enum": [
+                                    "http://vocab.fairdatacollective.org/gdmt/hasAwardTitle"
+                                ]
+                            },
+                            "awardPageIRI": {
+                                "enum": [
+                                    "http://vocab.fairdatacollective.org/gdmt/hasAwardPageIRI"
+                                ]
+                            },
+                            "awardLocalIdentifier": {
+                                "enum": [
+                                    "http://vocab.fairdatacollective.org/gdmt/hasAwardLocalIdentifier"
+                                ]
+                            },
+                            "funderName": {
+                                "enum": [
+                                    "http://vocab.fairdatacollective.org/gdmt/hasFunderName"
+                                ]
+                            },
+                            "funderIdentifier": {
+                                "enum": [
+                                    "http://vocab.fairdatacollective.org/gdmt/hasFunderIdentifier"
+                                ]
+                            },
+                            "funderIdentifierScheme": {
+                                "enum": [
+                                    "http://vocab.fairdatacollective.org/gdmt/hasFunderIdentifierScheme"
+                                ]
+                            },
+                            "funderIdentifierSchemeIRI": {
+                                "enum": [
+                                    "http://vocab.fairdatacollective.org/gdmt/hasFunderIdentifierSchemeIRI"
+                                ]
+                            }
+                        },
+                        "additionalProperties": false,
+                        "required": [
+                            "awardTitle",
+                            "awardPageIRI",
+                            "awardLocalIdentifier",
+                            "funderName",
+                            "funderIdentifier",
+                            "funderIdentifierScheme",
+                            "funderIdentifierSchemeIRI"
+                        ]
+                    },
+                    "@id": {
+                        "type": "string",
+                        "format": "uri"
+                    },
+                    "@type": {
+                        "oneOf": [
+                            {
+                                "type": "string",
+                                "format": "uri"
+                            },
+                            {
+                                "type": "array",
+                                "minItems": 1,
+                                "items": {
+                                    "type": "string",
+                                    "format": "uri"
+                                },
+                                "uniqueItems": true
+                            }
+                        ]
+                    },
+                    "awardTitle": {
+                        "@id": "https://repo.metadatacenter.org/template-fields/57656bad-5889-4211-8f3e-de946ab3642e",
+                        "@type": "https://schema.metadatacenter.org/core/TemplateField",
+                        "@context": {
+                            "xsd": "http://www.w3.org/2001/XMLSchema#",
+                            "pav": "http://purl.org/pav/",
+                            "bibo": "http://purl.org/ontology/bibo/",
+                            "oslc": "http://open-services.net/ns/core#",
+                            "schema": "http://schema.org/",
+                            "skos": "http://www.w3.org/2004/02/skos/core#",
+                            "schema:name": {
+                                "@type": "xsd:string"
+                            },
+                            "schema:description": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:prefLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:altLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "pav:createdOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "pav:createdBy": {
+                                "@type": "@id"
+                            },
+                            "pav:lastUpdatedOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "oslc:modifiedBy": {
+                                "@type": "@id"
+                            }
+                        },
+                        "type": "object",
+                        "title": "awardTitle field schema",
+                        "description": "awardTitle field schema generated by the CEDAR Template Editor 2.5.38",
+                        "_ui": {
+                            "inputType": "textfield"
+                        },
+                        "_valueConstraints": {
+                            "requiredValue": false
+                        },
+                        "properties": {
+                            "@type": {
+                                "oneOf": [
+                                    {
+                                        "type": "string",
+                                        "format": "uri"
+                                    },
+                                    {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "string",
+                                            "format": "uri"
+                                        },
+                                        "uniqueItems": true
+                                    }
+                                ]
+                            },
+                            "@value": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "rdfs:label": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        },
+                        "required": [
+                            "@value"
+                        ],
+                        "schema:name": "awardTitle",
+                        "schema:description": "The human readable title of the award, grant, or other specific funding mechanism for the described dataset.",
+                        "pav:createdOn": "2021-02-17T09:35:55-08:00",
+                        "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "pav:lastUpdatedOn": "2021-02-17T09:35:55-08:00",
+                        "pav:version": "0.0.1",
+                        "bibo:status": "bibo:draft",
+                        "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "schema:schemaVersion": "1.6.0",
+                        "additionalProperties": false,
+                        "skos:prefLabel": "Award Title",
+                        "$schema": "http://json-schema.org/draft-04/schema#"
+                    },
+                    "awardPageIRI": {
+                        "@id": "https://repo.metadatacenter.org/template-fields/09cdb0aa-14b3-49cb-bfad-802f3b60a810",
+                        "@type": "https://schema.metadatacenter.org/core/TemplateField",
+                        "@context": {
+                            "xsd": "http://www.w3.org/2001/XMLSchema#",
+                            "pav": "http://purl.org/pav/",
+                            "bibo": "http://purl.org/ontology/bibo/",
+                            "oslc": "http://open-services.net/ns/core#",
+                            "schema": "http://schema.org/",
+                            "skos": "http://www.w3.org/2004/02/skos/core#",
+                            "schema:name": {
+                                "@type": "xsd:string"
+                            },
+                            "schema:description": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:prefLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:altLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "pav:createdOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "pav:createdBy": {
+                                "@type": "@id"
+                            },
+                            "pav:lastUpdatedOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "oslc:modifiedBy": {
+                                "@type": "@id"
+                            }
+                        },
+                        "type": "object",
+                        "title": "awardPageIRI field schema",
+                        "description": "awardPageIRI field schema generated by the CEDAR Template Editor 2.5.38",
+                        "_ui": {
+                            "inputType": "textfield"
+                        },
+                        "_valueConstraints": {
+                            "requiredValue": false
+                        },
+                        "properties": {
+                            "@type": {
+                                "oneOf": [
+                                    {
+                                        "type": "string",
+                                        "format": "uri"
+                                    },
+                                    {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "string",
+                                            "format": "uri"
+                                        },
+                                        "uniqueItems": true
+                                    }
+                                ]
+                            },
+                            "@value": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "rdfs:label": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        },
+                        "required": [
+                            "@value"
+                        ],
+                        "schema:name": "awardPageIRI",
+                        "schema:description": "The IRI leading to a page provided by the funder for more information about the award (grant).",
+                        "pav:createdOn": "2021-02-17T09:35:55-08:00",
+                        "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "pav:lastUpdatedOn": "2021-02-17T09:35:55-08:00",
+                        "pav:version": "0.0.1",
+                        "bibo:status": "bibo:draft",
+                        "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "schema:schemaVersion": "1.6.0",
+                        "additionalProperties": false,
+                        "skos:prefLabel": "Award Page IRI",
+                        "$schema": "http://json-schema.org/draft-04/schema#"
+                    },
+                    "awardLocalIdentifier": {
+                        "@id": "https://repo.metadatacenter.org/template-fields/9be2e644-def4-4f7e-9cf5-d083b519a48a",
+                        "@type": "https://schema.metadatacenter.org/core/TemplateField",
+                        "@context": {
+                            "xsd": "http://www.w3.org/2001/XMLSchema#",
+                            "pav": "http://purl.org/pav/",
+                            "bibo": "http://purl.org/ontology/bibo/",
+                            "oslc": "http://open-services.net/ns/core#",
+                            "schema": "http://schema.org/",
+                            "skos": "http://www.w3.org/2004/02/skos/core#",
+                            "schema:name": {
+                                "@type": "xsd:string"
+                            },
+                            "schema:description": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:prefLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:altLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "pav:createdOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "pav:createdBy": {
+                                "@type": "@id"
+                            },
+                            "pav:lastUpdatedOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "oslc:modifiedBy": {
+                                "@type": "@id"
+                            }
+                        },
+                        "type": "object",
+                        "title": "awardLocalIdentifier field schema",
+                        "description": "awardLocalIdentifier field schema generated by the CEDAR Template Editor 2.5.38",
+                        "_ui": {
+                            "inputType": "textfield"
+                        },
+                        "_valueConstraints": {
+                            "requiredValue": false
+                        },
+                        "properties": {
+                            "@type": {
+                                "oneOf": [
+                                    {
+                                        "type": "string",
+                                        "format": "uri"
+                                    },
+                                    {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "string",
+                                            "format": "uri"
+                                        },
+                                        "uniqueItems": true
+                                    }
+                                ]
+                            },
+                            "@value": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "rdfs:label": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        },
+                        "required": [
+                            "@value"
+                        ],
+                        "schema:name": "awardLocalIdentifier",
+                        "schema:description": "The code assigned by the funding provider to a sponsored award (grant). (Can be an IRI, but typically is not.)",
+                        "pav:createdOn": "2021-02-17T09:35:55-08:00",
+                        "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "pav:lastUpdatedOn": "2021-02-17T09:35:55-08:00",
+                        "pav:version": "0.0.1",
+                        "bibo:status": "bibo:draft",
+                        "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "schema:schemaVersion": "1.6.0",
+                        "additionalProperties": false,
+                        "skos:prefLabel": "Award Local Identifier",
+                        "$schema": "http://json-schema.org/draft-04/schema#"
+                    },
+                    "funderName": {
+                        "@id": "https://repo.metadatacenter.org/template-fields/665c9ea0-eb8e-4944-8a7f-0e5b34c5f093",
+                        "@type": "https://schema.metadatacenter.org/core/TemplateField",
+                        "@context": {
+                            "xsd": "http://www.w3.org/2001/XMLSchema#",
+                            "pav": "http://purl.org/pav/",
+                            "bibo": "http://purl.org/ontology/bibo/",
+                            "oslc": "http://open-services.net/ns/core#",
+                            "schema": "http://schema.org/",
+                            "skos": "http://www.w3.org/2004/02/skos/core#",
+                            "schema:name": {
+                                "@type": "xsd:string"
+                            },
+                            "schema:description": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:prefLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:altLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "pav:createdOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "pav:createdBy": {
+                                "@type": "@id"
+                            },
+                            "pav:lastUpdatedOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "oslc:modifiedBy": {
+                                "@type": "@id"
+                            }
+                        },
+                        "type": "object",
+                        "title": "funderName field schema",
+                        "description": "funderName field schema generated by the CEDAR Template Editor 2.5.38",
+                        "_ui": {
+                            "inputType": "textfield"
+                        },
+                        "_valueConstraints": {
+                            "requiredValue": false
+                        },
+                        "properties": {
+                            "@type": {
+                                "oneOf": [
+                                    {
+                                        "type": "string",
+                                        "format": "uri"
+                                    },
+                                    {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "string",
+                                            "format": "uri"
+                                        },
+                                        "uniqueItems": true
+                                    }
+                                ]
+                            },
+                            "@value": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "rdfs:label": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        },
+                        "required": [
+                            "@value"
+                        ],
+                        "schema:name": "funderName",
+                        "schema:description": "Name of the organization providing the funding for the described dataset ('funding provider').",
+                        "pav:createdOn": "2021-02-17T09:35:55-08:00",
+                        "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "pav:lastUpdatedOn": "2021-02-17T09:35:55-08:00",
+                        "pav:version": "0.0.1",
+                        "bibo:status": "bibo:draft",
+                        "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "schema:schemaVersion": "1.6.0",
+                        "additionalProperties": false,
+                        "skos:prefLabel": "Funder Name",
+                        "$schema": "http://json-schema.org/draft-04/schema#"
+                    },
+                    "funderIdentifier": {
+                        "@id": "https://repo.metadatacenter.org/template-fields/de6c763e-514b-4a9e-a009-c0ec0d7bc481",
+                        "@type": "https://schema.metadatacenter.org/core/TemplateField",
+                        "@context": {
+                            "xsd": "http://www.w3.org/2001/XMLSchema#",
+                            "pav": "http://purl.org/pav/",
+                            "bibo": "http://purl.org/ontology/bibo/",
+                            "oslc": "http://open-services.net/ns/core#",
+                            "schema": "http://schema.org/",
+                            "skos": "http://www.w3.org/2004/02/skos/core#",
+                            "schema:name": {
+                                "@type": "xsd:string"
+                            },
+                            "schema:description": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:prefLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:altLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "pav:createdOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "pav:createdBy": {
+                                "@type": "@id"
+                            },
+                            "pav:lastUpdatedOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "oslc:modifiedBy": {
+                                "@type": "@id"
+                            }
+                        },
+                        "type": "object",
+                        "title": "funderIdentifier field schema",
+                        "description": "funderIdentifier field schema generated by the CEDAR Template Editor 2.5.38",
+                        "_ui": {
+                            "inputType": "textfield"
+                        },
+                        "_valueConstraints": {
+                            "requiredValue": false
+                        },
+                        "properties": {
+                            "@type": {
+                                "oneOf": [
+                                    {
+                                        "type": "string",
+                                        "format": "uri"
+                                    },
+                                    {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "string",
+                                            "format": "uri"
+                                        },
+                                        "uniqueItems": true
+                                    }
+                                ]
+                            },
+                            "@value": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "rdfs:label": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        },
+                        "required": [
+                            "@value"
+                        ],
+                        "schema:name": "funderIdentifier",
+                        "schema:description": "Globally unique string that identifies the funding provider.",
+                        "pav:createdOn": "2021-02-17T09:35:55-08:00",
+                        "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "pav:lastUpdatedOn": "2021-02-17T09:35:55-08:00",
+                        "pav:version": "0.0.1",
+                        "bibo:status": "bibo:draft",
+                        "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "schema:schemaVersion": "1.6.0",
+                        "additionalProperties": false,
+                        "skos:prefLabel": "Funder Identifier",
+                        "$schema": "http://json-schema.org/draft-04/schema#"
+                    },
+                    "funderIdentifierScheme": {
+                        "@id": "https://repo.metadatacenter.org/template-fields/d38047b7-0303-4466-a7fb-4223143a43a5",
+                        "@type": "https://schema.metadatacenter.org/core/TemplateField",
+                        "@context": {
+                            "xsd": "http://www.w3.org/2001/XMLSchema#",
+                            "pav": "http://purl.org/pav/",
+                            "bibo": "http://purl.org/ontology/bibo/",
+                            "oslc": "http://open-services.net/ns/core#",
+                            "schema": "http://schema.org/",
+                            "skos": "http://www.w3.org/2004/02/skos/core#",
+                            "schema:name": {
+                                "@type": "xsd:string"
+                            },
+                            "schema:description": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:prefLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:altLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "pav:createdOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "pav:createdBy": {
+                                "@type": "@id"
+                            },
+                            "pav:lastUpdatedOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "oslc:modifiedBy": {
+                                "@type": "@id"
+                            }
+                        },
+                        "type": "object",
+                        "title": "funderIdentifierScheme field schema",
+                        "description": "funderIdentifierScheme field schema generated by the CEDAR Template Editor 2.5.38",
+                        "_ui": {
+                            "inputType": "textfield"
+                        },
+                        "_valueConstraints": {
+                            "requiredValue": false
+                        },
+                        "properties": {
+                            "@type": {
+                                "oneOf": [
+                                    {
+                                        "type": "string",
+                                        "format": "uri"
+                                    },
+                                    {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "string",
+                                            "format": "uri"
+                                        },
+                                        "uniqueItems": true
+                                    }
+                                ]
+                            },
+                            "@value": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "rdfs:label": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        },
+                        "required": [
+                            "@value"
+                        ],
+                        "schema:name": "funderIdentifierScheme",
+                        "schema:description": "Name of the schema for the funderIdentifier.",
+                        "pav:createdOn": "2021-02-17T09:35:55-08:00",
+                        "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "pav:lastUpdatedOn": "2021-02-17T09:35:55-08:00",
+                        "pav:version": "0.0.1",
+                        "bibo:status": "bibo:draft",
+                        "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "schema:schemaVersion": "1.6.0",
+                        "additionalProperties": false,
+                        "skos:prefLabel": "Funder Identifier Scheme",
+                        "$schema": "http://json-schema.org/draft-04/schema#"
+                    },
+                    "funderIdentifierSchemeIRI": {
+                        "@id": "https://repo.metadatacenter.org/template-fields/23be6817-d0c2-4862-bf3c-ffe0d395e774",
+                        "@type": "https://schema.metadatacenter.org/core/TemplateField",
+                        "@context": {
+                            "xsd": "http://www.w3.org/2001/XMLSchema#",
+                            "pav": "http://purl.org/pav/",
+                            "bibo": "http://purl.org/ontology/bibo/",
+                            "oslc": "http://open-services.net/ns/core#",
+                            "schema": "http://schema.org/",
+                            "skos": "http://www.w3.org/2004/02/skos/core#",
+                            "schema:name": {
+                                "@type": "xsd:string"
+                            },
+                            "schema:description": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:prefLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "skos:altLabel": {
+                                "@type": "xsd:string"
+                            },
+                            "pav:createdOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "pav:createdBy": {
+                                "@type": "@id"
+                            },
+                            "pav:lastUpdatedOn": {
+                                "@type": "xsd:dateTime"
+                            },
+                            "oslc:modifiedBy": {
+                                "@type": "@id"
+                            }
+                        },
+                        "type": "object",
+                        "title": "has Funder Identifier Scheme IRI field schema",
+                        "description": "has Funder Identifier Scheme IRI field schema generated by the CEDAR Template Editor 2.5.38",
+                        "_ui": {
+                            "inputType": "textfield"
+                        },
+                        "_valueConstraints": {
+                            "requiredValue": false
+                        },
+                        "properties": {
+                            "@type": {
+                                "oneOf": [
+                                    {
+                                        "type": "string",
+                                        "format": "uri"
+                                    },
+                                    {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "string",
+                                            "format": "uri"
+                                        },
+                                        "uniqueItems": true
+                                    }
+                                ]
+                            },
+                            "@value": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "rdfs:label": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        },
+                        "required": [
+                            "@value"
+                        ],
+                        "schema:name": "has Funder Identifier Scheme IRI",
+                        "schema:description": "IRI of the schema for the funder identifier.",
+                        "pav:createdOn": "2021-02-17T09:35:55-08:00",
+                        "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "pav:lastUpdatedOn": "2021-02-17T09:35:55-08:00",
+                        "pav:version": "0.0.1",
+                        "bibo:status": "bibo:draft",
+                        "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                        "schema:schemaVersion": "1.6.0",
+                        "additionalProperties": false,
+                        "skos:prefLabel": "Funder Identifier Scheme IRI",
+                        "$schema": "http://json-schema.org/draft-04/schema#"
+                    }
+                },
+                "required": [
+                    "@context",
+                    "@id",
+                    "awardTitle",
+                    "awardPageIRI",
+                    "awardLocalIdentifier",
+                    "funderName",
+                    "funderIdentifier",
+                    "funderIdentifierScheme",
+                    "funderIdentifierSchemeIRI"
+                ],
+                "additionalProperties": false,
+                "pav:createdOn": "2021-02-17T09:36:51-08:00",
+                "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                "pav:lastUpdatedOn": "2021-02-17T09:36:51-08:00",
+                "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
+                "schema:schemaVersion": "1.6.0",
+                "schema:name": "Funding",
+                "schema:description": "The sources of funding that enabled and drove the creation of the dataset. (Non-monetary sources are described under Contributor.)",
+                "pav:version": "0.0.1",
+                "bibo:status": "bibo:draft",
+                "skos:prefLabel": "Funding",
                 "$schema": "http://json-schema.org/draft-04/schema#"
             }
         }
@@ -6743,13 +7550,14 @@
         "Creator",
         "Contributor",
         "Rights",
-        "Date"
+        "Date",
+        "Funding"
     ],
     "schema:name": "Generic Metadata Template",
     "schema:description": "",
     "pav:createdOn": "2021-02-16T07:39:21-08:00",
     "pav:createdBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
-    "pav:lastUpdatedOn": "2021-02-17T09:26:32-08:00",
+    "pav:lastUpdatedOn": "2021-02-17T09:36:51-08:00",
     "oslc:modifiedBy": "https://metadatacenter.org/users/cb584e9d-cd34-44f0-9d67-10b217311750",
     "schema:schemaVersion": "1.6.0",
     "additionalProperties": false,
