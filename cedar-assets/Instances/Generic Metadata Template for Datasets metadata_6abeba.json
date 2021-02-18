@@ -1,0 +1,578 @@
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "pav": "http://purl.org/pav/",
+        "schema": "http://schema.org/",
+        "oslc": "http://open-services.net/ns/core#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "rdfs:label": {
+            "@type": "xsd:string"
+        },
+        "schema:isBasedOn": {
+            "@type": "@id"
+        },
+        "schema:name": {
+            "@type": "xsd:string"
+        },
+        "schema:description": {
+            "@type": "xsd:string"
+        },
+        "pav:derivedFrom": {
+            "@type": "@id"
+        },
+        "pav:createdOn": {
+            "@type": "xsd:dateTime"
+        },
+        "pav:createdBy": {
+            "@type": "@id"
+        },
+        "pav:lastUpdatedOn": {
+            "@type": "xsd:dateTime"
+        },
+        "oslc:modifiedBy": {
+            "@type": "@id"
+        },
+        "skos:notation": {
+            "@type": "xsd:string"
+        },
+        "ResourceType": "http://vocab.fairdatacollective.org/gdmt/hasResourceTypeInfo",
+        "DatasetIdentifier": "http://vocab.fairdatacollective.org/gdmt/hasDatasetIdentifierInfo",
+        "RelatedResources": "http://vocab.fairdatacollective.org/gdmt/hasRelatedResourcesInfo",
+        "Language": "http://vocab.fairdatacollective.org/gdmt/hasLanguageInfo",
+        "Title": "http://vocab.fairdatacollective.org/gdmt/hasTitleInfo",
+        "SubjectAndKeyword": "http://vocab.fairdatacollective.org/gdmt/hasSubjectInfo",
+        "Contributor": "https://schema.metadatacenter.org/properties/26a115d1-8c70-434d-a3d0-9713b0f3b55a",
+        "Rights": "http://vocab.fairdatacollective.org/gdmt/hasRightsInfo",
+        "Date": "http://vocab.fairdatacollective.org/gdmt/hasDateInfo",
+        "Funding": "http://vocab.fairdatacollective.org/gdmt/hasFundingInfo",
+        "Variable": "http://vocab.fairdatacollective.org/gdmt/hasVariableInfo",
+        "DataSource": "http://vocab.fairdatacollective.org/gdmt/hasDataSourceInfo",
+        "DataStream": "http://vocab.fairdatacollective.org/gdmt/hasDataStreamInfo",
+        "SpatialCoverage": "http://vocab.fairdatacollective.org/gdmt/hasSpatialCoverageInfo",
+        "VerticalCoverage": "http://vocab.fairdatacollective.org/gdmt/hasVerticalCoverageInfo",
+        "TemporalCoverage": "http://vocab.fairdatacollective.org/gdmt/hasTemporalCoverageInfo",
+        "Distribution": "http://vocab.fairdatacollective.org/gdmt/hasDistributionInfo",
+        "Version": "http://vocab.fairdatacollective.org/gdmt/hasVersionInfo",
+        "Creator": "http://vocab.fairdatacollective.org/gdmt/hasCreatorInfo"
+    },
+    "ResourceType": {
+        "@context": {
+            "resourceTypeCategory": "http://purl.org/dc/terms/type",
+            "resourceTypeDetail": "http://purl.org/dc/elements/1.1/type"
+        },
+        "resourceTypeCategory": {
+            "@id": "http://vocab.fairdatacollective.org/gdmt/Dataset",
+            "rdfs:label": "Dataset"
+        },
+        "resourceTypeDetail": {
+            "@value": "Very (detailed :->)"
+        },
+        "@id": "https://repo.metadatacenter.org/template-element-instances/7049efc9-c96f-4d5b-91aa-b4c8f81ee3bc"
+    },
+    "DatasetIdentifier": {
+        "@context": {
+            "datasetIdentifier": "http://purl.org/dc/terms/identifier",
+            "datasetIdentifierType": "http://schema.org/propertyID"
+        },
+        "datasetIdentifier": {
+            "@value": "https://example.com/unique_digital_object_identifier"
+        },
+        "datasetIdentifierType": {
+            "@id": "http://vocab.fairdatacollective.org/gdmt/IRI",
+            "rdfs:label": "IRI"
+        },
+        "@id": "https://repo.metadatacenter.org/template-element-instances/d0b27673-44d6-408c-8eea-2efbdb2bfcaf"
+    },
+    "RelatedResources": [
+        {
+            "@context": {
+                "relatedResourceIdentifier": "http://purl.org/dc/terms/identifier",
+                "relatedResourceIdentifierType": "http://schema.org/propertyID",
+                "relatedResourceTypeCategory": "http://purl.org/dc/elements/1.1/type",
+                "relationType": "http://rs.tdwg.org/dwc/terms/relationshipOfResource"
+            },
+            "relatedResourceIdentifier": {
+                "@value": null
+            },
+            "relatedResourceIdentifierType": {},
+            "relatedResourceTypeCategory": {},
+            "relationType": {},
+            "@id": "https://repo.metadatacenter.org/template-element-instances/b93df0c0-2165-469d-afab-130f5edc49c8"
+        }
+    ],
+    "Language": {
+        "@context": {
+            "primaryLanguage": "http://vocab.fairdatacollective.org/gdmt/hasPrimaryLanguage",
+            "language": "http://purl.org/dc/terms/language"
+        },
+        "primaryLanguage": {},
+        "language": [
+            {}
+        ],
+        "@id": "https://repo.metadatacenter.org/template-element-instances/1493cdfa-2a7e-4546-8f90-be9cab2279c4"
+    },
+    "Title": [
+        {
+            "@context": {
+                "title": "http://purl.org/dc/elements/1.1/title",
+                "language": "http://purl.org/dc/terms/language"
+            },
+            "title": {
+                "@value": "A Beautiful Test Dataset"
+            },
+            "language": {
+                "@id": "https://www.omg.org/spec/LCC/Languages/LaISO639-1-LanguageCodes/en",
+                "rdfs:label": "en"
+            },
+            "@id": "https://repo.metadatacenter.org/template-element-instances/9c684222-7163-4d8f-b46f-f0a0776f7d33"
+        }
+    ],
+    "SubjectAndKeyword": {
+        "@context": {
+            "Subject": "http://vocab.fairdatacollective.org/gdmt/hasSubjectInfo",
+            "keyword": "http://www.w3.org/ns/dcat#keyword"
+        },
+        "Subject": [
+            {
+                "@context": {
+                    "subjectLabel": "http://purl.org/dc/terms/subject",
+                    "subjectIRI": "http://vocab.fairdatacollective.org/gdmt/hasSubjectIRI",
+                    "subjectScheme": "http://vocab.fairdatacollective.org/gdmt/hasSubjectScheme",
+                    "subjectSchemeIRI": "http://vocab.fairdatacollective.org/gdmt/hasSubjectSchemeIRI"
+                },
+                "subjectLabel": {
+                    "@value": null
+                },
+                "subjectIRI": {
+                    "@value": null
+                },
+                "subjectScheme": {
+                    "@value": null
+                },
+                "subjectSchemeIRI": {
+                    "@value": null
+                },
+                "@id": "https://repo.metadatacenter.org/template-element-instances/9bac0d4c-85ca-4c56-ae51-1b4bfd9e81d7"
+            }
+        ],
+        "keyword": [
+            {
+                "@value": null
+            }
+        ],
+        "@id": "https://repo.metadatacenter.org/template-element-instances/0bc99467-34f4-4326-8e3f-1056ada3da43"
+    },
+    "Contributor": [
+        {
+            "@context": {
+                "contributorType": "http://vocab.fairdatacollective.org/gdmt/hasContributorType",
+                "contributorEmail": "http://xmlns.com/foaf/0.1/mbox",
+                "contributorRole": "http://vocab.fairdatacollective.org/gdmt/hasContributorRole",
+                "ContributorName": "http://vocab.fairdatacollective.org/gdmt/hasContributorNameInfo",
+                "ContributorIdentifier": "http://vocab.fairdatacollective.org/gdmt/hasContributorIdentifierInfo",
+                "ContributorAffiliation": "http://vocab.fairdatacollective.org/gdmt/hasContributorAffiliationInfo"
+            },
+            "contributorType": {},
+            "contributorEmail": [
+                {
+                    "@value": null
+                }
+            ],
+            "contributorRole": [
+                {}
+            ],
+            "ContributorName": {
+                "@context": {
+                    "contributorName": "http://purl.org/dc/terms/contributor",
+                    "contributorGivenName": "http://xmlns.com/foaf/0.1/givenName",
+                    "contributorFamilyName": "http://xmlns.com/foaf/0.1/familyName"
+                },
+                "contributorName": {
+                    "@value": null
+                },
+                "contributorGivenName": [
+                    {
+                        "@value": null
+                    }
+                ],
+                "contributorFamilyName": [
+                    {
+                        "@value": null
+                    }
+                ],
+                "@id": "https://repo.metadatacenter.org/template-element-instances/19ea5bba-eb27-433c-ac10-f43ccd76ca85"
+            },
+            "ContributorIdentifier": {
+                "@context": {
+                    "contributorIdentifier": "http://vocab.fairdatacollective.org/gdmt/hasContributorIdentifier",
+                    "contributorIdentifierScheme": "http://vocab.fairdatacollective.org/gdmt/hasContributorIdentifierScheme"
+                },
+                "contributorIdentifier": {
+                    "@value": null
+                },
+                "contributorIdentifierScheme": {},
+                "@id": "https://repo.metadatacenter.org/template-element-instances/a93571f1-f706-4628-b29d-287bc2bcf984"
+            },
+            "ContributorAffiliation": {
+                "@context": {
+                    "contributorAffiliation": "http://vocab.fairdatacollective.org/gdmt/hasContributorAffiliation",
+                    "contributorAffiliationIdentifier": "http://vocab.fairdatacollective.org/gdmt/hasContributorAffiliationIdentifier",
+                    "contributorAffiliationIdentifierScheme": "http://vocab.fairdatacollective.org/gdmt/hasContributorAffiliationIdentifierScheme"
+                },
+                "contributorAffiliation": {
+                    "@value": null
+                },
+                "contributorAffiliationIdentifier": {
+                    "@value": null
+                },
+                "contributorAffiliationIdentifierScheme": {},
+                "@id": "https://repo.metadatacenter.org/template-element-instances/a0af6c35-d20d-405d-a1e4-70618c40a0e2"
+            },
+            "@id": "https://repo.metadatacenter.org/template-element-instances/7c95073e-4889-4dc4-a839-4cb9f5467641"
+        }
+    ],
+    "Rights": {
+        "@context": {
+            "licenseName": "http://vocab.fairdatacollective.org/gdmt/hasLicenseName",
+            "licenseIdentifier": "http://vocab.fairdatacollective.org/gdmt/hasLicenseIdentifier",
+            "licenseText": "http://purl.org/dc/terms/rights"
+        },
+        "licenseName": {
+            "@value": "BSD 2-clause"
+        },
+        "licenseIdentifier": {
+            "@id": "http://vocab.fairdatacollective.org/gdmt/BSD2Clause",
+            "rdfs:label": "BSD-2-Clause"
+        },
+        "licenseText": {
+            "@value": null
+        },
+        "@id": "https://repo.metadatacenter.org/template-element-instances/8e22ccc6-f15c-4127-9a73-fbae1fb926b0"
+    },
+    "Date": [
+        {
+            "@context": {
+                "datasetDateType": "http://vocab.fairdatacollective.org/gdmt/hasDatasetDateType",
+                "datasetDate": "http://vocab.fairdatacollective.org/gdmt/hasDatasetDate"
+            },
+            "datasetDateType": {
+                "@id": "http://vocab.fairdatacollective.org/gdmt/Published",
+                "rdfs:label": "Published"
+            },
+            "datasetDate": {
+                "@value": "2021-02-18",
+                "@type": "xsd:date"
+            },
+            "@id": "https://repo.metadatacenter.org/template-element-instances/66d476ff-f8fb-4de9-a00c-ed0d9fe77455"
+        }
+    ],
+    "Funding": [
+        {
+            "@context": {
+                "awardTitle": "http://vocab.fairdatacollective.org/gdmt/hasAwardTitle",
+                "awardPageIRI": "http://vocab.fairdatacollective.org/gdmt/hasAwardPageIRI",
+                "awardLocalIdentifier": "http://vocab.fairdatacollective.org/gdmt/hasAwardLocalIdentifier",
+                "funderName": "http://vocab.fairdatacollective.org/gdmt/hasFunderName",
+                "funderIdentifier": "http://vocab.fairdatacollective.org/gdmt/hasFunderIdentifier",
+                "funderIdentifierScheme": "http://vocab.fairdatacollective.org/gdmt/hasFunderIdentifierScheme",
+                "funderIdentifierSchemeIRI": "http://vocab.fairdatacollective.org/gdmt/hasFunderIdentifierSchemeIRI"
+            },
+            "awardTitle": {
+                "@value": null
+            },
+            "awardPageIRI": {
+                "@value": null
+            },
+            "awardLocalIdentifier": {
+                "@value": null
+            },
+            "funderName": {
+                "@value": null
+            },
+            "funderIdentifier": {
+                "@value": null
+            },
+            "funderIdentifierScheme": {
+                "@value": null
+            },
+            "funderIdentifierSchemeIRI": {
+                "@value": null
+            },
+            "@id": "https://repo.metadatacenter.org/template-element-instances/7fcb57d2-ec9b-4072-986b-0e2a32dd376b"
+        }
+    ],
+    "Variable": [
+        {
+            "@context": {
+                "variable": "http://vocab.fairdatacollective.org/gdmt/hasVariable",
+                "variableIRI": "http://vocab.fairdatacollective.org/gdmt/hasVariableIRI",
+                "variableScheme": "http://vocab.fairdatacollective.org/gdmt/hasVariableScheme",
+                "variableSchemeIRI": "http://vocab.fairdatacollective.org/gdmt/hasVariableSchemeIRI"
+            },
+            "variable": {
+                "@value": null
+            },
+            "variableIRI": {
+                "@value": null
+            },
+            "variableScheme": {
+                "@value": null
+            },
+            "variableSchemeIRI": {
+                "@value": null
+            },
+            "@id": "https://repo.metadatacenter.org/template-element-instances/0935c881-1537-4445-b55d-df2fe5d8bd43"
+        }
+    ],
+    "DataSource": [
+        {
+            "@context": {
+                "dataSource": "http://vocab.fairdatacollective.org/gdmt/hasDataSource",
+                "dataSourceIRI": "http://vocab.fairdatacollective.org/gdmt/hasDataSourceIRI",
+                "dataSourceScheme": "http://vocab.fairdatacollective.org/gdmt/hasDataSourceScheme",
+                "dataSourceSchemeIRI": "http://vocab.fairdatacollective.org/gdmt/hasDataSourceSchemeIRI"
+            },
+            "dataSource": {
+                "@value": null
+            },
+            "dataSourceIRI": {
+                "@value": null
+            },
+            "dataSourceScheme": {
+                "@value": null
+            },
+            "dataSourceSchemeIRI": {
+                "@value": null
+            },
+            "@id": "https://repo.metadatacenter.org/template-element-instances/a8ba1a03-0a47-4584-b920-d2fab92e74b2"
+        }
+    ],
+    "DataStream": [
+        {
+            "@context": {
+                "dataStream": "http://vocab.fairdatacollective.org/gdmt/hasDataStream",
+                "dataStreamIRI": "http://vocab.fairdatacollective.org/gdmt/hasDataStreamIRI",
+                "datastreamScheme": "http://vocab.fairdatacollective.org/gdmt/hasDataStreamScheme",
+                "dataStreamSchemeIRI": "http://vocab.fairdatacollective.org/gdmt/hasDataStreamSchemeIRI"
+            },
+            "dataStream": {
+                "@value": null
+            },
+            "dataStreamIRI": {
+                "@value": null
+            },
+            "datastreamScheme": {
+                "@value": null
+            },
+            "dataStreamSchemeIRI": {
+                "@value": null
+            },
+            "@id": "https://repo.metadatacenter.org/template-element-instances/d1c71b30-4faa-4acd-9d95-52882d391471"
+        }
+    ],
+    "SpatialCoverage": {
+        "@context": {
+            "eastBoundLongitude": "http://vocab.fairdatacollective.org/gdmt/hasEastBoundLongitude",
+            "westBoundLongitude": "http://vocab.fairdatacollective.org/gdmt/hasWestBoundLongitude",
+            "southBoundLatitude": "http://vocab.fairdatacollective.org/gdmt/hasSouthBoundLatitude",
+            "northBoundLatitude": "http://vocab.fairdatacollective.org/gdmt/hasNorthBoundLatitude"
+        },
+        "eastBoundLongitude": {
+            "@value": null,
+            "@type": "xsd:decimal"
+        },
+        "westBoundLongitude": {
+            "@value": null,
+            "@type": "xsd:decimal"
+        },
+        "southBoundLatitude": {
+            "@value": null,
+            "@type": "xsd:decimal"
+        },
+        "northBoundLatitude": {
+            "@value": null,
+            "@type": "xsd:decimal"
+        },
+        "@id": "https://repo.metadatacenter.org/template-element-instances/d6aa4654-1df5-4ae5-821b-8f9795490781"
+    },
+    "VerticalCoverage": {
+        "@context": {
+            "verticalExtentMinimumValue": "http://vocab.fairdatacollective.org/gdmt/hasVerticalExtentMinimumValue",
+            "verticalExtentMaximumValue": "http://vocab.fairdatacollective.org/gdmt/hasVerticalExtentMaximumValue",
+            "verticalExtentUnit": "http://vocab.fairdatacollective.org/gdmt/hasVerticalExtentUnit",
+            "verticalExtentDatum": "http://vocab.fairdatacollective.org/gdmt/hasVerticalExtentDatum",
+            "verticalExtentDatumIRI": "http://vocab.fairdatacollective.org/gdmt/hasVerticalExtentDatumIRI"
+        },
+        "verticalExtentMinimumValue": {
+            "@value": null,
+            "@type": "xsd:decimal"
+        },
+        "verticalExtentMaximumValue": {
+            "@value": null,
+            "@type": "xsd:decimal"
+        },
+        "verticalExtentUnit": {},
+        "verticalExtentDatum": {
+            "@value": null
+        },
+        "verticalExtentDatumIRI": {
+            "@value": null
+        },
+        "@id": "https://repo.metadatacenter.org/template-element-instances/fdd430d4-77e8-4e68-95ea-7bd9d103095f"
+    },
+    "TemporalCoverage": {
+        "@context": {
+            "temporalExtentMinimumValue": "http://vocab.fairdatacollective.org/gdmt/hasTemporalExtentMinimumValue",
+            "temporalExtentMaximumValue": "http://vocab.fairdatacollective.org/gdmt/hasTemporalExtentMaximumValue",
+            "temporalResolution": "http://vocab.fairdatacollective.org/gdmt/hasTemporalResolution",
+            "duration": "http://schema.org/duration"
+        },
+        "temporalExtentMinimumValue": {
+            "@value": null,
+            "@type": "xsd:dateTime"
+        },
+        "temporalExtentMaximumValue": {
+            "@value": null,
+            "@type": "xsd:dateTime"
+        },
+        "temporalResolution": {
+            "@value": null,
+            "@type": "xsd:dateTime"
+        },
+        "duration": {
+            "@value": null,
+            "@type": "xsd:dateTime"
+        },
+        "@id": "https://repo.metadatacenter.org/template-element-instances/ec0df841-9c49-4e6a-805b-5ff2d0d21edf"
+    },
+    "Distribution": [
+        {
+            "@context": {
+                "distributionIdentifier": "http://vocab.fairdatacollective.org/gdmt/hasDistributionIdentifier",
+                "distributionIdentifierType": "http://vocab.fairdatacollective.org/gdmt/hasDistributionIdentifierType",
+                "distributionFormat": "http://purl.org/dc/terms/conformsTo",
+                "distributionMediaType": "http://www.w3.org/ns/dcat#mediaType",
+                "distributionSize": "http://vocab.fairdatacollective.org/gdmt/hasDistributionSize",
+                "distributionAccessProtocol": "http://vocab.fairdatacollective.org/gdmt/hasDistributionAccessProtocol",
+                "distributionAccessConfiguration": "http://vocab.fairdatacollective.org/gdmt/hasDistributionAccessConfiguration",
+                "distributionQueryStatement": "http://vocab.fairdatacollective.org/gdmt/hasDistributionQueryStatement"
+            },
+            "distributionIdentifier": {
+                "@value": null
+            },
+            "distributionIdentifierType": {},
+            "distributionFormat": {
+                "@value": null
+            },
+            "distributionMediaType": {},
+            "distributionSize": {
+                "@value": null
+            },
+            "distributionAccessProtocol": {
+                "@value": null
+            },
+            "distributionAccessConfiguration": [
+                {
+                    "@value": null
+                }
+            ],
+            "distributionQueryStatement": [
+                {
+                    "@value": null
+                }
+            ],
+            "@id": "https://repo.metadatacenter.org/template-element-instances/30804548-4d52-41c0-8761-34bba08ee0ca"
+        }
+    ],
+    "Version": {
+        "@context": {
+            "version": "http://schema.org/version"
+        },
+        "version": {
+            "@value": null
+        },
+        "@id": "https://repo.metadatacenter.org/template-element-instances/de3a156c-eb9f-4223-bf3d-defaf617332c"
+    },
+    "Creator": [
+        {
+            "@context": {
+                "creatorEmail": "http://xmlns.com/foaf/0.1/mbox",
+                "creatorRole": "http://vocab.fairdatacollective.org/gdmt/hasCreatorRole",
+                "creatorType": "http://vocab.fairdatacollective.org/gdmt/hasCreatorType",
+                "CreatorName": "http://vocab.fairdatacollective.org/gdmt/hasCreatorNameInfo",
+                "CreatorAffiliation": "http://vocab.fairdatacollective.org/gdmt/hasCreatorAffiliationInfo",
+                "CreatorIdentifier": "http://vocab.fairdatacollective.org/gdmt/hasCreatorIdentifierInfo"
+            },
+            "creatorEmail": [
+                {
+                    "@value": null
+                }
+            ],
+            "creatorRole": [
+                {}
+            ],
+            "creatorType": {
+                "@id": "http://vocab.fairdatacollective.org/gdmt/Person",
+                "rdfs:label": "Person"
+            },
+            "CreatorName": {
+                "@context": {
+                    "creatorName": "http://purl.org/dc/terms/creator",
+                    "creatorGivenName": "http://xmlns.com/foaf/0.1/givenName",
+                    "creatorFamilyName": "http://xmlns.com/foaf/0.1/familyName"
+                },
+                "creatorName": {
+                    "@value": "John Graybeal"
+                },
+                "creatorGivenName": {
+                    "@value": null
+                },
+                "creatorFamilyName": {
+                    "@value": null
+                },
+                "@id": "https://repo.metadatacenter.org/template-element-instances/f4c8f443-cff4-46ea-9ef4-0cd3309e6162"
+            },
+            "CreatorAffiliation": [
+                {
+                    "@context": {
+                        "creatorAffiliation": "http://vocab.fairdatacollective.org/gdmt/hasCreatorAffiliation",
+                        "creatorAffiliationIdentifier": "http://vocab.fairdatacollective.org/gdmt/hasCreatorAffiliationIdentifier",
+                        "creatorAffiliationIdentifierScheme": "http://vocab.fairdatacollective.org/gdmt/hasCreatorAffiliationIdentifierScheme"
+                    },
+                    "creatorAffiliation": {
+                        "@value": null
+                    },
+                    "creatorAffiliationIdentifier": {
+                        "@value": null
+                    },
+                    "creatorAffiliationIdentifierScheme": {},
+                    "@id": "https://repo.metadatacenter.org/template-element-instances/9f5e47d4-9c3b-41f1-ba36-b8474712cb33"
+                }
+            ],
+            "CreatorIdentifier": {
+                "@context": {
+                    "creatorIdentifier": "http://vocab.fairdatacollective.org/gdmt/hasCreatorIdentifier",
+                    "creatorIdentifierScheme": "http://vocab.fairdatacollective.org/gdmt/hasCreatorIdentifierScheme"
+                },
+                "creatorIdentifier": {
+                    "@value": "https://orcid.org/0000-0001-6875-5360"
+                },
+                "creatorIdentifierScheme": {
+                    "@id": "https://orcid.org/",
+                    "rdfs:label": "ORCiD"
+                },
+                "@id": "https://repo.metadatacenter.org/template-element-instances/82edc17f-b393-497b-bd5e-3baae9bd217b"
+            },
+            "@id": "https://repo.metadatacenter.org/template-element-instances/820e2bee-6628-44bc-9a17-ccb2a8d37051"
+        }
+    ],
+    "schema:isBasedOn": "https://repo.metadatacenter.org/templates/17cb90a2-05d0-4b1d-9f4a-6ee3bf9c362b",
+    "schema:name": "Generic Metadata Template for Datasets metadata",
+    "schema:description": "",
+    "pav:createdOn": "2021-02-18T10:20:38-08:00",
+    "pav:createdBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
+    "pav:lastUpdatedOn": "2021-02-18T10:24:10-08:00",
+    "oslc:modifiedBy": "https://metadatacenter.org/users/1adf5ee5-cee0-47d1-9769-efbe00cdebee",
+    "@id": "https://repo.metadatacenter.org/template-instances/c859f747-071d-4e53-a622-ffc5e16abeba"
+}
