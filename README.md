@@ -26,7 +26,7 @@ but must be addressed by the data aggregator and distributor.
 These differences will be highlighted as we fill out the details of the template specification.
 
 # Resources
-- [CEDAR OpenView representation of the template](https://openview.metadatacenter.org/templates/https:%2F%2Frepo.metadatacenter.org%2Ftemplates%2Fdd6231ef-5890-48cb-9621-04c5b5577c1e) showing structure of the generic metadata template.
+- [CEDAR OpenView representation of the template](https://openview.metadatacenter.org/templates/https:%2F%2Frepo.metadatacenter.org%2Ftemplates%2F17cb90a2-05d0-4b1d-9f4a-6ee3bf9c362b) showing structure of the generic metadata template.
 - [Example of the template instance](https://openview.metadatacenter.org/template-instances/https:%2F%2Frepo.metadatacenter.org%2Ftemplate-instances%2F33b76e0c-b09d-4742-9b2d-70aaaa408345) that has been configured for wind energy community by adding [community specific controlled vocabularies for field **subject**](http://bioportal.bioontology.org/ontologies/WETAXTOPICS)
 - [Folder](./cedar/assets) containing [CEDAR](https://cedar.metadatacenter.org/) assets, specifically metadata elements, fields and templates provided as [JSON-LD](https://json-ld.org/) files.
 - [Slides](./template-presentation.pdf) presenting the generic data metadata template
